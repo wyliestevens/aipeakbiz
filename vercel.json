@@ -1,0 +1,36 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/ai-chatbot", "destination": "/ai-chatbot.html" },
+    { "source": "/ai-voice-assistant", "destination": "/ai-voice-assistant.html" },
+    { "source": "/reputation-management", "destination": "/reputation-management.html" },
+    { "source": "/ai-for-chiropractors", "destination": "/ai-for-chiropractors.html" },
+    { "source": "/ai-for-dentists", "destination": "/ai-for-dentists.html" },
+    { "source": "/ai-for-med-spas", "destination": "/ai-for-med-spas.html" },
+    { "source": "/ai-for-home-services", "destination": "/ai-for-home-services.html" },
+    { "source": "/ai-for-law-firms", "destination": "/ai-for-law-firms.html" },
+    { "source": "/ai-for-auto-repair", "destination": "/ai-for-auto-repair.html" },
+    { "source": "/ai-for-real-estate", "destination": "/ai-for-real-estate.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog/reduce-no-shows-chiropractic", "destination": "/blog/reduce-no-shows-chiropractic.html" },
+    { "source": "/blog/get-more-google-reviews", "destination": "/blog/get-more-google-reviews.html" },
+    { "source": "/blog/ai-answering-service-vs-receptionist", "destination": "/blog/ai-answering-service-vs-receptionist.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/disclaimer", "destination": "/disclaimer.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
