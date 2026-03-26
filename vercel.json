@@ -12,6 +12,7 @@
     { "source": "/ai-for-law-firms", "destination": "/ai-for-law-firms.html" },
     { "source": "/ai-for-auto-repair", "destination": "/ai-for-auto-repair.html" },
     { "source": "/ai-for-real-estate", "destination": "/ai-for-real-estate.html" },
+    { "source": "/features", "destination": "/features.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },

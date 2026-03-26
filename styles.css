@@ -94,7 +94,23 @@ nav .container{display:flex;align-items:center;justify-content:space-between;hei
 .industry-card h3{font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:6px}
 .industry-card p{font-size:.8rem;color:var(--text-muted)}
 .industry-card a{display:inline-block;margin-top:12px;font-size:.8rem;color:var(--accent);font-weight:600}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px;max-width:900px;margin-left:auto;margin-right:auto}
+.founding-banner{background:linear-gradient(135deg,rgba(0,184,148,.08) 0%,rgba(0,184,148,.03) 100%);border:1px solid var(--border-accent);border-radius:var(--radius);padding:24px 32px;text-align:center;margin-bottom:32px;max-width:900px;margin-left:auto;margin-right:auto}
+.founding-banner strong{color:var(--accent);font-family:var(--font-display);font-weight:700}
+.founding-banner p{font-size:.95rem;color:var(--text-secondary);margin:0;line-height:1.6}
+.feature-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px 28px;transition:all .3s;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.feature-card:hover{border-color:var(--border-accent);transform:translateY(-4px)}
+.feature-card .feature-icon{width:48px;height:48px;border-radius:12px;background:var(--accent-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px}
+.feature-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:600;margin-bottom:8px}
+.feature-card p{font-size:.9rem;color:var(--text-secondary);line-height:1.7;margin-bottom:12px}
+.feature-card .tier-badge{display:inline-block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:4px 12px;border-radius:100px;background:var(--accent-glow);color:var(--accent);border:1px solid var(--border-accent)}
+.feature-card .tier-badge.peak-only{background:rgba(139,92,246,.1);color:#7c3aed;border-color:rgba(139,92,246,.3)}
+.pricing-build{font-family:var(--font-display);font-size:1.8rem;font-weight:800;line-height:1;margin-bottom:4px}
+.pricing-build span{font-size:.85rem;font-weight:400;color:var(--text-muted)}
+.roi-card{background:linear-gradient(135deg,rgba(0,184,148,.08) 0%,rgba(0,184,148,.03) 100%);border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:48px 40px;text-align:center;margin-top:48px}
+.roi-card .big-stat{font-family:var(--font-display);font-size:3rem;font-weight:800;color:var(--accent);line-height:1}
+.roi-card p{font-size:1.05rem;color:var(--text-secondary);margin-top:12px;line-height:1.7}
 .pricing-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px 32px;position:relative;transition:all .3s}
 .pricing-card.featured{border-color:var(--accent);box-shadow:0 0 60px var(--accent-glow)}
 .pricing-card.featured::before{content:'Most Popular';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#ffffff;padding:6px 20px;border-radius:100px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
@@ -160,8 +176,8 @@ footer{background:#1a1f2e;border-top:1px solid var(--border);padding:64px 0 32px
 .footer-legal{display:flex;gap:24px}
 .footer-legal a{font-size:.8rem;color:var(--text-muted);transition:color .2s}
 .footer-legal a:hover{color:var(--text-secondary)}
-@media(max-width:1024px){.pain-grid,.steps-grid,.pricing-grid,.blog-grid,.solutions-grid{grid-template-columns:1fr 1fr}.features-grid{grid-template-columns:1fr}.solution-block{grid-template-columns:1fr;gap:32px}.solution-block.reverse{direction:ltr}.industries-grid{grid-template-columns:repeat(3,1fr)}.contact-grid{grid-template-columns:1fr}.about-values{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
-@media(max-width:768px){section{padding:72px 0}.nav-links{display:none}.nav-links.active{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);padding:24px;gap:16px;border-bottom:1px solid var(--border)}.mobile-toggle{display:block}.pain-grid,.steps-grid,.pricing-grid,.blog-grid,.solutions-grid{grid-template-columns:1fr}.industries-grid{grid-template-columns:1fr 1fr}.hero{padding:120px 0 72px}.page-hero{padding:120px 0 60px}.hero-buttons{flex-direction:column}.hero-stats{flex-wrap:wrap;gap:32px}.btn-primary,.btn-secondary{width:100%;justify-content:center}.cta-box{padding:48px 24px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}.logo-img{height:32px}}
+@media(max-width:1024px){.pain-grid,.steps-grid,.blog-grid,.solutions-grid{grid-template-columns:1fr 1fr}.feature-card-grid{grid-template-columns:1fr}.features-grid{grid-template-columns:1fr}.solution-block{grid-template-columns:1fr;gap:32px}.solution-block.reverse{direction:ltr}.industries-grid{grid-template-columns:repeat(3,1fr)}.contact-grid{grid-template-columns:1fr}.about-values{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:768px){section{padding:72px 0}.nav-links{display:none}.nav-links.active{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);padding:24px;gap:16px;border-bottom:1px solid var(--border)}.mobile-toggle{display:block}.pain-grid,.steps-grid,.pricing-grid,.blog-grid,.solutions-grid,.feature-card-grid{grid-template-columns:1fr}.industries-grid{grid-template-columns:1fr 1fr}.hero{padding:120px 0 72px}.page-hero{padding:120px 0 60px}.hero-buttons{flex-direction:column}.hero-stats{flex-wrap:wrap;gap:32px}.btn-primary,.btn-secondary{width:100%;justify-content:center}.cta-box{padding:48px 24px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}.logo-img{height:32px}}
 .pricing-grid{align-items:stretch}
 .pricing-card{display:flex;flex-direction:column}
 .pricing-features{flex:1}
