@@ -22,7 +22,8 @@
     { "source": "/blog/ai-answering-service-vs-receptionist", "destination": "/blog/ai-answering-service-vs-receptionist.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/disclaimer", "destination": "/disclaimer.html" }
+    { "source": "/disclaimer", "destination": "/disclaimer.html" },
+    { "source": "/free-assessment/:path*", "destination": "/free-assessment/index.html" }
   ],
   "headers": [
     {
