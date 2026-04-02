@@ -29,6 +29,7 @@
 <li><a href="/pricing">Pricing</a></li>
 <li><a href="/ai-for-chiropractors">For Chiropractors</a></li>
 <li><a href="/about">About</a></li>
+<li><a href="#assessment">Free Assessment</a></li>
 <li><a href="https://link.aipeakbiz.com/widget/bookings/aipeakbiz" class="nav-cta">Book a Demo</a></li>
 </ul>
 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
@@ -41,7 +42,7 @@
 <p>AI Peak Biz builds and manages a complete AI front desk system for chiropractic clinics. Every call answered. Every inquiry captured. More appointments booked. More 5-star reviews. No new payroll.</p>
 <div class="hero-buttons">
 <a href="https://link.aipeakbiz.com/widget/bookings/aipeakbiz" class="btn-primary">Book a Demo &rarr;</a>
-<a href="#how-it-works" class="btn-secondary">See How It Works</a>
+<a href="#assessment" class="btn-secondary">Take the Free Assessment</a>
 </div>
 <div class="hero-stats">
 <div><div class="hero-stat-value">24/7</div><div class="hero-stat-label">Calls answered around the clock</div></div>
@@ -60,6 +61,11 @@
 <div class="pain-card animate"><div class="problem-number">04</div><h3>Inactive Patients Never Come Back</h3><p>Patients who completed their treatment plan 90 days ago are not coming back on their own. Without a reactivation system, that revenue sits on the table. You already paid to acquire them.</p><div class="problem-cost">Avg. loss: $3,000-$6,000/quarter</div></div>
 <div class="pain-card animate"><div class="problem-number">05</div><h3>Your Front Desk Is Overwhelmed</h3><p>Your staff is answering phones, checking patients in, handling insurance, scheduling follow-ups, and trying to collect reviews all at once. Calls go to voicemail. Follow-ups get delayed. Leads slip through.</p><div class="problem-cost">Root cause of all the above</div></div>
 </div>
+</div></section>
+
+<!-- ASSESSMENT TOOL -->
+<section class="assessment-section" id="assessment"><div class="container">
+<div class="assessment-wrap" id="homeAssessment" data-assessment></div>
 </div></section>
 
 <!-- SOLUTION -->
@@ -261,5 +267,6 @@ const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(e
 document.querySelectorAll(".animate").forEach(el=>observer.observe(el));
 document.querySelectorAll(".faq-question").forEach(btn=>{btn.addEventListener("click",()=>{const item=btn.parentElement;const active=item.classList.contains("active");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("active"));if(!active)item.classList.add("active");});});
 </script>
+<script src="/assessment.js"></script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="67ddf0a80d1911aaceb3e991"></script>
 </body></html>
