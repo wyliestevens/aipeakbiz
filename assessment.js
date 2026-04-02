@@ -202,7 +202,7 @@ function initAssessment(containerId) {
         '<div class="assessment-breakdown-item"><h4>No-Shows</h4><p>$' + noshowLoss.toLocaleString() + '/mo</p></div>' +
       '</div>' +
       '<div class="assessment-cta">' +
-        '<a href="https://link.aipeakbiz.com/widget/bookings/aipeakbiz" class="btn-primary">Book a Free Demo to Fix This &rarr;</a>' +
+        '<a href="https://link.aipeakbiz.com/widget/bookings/aipeakbiz-demo" class="btn-primary">Book a Free Demo to Fix This &rarr;</a>' +
         '<p>30-minute call. We will walk through your specific numbers and show you the system.</p>' +
       '</div>' +
       '<button class="assessment-retake" id="aRetake">Retake Assessment</button>' +
