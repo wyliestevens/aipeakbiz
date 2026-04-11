@@ -82,7 +82,7 @@ src="https://www.facebook.com/tr?id=1688465049265146&ev=PageView&noscript=1"
 
 <!-- ASSESSMENT TOOL -->
 <section class="assessment-section" id="assessment"><div class="container">
-<div class="assessment-wrap" style="text-align:center;">
+<div style="text-align:center;">
 <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:12px;">Free AI Business Assessment</h2>
 <p style="font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.7;max-width:540px;margin:0 auto 32px;">Fill out the form below to get started with your free assessment.</p>
 <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;min-height:874px;">
@@ -105,6 +105,7 @@ src="https://www.facebook.com/tr?id=1688465049265146&ev=PageView&noscript=1"
 ></iframe>
 </div>
 </div>
+<div class="assessment-wrap" id="homeAssessment" data-assessment style="margin-top:64px;"></div>
 </div></section>
 
 <!-- SOLUTION -->
@@ -337,6 +338,7 @@ const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(e
 document.querySelectorAll(".animate").forEach(el=>observer.observe(el));
 document.querySelectorAll(".faq-question").forEach(btn=>{btn.addEventListener("click",()=>{const item=btn.parentElement;const active=item.classList.contains("active");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("active"));if(!active)item.classList.add("active");});});
 </script>
+<script src="/assessment.js"></script>
 <script src="https://link.aipeakbiz.com/js/form_embed.js"></script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="67ddf0a80d1911aaceb3e991"></script>
 </body></html>
