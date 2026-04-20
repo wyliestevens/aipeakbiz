@@ -12,10 +12,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        surface: "#111113",
-        "text-primary": "#FAFAFA",
-        "text-secondary": "#A1A1AA",
-        "text-muted": "#52525B",
+        surface: "#273548",
+        "text-primary": "#F1F5F9",
+        "text-secondary": "#94A3B8",
+        "text-muted": "#64748B",
         accent: {
           blue: "#3B82F6",
           violet: "#8B5CF6",
@@ -23,7 +23,7 @@ const config: Config = {
         },
         success: "#10B981",
         warning: "#F59E0B",
-        "border-custom": "#27272A",
+        "border-custom": "#334155",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],

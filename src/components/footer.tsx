@@ -33,7 +33,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="/images/logo.png" alt="AI Peak Biz" width={32} height={32} />
+              <Image src="/images/logo.png" alt="AI Peak Biz" width={42} height={42} />
               <span className="text-lg font-bold text-text-primary">
                 AI Peak <em className="not-italic text-accent-blue">Biz</em>
               </span>

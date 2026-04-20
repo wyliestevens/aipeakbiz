@@ -50,9 +50,9 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
-            width={40}
-            height={40}
-            className="w-8 h-8 md:w-10 md:h-10"
+            width={52}
+            height={52}
+            className="w-10 h-10 md:w-[52px] md:h-[52px]"
             priority
           />
           <span className="text-lg font-bold text-text-primary">
