@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
   PhoneCall, MessageSquare, Star, PhoneForwarded,
-  Bell, CalendarCheck, UserPlus, LayoutDashboard,
+  Bell, CalendarCheck, UserPlus, LayoutDashboard, Globe, Settings,
 } from "lucide-react";
 
 const capabilities = [
@@ -14,7 +14,9 @@ const capabilities = [
   { icon: Bell, title: "Appointment Reminders", desc: "24-hour and 2-hour texts" },
   { icon: CalendarCheck, title: "No-Show Recovery", desc: "Automated rebooking" },
   { icon: UserPlus, title: "Dormant Customer Reactivation", desc: "Win back past customers" },
-  { icon: LayoutDashboard, title: "Full CRM with Lead Pipeline", desc: "Track every lead to close" },
+  { icon: LayoutDashboard, title: "CRM with Lead Pipeline", desc: "One dashboard to track every lead, customer, and deal from first call to close" },
+  { icon: Globe, title: "Website Design & Build", desc: "Professional sites built to convert visitors into booked appointments" },
+  { icon: Settings, title: "Custom Automation Services", desc: "Tailored workflows built for your specific business needs" },
 ];
 
 export function SystemSection() {
@@ -29,11 +31,11 @@ export function SystemSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display mb-4">
-            One system. Every tool your front desk needs.
+            One system. Every tool your business needs.
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {capabilities.map((cap, i) => (
             <motion.div
               key={cap.title}

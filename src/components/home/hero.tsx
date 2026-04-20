@@ -61,9 +61,9 @@ export function HeroSection() {
 
           {/* Subhead */}
           <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
-            AI Peak Biz builds and manages AI front desk systems for service
-            businesses. Every call answered. Every inquiry captured. More
-            appointments booked. More 5-star reviews. No new payroll.
+            AI Peak Biz builds and manages complete AI automation systems
+            for service businesses. Every call answered. Every inquiry captured.
+            More appointments booked. More 5-star reviews. No new payroll.
           </p>
 
           {/* CTAs */}

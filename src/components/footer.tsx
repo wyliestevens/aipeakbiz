@@ -39,7 +39,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
-              AI front desk systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.
+              AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.
             </p>
           </div>
 

@@ -10,9 +10,9 @@ import { AboutTeaser } from "@/components/home/about-teaser";
 import { CTASection } from "@/components/cta-section";
 
 export const metadata: Metadata = {
-  title: "AI Peak Biz | AI Front Desk Systems for Service Businesses",
+  title: "AI Peak Biz | AI Automation for Service Businesses",
   description:
-    "AI Peak Biz builds and manages AI front desk systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
+    "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
   alternates: { canonical: "https://www.aipeakbiz.com" },
 };
 

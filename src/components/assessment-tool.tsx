@@ -263,9 +263,9 @@ export function AssessmentTool() {
                   <input
                     type="number"
                     min={0}
-                    value={data.reviewCount || ""}
+                    value={data.reviewCount === 0 ? "0" : data.reviewCount || ""}
                     onChange={(e) =>
-                      setData({ ...data, reviewCount: parseInt(e.target.value) || 0 })
+                      setData({ ...data, reviewCount: e.target.value === "" ? 0 : parseInt(e.target.value) || 0 })
                     }
                     className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none"
                     placeholder="e.g. 45"

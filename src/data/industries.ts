@@ -69,7 +69,7 @@ export const industries: Industry[] = [
     name: "Beauty",
     slug: "beauty",
     icon: Scissors,
-    subIndustries: ["Salons", "Barber Shops", "Nail Salons", "Lash Studios", "Tattoo Shops"],
+    subIndustries: ["Hair", "Nails", "Barber", "Lashes"],
   },
   {
     name: "Education",
@@ -87,7 +87,7 @@ export const industries: Industry[] = [
     name: "Trades & Specialty",
     slug: "trades-specialty",
     icon: Lock,
-    subIndustries: ["Locksmiths", "Movers", "Storage Facilities", "Security Companies"],
+    subIndustries: ["Locksmiths", "Towing", "Movers", "Storage Facilities", "Security Companies"],
   },
 ];
 

@@ -20,25 +20,25 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aipeakbiz.com"),
   title: {
-    default: "AI Peak Biz | AI Front Desk Systems for Service Businesses",
+    default: "AI Peak Biz | AI Automation for Service Businesses",
     template: "%s | AI Peak Biz",
   },
   description:
-    "AI Peak Biz builds and manages AI front desk systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
+    "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.aipeakbiz.com",
     siteName: "AI Peak Biz",
-    title: "AI Peak Biz | AI Front Desk Systems for Service Businesses",
+    title: "AI Peak Biz | AI Automation for Service Businesses",
     description:
-      "AI Peak Biz builds and manages AI front desk systems for service businesses. Every call answered. Every lead captured. More appointments booked.",
+      "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Peak Biz | AI Front Desk Systems for Service Businesses",
+    title: "AI Peak Biz | AI Automation for Service Businesses",
     description:
-      "AI front desk systems for service businesses. Every call answered. Every lead captured.",
+      "AI automation systems for service businesses. Every call answered. Every lead captured.",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://www.aipeakbiz.com" },
