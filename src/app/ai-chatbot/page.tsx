@@ -1,0 +1,32 @@
+import { Metadata } from "next";
+import { ServicePageContent } from "@/components/service-page";
+
+export const metadata: Metadata = {
+  title: "AI Chatbot for Service Businesses",
+  description:
+    "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.",
+  alternates: { canonical: "https://www.aipeakbiz.com/ai-chatbot" },
+};
+
+export default function AIChatbotPage() {
+  return (
+    <ServicePageContent
+      title="AI Chatbot"
+      headline="Turn website visitors into booked appointments. Automatically."
+      description="Your website gets traffic. Most visitors leave without taking action. Your AI chatbot engages every visitor instantly, answers their questions, and books appointments 24/7. No forms. No wait. No lost leads."
+      features={[
+        { title: "Instant Response", desc: "Engages visitors within 5 seconds of landing on your site. No waiting. No bounce." },
+        { title: "Trained on Your Business", desc: "Knows your services, pricing, scheduling, and policies. Answers like a knowledgeable member of your team." },
+        { title: "Books Appointments in Real Time", desc: "Sees your calendar availability and books directly. The visitor goes from browsing to booked in under 60 seconds." },
+        { title: "Captures Lead Information", desc: "Collects name, contact info, service needed, and any qualifying details. Every lead is logged in your CRM." },
+        { title: "Works After Hours", desc: "Your website gets traffic at 10 PM. Without a chatbot, those visitors leave. With one, they book." },
+        { title: "Mobile Optimized", desc: "Works perfectly on mobile devices. Most of your website traffic is mobile. The chatbot meets them there." },
+      ]}
+      stats={[
+        { value: "5 sec", label: "Average response time" },
+        { value: "3-5x", label: "Increase in website conversions" },
+        { value: "24/7", label: "Always available" },
+      ]}
+    />
+  );
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.aipeakbiz.com
+
+# Sitemaps
+Sitemap: https://www.aipeakbiz.com/sitemap.xml
