@@ -35,7 +35,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/80" />
 
       <div className="container-custom relative pt-24 pb-16 md:pt-32 md:pb-24">
         <motion.div

@@ -27,29 +27,29 @@ const companyLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-surface border-t border-border-custom">
+    <footer className="bg-[#0F172A] border-t border-border-custom text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="/images/logo.png" alt="AI Peak Biz" width={42} height={42} />
-              <span className="text-lg font-bold text-text-primary">
+              <Image src="/images/logo.png" alt="AI Peak Biz" width={50} height={50} />
+              <span className="text-lg font-bold text-white">
                 AI Peak <em className="not-italic text-accent-blue">Biz</em>
               </span>
             </Link>
-            <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
+            <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.
             </p>
           </div>
 
           {/* Solutions */}
           <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Solutions</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Solutions</h3>
             <ul className="space-y-2">
               {solutionLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  <Link href={l.href} className="text-sm text-slate-400 hover:text-white transition-colors">
                     {l.name}
                   </Link>
                 </li>
@@ -59,11 +59,11 @@ export function Footer() {
 
           {/* Industries */}
           <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Industries</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Industries</h3>
             <ul className="space-y-2">
               {industryLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  <Link href={l.href} className="text-sm text-slate-400 hover:text-white transition-colors">
                     {l.name}
                   </Link>
                 </li>
@@ -73,37 +73,37 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Contact</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Contact</h3>
             <ul className="space-y-2">
               {companyLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  <Link href={l.href} className="text-sm text-slate-400 hover:text-white transition-colors">
                     {l.name}
                   </Link>
                 </li>
               ))}
               <li>
-                <a href={PHONE_TEL} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <a href={PHONE_TEL} className="text-sm text-slate-400 hover:text-white transition-colors">
                   {PHONE}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${EMAIL}`} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <a href={`mailto:${EMAIL}`} className="text-sm text-slate-400 hover:text-white transition-colors">
                   {EMAIL}
                 </a>
               </li>
-              <li className="text-sm text-text-muted">Kingman, Arizona</li>
+              <li className="text-sm text-slate-500">Kingman, Arizona</li>
             </ul>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="border-t border-border-custom mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-text-muted">&copy; 2026 AI Peak Biz. All rights reserved.</p>
+          <p className="text-sm text-slate-500">&copy; 2026 AI Peak Biz. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="text-sm text-text-muted hover:text-text-secondary transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="text-sm text-text-muted hover:text-text-secondary transition-colors">Terms</Link>
-            <Link href="/disclaimer" className="text-sm text-text-muted hover:text-text-secondary transition-colors">Disclaimer</Link>
+            <Link href="/privacy-policy" className="text-sm text-slate-500 hover:text-slate-400 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-sm text-slate-500 hover:text-slate-400 transition-colors">Terms</Link>
+            <Link href="/disclaimer" className="text-sm text-slate-500 hover:text-slate-400 transition-colors">Disclaimer</Link>
           </div>
         </div>
       </div>

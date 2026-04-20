@@ -2,8 +2,25 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { industries } from "@/data/industries";
+
+const nodeColors = [
+  "#3B82F6", // blue
+  "#10B981", // green
+  "#F59E0B", // amber
+  "#8B5CF6", // violet
+  "#EF4444", // red
+  "#06B6D4", // cyan
+  "#EC4899", // pink
+  "#F97316", // orange
+  "#14B8A6", // teal
+  "#A855F7", // purple
+  "#6366F1", // indigo
+  "#84CC16", // lime
+  "#0EA5E9", // sky
+];
 
 function MindMapDesktop() {
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
@@ -14,28 +31,32 @@ function MindMapDesktop() {
 
   return (
     <div className="hidden md:block relative" style={{ width: 800, height: 800, margin: "0 auto" }}>
-      {/* Center node */}
+      {/* Center node with logo */}
       <motion.div
-        className="absolute z-10 flex items-center justify-center"
+        className="absolute z-10 flex items-center justify-center rounded-full"
         style={{
-          left: centerX - 64,
-          top: centerY - 64,
-          width: 128,
-          height: 128,
+          left: centerX - 70,
+          top: centerY - 70,
+          width: 140,
+          height: 140,
         }}
         animate={{
           boxShadow: [
-            "0 0 20px rgba(59, 130, 246, 0.3)",
-            "0 0 40px rgba(139, 92, 246, 0.5)",
-            "0 0 20px rgba(59, 130, 246, 0.3)",
+            "0 0 30px rgba(59, 130, 246, 0.3)",
+            "0 0 50px rgba(59, 130, 246, 0.5)",
+            "0 0 30px rgba(59, 130, 246, 0.3)",
           ],
         }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-full h-full rounded-full bg-gradient-to-br from-accent-blue via-accent-violet to-accent-pink flex items-center justify-center">
-          <span className="text-white font-bold text-sm text-center leading-tight px-2">
-            AI Peak<br />Biz
-          </span>
+        <div className="w-full h-full rounded-full bg-white border-2 border-accent-blue/30 flex items-center justify-center shadow-lg">
+          <Image
+            src="/images/logo.png"
+            alt="AI Peak Biz"
+            width={90}
+            height={90}
+            className="w-[90px] h-[90px] object-contain"
+          />
         </div>
       </motion.div>
 
@@ -56,8 +77,8 @@ function MindMapDesktop() {
               y1={centerY}
               x2={x}
               y2={y}
-              stroke={isHovered ? "#8B5CF6" : "#27272A"}
-              strokeWidth={isHovered ? 2 : 1}
+              stroke={isHovered ? nodeColors[i] : "#CBD5E1"}
+              strokeWidth={isHovered ? 2.5 : 1}
               className="transition-all duration-300"
             />
           );
@@ -71,15 +92,16 @@ function MindMapDesktop() {
         const y = centerY + radius * Math.sin(angle);
         const isHovered = hoveredSlug === ind.slug;
         const Icon = ind.icon;
+        const color = nodeColors[i];
 
         return (
           <div
             key={ind.slug}
             className="absolute"
             style={{
-              left: x - 56,
-              top: y - 28,
-              width: 112,
+              left: x - 60,
+              top: y - 34,
+              width: 120,
             }}
             onMouseEnter={() => setHoveredSlug(ind.slug)}
             onMouseLeave={() => setHoveredSlug(null)}
@@ -91,22 +113,25 @@ function MindMapDesktop() {
             >
               <motion.div
                 animate={{
-                  scale: isHovered ? 1.1 : 1,
+                  scale: isHovered ? 1.15 : 1,
                   boxShadow: isHovered
-                    ? "0 0 24px rgba(59, 130, 246, 0.4)"
-                    : "0 0 0px rgba(59, 130, 246, 0)",
+                    ? `0 0 24px ${color}66`
+                    : `0 0 0px ${color}00`,
                 }}
                 transition={{ duration: 0.2 }}
-                className="mx-auto w-14 h-14 rounded-full glassmorphism flex items-center justify-center mb-1.5"
+                className="mx-auto w-[68px] h-[68px] rounded-full flex items-center justify-center mb-2 border-2 shadow-md"
+                style={{
+                  backgroundColor: `${color}15`,
+                  borderColor: `${color}40`,
+                }}
               >
                 <Icon
-                  className={`w-6 h-6 transition-colors duration-200 ${
-                    isHovered ? "text-accent-blue" : "text-text-secondary"
-                  }`}
+                  className="w-7 h-7 transition-colors duration-200"
+                  style={{ color }}
                 />
               </motion.div>
               <span
-                className={`text-xs font-medium transition-colors duration-200 ${
+                className={`text-sm font-semibold transition-colors duration-200 ${
                   isHovered ? "text-text-primary" : "text-text-secondary"
                 }`}
               >
@@ -122,13 +147,18 @@ function MindMapDesktop() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 glassmorphism rounded-lg p-3 shadow-2xl"
+                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 bg-white rounded-lg p-3 shadow-xl border border-border-custom"
                 >
                   <div className="flex flex-wrap gap-1">
                     {ind.subIndustries.map((sub) => (
                       <span
                         key={sub}
-                        className="inline-block px-2 py-0.5 text-[10px] rounded-full bg-accent-blue/10 text-accent-blue border border-accent-blue/20"
+                        className="inline-block px-2 py-0.5 text-[10px] rounded-full font-medium"
+                        style={{
+                          backgroundColor: `${color}15`,
+                          color: color,
+                          border: `1px solid ${color}30`,
+                        }}
                       >
                         {sub}
                       </span>
@@ -147,16 +177,17 @@ function MindMapDesktop() {
 function MindMapMobile() {
   return (
     <div className="md:hidden grid grid-cols-2 sm:grid-cols-3 gap-3">
-      {industries.map((ind) => {
+      {industries.map((ind, i) => {
         const Icon = ind.icon;
+        const color = nodeColors[i];
         return (
           <Link
             key={ind.slug}
             href={`/industries/${ind.slug}`}
-            className="glassmorphism rounded-xl p-4 hover:border-accent-blue/50 transition-all duration-200 group"
+            className="bg-white rounded-xl p-4 border border-border-custom shadow-sm hover:shadow-md transition-all duration-200 group"
             aria-label={`${ind.name} - click to learn more`}
           >
-            <Icon className="w-6 h-6 text-accent-blue mb-2" />
+            <Icon className="w-7 h-7 mb-2" style={{ color }} />
             <h3 className="text-sm font-semibold text-text-primary mb-2 group-hover:text-accent-blue transition-colors">
               {ind.name}
             </h3>
@@ -164,13 +195,17 @@ function MindMapMobile() {
               {ind.subIndustries.slice(0, 4).map((sub) => (
                 <span
                   key={sub}
-                  className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-accent-blue/10 text-accent-blue/80"
+                  className="inline-block px-1.5 py-0.5 text-[9px] rounded-full font-medium"
+                  style={{
+                    backgroundColor: `${color}12`,
+                    color: color,
+                  }}
                 >
                   {sub}
                 </span>
               ))}
               {ind.subIndustries.length > 4 && (
-                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-white/5 text-text-muted">
+                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-gray-100 text-text-muted">
                   +{ind.subIndustries.length - 4}
                 </span>
               )}

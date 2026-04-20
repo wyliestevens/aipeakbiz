@@ -13,13 +13,13 @@ const steps = [
   {
     icon: Wrench,
     number: "2",
-    title: "We Build It",
+    title: "System Build",
     desc: "Our team configures everything. Done for you.",
   },
   {
     icon: Rocket,
     number: "3",
-    title: "You Go Live",
+    title: "System Live",
     desc: "Most businesses are running in 5 to 10 business days.",
   },
 ];

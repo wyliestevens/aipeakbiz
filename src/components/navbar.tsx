@@ -50,9 +50,9 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
-            width={52}
-            height={52}
-            className="w-10 h-10 md:w-[52px] md:h-[52px]"
+            width={62}
+            height={62}
+            className="w-12 h-12 md:w-[62px] md:h-[62px]"
             priority
           />
           <span className="text-lg font-bold text-text-primary">
@@ -88,7 +88,7 @@ export function Navbar() {
                     <Link
                       key={ind.slug}
                       href={`/industries/${ind.slug}`}
-                      className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
+                      className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-accent-blue/5 rounded-lg transition-colors"
                     >
                       <ind.icon className="w-4 h-4 text-accent-blue" />
                       {ind.name}
@@ -125,7 +125,7 @@ export function Navbar() {
                     <Link
                       key={s.href}
                       href={s.href}
-                      className="block px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
+                      className="block px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-accent-blue/5 rounded-lg transition-colors"
                     >
                       {s.name}
                     </Link>
@@ -188,7 +188,7 @@ export function Navbar() {
                   key={ind.slug}
                   href={`/industries/${ind.slug}`}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
+                  className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-accent-blue/5 rounded-lg transition-colors"
                 >
                   <ind.icon className="w-4 h-4 text-accent-blue" />
                   {ind.name}
@@ -201,7 +201,7 @@ export function Navbar() {
                   key={s.href}
                   href={s.href}
                   onClick={() => setMobileOpen(false)}
-                  className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
+                  className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-accent-blue/5 rounded-lg transition-colors"
                 >
                   {s.name}
                 </Link>
