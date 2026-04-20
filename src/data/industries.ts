@@ -91,7 +91,7 @@ export const industries: Industry[] = [
   },
 ];
 
-export const BOOKING_URL = "https://link.aipeakbiz.com/widget/bookings/aipeakbiz-demo";
+export const BOOKING_URL = "https://link.aipeakbiz.com/widget/bookings/ai-peak-biz-demo";
 export const PHONE = "928-628-6080";
 export const PHONE_TEL = "tel:9286286080";
 export const EMAIL = "wylie@aipeakbiz.com";
