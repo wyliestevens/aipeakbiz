@@ -23,7 +23,7 @@ function ReviewCard({ review }: { review: Review }) {
         </div>
         <div>
           <p className="text-sm font-medium text-text-primary">{review.name}</p>
-          <p className="text-xs text-text-muted">Google Review</p>
+          <p className="text-xs text-text-muted">{review.title} &middot; Google Review</p>
         </div>
       </div>
     </div>
