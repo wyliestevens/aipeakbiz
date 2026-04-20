@@ -132,10 +132,16 @@ export function AssessmentTool() {
     };
   }, [data]);
 
-  const goNext = () => {
+  // Auto-advance from the calculating step
+  useEffect(() => {
     if (step === 7) {
       setResults(calculateResults());
+      const timer = setTimeout(() => setStep(8), 1500);
+      return () => clearTimeout(timer);
     }
+  }, [step, calculateResults]);
+
+  const goNext = () => {
     setStep((s) => Math.min(s + 1, 8));
   };
 
@@ -618,13 +624,6 @@ export function AssessmentTool() {
               <p className="text-lg text-text-secondary">
                 Calculating your revenue loss...
               </p>
-              {/* Auto-advance after brief pause */}
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `setTimeout(() => document.getElementById('auto-next')?.click(), 1500)`,
-                }}
-              />
-              <button id="auto-next" onClick={goNext} className="hidden" />
             </div>
           )}
 
