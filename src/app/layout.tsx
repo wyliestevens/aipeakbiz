@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { AnalyticsScripts } from "@/components/analytics";
 import { SkipToMain } from "@/components/skip-to-main";
+import { ChatWidget } from "@/components/chat-widget";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -113,12 +114,7 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <AnalyticsScripts />
-        <script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="67ddf0a80d1911aaceb3e991"
-          async
-        />
+        <ChatWidget />
       </body>
     </html>
   );
