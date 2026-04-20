@@ -79,7 +79,8 @@ function CapabilityCard({ cap, index }: { cap: typeof capabilities[0]; index: nu
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="relative glassmorphism rounded-xl p-5 hover:border-accent-blue/30 transition-colors cursor-pointer"
+      className="relative glassmorphism rounded-xl p-5 hover:border-accent-blue/30 transition-colors cursor-pointer hover:z-50"
+      style={{ zIndex: hovered ? 50 : 1 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -96,7 +97,7 @@ function CapabilityCard({ cap, index }: { cap: typeof capabilities[0]; index: nu
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.15 }}
-            className="absolute z-30 left-0 right-0 top-full mt-2 bg-white rounded-xl p-4 shadow-xl border border-border-custom"
+            className="absolute z-[100] left-0 right-0 top-full mt-2 glassmorphism rounded-xl p-4 shadow-2xl"
             style={{ minWidth: 280 }}
           >
             <p className="text-sm text-text-secondary leading-relaxed">

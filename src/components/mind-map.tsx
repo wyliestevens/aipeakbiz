@@ -49,7 +49,7 @@ function MindMapDesktop() {
         }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-full h-full rounded-full bg-white border-2 border-accent-blue/30 flex items-center justify-center shadow-lg">
+        <div className="w-full h-full rounded-full bg-[#0D3B3F] border-2 border-[#4DD9E0]/40 flex items-center justify-center shadow-lg">
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
@@ -77,7 +77,7 @@ function MindMapDesktop() {
               y1={centerY}
               x2={x}
               y2={y}
-              stroke={isHovered ? nodeColors[i] : "#CBD5E1"}
+              stroke={isHovered ? nodeColors[i] : "#3A3A3E"}
               strokeWidth={isHovered ? 2.5 : 1}
               className="transition-all duration-300"
             />
@@ -147,7 +147,7 @@ function MindMapDesktop() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 bg-white rounded-lg p-3 shadow-xl border border-border-custom"
+                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 glassmorphism rounded-lg p-3 shadow-xl"
                 >
                   <div className="flex flex-wrap gap-1">
                     {ind.subIndustries.map((sub) => (
@@ -184,7 +184,7 @@ function MindMapMobile() {
           <Link
             key={ind.slug}
             href={`/industries/${ind.slug}`}
-            className="bg-white rounded-xl p-4 border border-border-custom shadow-sm hover:shadow-md transition-all duration-200 group"
+            className="glassmorphism rounded-xl p-4 hover:border-accent-blue/50 transition-all duration-200 group"
             aria-label={`${ind.name} - click to learn more`}
           >
             <Icon className="w-7 h-7 mb-2" style={{ color }} />
@@ -205,7 +205,7 @@ function MindMapMobile() {
                 </span>
               ))}
               {ind.subIndustries.length > 4 && (
-                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-gray-100 text-text-muted">
+                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-white/10 text-text-muted">
                   +{ind.subIndustries.length - 4}
                 </span>
               )}

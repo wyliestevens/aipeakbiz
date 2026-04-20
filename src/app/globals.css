@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: #F1F5F9;
-    --foreground: #0F172A;
+    --background: #1C1C1E;
+    --foreground: #F1F5F9;
   }
 
   * {
@@ -18,7 +18,7 @@
 
   html {
     @apply scroll-smooth;
-    color-scheme: light;
+    color-scheme: dark;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   .glassmorphism {
-    @apply bg-white/80 backdrop-blur-xl border border-border-custom/50 shadow-sm;
+    @apply bg-surface/80 backdrop-blur-xl border border-border-custom/50;
   }
 
   .gradient-text {
