@@ -111,7 +111,7 @@ export async function POST(req: NextRequest) {
       lastName: data.lastName || "",
       email: data.email || "",
       phone: data.phone || "",
-      smsConsent: data.smsConsent || false,
+      smsConsent: data.smsConsent ? "Yes" : "No",
       source: "assessment_tool",
 
       // Industry
