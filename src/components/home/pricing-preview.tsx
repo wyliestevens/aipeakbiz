@@ -23,7 +23,7 @@ const tiers = [
     name: "Peak",
     build: "$14,997",
     monthly: "$2,497/mo",
-    features: ["Everything in Growth", "Dormant Customer Reactivation", "Advanced Automations", "Priority Support", "Monthly Optimization"],
+    features: ["Everything in Growth", "Predictive Revenue Forecasting", "Quarterly Strategy Reviews", "Competitor Monitoring", "Multi-Location Support"],
   },
 ];
 
