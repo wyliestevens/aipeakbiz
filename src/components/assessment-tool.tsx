@@ -88,8 +88,14 @@ export function AssessmentTool() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<AssessmentData>(defaultData);
   const [results, setResults] = useState<Results | null>(null);
-  const [email, setEmail] = useState("");
-  const [emailSent, setEmailSent] = useState(false);
+  const [contactInfo, setContactInfo] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    smsConsent: false,
+  });
+  const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
 
   const calculateResults = useCallback((): Results => {
@@ -148,17 +154,17 @@ export function AssessmentTool() {
   const goBack = () => setStep((s) => Math.max(s - 1, 0));
 
   const sendResults = async () => {
-    if (!email || !results) return;
+    if (!contactInfo.email || !contactInfo.firstName || !results) return;
     setSending(true);
     try {
       await fetch("/api/assessment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, ...data, ...results }),
+        body: JSON.stringify({ ...contactInfo, ...data, ...results }),
       });
-      setEmailSent(true);
+      setSubmitted(true);
     } catch {
-      setEmailSent(true); // Show success anyway since the API just logs for now
+      setSubmitted(true);
     }
     setSending(false);
   };
@@ -708,35 +714,80 @@ export function AssessmentTool() {
                 </a>
               </div>
 
-              {/* Email capture */}
+              {/* Contact capture */}
               <div className="glassmorphism rounded-xl p-6">
-                <h3 className="text-sm font-semibold text-text-primary mb-2">
-                  Want a PDF of your results emailed to you?
+                <h3 className="text-lg font-semibold text-text-primary mb-2">
+                  Get your full report emailed to you
                 </h3>
-                {emailSent ? (
-                  <p className="text-sm text-success">
-                    Results sent! Check your inbox.
-                  </p>
+                <p className="text-sm text-text-secondary mb-4">
+                  Enter your info below and we will send your personalized results plus actionable tips to recover this revenue.
+                </p>
+                {submitted ? (
+                  <div className="text-center py-4">
+                    <p className="text-lg font-semibold text-success mb-2">
+                      Results sent! Check your inbox.
+                    </p>
+                    <p className="text-sm text-text-secondary">
+                      We will also follow up with specific strategies for your industry.
+                    </p>
+                  </div>
                 ) : (
-                  <div className="flex gap-3">
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 gap-3">
+                      <input
+                        type="text"
+                        value={contactInfo.firstName}
+                        onChange={(e) => setContactInfo({ ...contactInfo, firstName: e.target.value })}
+                        placeholder="First name *"
+                        className="px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                      />
+                      <input
+                        type="text"
+                        value={contactInfo.lastName}
+                        onChange={(e) => setContactInfo({ ...contactInfo, lastName: e.target.value })}
+                        placeholder="Last name"
+                        className="px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                      />
+                    </div>
                     <input
                       type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="your@email.com"
-                      className="flex-1 px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                      value={contactInfo.email}
+                      onChange={(e) => setContactInfo({ ...contactInfo, email: e.target.value })}
+                      placeholder="Email address *"
+                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
                     />
+                    <input
+                      type="tel"
+                      value={contactInfo.phone}
+                      onChange={(e) => setContactInfo({ ...contactInfo, phone: e.target.value })}
+                      placeholder="Phone number *"
+                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                    />
+                    <label className="flex items-start gap-2 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={contactInfo.smsConsent}
+                        onChange={(e) => setContactInfo({ ...contactInfo, smsConsent: e.target.checked })}
+                        className="mt-1 accent-accent-blue"
+                      />
+                      <span className="text-xs text-text-secondary leading-relaxed">
+                        I agree to receive text messages from AI Peak Biz. Message frequency varies. Reply STOP to opt out. Message and data rates may apply.
+                      </span>
+                    </label>
                     <button
                       onClick={sendResults}
-                      disabled={!email || sending}
-                      className="btn-primary text-sm disabled:opacity-50"
+                      disabled={!contactInfo.email || !contactInfo.firstName || !contactInfo.phone || sending}
+                      className="btn-primary w-full text-sm disabled:opacity-50"
                     >
                       {sending ? (
                         <Loader2 className="w-4 h-4 animate-spin" />
                       ) : (
-                        "Send"
+                        "Send My Results"
                       )}
                     </button>
+                    <p className="text-[10px] text-text-muted text-center">
+                      We respect your privacy. No spam. Unsubscribe anytime.
+                    </p>
                   </div>
                 )}
               </div>

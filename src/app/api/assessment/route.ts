@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/6252625f-b313-4075-9328-c614941ea780";
 
 function formatCurrency(num: number): string {
   return new Intl.NumberFormat("en-US", {
@@ -9,6 +10,17 @@ function formatCurrency(num: number): string {
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(num);
+}
+
+function getTopPainPoint(data: Record<string, unknown>): string {
+  const items = [
+    { label: "missed_calls", value: Number(data.missedCallsLost) || 0 },
+    { label: "no_shows", value: Number(data.noShowsLost) || 0 },
+    { label: "weak_reviews", value: Number(data.reviewsLost) || 0 },
+    { label: "website", value: Number(data.websiteLost) || 0 },
+  ];
+  items.sort((a, b) => b.value - a.value);
+  return items[0].label;
 }
 
 function buildEmailHtml(data: Record<string, unknown>): string {
@@ -19,19 +31,20 @@ function buildEmailHtml(data: Record<string, unknown>): string {
   const totalMonthly = Number(data.totalMonthlyLoss) || 0;
   const totalAnnual = Number(data.totalAnnualLoss) || 0;
   const paybackWeeks = Number(data.paybackWeeks) || 0;
+  const firstName = data.firstName || "there";
 
   return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #1C1C1E; color: #F1F5F9; padding: 40px 30px; border-radius: 12px;">
       <div style="text-align: center; margin-bottom: 30px;">
         <img src="https://www.aipeakbiz.com/images/logo.png" alt="AI Peak Biz" width="80" style="margin-bottom: 16px;" />
-        <h1 style="font-size: 24px; margin: 0; color: #F1F5F9;">Your Revenue Loss Assessment</h1>
-        <p style="color: #A1A1AA; font-size: 14px; margin-top: 8px;">AI Peak Biz &middot; aipeakbiz.com</p>
+        <h1 style="font-size: 24px; margin: 0; color: #F1F5F9;">${firstName}, here are your results</h1>
+        <p style="color: #A1A1AA; font-size: 14px; margin-top: 8px;">AI Peak Biz Revenue Loss Assessment</p>
       </div>
 
       <div style="background: #2A2A2E; border-radius: 8px; padding: 24px; margin-bottom: 20px; text-align: center;">
         <p style="color: #A1A1AA; font-size: 14px; margin: 0 0 8px 0;">Estimated Monthly Revenue Loss</p>
         <p style="font-size: 36px; font-weight: bold; margin: 0; color: #3B82F6;">${formatCurrency(totalMonthly)}</p>
-        <p style="color: #A1A1AA; font-size: 14px; margin-top: 8px;">That's ${formatCurrency(totalAnnual)} per year</p>
+        <p style="color: #A1A1AA; font-size: 14px; margin-top: 8px;">That&rsquo;s ${formatCurrency(totalAnnual)} per year</p>
       </div>
 
       <div style="background: #2A2A2E; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
@@ -88,20 +101,70 @@ export async function POST(req: NextRequest) {
     const userEmail = data.email;
     const html = buildEmailHtml(data);
 
-    // Send to Wylie (always)
+    // Determine the biggest pain point for custom GHL workflows
+    const topPainPoint = getTopPainPoint(data);
+
+    // Send to GHL webhook with all data for nurture campaigns
+    const ghlPayload = {
+      // Contact info
+      firstName: data.firstName || "",
+      lastName: data.lastName || "",
+      email: data.email || "",
+      phone: data.phone || "",
+      smsConsent: data.smsConsent || false,
+      source: "assessment_tool",
+
+      // Industry
+      industry: data.industry || "",
+
+      // Assessment inputs
+      reviewCount: data.reviewCount || 0,
+      starRating: data.starRating || 0,
+      monthlyCalls: data.monthlyCalls || 0,
+      missedCallRate: Math.round((Number(data.missedCallRate) || 0) * 100),
+      revenuePerCustomer: data.revenuePerCustomer || 0,
+      monthlyVisitors: data.monthlyVisitors || 0,
+      conversionRate: ((Number(data.conversionRate) || 0) * 100).toFixed(1),
+      noShowRate: Math.round((Number(data.noShowRate) || 0) * 100),
+
+      // Calculated losses (monthly)
+      missedCallsLost: Math.round(Number(data.missedCallsLost) || 0),
+      noShowsLost: Math.round(Number(data.noShowsLost) || 0),
+      reviewsLost: Math.round(Number(data.reviewsLost) || 0),
+      websiteLost: Math.round(Number(data.websiteLost) || 0),
+      totalMonthlyLoss: Math.round(Number(data.totalMonthlyLoss) || 0),
+      totalAnnualLoss: Math.round(Number(data.totalAnnualLoss) || 0),
+      paybackWeeks: data.paybackWeeks || 0,
+
+      // Custom segmentation fields for targeted nurture
+      topPainPoint,
+      lossLevel: Number(data.totalMonthlyLoss) >= 5000 ? "high" : Number(data.totalMonthlyLoss) >= 2000 ? "medium" : "low",
+      hasWeakReviews: (Number(data.starRating) || 5) < 4.5,
+      highMissedCalls: (Number(data.missedCallRate) || 0) > 0.25,
+      highNoShows: (Number(data.noShowRate) || 0) > 0.15,
+    };
+
+    // Fire GHL webhook (don't await — fire and forget so user isn't delayed)
+    fetch(GHL_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(ghlPayload),
+    }).catch((err) => console.error("GHL webhook error:", err));
+
+    // Send email to Wylie
     await resend.emails.send({
       from: "AI Peak Biz <wylie@aipeakbiz.com>",
       to: "wylie@aipeakbiz.com",
-      subject: `New Assessment: ${data.industry || "Unknown"} - ${formatCurrency(Number(data.totalMonthlyLoss) || 0)}/mo loss`,
+      subject: `New Assessment Lead: ${data.firstName || "Unknown"} ${data.lastName || ""} - ${data.industry || "Unknown"} - ${formatCurrency(Number(data.totalMonthlyLoss) || 0)}/mo`,
       html,
     });
 
-    // Send to the user if they provided an email
+    // Send to the user
     if (userEmail) {
       await resend.emails.send({
         from: "AI Peak Biz <wylie@aipeakbiz.com>",
         to: userEmail,
-        subject: "Your AI Peak Biz Revenue Loss Assessment Results",
+        subject: `${data.firstName || "Hey"}, your AI Peak Biz Revenue Loss Assessment Results`,
         html,
       });
     }
