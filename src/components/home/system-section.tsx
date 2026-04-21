@@ -97,7 +97,7 @@ function CapabilityCard({ cap, index }: { cap: typeof capabilities[0]; index: nu
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.15 }}
-            className="absolute z-[100] left-0 right-0 top-full mt-2 glassmorphism rounded-xl p-4 shadow-2xl"
+            className="absolute z-[100] left-0 right-0 top-full mt-2 bg-[#2A2A2E] border border-[#3A3A3E] rounded-xl p-4 shadow-2xl"
             style={{ minWidth: 280 }}
           >
             <p className="text-sm text-text-secondary leading-relaxed">
