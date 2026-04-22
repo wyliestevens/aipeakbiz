@@ -22,7 +22,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
               {content.heroHeadline}
@@ -30,7 +30,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-8">
               {content.heroSubhead}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/free-assessment" className="btn-primary text-base px-8 py-4">
                 Take the Free Assessment
               </Link>

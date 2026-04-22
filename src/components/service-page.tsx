@@ -31,7 +31,7 @@ export function ServicePageContent({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
             <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-4">
               {title}
@@ -42,7 +42,7 @@ export function ServicePageContent({
             <p className="text-lg text-text-secondary leading-relaxed mb-8">
               {description}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/free-assessment" className="btn-primary text-base px-8 py-4">
                 Take the Free Assessment
               </Link>

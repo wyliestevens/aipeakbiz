@@ -49,7 +49,7 @@ export function ConsultingPageContent() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
             <p className="text-sm font-semibold tracking-widest text-accent-violet uppercase mb-4">
               AI Consulting
@@ -57,13 +57,13 @@ export function ConsultingPageContent() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
               Not sure where AI fits in your business? We&apos;ll show you.
             </h1>
-            <p className="text-lg text-text-secondary leading-relaxed mb-8">
+            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed mb-8">
               The AI landscape moves fast. You don&apos;t need to become an
               expert overnight — you need a partner who already is. We come
               alongside your team, figure out exactly where AI can help, and
               make sure you can run with it on your own.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href={BOOKING_URL}
                 className="btn-primary text-base px-8 py-4"
@@ -95,7 +95,7 @@ export function ConsultingPageContent() {
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
               How our consulting works
             </h2>
-            <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
+            <p className="text-lg text-text-secondary mt-4 max-w-2xl mx-auto">
               Simple, straightforward, and built around your timeline — not ours.
             </p>
           </motion.div>
@@ -112,10 +112,10 @@ export function ConsultingPageContent() {
                 <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4">
                   <step.icon className="w-5 h-5 text-accent-violet" />
                 </div>
-                <h3 className="text-lg font-semibold text-text-primary mb-2">
+                <h3 className="text-xl font-semibold text-text-primary mb-2">
                   {step.title}
                 </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
+                <p className="text-base text-text-secondary leading-relaxed">
                   {step.desc}
                 </p>
               </motion.div>
@@ -142,7 +142,7 @@ export function ConsultingPageContent() {
                   <div className="w-6 h-6 rounded-full bg-accent-blue/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 text-accent-blue" />
                   </div>
-                  <span className="text-text-secondary">{b}</span>
+                  <span className="text-lg text-text-secondary">{b}</span>
                 </li>
               ))}
             </ul>
