@@ -24,7 +24,7 @@ export function ConsultingTeaser() {
           <p className="text-lg text-text-secondary leading-relaxed mb-8">
             You don&apos;t need to figure it out alone. We come alongside your
             team, investigate your operations, and build a clear roadmap for
-            AI adoption that fits your business — not someone else&apos;s.
+            AI adoption that fits your business, not someone else&apos;s.
           </p>
           <Link
             href="/ai-consulting"

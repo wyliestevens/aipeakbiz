@@ -11,7 +11,7 @@ const steps = [
   {
     icon: Search,
     title: "We Investigate",
-    desc: "We dig into your day-to-day operations — your workflows, your bottlenecks, where time and money leak. No generic audits. We learn how your specific business actually runs.",
+    desc: "We dig into your day-to-day operations. Your workflows, your bottlenecks, where time and money leak. No generic audits. We learn how your specific business actually runs.",
   },
   {
     icon: Map,
@@ -32,11 +32,11 @@ const steps = [
 
 const benefits = [
   "Personalized AI strategy built around your actual operations",
-  "Hands-on training for your team — not just a slide deck",
-  "Vendor-neutral recommendations — we suggest what's best for you, not what pays us a commission",
+  "Hands-on training for your team, not just a slide deck",
+  "Vendor-neutral recommendations. We suggest what's best for you, not what pays us a commission",
   "No long-term contracts or retainers required",
   "Ongoing support for as long as you need it, and not a day longer",
-  "Clear, plain-English explanations — no jargon, no hype",
+  "Clear, plain-English explanations. No jargon, no hype",
 ];
 
 export function ConsultingPageContent() {
@@ -59,7 +59,7 @@ export function ConsultingPageContent() {
             </h1>
             <p className="text-xl md:text-2xl text-text-secondary leading-relaxed mb-8">
               The AI landscape moves fast. You don&apos;t need to become an
-              expert overnight — you need a partner who already is. We come
+              expert overnight. You need a partner who already is. We come
               alongside your team, figure out exactly where AI can help, and
               make sure you can run with it on your own.
             </p>
@@ -96,7 +96,7 @@ export function ConsultingPageContent() {
               How our consulting works
             </h2>
             <p className="text-lg text-text-secondary mt-4 max-w-2xl mx-auto">
-              Simple, straightforward, and built around your timeline — not ours.
+              Simple, straightforward, and built around your timeline, not ours.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -107,9 +107,9 @@ export function ConsultingPageContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6"
+                className="glassmorphism rounded-xl p-6 text-center"
               >
-                <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4 mx-auto">
                   <step.icon className="w-5 h-5 text-accent-violet" />
                 </div>
                 <h3 className="text-xl font-semibold text-text-primary mb-2">
@@ -163,10 +163,8 @@ export function ConsultingPageContent() {
               Who this is for
             </h2>
             <p className="text-lg text-text-secondary leading-relaxed mb-4">
-              Our consulting is for business owners who know AI matters but
-              aren&apos;t sure where to start — or who have tried tools that
-              didn&apos;t stick. Whether you run a 5-person team or a 500-person
-              operation, we meet you where you are.
+              Our consulting is for business owners or managers who know AI
+              matters but aren&apos;t sure where to start.
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
               If you already know exactly what you need, check out our{" "}

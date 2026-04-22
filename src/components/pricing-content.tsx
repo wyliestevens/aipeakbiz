@@ -53,7 +53,7 @@ const tiers = [
     name: "Peak: Full Business Intelligence System",
     build: "$14,997",
     monthly: "$2,497",
-    description: "Not just automation — a strategic growth partner. For businesses that want to dominate their market.",
+    description: "Not just automation. A strategic growth partner for businesses that want to dominate their market.",
     features: [
       { name: "Everything in Growth", included: true },
       { name: "Dormant Customer Reactivation Campaigns", included: true },
@@ -87,7 +87,7 @@ const pricingFAQ = [
   {
     question: "What if I cancel?",
     answer:
-      "You can cancel monthly management at any time. The system is deactivated. You are not buying standalone software — you are getting a managed service that includes ongoing optimization, support, and updates.",
+      "You can cancel monthly management at any time. The system is deactivated. You are not buying standalone software. You are getting a managed service that includes ongoing optimization, support, and updates.",
   },
   {
     question: "Do you offer refunds on the build?",

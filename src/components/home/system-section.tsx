@@ -12,13 +12,13 @@ const capabilities = [
     icon: PhoneCall,
     title: "AI Voice Assistant",
     desc: "Answers every call 24/7",
-    detail: "Your AI receptionist picks up every phone call — during business hours, after hours, weekends, and holidays. It knows your services, pricing, and scheduling. It books appointments directly into your calendar and transfers complex calls to your team with full context.",
+    detail: "Your AI receptionist picks up every phone call, during business hours, after hours, weekends, and holidays. It knows your services, pricing, and scheduling. It books appointments directly into your calendar and transfers complex calls to your team with full context.",
   },
   {
     icon: MessageSquare,
     title: "AI Chatbot",
     desc: "Books appointments from your website",
-    detail: "A smart chatbot on your website that engages visitors in real time, answers questions about your services, and books appointments 24/7. Visitors who would have bounced now become booked customers — even at midnight.",
+    detail: "A smart chatbot on your website that engages visitors in real time, answers questions about your services, and books appointments 24/7. Visitors who would have bounced now become booked customers, even at midnight.",
   },
   {
     icon: Star,
@@ -30,7 +30,7 @@ const capabilities = [
     icon: PhoneForwarded,
     title: "Missed Call Text-Back",
     desc: "60-second response",
-    detail: "When a call goes unanswered, your system sends a text within 60 seconds with a booking link. The customer can describe what they need and schedule an appointment instantly — before they call your competitor.",
+    detail: "When a call goes unanswered, your system sends a text within 60 seconds with a booking link. The customer can describe what they need and schedule an appointment instantly, before they call your competitor.",
   },
   {
     icon: Bell,
@@ -66,7 +66,7 @@ const capabilities = [
     icon: Settings,
     title: "Custom Automation Services",
     desc: "Tailored workflows for your business",
-    detail: "Every business is different. We build custom automation workflows tailored to your specific operations — from intake forms to follow-up sequences to internal notifications. If it can be automated, we build it.",
+    detail: "Every business is different. We build custom automation workflows tailored to your specific operations, from intake forms to follow-up sequences to internal notifications. If it can be automated, we build it.",
   },
 ];
 

@@ -97,9 +97,9 @@ export function ServicePageContent({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6"
+                className="glassmorphism rounded-xl p-6 text-center"
               >
-                <div className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-3">
+                <div className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-3 mx-auto">
                   <Check className="w-4 h-4 text-accent-blue" />
                 </div>
                 <h3 className="text-sm font-semibold text-text-primary mb-2">

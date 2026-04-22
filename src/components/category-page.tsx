@@ -156,7 +156,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6 md:p-8"
+                className="glassmorphism rounded-xl p-6 md:p-8 text-center"
               >
                 <h3 className="text-lg font-semibold text-text-primary mb-3">
                   {useCase.title}

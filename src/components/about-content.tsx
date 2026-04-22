@@ -29,7 +29,7 @@ export function AboutContent() {
       {/* Story */}
       <section className="section-padding pt-8">
         <div className="container-custom">
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export function AboutContent() {
                 20 years watching phones ring unanswered
               </h2>
               <p className="text-text-secondary leading-relaxed mb-4">
-                My name is Wylie Stevens. I spent 20 years in healthcare — in clinics, at the front desk, in the trenches. I watched receptionist after receptionist try to check patients in, handle insurance calls, schedule follow-ups, and answer the ringing phone all at the same time. Something always slipped. Usually the phone.
+                My name is Wylie Stevens. I spent 20 years in healthcare. In clinics, at the front desk, in the trenches. I watched receptionist after receptionist try to check patients in, handle insurance calls, schedule follow-ups, and answer the ringing phone all at the same time. Something always slipped. Usually the phone.
               </p>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Every missed call was a patient who booked with someone else. Every no-show was an empty room that still cost money to keep open. Every unrequested review was a missed chance to build the reputation the practice deserved.

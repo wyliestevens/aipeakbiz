@@ -16,7 +16,7 @@
 - Chat widget
 
 ## Last Change
-- Centered hero sections on all pages + increased consulting page text sizes (2026-04-22)
+- Centered ALL copy site-wide, removed all em dashes, updated consulting copy per Wylie's direction (2026-04-22)
 - Fixed navbar dropdown bleed-through: solid opaque background instead of glassmorphism (2026-04-22)
 - Fixed system section: hover popup with solid opaque bg, no bleed-through (2026-04-22)
 - Centered "Dormant Customers" and "Overwhelmed Front Desk" cards in pain points grid (2026-04-22)

@@ -319,7 +319,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "My projects are complex. Can the AI handle detailed inquiries?",
         answer:
-          "The AI handles initial qualification — project type, timeline, budget range, location. Complex technical questions are transferred to you or your estimator with full context. The AI replaces the front desk, not the project manager.",
+          "The AI handles initial qualification: project type, timeline, budget range, location. Complex technical questions are transferred to you or your estimator with full context. The AI replaces the front desk, not the project manager.",
       },
       {
         question: "I do not have a front desk. Is this still worth it?",
@@ -510,7 +510,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "Is the system appropriate for legal intake?",
         answer:
-          "Yes. The AI is configured to ask qualifying questions specific to your practice area, collect necessary contact and case information, and book consultations. It does not provide legal advice — it handles intake and scheduling.",
+          "Yes. The AI is configured to ask qualifying questions specific to your practice area, collect necessary contact and case information, and book consultations. It does not provide legal advice. It handles intake and scheduling.",
       },
       {
         question: "Can it handle sensitive situations appropriately?",
@@ -525,7 +525,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "What about attorney-client privilege?",
         answer:
-          "The AI collects only basic qualifying information for intake — name, contact info, brief case description, and appointment scheduling. No privileged information is requested or stored in the AI system.",
+          "The AI collects only basic qualifying information for intake: name, contact info, brief case description, and appointment scheduling. No privileged information is requested or stored in the AI system.",
       },
       {
         question: "How fast is the setup?",
@@ -689,12 +689,12 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "The Property Manager at Scale",
         description:
-          "You manage 200 units across 5 properties. Maintenance calls, lease questions, and prospective tenant inquiries come in all day. The AI handles initial triage — maintenance requests are logged and routed, prospective tenants get availability information and tour scheduling, and lease questions get basic answers or escalation.",
+          "You manage 200 units across 5 properties. Maintenance calls, lease questions, and prospective tenant inquiries come in all day. The AI handles initial triage. Maintenance requests are logged and routed, prospective tenants get availability information and tour scheduling, and lease questions get basic answers or escalation.",
       },
       {
         title: "The Investor Fielding Motivated Seller Calls",
         description:
-          "Your direct mail campaign generates 50 calls this week. You are at your day job. The AI qualifies each seller — property type, condition, motivation, timeline, and asking price. Qualified leads are booked for phone appointments. You review the CRM after work and call the 8 strongest leads first.",
+          "Your direct mail campaign generates 50 calls this week. You are at your day job. The AI qualifies each seller on property type, condition, motivation, timeline, and asking price. Qualified leads are booked for phone appointments. You review the CRM after work and call the 8 strongest leads first.",
       },
     ],
     faq: [
@@ -711,7 +711,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "Can it qualify leads?",
         answer:
-          "Yes. We configure qualifying questions specific to your business — buyer vs. seller, price range, timeline, pre-approval status, property type, and more. Only qualified leads get booked on your calendar.",
+          "Yes. We configure qualifying questions specific to your business: buyer vs. seller, price range, timeline, pre-approval status, property type, and more. Only qualified leads get booked on your calendar.",
       },
       {
         question: "How fast is setup?",
@@ -777,7 +777,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "The Auto Repair Shop During Morning Rush",
         description:
-          "It is 7:30 AM. Three customers are at the counter. Two lines are ringing. Your service advisor is juggling everything. The AI handles the phone calls — answering questions about oil change pricing, scheduling a brake inspection for tomorrow, and texting back a missed caller. Three repair orders that would have gone to the competitor are now in your system.",
+          "It is 7:30 AM. Three customers are at the counter. Two lines are ringing. Your service advisor is juggling everything. The AI handles the phone calls, answering questions about oil change pricing, scheduling a brake inspection for tomorrow, and texting back a missed caller. Three repair orders that would have gone to the competitor are now in your system.",
       },
       {
         title: "The Body Shop After a Storm",
@@ -794,7 +794,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "Can the AI give repair estimates?",
         answer:
-          "The AI can provide standard pricing for common services you define — oil changes, brake pads, tire rotations. For complex diagnostics, it books an inspection appointment and lets the customer know an estimate will follow the diagnosis.",
+          "The AI can provide standard pricing for common services you define, like oil changes, brake pads, and tire rotations. For complex diagnostics, it books an inspection appointment and lets the customer know an estimate will follow the diagnosis.",
       },
       {
         question: "Does it work with my shop management software?",
@@ -804,7 +804,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "Can it handle warranty and recall questions?",
         answer:
-          "The AI can provide basic information you configure — warranty policies, recall procedures, and service intervals. Detailed technical questions are routed to your service advisor with full context.",
+          "The AI can provide basic information you configure, including warranty policies, recall procedures, and service intervals. Detailed technical questions are routed to your service advisor with full context.",
       },
       {
         question: "How quickly can I get started?",
@@ -828,7 +828,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "Calls During Class Times",
         description:
-          "Your busiest call times are exactly when you are busiest in person. Morning classes, lunch sessions, evening rush — the phone rings and nobody can answer. The prospect was ready to sign up. They called three gyms. The one that answered got the member.",
+          "Your busiest call times are exactly when you are busiest in person. Morning classes, lunch sessions, evening rush. The phone rings and nobody can answer. The prospect was ready to sign up. They called three gyms. The one that answered got the member.",
         cost: "Typical loss: $1,500 to $5,000 per month in lost memberships",
       },
       {
@@ -902,7 +902,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "How does the reactivation work?",
         answer:
-          "The system identifies members who have not visited in a defined period and sends automated messages — texts, emails, or both. The message content is customized to your brand and can include special offers or simple check-ins.",
+          "The system identifies members who have not visited in a defined period and sends automated messages via text, email, or both. The message content is customized to your brand and can include special offers or simple check-ins.",
       },
     ],
     reviewIndices: [0, 1, 4],
@@ -921,7 +921,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "Cannot Answer While Servicing Clients",
         description:
-          "You are a stylist, not a receptionist. Your hands are full — literally. Every call that goes to voicemail is a client who books elsewhere. In beauty, the appointment is the sale. If you cannot book it in the moment, you lost it.",
+          "You are a stylist, not a receptionist. Your hands are full, literally. Every call that goes to voicemail is a client who books elsewhere. In beauty, the appointment is the sale. If you cannot book it in the moment, you lost it.",
         cost: "Typical loss: $1,500 to $6,000 per month",
       },
       {
@@ -1107,7 +1107,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "Peak Hours Mean Missed Reservations",
         description:
-          "Your busiest hours for calls are exactly when your team is busiest serving guests. Lunch rush, dinner rush, weekend brunch — the phone rings and nobody can answer. Each missed call could be a party of 4 to 12 that books somewhere else.",
+          "Your busiest hours for calls are exactly when your team is busiest serving guests. Lunch rush, dinner rush, weekend brunch. The phone rings and nobody can answer. Each missed call could be a party of 4 to 12 that books somewhere else.",
         cost: "Typical loss: $2,000 to $10,000 per month in lost reservations",
       },
       {
@@ -1149,7 +1149,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "The Restaurant During Friday Night Rush",
         description:
-          "It is 7:30 PM. Every staff member is serving guests. The phone rings 12 times between 7 and 9 PM. Without AI, 8 of those calls go unanswered. With AI, all 12 are handled — 4 reservations booked, 3 questions answered, 5 callers told about wait times. You fill tables you would have left empty.",
+          "It is 7:30 PM. Every staff member is serving guests. The phone rings 12 times between 7 and 9 PM. Without AI, 8 of those calls go unanswered. With AI, all 12 are handled: 4 reservations booked, 3 questions answered, 5 callers told about wait times. You fill tables you would have left empty.",
       },
       {
         title: "The Catering Company During Wedding Season",
@@ -1200,7 +1200,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "Emergency Calls Cannot Wait",
         description:
-          "Lockouts, security alarms, urgent moves — your clients need immediate response. Not a callback in 4 hours. Not a voicemail. Right now. If you do not answer, they call the next listing. In trades and specialty services, the first responder gets the job.",
+          "Lockouts, security alarms, urgent moves. Your clients need immediate response. Not a callback in 4 hours. Not a voicemail. Right now. If you do not answer, they call the next listing. In trades and specialty services, the first responder gets the job.",
         cost: "Typical loss: $2,000 to $8,000 per month",
       },
       {
@@ -1247,7 +1247,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         title: "The Moving Company During Summer",
         description:
-          "June through August is peak season. Inquiries triple. Your office cannot keep up. The AI handles initial inquiries, captures move details — origin, destination, date, inventory — and books in-home estimates. You book 15 extra moves that summer.",
+          "June through August is peak season. Inquiries triple. Your office cannot keep up. The AI handles initial inquiries, captures move details like origin, destination, date, and inventory, and books in-home estimates. You book 15 extra moves that summer.",
       },
       {
         title: "The Storage Facility Filling Empty Units",
@@ -1264,7 +1264,7 @@ export const industryContent: Record<string, IndustryContent> = {
       {
         question: "Can the AI handle emergency dispatch?",
         answer:
-          "Yes. We configure the system to identify emergency calls and route them immediately — to your phone, your on-call tech, or your dispatch system. Non-emergency calls are scheduled normally.",
+          "Yes. We configure the system to identify emergency calls and route them immediately to your phone, your on-call tech, or your dispatch system. Non-emergency calls are scheduled normally.",
       },
       {
         question: "I am a one-person operation. Is this for me?",
