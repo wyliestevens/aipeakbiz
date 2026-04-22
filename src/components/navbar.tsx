@@ -83,7 +83,7 @@ export function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-1 w-64 glassmorphism rounded-xl p-2 shadow-2xl"
+                  className="absolute top-full left-0 mt-1 w-64 bg-[#1E1E22] border border-[#3A3A3E] rounded-xl p-2 shadow-2xl"
                 >
                   {industries.map((ind) => (
                     <Link
@@ -120,7 +120,7 @@ export function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-1 w-56 glassmorphism rounded-xl p-2 shadow-2xl"
+                  className="absolute top-full left-0 mt-1 w-56 bg-[#1E1E22] border border-[#3A3A3E] rounded-xl p-2 shadow-2xl"
                 >
                   {serviceLinks.map((s) => (
                     <Link

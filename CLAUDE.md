@@ -16,6 +16,7 @@
 - Chat widget
 
 ## Last Change
+- Fixed navbar dropdown bleed-through: solid opaque background instead of glassmorphism (2026-04-22)
 - Fixed system section: replaced hover popups with click-to-expand panel below grid — no more bleed-through (2026-04-22)
 - Centered "Dormant Customers" and "Overwhelmed Front Desk" cards in pain points grid (2026-04-22)
 - Removed "24/7 coverage" and "60-second response" stat pills from hero (2026-04-22)
