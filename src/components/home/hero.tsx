@@ -3,11 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { BOOKING_URL } from "@/data/industries";
-import { Clock, Zap, Rocket } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 const stats = [
-  { icon: Clock, label: "24/7 coverage" },
-  { icon: Zap, label: "60-second response" },
   { icon: Rocket, label: "5-10 day launch" },
 ];
 
