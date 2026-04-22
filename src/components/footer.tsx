@@ -6,6 +6,7 @@ const solutionLinks = [
   { name: "AI Chatbot", href: "/ai-chatbot" },
   { name: "AI Voice Assistant", href: "/ai-voice-assistant" },
   { name: "Reputation Management", href: "/reputation-management" },
+  { name: "AI Consulting", href: "/ai-consulting" },
   { name: "Pricing", href: "/pricing" },
   { name: "Free Assessment", href: "/free-assessment" },
 ];

@@ -11,6 +11,7 @@ const serviceLinks = [
   { name: "AI Chatbot", href: "/ai-chatbot" },
   { name: "AI Voice Assistant", href: "/ai-voice-assistant" },
   { name: "Reputation Management", href: "/reputation-management" },
+  { name: "AI Consulting", href: "/ai-consulting" },
 ];
 
 export function Navbar() {
@@ -135,6 +136,9 @@ export function Navbar() {
             </AnimatePresence>
           </div>
 
+          <Link href="/ai-consulting" className="px-3 py-2 text-sm text-accent-violet hover:text-text-primary transition-colors rounded-lg font-medium">
+            AI Consulting
+          </Link>
           <Link href="/pricing" className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg">
             Pricing
           </Link>
@@ -207,6 +211,7 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="border-t border-border-custom my-2" />
+              <Link href="/ai-consulting" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-accent-violet hover:text-text-primary font-medium">AI Consulting</Link>
               <Link href="/pricing" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">Pricing</Link>
               <Link href="/about" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">About</Link>
               <Link href="/free-assessment" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">Free Assessment</Link>

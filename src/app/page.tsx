@@ -6,6 +6,7 @@ import { SystemSection } from "@/components/home/system-section";
 import { HowItWorksSection } from "@/components/home/how-it-works";
 import { PricingPreview } from "@/components/home/pricing-preview";
 import { ReviewsSection } from "@/components/home/reviews-section";
+import { ConsultingTeaser } from "@/components/home/consulting-teaser";
 import { AboutTeaser } from "@/components/home/about-teaser";
 import { CTASection } from "@/components/cta-section";
 
@@ -42,6 +43,7 @@ export default function HomePage() {
       <HowItWorksSection />
       <PricingPreview />
       <ReviewsSection />
+      <ConsultingTeaser />
       <AboutTeaser />
       <CTASection />
     </>
