@@ -57,7 +57,7 @@ export function PainPointsSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
           {painPoints.map((point, i) => (
             <motion.div
               key={point.title}
@@ -65,9 +65,9 @@ export function PainPointsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`glassmorphism rounded-xl p-6 ${
-                i >= 3 ? "md:col-span-1 lg:col-span-1" : ""
-              } ${i === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
+              className={`glassmorphism rounded-xl p-6 lg:col-span-2 ${
+                i === 3 ? "lg:col-start-2" : ""
+              }`}
             >
               <div className="w-10 h-10 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-4">
                 <point.icon className="w-5 h-5 text-accent-blue" />
