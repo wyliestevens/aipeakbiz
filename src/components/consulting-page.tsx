@@ -193,7 +193,7 @@ export function ConsultingPageContent() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 <div className="text-center">
                   <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
                     <Clock className="w-5 h-5 text-accent-violet" />
@@ -206,7 +206,7 @@ export function ConsultingPageContent() {
                     <Wrench className="w-5 h-5 text-accent-violet" />
                   </div>
                   <h3 className="text-lg font-semibold text-text-primary mb-1">A Working AI System</h3>
-                  <p className="text-sm text-text-secondary">You do not just learn about AI. You walk away with a live system built for your business, ready to go on day one.</p>
+                  <p className="text-sm text-text-secondary">You do not just learn about AI. By the end of the seminar, your business will have a live AI system built and configured for your operations.</p>
                 </div>
                 <div className="text-center">
                   <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
@@ -214,6 +214,13 @@ export function ConsultingPageContent() {
                   </div>
                   <h3 className="text-lg font-semibold text-text-primary mb-1">Your Whole Team</h3>
                   <p className="text-sm text-text-secondary">Everyone who needs to use the system gets trained. No one gets left behind or stuck figuring it out alone.</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
+                    <Handshake className="w-5 h-5 text-accent-violet" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-text-primary mb-1">90 Days of Support</h3>
+                  <p className="text-sm text-text-secondary">After we leave, we stay available for 90 days to make sure everything is running smoothly and your team has the help they need.</p>
                 </div>
               </div>
 
