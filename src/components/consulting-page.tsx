@@ -186,10 +186,13 @@ export function ConsultingPageContent() {
                   We come to you. Two days. Your entire team up to speed on AI.
                 </h2>
                 <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-                  For businesses that want the full hands-on experience, we fly
-                  to your location and spend two days with your team. By the time
-                  we leave, your business will have a working AI system and a
-                  team that knows how to use it.
+                  This is a done-for-you engagement. Before we arrive, we
+                  analyze your business, identify the AI systems that will have
+                  the biggest impact on your operations, and build a custom plan.
+                  Then we fly to your location and spend two days with your team,
+                  building and training on exactly what your business needs. By
+                  the time we leave, you have a working AI system and a team that
+                  knows how to run it.
                 </p>
               </div>
 
