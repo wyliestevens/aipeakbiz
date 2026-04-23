@@ -23,6 +23,8 @@
 - Added AI Teaching & Training to services nav (links to consulting page #teaching) (2026-04-23)
 - Rewrote AI Consulting page hero to lead with teaching, added prominent 4-card AI Teaching section (2026-04-23)
 - Updated homepage consulting teaser to emphasize AI teaching (2026-04-23)
+- Added In-Person AI Training section to consulting page: $25K + expenses, 2-day on-site seminar, working AI system delivered (2026-04-23)
+- Added "In-Person AI Training" to services nav dropdown (2026-04-23)
 
 ## What's Next
 - GHL workflow setup: create webhook trigger for voice-bot-demo tag, configure AI voice agent, set up outbound call action
