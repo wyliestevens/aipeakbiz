@@ -4,6 +4,7 @@ import { MindMapSection } from "@/components/home/mind-map-section";
 import { PainPointsSection } from "@/components/home/pain-points";
 import { SystemSection } from "@/components/home/system-section";
 import { HowItWorksSection } from "@/components/home/how-it-works";
+import { VoiceDemoSection } from "@/components/home/voice-demo-section";
 import { PricingPreview } from "@/components/home/pricing-preview";
 import { ReviewsSection } from "@/components/home/reviews-section";
 import { ConsultingTeaser } from "@/components/home/consulting-teaser";
@@ -41,6 +42,7 @@ export default function HomePage() {
       <PainPointsSection />
       <SystemSection />
       <HowItWorksSection />
+      <VoiceDemoSection />
       <PricingPreview />
       <ReviewsSection />
       <ConsultingTeaser />

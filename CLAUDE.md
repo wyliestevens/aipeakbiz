@@ -8,7 +8,7 @@
 
 ## What's Been Built
 - Homepage with hero, mind map, pain points, system section, how it works, pricing preview, reviews, consulting teaser, about teaser, CTA
-- Service pages: AI Chatbot, AI Voice Assistant, Reputation Management, AI Consulting
+- Service pages: AI Chatbot, AI Voice Assistant, Missed Call Text-Back, Reputation Management, Website Design, Database Reactivation, AI Consulting
 - Industry pages (dynamic): Healthcare, Home Services, Construction, Legal, Real Estate, etc.
 - Free Assessment tool with GHL webhook + Resend email
 - Pricing page (3 tiers)
@@ -16,12 +16,11 @@
 - Chat widget
 
 ## Last Change
-- Centered ALL copy site-wide, removed all em dashes, updated consulting copy per Wylie's direction (2026-04-22)
-- Fixed navbar dropdown bleed-through: solid opaque background instead of glassmorphism (2026-04-22)
-- Fixed system section: hover popup with solid opaque bg, no bleed-through (2026-04-22)
-- Centered "Dormant Customers" and "Overwhelmed Front Desk" cards in pain points grid (2026-04-22)
-- Removed "24/7 coverage" and "60-second response" stat pills from hero (2026-04-22)
-- Added AI Consulting page + homepage teaser + prominent nav placement (2026-04-22)
+- Added 3 new service pages: Website Design, Missed Call Text-Back, Database Reactivation (2026-04-23)
+- Updated navbar services dropdown to list all 7 services (2026-04-23)
+- Added Voice Bot Demo section on homepage (between How It Works and Pricing) with phone input + GHL webhook (2026-04-23)
+- Created /api/voice-demo endpoint that sends phone + "voice-bot-demo" tag to GHL (2026-04-23)
 
 ## What's Next
-- TBD — awaiting Wylie's direction on consulting page refinements or other changes
+- GHL workflow setup: create webhook trigger for voice-bot-demo tag, configure AI voice agent, set up outbound call action
+- Voice bot prompt engineering in GHL

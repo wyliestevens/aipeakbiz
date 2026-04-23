@@ -10,7 +10,10 @@ import { industries, BOOKING_URL, PHONE, PHONE_TEL } from "@/data/industries";
 const serviceLinks = [
   { name: "AI Chatbot", href: "/ai-chatbot" },
   { name: "AI Voice Assistant", href: "/ai-voice-assistant" },
+  { name: "Missed Call Text-Back", href: "/missed-call-text-back" },
   { name: "Reputation Management", href: "/reputation-management" },
+  { name: "Website Design", href: "/website-design" },
+  { name: "Database Reactivation", href: "/database-reactivation" },
   { name: "AI Consulting", href: "/ai-consulting" },
 ];
 
