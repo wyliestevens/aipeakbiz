@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Search, Map, GraduationCap, Handshake, Check, BookOpen, Users, Lightbulb, Presentation, MapPin, Clock, Wrench, ArrowRight } from "lucide-react";
+import { Search, Map, GraduationCap, Handshake, Check, BookOpen, Users, Lightbulb, Presentation } from "lucide-react";
 import { BOOKING_URL } from "@/data/industries";
 import { ReviewCarousel } from "@/components/review-carousel";
 import { CTASection } from "@/components/cta-section";
@@ -162,88 +162,6 @@ export function ConsultingPageContent() {
             >
               Book a Training Session
             </a>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* In-Person Training */}
-      <section id="in-person" className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-violet/10 via-transparent to-accent-blue/10" />
-        <div className="container-custom relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="glassmorphism rounded-2xl p-8 md:p-12 border border-accent-violet/20">
-              <div className="text-center mb-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-violet/10 text-sm mb-6">
-                  <MapPin className="w-4 h-4 text-accent-violet" />
-                  <span className="text-accent-violet font-semibold">In-Person Training</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display mb-4">
-                  We come to you. Two days. Your entire team up to speed on AI.
-                </h2>
-                <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-                  This is a done-for-you engagement. Before we arrive, we
-                  analyze your business, identify the AI systems that will have
-                  the biggest impact on your operations, and build a custom plan.
-                  Then we fly to your location and spend two days with your team,
-                  building and training on exactly what your business needs. By
-                  the time we leave, you have a working AI system and a team that
-                  knows how to run it.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-                <div className="text-center">
-                  <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
-                    <Clock className="w-5 h-5 text-accent-violet" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-text-primary mb-1">Two Full Days</h3>
-                  <p className="text-sm text-text-secondary">Six hours per day of focused, hands-on training with your team. No filler. No fluff.</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
-                    <Wrench className="w-5 h-5 text-accent-violet" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-text-primary mb-1">A Working AI System</h3>
-                  <p className="text-sm text-text-secondary">You do not just learn about AI. By the end of the seminar, your business will have a live AI system built and configured for your operations.</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
-                    <Users className="w-5 h-5 text-accent-violet" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-text-primary mb-1">Your Whole Team</h3>
-                  <p className="text-sm text-text-secondary">Everyone who needs to use the system gets trained. No one gets left behind or stuck figuring it out alone.</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-3 mx-auto">
-                    <Handshake className="w-5 h-5 text-accent-violet" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-text-primary mb-1">90 Days of Support</h3>
-                  <p className="text-sm text-text-secondary">After we leave, we stay available for 90 days to make sure everything is running smoothly and your team has the help they need.</p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold font-mono gradient-text mb-2">
-                  $25,000
-                </p>
-                <p className="text-sm text-text-muted mb-6">
-                  Plus travel and lodging expenses. We come to your location anywhere in the US.
-                </p>
-                <a
-                  href={BOOKING_URL}
-                  className="btn-primary text-base px-8 py-4 inline-flex items-center gap-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a Call to Discuss <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
