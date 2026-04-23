@@ -15,6 +15,7 @@ const serviceLinks = [
   { name: "Website Design", href: "/website-design" },
   { name: "Database Reactivation", href: "/database-reactivation" },
   { name: "AI Consulting", href: "/ai-consulting" },
+  { name: "AI Teaching & Training", href: "/ai-consulting#teaching" },
 ];
 
 export function Navbar() {

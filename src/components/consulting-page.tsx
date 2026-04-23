@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Search, Map, GraduationCap, Handshake, Check } from "lucide-react";
+import { Search, Map, GraduationCap, Handshake, Check, BookOpen, Users, Lightbulb, Presentation } from "lucide-react";
 import { BOOKING_URL } from "@/data/industries";
 import { ReviewCarousel } from "@/components/review-carousel";
 import { CTASection } from "@/components/cta-section";
@@ -52,16 +52,16 @@ export function ConsultingPageContent() {
             className="max-w-3xl mx-auto text-center"
           >
             <p className="text-sm font-semibold tracking-widest text-accent-violet uppercase mb-4">
-              AI Consulting
+              AI Consulting & Teaching
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
-              Not sure where AI fits in your business? We&apos;ll show you.
+              We don&apos;t just build AI systems. We teach you how to use them.
             </h1>
             <p className="text-xl md:text-2xl text-text-secondary leading-relaxed mb-8">
-              The AI landscape moves fast. You don&apos;t need to become an
-              expert overnight. You need a partner who already is. We come
-              alongside your team, figure out exactly where AI can help, and
-              make sure you can run with it on your own.
+              AI is changing how businesses operate, and most teams are behind.
+              We come alongside your business, identify where AI makes the
+              biggest impact, and train your people to use it confidently.
+              Consulting, teaching, and hands-on training, all in one place.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -83,8 +83,91 @@ export function ConsultingPageContent() {
         </div>
       </section>
 
+      {/* AI Teaching */}
+      <section id="teaching" className="section-padding bg-surface">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glassmorphism text-sm mb-6">
+              <GraduationCap className="w-4 h-4 text-accent-violet" />
+              <span className="text-text-primary font-medium">AI Teaching & Training</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display mb-4">
+              Learn how to use AI in your business.
+            </h2>
+            <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+              Most businesses know AI matters but have no idea where to start.
+              We teach your team how to actually use AI tools to save time,
+              reduce costs, and work smarter, in language anyone can understand.
+            </p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: BookOpen,
+                title: "AI Fundamentals",
+                desc: "We start with the basics. What AI can and cannot do, which tools matter for your industry, and how to think about AI as a business tool, not a buzzword.",
+              },
+              {
+                icon: Presentation,
+                title: "Hands-On Training",
+                desc: "No slide decks. No theory. We sit with your team and walk them through real AI tools using real examples from your business until they are comfortable.",
+              },
+              {
+                icon: Lightbulb,
+                title: "Use Case Discovery",
+                desc: "We identify the specific places in your operations where AI will save you the most time and money. Every business is different, so every plan is custom.",
+              },
+              {
+                icon: Users,
+                title: "Team Enablement",
+                desc: "Your team walks away knowing how to use AI tools independently. No dependency on us. No ongoing contracts required. You own the knowledge.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="glassmorphism rounded-xl p-6 text-center"
+              >
+                <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4 mx-auto">
+                  <item.icon className="w-5 h-5 text-accent-violet" />
+                </div>
+                <h3 className="text-lg font-semibold text-text-primary mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-base text-text-secondary leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-10"
+          >
+            <a
+              href={BOOKING_URL}
+              className="btn-primary text-base px-8 py-4 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a Training Session
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* How it works */}
-      <section className="section-padding bg-surface">
+      <section className="section-padding">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
