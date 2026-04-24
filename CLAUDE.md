@@ -20,6 +20,7 @@
 - Hero converted from centered single-column to two-column layout (headline left, form right) (2026-04-24)
 - Form fields: first name, last name, email, phone (E.164 formatted), business name, consent checkbox, honeypot
 - GHL webhook: https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/b6c36035-51b7-4f92-b3ba-b9e01fcbe4c9
+- Added AI Outbound Calling capability card to system section (2026-04-24)
 - Previous changes: service pages, voice demo section, AI teaching, in-person training (2026-04-23)
 
 ## What's Next

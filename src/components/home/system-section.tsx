@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  PhoneCall, MessageSquare, Star, PhoneForwarded,
+  PhoneCall, PhoneOutgoing, MessageSquare, Star, PhoneForwarded,
   Bell, CalendarCheck, UserPlus, LayoutDashboard, Globe, Settings,
 } from "lucide-react";
 
@@ -13,6 +13,12 @@ const capabilities = [
     title: "AI Voice Assistant",
     desc: "Answers every call 24/7",
     detail: "Your AI receptionist picks up every phone call, during business hours, after hours, weekends, and holidays. It knows your services, pricing, and scheduling. It books appointments directly into your calendar and transfers complex calls to your team with full context.",
+  },
+  {
+    icon: PhoneOutgoing,
+    title: "AI Outbound Calling",
+    desc: "Books appointments on autopilot",
+    detail: "Your AI agent calls leads, past customers, and no-shows on your behalf to book appointments. It sounds natural, handles objections, and schedules directly into your calendar. More booked appointments without your team picking up the phone.",
   },
   {
     icon: MessageSquare,
