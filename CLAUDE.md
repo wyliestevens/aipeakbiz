@@ -16,15 +16,11 @@
 - Chat widget
 
 ## Last Change
-- Added 3 new service pages: Website Design, Missed Call Text-Back, Database Reactivation (2026-04-23)
-- Updated navbar services dropdown to list all 8 services including AI Teaching & Training (2026-04-23)
-- Added Voice Bot Demo section on homepage (between How It Works and Pricing) with phone input + GHL webhook (2026-04-23)
-- Created /api/voice-demo endpoint that sends phone + "voice-bot-demo" tag to GHL (2026-04-23)
-- Added AI Teaching & Training to services nav (links to consulting page #teaching) (2026-04-23)
-- Rewrote AI Consulting page hero to lead with teaching, added prominent 4-card AI Teaching section (2026-04-23)
-- Updated homepage consulting teaser to emphasize AI teaching (2026-04-23)
-- Added In-Person AI Training section to consulting page: $25K + expenses, 2-day on-site seminar, working AI system delivered (2026-04-23)
-- Added "In-Person AI Training" to services nav dropdown (2026-04-23)
+- Added full demo request form to hero section (right column) that POSTs to GHL webhook, triggers Retell AI outbound call (2026-04-24)
+- Hero converted from centered single-column to two-column layout (headline left, form right) (2026-04-24)
+- Form fields: first name, last name, email, phone (E.164 formatted), business name, consent checkbox, honeypot
+- GHL webhook: https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/b6c36035-51b7-4f92-b3ba-b9e01fcbe4c9
+- Previous changes: service pages, voice demo section, AI teaching, in-person training (2026-04-23)
 
 ## What's Next
 - GHL workflow setup: create webhook trigger for voice-bot-demo tag, configure AI voice agent, set up outbound call action
