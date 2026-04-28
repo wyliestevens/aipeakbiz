@@ -26,6 +26,10 @@ const companyLinks = [
   { name: "Book a Demo", href: BOOKING_URL },
 ];
 
+const recentWork = [
+  { name: "Used Slot Shop", href: "https://usedslotshop.com" },
+];
+
 export function Footer() {
   return (
     <footer className="bg-[#0F172A] border-t border-border-custom text-white">
@@ -67,6 +71,22 @@ export function Footer() {
                   <Link href={l.href} className="text-sm text-slate-400 hover:text-white transition-colors">
                     {l.name}
                   </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="text-sm font-semibold text-white mt-6 mb-4">Recent Work</h3>
+            <ul className="space-y-2">
+              {recentWork.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    target="_blank"
+                    rel="noopener"
+                    title={`${l.name} — built by AI Peak Biz`}
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    {l.name}
+                  </a>
                 </li>
               ))}
             </ul>
