@@ -28,6 +28,7 @@ const companyLinks = [
 
 const recentWork = [
   { name: "Used Slot Shop", href: "https://usedslotshop.com" },
+  { name: "Last Song", href: "https://lastsong.pro" },
 ];
 
 export function Footer() {
