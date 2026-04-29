@@ -14,7 +14,7 @@ const tiers = [
     monthly: "$997",
     description: "Core AI front desk tools for businesses ready to stop missing calls.",
     features: [
-      { name: "AI Voice Assistant (24/7)", included: true },
+      { name: "AI Voice Assistant (24/7)*", included: true },
       { name: "Missed Call Text-Back", included: true },
       { name: "Appointment Reminders (24h + 2h)", included: true },
       { name: "Basic CRM", included: true },
@@ -36,7 +36,7 @@ const tiers = [
     popular: true,
     description: "The complete system for businesses serious about growth. Our most popular tier.",
     features: [
-      { name: "AI Voice Assistant (24/7)", included: true },
+      { name: "AI Voice Assistant (24/7)*", included: true },
       { name: "Missed Call Text-Back", included: true },
       { name: "Appointment Reminders (24h + 2h)", included: true },
       { name: "Full CRM with Lead Pipeline", included: true },
@@ -120,7 +120,7 @@ export function PricingContent() {
               Simple pricing. Real ROI.
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              Every tier includes a one-time system build plus monthly management. No hidden fees. No per-call charges. No surprises.
+              Every tier includes a one-time system build plus monthly management. No hidden fees. No surprises.
             </p>
           </motion.div>
         </div>
@@ -192,7 +192,7 @@ export function PricingContent() {
             ))}
           </div>
           <p className="text-xs text-text-muted mt-6 text-center max-w-2xl mx-auto">
-            *AI Outbound Calls carry additional per-minute usage costs beyond the monthly subscription. Exact pricing depends on call volume and will be covered during your discovery call.
+            *AI Voice Assistant and AI Outbound Calls carry additional per-minute usage costs beyond the monthly subscription. Exact pricing depends on call volume and will be covered during your discovery call.
           </p>
         </div>
       </section>
