@@ -16,6 +16,7 @@
 - Chat widget
 
 ## Last Change
+- Added "AI Appointment Setter (Outbound Calls)" to Growth tier (included) and Essentials tier (not included) on pricing page (2026-04-29)
 - Added full demo request form to hero section (right column) that POSTs to GHL webhook, triggers Retell AI outbound call (2026-04-24)
 - Hero converted from centered single-column to two-column layout (headline left, form right) (2026-04-24)
 - Form fields: first name, last name, email, phone (E.164 formatted), business name, consent checkbox, honeypot
