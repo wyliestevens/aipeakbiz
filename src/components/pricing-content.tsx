@@ -20,7 +20,7 @@ const tiers = [
       { name: "Basic CRM", included: true },
       { name: "Booking Automation", included: true },
       { name: "AI Chatbot", included: false },
-      { name: "AI Appointment Setter (Outbound Calls)", included: false },
+      { name: "AI Appointment Setter (Outbound Calls)*", included: false },
       { name: "Reputation Management Engine", included: false },
       { name: "No-Show Recovery", included: false },
       { name: "Dormant Customer Reactivation", included: false },
@@ -42,7 +42,7 @@ const tiers = [
       { name: "Full CRM with Lead Pipeline", included: true },
       { name: "Booking Automation", included: true },
       { name: "AI Chatbot", included: true },
-      { name: "AI Appointment Setter (Outbound Calls)", included: true },
+      { name: "AI Appointment Setter (Outbound Calls)*", included: true },
       { name: "Reputation Management Engine", included: true },
       { name: "No-Show Recovery", included: true },
       { name: "Dormant Customer Reactivation", included: false },
@@ -191,6 +191,9 @@ export function PricingContent() {
               </motion.div>
             ))}
           </div>
+          <p className="text-xs text-text-muted mt-6 text-center max-w-2xl mx-auto">
+            *AI Outbound Calls carry additional per-minute usage costs beyond the monthly subscription. Exact pricing depends on call volume and will be covered during your discovery call.
+          </p>
         </div>
       </section>
 
