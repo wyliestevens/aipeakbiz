@@ -17,6 +17,7 @@
 
 ## Last Change
 - Added AI Appointment Setter service page at /ai-appointment-setter with speed-to-lead messaging (2026-04-29)
+- Added AI Peak Biz logo as favicon (browser tab icon) replacing default Vercel icon (2026-04-30)
 - Added AI Appointment Setter to navbar services dropdown (2026-04-29)
 - Added "AI Appointment Setter (Outbound Calls)" to Growth tier (included) and Essentials tier (not included) on pricing page (2026-04-29)
 - Added full demo request form to hero section (right column) that POSTs to GHL webhook, triggers Retell AI outbound call (2026-04-24)
