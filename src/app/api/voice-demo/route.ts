@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const GHL_WEBHOOK_URL =
   process.env.GHL_VOICE_DEMO_WEBHOOK_URL ||
-  "https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/6252625f-b313-4075-9328-c614941ea780";
+  "https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/b6c36035-51b7-4f92-b3ba-b9e01fcbe4c9";
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,25 +17,32 @@ export async function POST(req: NextRequest) {
 
     const formattedPhone = `+1${phone}`;
 
-    // Send to GHL webhook with voice-bot-demo tag
-    fetch(GHL_WEBHOOK_URL, {
+    const ghlRes = await fetch(GHL_WEBHOOK_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        first_name: "Demo",
+        last_name: "Caller",
+        email: "demo@aipeakbiz.com",
         phone: formattedPhone,
-        tags: ["voice-bot-demo"],
-        source: "website-voice-demo",
-        customField: {
-          demo_type: "ai_voice_bot",
-          requested_at: new Date().toISOString(),
-        },
+        business_name: "Voice Demo Request",
+        consent: true,
+        source: "website-voice-demo-section",
       }),
-    }).catch(() => {
-      // Fire-and-forget, don't block response
     });
 
+    if (!ghlRes.ok) {
+      const body = await ghlRes.text().catch(() => "");
+      console.error("GHL voice-demo webhook failed", ghlRes.status, body);
+      return NextResponse.json(
+        { error: "Could not start the demo call. Please try again." },
+        { status: 502 }
+      );
+    }
+
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("voice-demo route error", err);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }
