@@ -16,6 +16,7 @@
 - Chat widget
 
 ## Last Change
+- Added Paycheck Calculator (paycheck.center) backlink to footer Recent Work section (2026-05-06)
 - Added AI Appointment Setter service page at /ai-appointment-setter with speed-to-lead messaging (2026-04-29)
 - Added AI Peak Biz logo as favicon (browser tab icon) replacing default Vercel icon (2026-04-30)
 - Added AI Appointment Setter to navbar services dropdown (2026-04-29)
