@@ -9,8 +9,7 @@ const tiers = [
   {
     name: "AI Front Desk Deployment",
     fullPay: "$4,997",
-    installmentDown: "$1,997",
-    installmentMonthly: "$850/mo x 4",
+    installmentMonthly: "$1,829/mo x 6",
     monthly: "$997",
     description: "Core revenue recovery for businesses ready to stop missing calls and losing leads.",
     features: [
@@ -31,8 +30,7 @@ const tiers = [
   {
     name: "Revenue Recovery Deployment",
     fullPay: "$7,997",
-    installmentDown: "$2,997",
-    installmentMonthly: "$1,400/mo x 4",
+    installmentMonthly: "$2,829/mo x 6",
     monthly: "$1,497",
     popular: true,
     description: "The complete system for businesses serious about capturing every dollar of revenue. Our most popular deployment.",
@@ -54,8 +52,7 @@ const tiers = [
   {
     name: "AI Revenue Deployment",
     fullPay: "$14,997",
-    installmentDown: "$4,997",
-    installmentMonthly: "$2,800/mo x 4",
+    installmentMonthly: "$4,996/mo x 6",
     monthly: "$2,497",
     description: "A strategic growth partner with full business intelligence, ongoing optimization, and quarterly strategy reviews.",
     features: [
@@ -81,7 +78,7 @@ const pricingFAQ = [
   {
     question: "What are the payment options?",
     answer:
-      "You can pay the deployment cost in full upfront, or put a portion down today and spread the balance over monthly installments. Monthly management is billed separately each month. We will walk you through the options during your strategy call.",
+      "You can pay the deployment cost in full upfront, or choose our 6-month installment plan. With the installment plan, you pay a flat monthly rate for 6 months that covers the deployment, then transition to your ongoing monthly management rate. We will walk you through the options during your strategy call.",
   },
   {
     question: "Can I upgrade later?",
@@ -191,21 +188,17 @@ export function PricingContent() {
                     <div>
                       <div className="flex items-baseline gap-1">
                         <span className="text-3xl font-bold text-text-primary">
-                          {tier.installmentDown}
+                          {tier.installmentMonthly.split("/")[0]}
                         </span>
-                        <span className="text-sm text-text-muted">today</span>
+                        <span className="text-sm text-text-muted">
+                          /mo for 6 months
+                        </span>
                       </div>
-                      <div className="flex items-baseline gap-1 mt-1">
+                      <div className="flex items-baseline gap-1 mt-2">
                         <span className="text-lg font-bold text-text-primary">
-                          {tier.installmentMonthly}
+                          then {tier.monthly}
                         </span>
-                        <span className="text-sm text-text-muted">remaining</span>
-                      </div>
-                      <div className="flex items-baseline gap-1 mt-1">
-                        <span className="text-lg font-bold text-text-primary">
-                          + {tier.monthly}
-                        </span>
-                        <span className="text-sm text-text-muted">/mo management</span>
+                        <span className="text-sm text-text-muted">/mo ongoing</span>
                       </div>
                     </div>
                   )}

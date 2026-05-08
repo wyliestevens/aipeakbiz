@@ -9,8 +9,7 @@ const deployments = [
   {
     name: "AI Front Desk Deployment",
     fullPay: "$4,997",
-    installmentDown: "$1,997",
-    installmentMonthly: "$850/mo x 4",
+    installmentMonthly: "$1,829/mo x 6",
     monthly: "$997/mo",
     description: "Core revenue recovery for businesses ready to stop missing calls.",
     highlights: [
@@ -23,8 +22,7 @@ const deployments = [
   {
     name: "Revenue Recovery Deployment",
     fullPay: "$7,997",
-    installmentDown: "$2,997",
-    installmentMonthly: "$1,400/mo x 4",
+    installmentMonthly: "$2,829/mo x 6",
     monthly: "$1,497/mo",
     popular: true,
     description: "The complete system for businesses serious about capturing every dollar of revenue.",
@@ -39,8 +37,7 @@ const deployments = [
   {
     name: "AI Revenue Deployment",
     fullPay: "$14,997",
-    installmentDown: "$4,997",
-    installmentMonthly: "$2,800/mo x 4",
+    installmentMonthly: "$4,996/mo x 6",
     monthly: "$2,497/mo",
     description: "A strategic growth partner with full business intelligence and ongoing optimization.",
     highlights: [
@@ -135,21 +132,15 @@ export function DeploymentSection() {
                   <>
                     <div>
                       <span className="text-3xl font-bold text-text-primary">
-                        {tier.installmentDown}
+                        {tier.installmentMonthly.split("/")[0]}
                       </span>
-                      <span className="text-sm text-text-muted ml-1">today</span>
+                      <span className="text-sm text-text-muted ml-1">/mo for 6 months</span>
                     </div>
-                    <div className="mt-1">
+                    <div className="mt-2">
                       <span className="text-lg font-bold text-text-primary">
-                        {tier.installmentMonthly}
+                        then {tier.monthly}
                       </span>
-                      <span className="text-sm text-text-muted ml-1">remaining</span>
-                    </div>
-                    <div className="mt-1">
-                      <span className="text-lg font-bold text-text-primary">
-                        + {tier.monthly}
-                      </span>
-                      <span className="text-sm text-text-muted ml-1">management</span>
+                      <span className="text-sm text-text-muted ml-1">ongoing</span>
                     </div>
                   </>
                 )}
