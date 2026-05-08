@@ -12,9 +12,19 @@ const reviews = [
     title: "Roofer",
   },
   {
-    quote: "Wylie is a true professional on all levels. His company helped our marketing efforts in ways originally hard to imagine. The services this company offers are vast, honest, no hard sell, and great guidance. So glad we found them.",
+    quote: "Wylie is a true professional on all levels! His company helped our marketing efforts in ways originally hard to imagine! The services this company offers is vast and honest, no hard sell, just great guidance! And availability! So glad we found them!",
     name: "John Eastman",
     title: "Business Owner",
+  },
+  {
+    quote: "Wylie does a great job on websites helps you with anything",
+    name: "Brian Demaria",
+    title: "Business Owner",
+  },
+  {
+    quote: "Our church has benefited tremendously by using AI Peaks. Highly recommend it!",
+    name: "Barb Eastman",
+    title: "Church Administrator",
   },
 ];
 
@@ -41,8 +51,33 @@ export function SocialProofSection() {
           </p>
         </div>
 
+        {/* Top row: 3 detailed reviews */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {reviews.map((review) => (
+          {reviews.slice(0, 3).map((review) => (
+            <div
+              key={review.name}
+              className="bg-white rounded-xl p-7 border border-border"
+            >
+              <div className="flex items-center gap-2 mb-5">
+                <Stars />
+                <span className="text-xs text-text-muted">Google Review</span>
+              </div>
+
+              <p className="text-sm text-text-secondary leading-relaxed mb-6">
+                &ldquo;{review.quote}&rdquo;
+              </p>
+
+              <div>
+                <p className="text-sm font-semibold text-text-primary">{review.name}</p>
+                <p className="text-xs text-text-muted">{review.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom row: 2 shorter reviews */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-6">
+          {reviews.slice(3).map((review) => (
             <div
               key={review.name}
               className="bg-white rounded-xl p-7 border border-border"
