@@ -16,7 +16,7 @@ const tiers = [
     features: [
       { name: "AI Voice Assistant (24/7)*", included: true },
       { name: "Missed Call Text-Back", included: true },
-      { name: "Appointment Reminders (24h + 2h)", included: true },
+      { name: "Appointment Reminders (fully customizable)", included: true },
       { name: "Basic CRM", included: true },
       { name: "Booking Automation", included: true },
       { name: "AI Chatbot", included: false },
@@ -39,7 +39,7 @@ const tiers = [
     features: [
       { name: "AI Voice Assistant (24/7)*", included: true },
       { name: "Missed Call Text-Back", included: true },
-      { name: "Appointment Reminders (24h + 2h)", included: true },
+      { name: "Appointment Reminders (fully customizable)", included: true },
       { name: "Full CRM with Lead Pipeline", included: true },
       { name: "Booking Automation", included: true },
       { name: "AI Chatbot", included: true },

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { BOOKING_URL } from "@/data/industries";
@@ -5,19 +8,23 @@ import { BOOKING_URL } from "@/data/industries";
 const deployments = [
   {
     name: "AI Front Desk Deployment",
-    deployment: "$4,997",
+    fullPay: "$4,997",
+    installmentDown: "$1,997",
+    installmentMonthly: "$850/mo x 4",
     monthly: "$997/mo",
     description: "Core revenue recovery for businesses ready to stop missing calls.",
     highlights: [
       "AI Voice Assistant (24/7)",
       "Missed Call Text-Back",
-      "Appointment Booking & Reminders",
+      "Appointment Booking & Custom Reminders",
       "Basic CRM",
     ],
   },
   {
     name: "Revenue Recovery Deployment",
-    deployment: "$7,997",
+    fullPay: "$7,997",
+    installmentDown: "$2,997",
+    installmentMonthly: "$1,400/mo x 4",
     monthly: "$1,497/mo",
     popular: true,
     description: "The complete system for businesses serious about capturing every dollar of revenue.",
@@ -31,7 +38,9 @@ const deployments = [
   },
   {
     name: "AI Revenue Deployment",
-    deployment: "$14,997",
+    fullPay: "$14,997",
+    installmentDown: "$4,997",
+    installmentMonthly: "$2,800/mo x 4",
     monthly: "$2,497/mo",
     description: "A strategic growth partner with full business intelligence and ongoing optimization.",
     highlights: [
@@ -45,16 +54,44 @@ const deployments = [
 ];
 
 export function DeploymentSection() {
+  const [paymentType, setPaymentType] = useState<"full" | "installment">("full");
+
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <div className="max-w-3xl mx-auto text-center mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-4">
             Flexible deployment options
           </h2>
           <p className="text-lg text-text-secondary">
-            Every deployment includes full system build, AI configuration, ongoing management, and support. Flexible payment options available.
+            Every deployment includes full system build, AI configuration, ongoing management, and support.
           </p>
+        </div>
+
+        {/* Payment toggle */}
+        <div className="flex justify-center mb-10">
+          <div className="inline-flex items-center gap-1 bg-background-alt rounded-lg p-1 border border-border">
+            <button
+              onClick={() => setPaymentType("full")}
+              className={`px-5 py-2.5 rounded-md text-sm font-medium transition-all ${
+                paymentType === "full"
+                  ? "bg-white text-text-primary shadow-sm"
+                  : "text-text-muted hover:text-text-secondary"
+              }`}
+            >
+              Pay in Full
+            </button>
+            <button
+              onClick={() => setPaymentType("installment")}
+              className={`px-5 py-2.5 rounded-md text-sm font-medium transition-all ${
+                paymentType === "installment"
+                  ? "bg-white text-text-primary shadow-sm"
+                  : "text-text-muted hover:text-text-secondary"
+              }`}
+            >
+              Installment Plan
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -76,18 +113,48 @@ export function DeploymentSection() {
                 {tier.name}
               </h3>
               <p className="text-sm text-text-secondary mb-5">{tier.description}</p>
-              <div className="mb-1">
-                <span className="text-3xl font-bold text-text-primary">
-                  {tier.deployment}
-                </span>
-                <span className="text-sm text-text-muted ml-1">deployment</span>
+
+              {/* Pricing display */}
+              <div className="mb-5 pb-5 border-b border-border-light">
+                {paymentType === "full" ? (
+                  <>
+                    <div>
+                      <span className="text-3xl font-bold text-text-primary">
+                        {tier.fullPay}
+                      </span>
+                      <span className="text-sm text-text-muted ml-1">deployment</span>
+                    </div>
+                    <div className="mt-1">
+                      <span className="text-xl font-bold text-text-primary">
+                        {tier.monthly}
+                      </span>
+                      <span className="text-sm text-text-muted ml-1">management</span>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <span className="text-3xl font-bold text-text-primary">
+                        {tier.installmentDown}
+                      </span>
+                      <span className="text-sm text-text-muted ml-1">today</span>
+                    </div>
+                    <div className="mt-1">
+                      <span className="text-lg font-bold text-text-primary">
+                        {tier.installmentMonthly}
+                      </span>
+                      <span className="text-sm text-text-muted ml-1">remaining</span>
+                    </div>
+                    <div className="mt-1">
+                      <span className="text-lg font-bold text-text-primary">
+                        + {tier.monthly}
+                      </span>
+                      <span className="text-sm text-text-muted ml-1">management</span>
+                    </div>
+                  </>
+                )}
               </div>
-              <div className="mb-5">
-                <span className="text-xl font-bold text-text-primary">
-                  {tier.monthly}
-                </span>
-                <span className="text-sm text-text-muted ml-1">management</span>
-              </div>
+
               <ul className="space-y-2.5 mb-6">
                 {tier.highlights.map((h) => (
                   <li key={h} className="flex items-start gap-2 text-sm">
@@ -113,9 +180,6 @@ export function DeploymentSection() {
         </div>
 
         <div className="text-center mt-8 space-y-2">
-          <p className="text-sm text-text-muted">
-            Flexible payment options available. Pay in full or spread the deployment cost over monthly installments.
-          </p>
           <p className="text-xs text-text-muted">
             AI Voice and Outbound Calls carry additional per-minute usage costs. Details covered during your strategy call.
           </p>
