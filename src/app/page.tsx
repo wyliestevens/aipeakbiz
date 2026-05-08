@@ -6,6 +6,7 @@ import { FounderSection } from "@/components/home/founder-section";
 import { SocialProofSection } from "@/components/home/social-proof-section";
 import { WhySection } from "@/components/home/why-section";
 import { DeploymentSection } from "@/components/home/deployment-section";
+import { IndustriesSection } from "@/components/home/industries-section";
 import { HomeFAQSection } from "@/components/home/home-faq-section";
 import { DemoSection } from "@/components/home/demo-section";
 import { CTASection } from "@/components/cta-section";
@@ -40,9 +41,10 @@ export default function HomePage() {
       <MissedLeadsSection />
       <HowItWorksSection />
       <FounderSection />
-      <SocialProofSection />
       <WhySection />
       <DeploymentSection />
+      <IndustriesSection />
+      <SocialProofSection />
       <DemoSection />
       <HomeFAQSection />
       <CTASection />
