@@ -39,7 +39,7 @@ export function HeroSection() {
                 className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg border border-border bg-white text-text-primary font-medium text-sm hover:bg-background-alt hover:border-brand/30 transition-all"
               >
                 <Play className="w-4 h-4 text-brand" />
-                Watch 2-Minute Overview
+                Watch Overview
               </button>
               <button
                 onClick={() => setVideoModal("demo")}
