@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/6252625f-b313-4075-9328-c614941ea780";
 
 function formatCurrency(num: number): string {
@@ -152,7 +154,7 @@ export async function POST(req: NextRequest) {
     }).catch((err) => console.error("GHL webhook error:", err));
 
     // Send email to Wylie
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "AI Peak Biz <wylie@aipeakbiz.com>",
       to: "wylie@aipeakbiz.com",
       subject: `New Assessment Lead: ${data.firstName || "Unknown"} ${data.lastName || ""} - ${data.industry || "Unknown"} - ${formatCurrency(Number(data.totalMonthlyLoss) || 0)}/mo`,
@@ -161,7 +163,7 @@ export async function POST(req: NextRequest) {
 
     // Send to the user
     if (userEmail) {
-      await resend.emails.send({
+      await getResend().emails.send({
         from: "AI Peak Biz <wylie@aipeakbiz.com>",
         to: userEmail,
         subject: `${data.firstName || "Hey"}, your AI Peak Biz Revenue Loss Assessment Results`,

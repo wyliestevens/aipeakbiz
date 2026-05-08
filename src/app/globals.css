@@ -3,22 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #1C1C1E;
-    --foreground: #F1F5F9;
-  }
-
-  * {
-    @apply border-border-custom;
+  html {
+    @apply scroll-smooth;
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-text-primary antialiased;
   }
 
-  html {
-    @apply scroll-smooth;
-    color-scheme: dark;
+  * {
+    @apply border-border;
   }
 }
 
@@ -31,33 +25,23 @@
     @apply mx-auto max-w-container px-4 sm:px-6 lg:px-8;
   }
 
-  .glassmorphism {
-    @apply bg-surface/80 backdrop-blur-xl border border-border-custom/50;
-  }
-
-  .gradient-text {
-    @apply bg-gradient-to-r from-accent-blue via-accent-violet to-accent-pink bg-clip-text text-transparent;
-  }
-
-  .gradient-border {
-    @apply relative;
-    background: linear-gradient(var(--background), var(--background)) padding-box,
-                linear-gradient(135deg, #3B82F6, #8B5CF6, #EC4899) border-box;
-    border: 1px solid transparent;
-  }
-
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white
-           bg-accent-blue hover:bg-accent-blue/90 transition-all duration-200
-           hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]
-           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+           bg-brand hover:bg-brand-dark transition-all duration-200
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-background;
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold
-           border border-border-custom text-text-primary hover:bg-surface
-           transition-all duration-200 hover:scale-[1.02]
-           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-violet focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+           border border-border text-text-primary hover:bg-surface-alt
+           transition-all duration-200
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium
+           text-text-secondary hover:text-text-primary hover:bg-background-alt
+           transition-all duration-200;
   }
 }
 

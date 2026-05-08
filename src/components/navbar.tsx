@@ -3,27 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { industries, BOOKING_URL, PHONE, PHONE_TEL } from "@/data/industries";
-
-const serviceLinks = [
-  { name: "AI Chatbot", href: "/ai-chatbot" },
-  { name: "AI Voice Assistant", href: "/ai-voice-assistant" },
-  { name: "AI Appointment Setter", href: "/ai-appointment-setter" },
-  { name: "Missed Call Text-Back", href: "/missed-call-text-back" },
-  { name: "Reputation Management", href: "/reputation-management" },
-  { name: "Website Design", href: "/website-design" },
-  { name: "Database Reactivation", href: "/database-reactivation" },
-  { name: "AI Consulting", href: "/ai-consulting" },
-  { name: "AI Teaching & Training", href: "/ai-consulting#teaching" },
-];
+import { Menu, X, Phone } from "lucide-react";
+import { BOOKING_URL, PHONE, PHONE_TEL } from "@/data/industries";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [industriesOpen, setIndustriesOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -40,11 +25,17 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  const navLinks = [
+    { name: "How It Works", href: "/#how-it-works" },
+    { name: "About", href: "/about" },
+    { name: "Pricing", href: "/pricing" },
+  ];
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "glassmorphism shadow-lg"
+          ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-border-light"
           : "bg-transparent"
       }`}
       role="navigation"
@@ -52,107 +43,31 @@ export function Navbar() {
     >
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
-            width={62}
-            height={62}
-            className="w-12 h-12 md:w-[62px] md:h-[62px]"
+            width={48}
+            height={48}
+            className="w-10 h-10 md:w-12 md:h-12"
             priority
           />
           <span className="text-lg font-bold text-text-primary">
-            AI Peak <em className="not-italic text-accent-blue">Biz</em>
+            AI Peak Biz
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-1">
-          {/* Industries dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setIndustriesOpen(true)}
-            onMouseLeave={() => setIndustriesOpen(false)}
-          >
-            <button
-              className="flex items-center gap-1 px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg"
-              aria-expanded={industriesOpen}
-              aria-haspopup="true"
+        <div className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
             >
-              Industries <ChevronDown className="w-3.5 h-3.5" />
-            </button>
-            <AnimatePresence>
-              {industriesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-1 w-64 bg-[#1E1E22] border border-[#3A3A3E] rounded-xl p-2 shadow-2xl"
-                >
-                  {industries.map((ind) => (
-                    <Link
-                      key={ind.slug}
-                      href={`/industries/${ind.slug}`}
-                      className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
-                    >
-                      <ind.icon className="w-4 h-4 text-accent-blue" />
-                      {ind.name}
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          {/* Services dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
-            <button
-              className="flex items-center gap-1 px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg"
-              aria-expanded={servicesOpen}
-              aria-haspopup="true"
-            >
-              Services <ChevronDown className="w-3.5 h-3.5" />
-            </button>
-            <AnimatePresence>
-              {servicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-1 w-56 bg-[#1E1E22] border border-[#3A3A3E] rounded-xl p-2 shadow-2xl"
-                >
-                  {serviceLinks.map((s) => (
-                    <Link
-                      key={s.href}
-                      href={s.href}
-                      className="block px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
-                    >
-                      {s.name}
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          <Link href="/ai-consulting" className="px-3 py-2 text-sm text-accent-violet hover:text-text-primary transition-colors rounded-lg font-medium">
-            AI Consulting
-          </Link>
-          <Link href="/pricing" className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg">
-            Pricing
-          </Link>
-          <Link href="/about" className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg">
-            About
-          </Link>
-          <Link href="/free-assessment" className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors rounded-lg">
-            Free Assessment
-          </Link>
+              {link.name}
+            </Link>
+          ))}
         </div>
 
         {/* Desktop right side */}
@@ -164,8 +79,13 @@ export function Navbar() {
             <Phone className="w-4 h-4" />
             {PHONE}
           </a>
-          <a href={BOOKING_URL} className="btn-primary text-sm" target="_blank" rel="noopener noreferrer">
-            Book a Demo
+          <a
+            href={BOOKING_URL}
+            className="btn-primary text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a Strategy Call
           </a>
         </div>
 
@@ -181,56 +101,37 @@ export function Navbar() {
       </div>
 
       {/* Mobile drawer */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
-            className="lg:hidden glassmorphism border-t border-border-custom overflow-hidden"
-          >
-            <div className="container-custom py-4 flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
-              <p className="text-xs font-semibold text-text-muted uppercase tracking-wider px-3 pt-2">Industries</p>
-              {industries.map((ind) => (
-                <Link
-                  key={ind.slug}
-                  href={`/industries/${ind.slug}`}
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
-                >
-                  <ind.icon className="w-4 h-4 text-accent-blue" />
-                  {ind.name}
-                </Link>
-              ))}
-              <div className="border-t border-border-custom my-2" />
-              <p className="text-xs font-semibold text-text-muted uppercase tracking-wider px-3">Services</p>
-              {serviceLinks.map((s) => (
-                <Link
-                  key={s.href}
-                  href={s.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors"
-                >
-                  {s.name}
-                </Link>
-              ))}
-              <div className="border-t border-border-custom my-2" />
-              <Link href="/ai-consulting" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-accent-violet hover:text-text-primary font-medium">AI Consulting</Link>
-              <Link href="/pricing" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">Pricing</Link>
-              <Link href="/about" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">About</Link>
-              <Link href="/free-assessment" onClick={() => setMobileOpen(false)} className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary">Free Assessment</Link>
-              <div className="border-t border-border-custom my-2" />
-              <a href={PHONE_TEL} className="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary">
-                <Phone className="w-4 h-4" /> {PHONE}
-              </a>
-              <a href={BOOKING_URL} className="btn-primary text-sm text-center mx-3" target="_blank" rel="noopener noreferrer">
-                Book a Demo
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {mobileOpen && (
+        <div className="lg:hidden bg-white border-t border-border-light">
+          <div className="container-custom py-6 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="px-3 py-3 text-base text-text-secondary hover:text-text-primary hover:bg-background-alt rounded-lg transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+            <div className="border-t border-border-light my-3" />
+            <a
+              href={PHONE_TEL}
+              className="flex items-center gap-2 px-3 py-3 text-base text-text-secondary"
+            >
+              <Phone className="w-4 h-4" /> {PHONE}
+            </a>
+            <a
+              href={BOOKING_URL}
+              className="btn-primary text-sm text-center mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a Strategy Call
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,20 +9,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        surface: "#2A2A2E",
-        "text-primary": "#F1F5F9",
-        "text-secondary": "#A1A1AA",
-        "text-muted": "#71717A",
-        accent: {
-          blue: "#3B82F6",
-          violet: "#8B5CF6",
-          pink: "#EC4899",
+        // Warm light background palette
+        background: "#FAFAF8",
+        "background-alt": "#F3F1EE",
+        surface: "#FFFFFF",
+        "surface-alt": "#F7F5F2",
+
+        // Navy/slate text hierarchy
+        "text-primary": "#1B2A4A",
+        "text-secondary": "#4A5568",
+        "text-muted": "#8B95A5",
+
+        // Brand accent - warm navy blue (trustworthy, calm)
+        brand: {
+          DEFAULT: "#2B5BA8",
+          light: "#3B6DC0",
+          dark: "#1E4080",
+          50: "#EEF2F9",
+          100: "#D4DEF0",
+          500: "#2B5BA8",
+          600: "#1E4080",
+          700: "#163060",
         },
-        success: "#10B981",
-        warning: "#F59E0B",
-        "border-custom": "#3A3A3E",
+
+        // Warm accent - for trust signals
+        warm: {
+          DEFAULT: "#C27C3E",
+          light: "#D4944F",
+          50: "#FDF6EE",
+        },
+
+        // Success / positive
+        success: "#2D8659",
+        "success-light": "#EBF5F0",
+
+        // Border
+        border: "#E5E2DD",
+        "border-light": "#F0EDE8",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],
@@ -33,24 +55,13 @@ const config: Config = {
         display: "-0.02em",
       },
       maxWidth: {
-        container: "1280px",
+        container: "1200px",
       },
       animation: {
-        "gradient-shift": "gradient-shift 8s ease infinite",
-        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         "fade-up": "fade-up 0.6s ease-out forwards",
-        "counter": "counter 2s ease-out forwards",
         "scroll-x": "scroll-x 30s linear infinite",
       },
       keyframes: {
-        "gradient-shift": {
-          "0%, 100%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-        },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(59, 130, 246, 0.3)" },
-          "50%": { boxShadow: "0 0 40px rgba(139, 92, 246, 0.5)" },
-        },
         "fade-up": {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },

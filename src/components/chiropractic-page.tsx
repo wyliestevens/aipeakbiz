@@ -505,7 +505,6 @@ export function ChiropracticPage() {
 
       <CTASection
         heading="See Exactly How Much Revenue Your Clinic Is Leaving on the Table"
-        showFoundingNote
       />
     </>
   );

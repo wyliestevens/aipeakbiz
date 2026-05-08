@@ -21,25 +21,25 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aipeakbiz.com"),
   title: {
-    default: "AI Peak Biz | AI Automation for Service Businesses",
+    default: "AI Peak Biz | Revenue Recovery for Service Businesses",
     template: "%s | AI Peak Biz",
   },
   description:
-    "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
+    "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.aipeakbiz.com",
     siteName: "AI Peak Biz",
-    title: "AI Peak Biz | AI Automation for Service Businesses",
+    title: "AI Peak Biz | Revenue Recovery for Service Businesses",
     description:
-      "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked.",
+      "Stop losing jobs to missed calls and slow follow-up. AI Peak Biz helps service businesses respond instantly and book more appointments.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Peak Biz | AI Automation for Service Businesses",
+    title: "AI Peak Biz | Revenue Recovery for Service Businesses",
     description:
-      "AI automation systems for service businesses. Every call answered. Every lead captured.",
+      "Stop losing jobs to missed calls and slow follow-up. Instant lead response for service businesses.",
   },
   icons: {
     icon: [
@@ -96,7 +96,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="google-site-verification" content="OEeYi3-tvnI3Z9PMuAclTB-aSxuPLTFAiB7tAR_ZCwA" />

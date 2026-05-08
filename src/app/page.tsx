@@ -1,20 +1,19 @@
 import { Metadata } from "next";
 import { HeroSection } from "@/components/home/hero";
-import { MindMapSection } from "@/components/home/mind-map-section";
-import { PainPointsSection } from "@/components/home/pain-points";
-import { SystemSection } from "@/components/home/system-section";
+import { MissedLeadsSection } from "@/components/home/missed-leads-section";
 import { HowItWorksSection } from "@/components/home/how-it-works";
-import { VoiceDemoSection } from "@/components/home/voice-demo-section";
-import { PricingPreview } from "@/components/home/pricing-preview";
-import { ReviewsSection } from "@/components/home/reviews-section";
-import { ConsultingTeaser } from "@/components/home/consulting-teaser";
-import { AboutTeaser } from "@/components/home/about-teaser";
+import { FounderSection } from "@/components/home/founder-section";
+import { SocialProofSection } from "@/components/home/social-proof-section";
+import { WhySection } from "@/components/home/why-section";
+import { DeploymentSection } from "@/components/home/deployment-section";
+import { HomeFAQSection } from "@/components/home/home-faq-section";
+import { DemoSection } from "@/components/home/demo-section";
 import { CTASection } from "@/components/cta-section";
 
 export const metadata: Metadata = {
-  title: "AI Peak Biz | AI Automation for Service Businesses",
+  title: "AI Peak Biz | Revenue Recovery for Service Businesses",
   description:
-    "AI Peak Biz builds and manages AI automation systems for service businesses. Every call answered. Every lead captured. More appointments booked. More 5-star reviews.",
+    "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.",
   alternates: { canonical: "https://www.aipeakbiz.com" },
 };
 
@@ -38,15 +37,14 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <HeroSection />
-      <MindMapSection />
-      <PainPointsSection />
-      <SystemSection />
+      <MissedLeadsSection />
       <HowItWorksSection />
-      <VoiceDemoSection />
-      <PricingPreview />
-      <ReviewsSection />
-      <ConsultingTeaser />
-      <AboutTeaser />
+      <FounderSection />
+      <SocialProofSection />
+      <WhySection />
+      <DeploymentSection />
+      <DemoSection />
+      <HomeFAQSection />
       <CTASection />
     </>
   );

@@ -1,117 +1,80 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { BOOKING_URL } from "@/data/industries";
-import { Rocket } from "lucide-react";
-import { DemoForm } from "./demo-form";
-
-const stats = [
-  { icon: Rocket, label: "5-10 day launch" },
-];
+import { Play, Headphones, PhoneCall, Calendar } from "lucide-react";
+import { VideoModal } from "./video-modal";
 
 export function HeroSection() {
+  const [videoModal, setVideoModal] = useState<"overview" | "demo" | null>(null);
+
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Animated gradient background */}
-      <div
-        className="absolute inset-0 opacity-30"
-        style={{
-          background:
-            "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 25%, #EC4899 50%, #8B5CF6 75%, #3B82F6 100%)",
-          backgroundSize: "400% 400%",
-          animation: "gradient-shift 8s ease infinite",
-        }}
-      />
-
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
-      <div className="absolute inset-0 bg-background/80" />
-
-      <div className="container-custom relative pt-24 pb-16 md:pt-32 md:pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left column - headline & CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-center lg:text-left"
-          >
+    <>
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-24">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
             {/* Eyebrow */}
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-6"
-            >
-              AI Automation for Every Service Business
-            </motion.p>
-
-            {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
-              Envision a business that never misses a call, a lead, or a review.
-            </h1>
-
-            {/* Subhead */}
-            <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-              AI Peak Biz builds and manages complete AI automation systems
-              for service businesses. Every call answered. Every inquiry captured.
-              More appointments booked. More 5-star reviews. No new payroll.
+            <p className="text-sm font-medium tracking-wide text-brand uppercase mb-4">
+              Revenue Recovery for Service Businesses
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-8">
-              <Link
-                href="/free-assessment"
-                className="btn-primary text-base px-8 py-4 w-full sm:w-auto"
+            {/* Headline */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
+              Every missed call is a job you already paid for and lost.
+            </h1>
+
+            {/* Subheadline */}
+            <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
+              AI Peak Biz helps service businesses respond to every lead instantly, answer every call 24/7, and book more appointments automatically. No more lost revenue from slow follow-up.
+            </p>
+
+            {/* Choose Your Experience */}
+            <p className="text-sm font-semibold text-text-muted uppercase tracking-wide mb-5">
+              Choose Your Experience
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto">
+              <button
+                onClick={() => setVideoModal("overview")}
+                className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg border border-border bg-white text-text-primary font-medium text-sm hover:bg-background-alt hover:border-brand/30 transition-all"
               >
-                Take the Free Assessment
-              </Link>
+                <Play className="w-4 h-4 text-brand" />
+                Watch 2-Minute Overview
+              </button>
+              <button
+                onClick={() => setVideoModal("demo")}
+                className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg border border-border bg-white text-text-primary font-medium text-sm hover:bg-background-alt hover:border-brand/30 transition-all"
+              >
+                <Headphones className="w-4 h-4 text-brand" />
+                Hear a Real AI Call
+              </button>
+              <a
+                href="#demo"
+                className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg border border-border bg-white text-text-primary font-medium text-sm hover:bg-background-alt hover:border-brand/30 transition-all"
+              >
+                <PhoneCall className="w-4 h-4 text-brand" />
+                Try the AI Demo
+              </a>
               <a
                 href={BOOKING_URL}
-                className="btn-secondary text-base px-8 py-4 w-full sm:w-auto"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg bg-brand text-white font-medium text-sm hover:bg-brand-dark transition-all"
               >
-                Book a Demo
+                <Calendar className="w-4 h-4" />
+                Book a Strategy Call
               </a>
             </div>
-
-            {/* Stat pills */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex flex-wrap items-center justify-center lg:justify-start gap-4"
-            >
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full glassmorphism text-sm"
-                >
-                  <stat.icon className="w-4 h-4 text-accent-blue" />
-                  <span className="text-text-primary font-medium">
-                    {stat.label}
-                  </span>
-                </div>
-              ))}
-            </motion.div>
-          </motion.div>
-
-          {/* Right column - demo form */}
-          <div className="w-full max-w-md mx-auto lg:max-w-none">
-            <DemoForm />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {videoModal && (
+        <VideoModal
+          type={videoModal}
+          onClose={() => setVideoModal(null)}
+        />
+      )}
+    </>
   );
 }
