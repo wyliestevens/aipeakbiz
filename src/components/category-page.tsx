@@ -6,6 +6,7 @@ import { Check } from "lucide-react";
 import { IndustryContent } from "@/data/industry-content";
 import { BOOKING_URL } from "@/data/industries";
 import { ReviewGrid } from "@/components/review-carousel";
+import { RevenueSystemsSection } from "@/components/revenue-systems-section";
 import { FAQ, FAQSchema } from "@/components/faq";
 import { CTASection } from "@/components/cta-section";
 
@@ -90,6 +91,9 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
           </div>
         </div>
       </section>
+
+      {/* Revenue Recovery Systems */}
+      <RevenueSystemsSection />
 
       {/* Solutions */}
       <section className="section-padding">

@@ -5,6 +5,7 @@ import { HowItWorksSection } from "@/components/home/how-it-works";
 import { FounderSection } from "@/components/home/founder-section";
 import { SocialProofSection } from "@/components/home/social-proof-section";
 import { WhySection } from "@/components/home/why-section";
+import { RevenueSystemsSection } from "@/components/revenue-systems-section";
 import { DeploymentSection } from "@/components/home/deployment-section";
 import { IndustriesSection } from "@/components/home/industries-section";
 import { HomeFAQSection } from "@/components/home/home-faq-section";
@@ -40,6 +41,7 @@ export default function HomePage() {
       <HeroSection />
       <MissedLeadsSection />
       <HowItWorksSection />
+      <RevenueSystemsSection />
       <FounderSection />
       <WhySection />
       <DeploymentSection />
