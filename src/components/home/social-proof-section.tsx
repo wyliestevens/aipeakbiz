@@ -1,27 +1,32 @@
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
-const testimonials = [
+const reviews = [
   {
-    quote: "We were missing 30 to 40 percent of our incoming calls. Within the first month, every single call was being answered. The system paid for itself in week two.",
-    name: "Clinic Owner",
-    industry: "Healthcare",
+    quote: "This AI receptionist has been a total game changer for our business. No more missed calls. No more overwhelmed staff. Every call is answered instantly and professionally, even after hours. It has streamlined our operations, improved client experience, and pays for itself with the number of leads we no longer lose.",
+    name: "Danni Owens",
+    title: "Health Clinic Owner",
   },
   {
-    quote: "I am on a roof six days a week. I cannot answer the phone. Now I do not have to. The AI books the estimate and I show up. That is it.",
-    name: "Roofing Contractor",
-    industry: "Home Services",
+    quote: "Very happy with the effort AI Peak Biz puts in. Wylie has been on top of design, testing new features, and paying attention to make sure everything works properly. Anytime I had an issue he would get on top of it and get it fixed very quickly. The bot holds conversations very well, asks clarifying questions I would not even think to ask and gathers helpful information before I ever have to talk to a customer.",
+    name: "Bryan Johnson",
+    title: "Roofer",
   },
   {
-    quote: "We were skeptical at first. The idea of AI talking to our clients felt risky. But the calls sound natural and our clients have not complained once. They just get faster service.",
-    name: "HVAC Business Owner",
-    industry: "Home Services",
-  },
-  {
-    quote: "The follow-up alone is worth the monthly cost. Leads that used to go cold are getting called back the same minute they come in.",
-    name: "Pastor & Small Business Owner",
-    industry: "Professional Services",
+    quote: "Wylie is a true professional on all levels. His company helped our marketing efforts in ways originally hard to imagine. The services this company offers are vast, honest, no hard sell, and great guidance. So glad we found them.",
+    name: "John Eastman",
+    title: "Business Owner",
   },
 ];
+
+function Stars() {
+  return (
+    <div className="flex gap-0.5">
+      {[...Array(5)].map((_, i) => (
+        <Star key={i} className="w-4 h-4 fill-warm text-warm" />
+      ))}
+    </div>
+  );
+}
 
 export function SocialProofSection() {
   return (
@@ -29,52 +34,34 @@ export function SocialProofSection() {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-4">
-            What business owners are saying
+            Trusted by real business owners
           </h2>
           <p className="text-lg text-text-secondary">
-            Real feedback from real businesses using AI Peak Biz.
+            AI Peak Biz is built around long-term relationships, practical results, and honest support for growing businesses.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {testimonials.map((t, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {reviews.map((review) => (
             <div
-              key={i}
-              className="bg-white rounded-xl p-6 border border-border"
+              key={review.name}
+              className="bg-white rounded-xl p-7 border border-border"
             >
-              <Quote className="w-8 h-8 text-brand-50 mb-3" />
-              <p className="text-text-secondary leading-relaxed mb-5 text-sm">
-                &ldquo;{t.quote}&rdquo;
+              <div className="flex items-center gap-2 mb-5">
+                <Stars />
+                <span className="text-xs text-text-muted">Google Review</span>
+              </div>
+
+              <p className="text-sm text-text-secondary leading-relaxed mb-6">
+                &ldquo;{review.quote}&rdquo;
               </p>
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-semibold text-text-primary">{t.name}</p>
-                  <p className="text-xs text-text-muted">{t.industry}</p>
-                </div>
-                <div className="flex gap-0.5">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-3.5 h-3.5 fill-warm text-warm" />
-                  ))}
-                </div>
+
+              <div>
+                <p className="text-sm font-semibold text-text-primary">{review.name}</p>
+                <p className="text-xs text-text-muted">{review.title}</p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust indicators */}
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-12 text-text-muted text-sm">
-          <div className="flex items-center gap-2">
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-warm text-warm" />
-              ))}
-            </div>
-            <span>Google Reviews</span>
-          </div>
-          <span className="hidden sm:inline text-border">|</span>
-          <span>400+ calls handled daily for one clinic</span>
-          <span className="hidden sm:inline text-border">|</span>
-          <span>Serving businesses nationwide</span>
         </div>
       </div>
     </section>
