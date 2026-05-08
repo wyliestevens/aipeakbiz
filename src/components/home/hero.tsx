@@ -46,7 +46,7 @@ export function HeroSection() {
                 className="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-lg border border-border bg-white text-text-primary font-medium text-sm hover:bg-background-alt hover:border-brand/30 transition-all"
               >
                 <Headphones className="w-4 h-4 text-brand" />
-                Hear a Real AI Call
+                Hear Real AI Call
               </button>
               <a
                 href="#demo"
