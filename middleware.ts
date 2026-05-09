@@ -26,7 +26,7 @@ export function middleware(request: NextRequest) {
 
   // No locale prefix = English (default). Rewrite internally to /en/*
   const url = request.nextUrl.clone();
-  url.pathname = `/en${pathname}`;
+  url.pathname = pathname === "/" ? "/en" : `/en${pathname}`;
   return NextResponse.rewrite(url);
 }
 
