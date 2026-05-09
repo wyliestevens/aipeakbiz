@@ -3,10 +3,19 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Globe } from "lucide-react";
 import { BOOKING_URL, PHONE, PHONE_TEL } from "@/data/industries";
+import { useDict, useLang } from "@/i18n/context";
+import { usePathname } from "next/navigation";
+
+function langPrefix(lang: string) {
+  return lang === "es" ? "/es" : "";
+}
 
 export function Navbar() {
+  const dict = useDict();
+  const lang = useLang();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -25,11 +34,19 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  const prefix = langPrefix(lang);
   const navLinks = [
-    { name: "How It Works", href: "/#how-it-works" },
-    { name: "About", href: "/about" },
-    { name: "Pricing", href: "/pricing" },
+    { name: dict.nav.howItWorks, href: `${prefix}/#how-it-works` },
+    { name: dict.nav.about, href: `${prefix}/about` },
+    { name: dict.nav.pricing, href: `${prefix}/pricing` },
   ];
+
+  // Build the alternate language URL
+  const altLang = lang === "es" ? "en" : "es";
+  const altPrefix = langPrefix(altLang);
+  // Strip current lang prefix from pathname to get the base path
+  const basePath = lang === "es" ? pathname.replace(/^\/es/, "") || "/" : pathname;
+  const altHref = `${altPrefix}${basePath}`;
 
   return (
     <nav
@@ -43,7 +60,7 @@ export function Navbar() {
     >
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+        <Link href={`${prefix}/`} className="flex items-center gap-2.5 shrink-0">
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
@@ -72,6 +89,15 @@ export function Navbar() {
 
         {/* Desktop right side */}
         <div className="hidden lg:flex items-center gap-4">
+          {/* Language switcher */}
+          <Link
+            href={altHref}
+            className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors"
+            title={dict.altLangName}
+          >
+            <Globe className="w-4 h-4" />
+            {dict.altLangName}
+          </Link>
           <a
             href={PHONE_TEL}
             className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors"
@@ -85,7 +111,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Book a Strategy Call
+            {dict.nav.bookCall}
           </a>
         </div>
 
@@ -115,6 +141,13 @@ export function Navbar() {
               </Link>
             ))}
             <div className="border-t border-border-light my-3" />
+            <Link
+              href={altHref}
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center gap-2 px-3 py-3 text-base text-text-secondary hover:text-text-primary hover:bg-background-alt rounded-lg transition-colors"
+            >
+              <Globe className="w-4 h-4" /> {dict.altLangName}
+            </Link>
             <a
               href={PHONE_TEL}
               className="flex items-center gap-2 px-3 py-3 text-base text-text-secondary"
@@ -127,7 +160,7 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book a Strategy Call
+              {dict.nav.bookCall}
             </a>
           </div>
         </div>

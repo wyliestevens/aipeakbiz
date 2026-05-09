@@ -1,4 +1,7 @@
+"use client";
+
 import { Star } from "lucide-react";
+import { useDict } from "@/i18n/context";
 
 const reviews = [
   {
@@ -39,15 +42,17 @@ function Stars() {
 }
 
 export function SocialProofSection() {
+  const dict = useDict();
+
   return (
     <section className="section-padding">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-4">
-            Trusted by real business owners
+            {dict.socialProof.heading}
           </h2>
           <p className="text-lg text-text-secondary">
-            AI Peak Biz is built around long-term relationships, practical results, and honest support for growing businesses.
+            {dict.socialProof.subheading}
           </p>
         </div>
 
@@ -60,7 +65,7 @@ export function SocialProofSection() {
             >
               <div className="flex items-center gap-2 mb-5">
                 <Stars />
-                <span className="text-xs text-text-muted">Google Review</span>
+                <span className="text-xs text-text-muted">{dict.socialProof.googleReview}</span>
               </div>
 
               <p className="text-sm text-text-secondary leading-relaxed mb-6">
@@ -84,7 +89,7 @@ export function SocialProofSection() {
             >
               <div className="flex items-center gap-2 mb-5">
                 <Stars />
-                <span className="text-xs text-text-muted">Google Review</span>
+                <span className="text-xs text-text-muted">{dict.socialProof.googleReview}</span>
               </div>
 
               <p className="text-sm text-text-secondary leading-relaxed mb-6">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Phone, CheckCircle, Loader2 } from "lucide-react";
+import { useDict } from "@/i18n/context";
 
 const GHL_WEBHOOK =
   "https://services.leadconnectorhq.com/hooks/8G7oorGsCPDIlU76HPkb/webhook-trigger/b6c36035-51b7-4f92-b3ba-b9e01fcbe4c9";
@@ -14,6 +15,7 @@ function formatPhone(value: string) {
 }
 
 export function DemoSection() {
+  const dict = useDict();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -37,7 +39,7 @@ export function DemoSection() {
 
     const digits = phone.replace(/\D/g, "");
     if (digits.length !== 10) {
-      setPhoneError("Please enter a valid 10-digit US phone number.");
+      setPhoneError(dict.demo.phoneError);
       return;
     }
 
@@ -59,9 +61,7 @@ export function DemoSection() {
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
     } catch {
-      setSubmitError(
-        "Something went wrong. Please try again or email us at wylie@aipeakbiz.com."
-      );
+      setSubmitError(dict.demo.errorMessage);
       setStatus("error");
     }
   };
@@ -75,19 +75,19 @@ export function DemoSection() {
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-4">
-              Try the AI yourself
+              {dict.demo.heading}
             </h2>
             <p className="text-lg text-text-secondary">
-              Fill out the form below and our AI voice assistant will call you within 60 seconds. Experience exactly what your customers would hear.
+              {dict.demo.subheading}
             </p>
           </div>
 
           {status === "success" ? (
             <div className="bg-success-light rounded-xl p-8 flex flex-col items-center gap-4 text-center border border-success/20">
               <CheckCircle className="w-12 h-12 text-success" />
-              <p className="text-xl font-semibold text-text-primary">Got it!</p>
+              <p className="text-xl font-semibold text-text-primary">{dict.demo.successTitle}</p>
               <p className="text-text-secondary leading-relaxed">
-                Our AI voice assistant will be calling you in about 60 seconds. Make sure your phone is nearby.
+                {dict.demo.successMessage}
               </p>
             </div>
           ) : (
@@ -95,11 +95,11 @@ export function DemoSection() {
               <div className="flex items-center gap-2 mb-2">
                 <Phone className="w-5 h-5 text-brand" />
                 <h3 className="text-lg font-semibold text-text-primary">
-                  Live AI Demo Call
+                  {dict.demo.formTitle}
                 </h3>
               </div>
               <p className="text-sm text-text-muted mb-5">
-                No obligation. No sales pitch. Just hear the AI in action.
+                {dict.demo.formSubtitle}
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -107,7 +107,7 @@ export function DemoSection() {
                   <input
                     type="text"
                     name="first_name"
-                    placeholder="First name"
+                    placeholder={dict.demo.firstName}
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     required
@@ -116,7 +116,7 @@ export function DemoSection() {
                   <input
                     type="text"
                     name="last_name"
-                    placeholder="Last name"
+                    placeholder={dict.demo.lastName}
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     required
@@ -127,7 +127,7 @@ export function DemoSection() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email address"
+                  placeholder={dict.demo.email}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -138,7 +138,7 @@ export function DemoSection() {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="(555) 123-4567"
+                    placeholder={dict.demo.phone}
                     value={phone}
                     onChange={(e) => {
                       setPhone(formatPhone(e.target.value));
@@ -155,7 +155,7 @@ export function DemoSection() {
                 <input
                   type="text"
                   name="business_name"
-                  placeholder="Business name"
+                  placeholder={dict.demo.businessName}
                   value={businessName}
                   onChange={(e) => setBusinessName(e.target.value)}
                   required
@@ -184,7 +184,7 @@ export function DemoSection() {
                     className="mt-1 accent-brand"
                   />
                   <span className="text-xs text-text-muted leading-relaxed">
-                    I agree to receive an automated demo call at the number provided from AI Peak Biz. Message and data rates may apply. I understand this consent is not a condition of purchase.
+                    {dict.demo.consent}
                   </span>
                 </label>
 
@@ -196,10 +196,10 @@ export function DemoSection() {
                   {status === "loading" ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
-                      Calling you...
+                      {dict.demo.submitting}
                     </>
                   ) : (
-                    "Get Your Live Demo Call"
+                    dict.demo.submit
                   )}
                 </button>
 

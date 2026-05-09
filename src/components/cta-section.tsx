@@ -1,21 +1,22 @@
+"use client";
+
 import { BOOKING_URL } from "@/data/industries";
+import { useDict, useLang } from "@/i18n/context";
 
-interface CTASectionProps {
-  heading?: string;
-}
+export function CTASection({ heading }: { heading?: string } = {}) {
+  const dict = useDict();
+  const lang = useLang();
+  const prefix = lang === "es" ? "/es" : "";
 
-export function CTASection({
-  heading = "Ready to stop losing revenue to missed calls?",
-}: CTASectionProps) {
   return (
     <section className="section-padding">
       <div className="container-custom">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-6">
-            {heading}
+            {heading || dict.cta.heading}
           </h2>
           <p className="text-lg text-text-secondary mb-8">
-            Let us walk you through exactly how the system works for your business. No pressure. No obligation. Just a conversation.
+            {dict.cta.subheading}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -24,13 +25,13 @@ export function CTASection({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book a Strategy Call
+              {dict.cta.bookCall}
             </a>
             <a
-              href="#demo"
+              href={`${prefix}/#demo`}
               className="btn-secondary text-base px-8 py-4"
             >
-              Try the AI Demo First
+              {dict.cta.tryDemo}
             </a>
           </div>
         </div>

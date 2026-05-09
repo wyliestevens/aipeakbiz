@@ -50,7 +50,19 @@
 - aipeakbiz-roofers (at /Users/wylie/aipeakbiz-roofers/) -- 71 industry-specific Google Ads landing pages at go.aipeakbiz.com
 - aipeakbiz-command-center (at /Users/wylie/aipeakbiz-command-center/)
 
+## i18n / Spanish Support (Added 2026-05-09)
+- Full Spanish translation at /es/ routes (e.g., aipeakbiz.com/es/, aipeakbiz.com/es/pricing)
+- English stays at root URLs (no /en/ prefix) via middleware rewrite
+- Translation dictionaries: src/i18n/dictionaries/en.ts and es.ts
+- Language context: src/i18n/context.tsx (useDict, useLang hooks)
+- Middleware: middleware.ts handles routing
+- All pages live under src/app/[lang]/ segment
+- Language switcher (globe icon) in navbar, desktop and mobile
+- Homepage fully translated; service/industry pages serve but use English text (translate incrementally)
+- Industry wheel (mind map) restored on homepage (2026-05-09)
+
 ## What's Next
+- Translate remaining service pages and industry pages to Spanish
 - Redesign the go.aipeakbiz.com landing pages (aipeakbiz-roofers repo) to match new brand
 - Service pages may need light-theme updates (still using old dark theme components)
 - GHL workflow setup: webhook trigger for voice-bot-demo, AI voice agent config

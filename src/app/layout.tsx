@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { AnalyticsScripts } from "@/components/analytics";
-import { SkipToMain } from "@/components/skip-to-main";
-import { ChatWidget } from "@/components/chat-widget";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -96,7 +91,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
         <meta name="google-site-verification" content="OEeYi3-tvnI3Z9PMuAclTB-aSxuPLTFAiB7tAR_ZCwA" />
@@ -116,12 +111,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <SkipToMain />
-        <Navbar />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <AnalyticsScripts />
-        <ChatWidget />
+        {children}
       </body>
     </html>
   );

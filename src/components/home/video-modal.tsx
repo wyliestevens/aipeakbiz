@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { X } from "lucide-react";
+import { useDict } from "@/i18n/context";
 
 interface VideoModalProps {
   type: "overview" | "demo";
@@ -9,6 +10,8 @@ interface VideoModalProps {
 }
 
 export function VideoModal({ type, onClose }: VideoModalProps) {
+  const dict = useDict();
+
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -26,8 +29,8 @@ export function VideoModal({ type, onClose }: VideoModalProps) {
     : "/videos/ai-demo.mp4";
 
   const title = type === "overview"
-    ? "How AI Peak Biz Works"
-    : "Real AI Call Demo";
+    ? dict.videoModal.overview
+    : dict.videoModal.demo;
 
   return (
     <div
@@ -43,7 +46,7 @@ export function VideoModal({ type, onClose }: VideoModalProps) {
           <button
             onClick={onClose}
             className="p-1 hover:bg-background-alt rounded-lg transition-colors"
-            aria-label="Close video"
+            aria-label={dict.videoModal.closeVideo}
           >
             <X className="w-5 h-5 text-text-muted" />
           </button>
@@ -55,7 +58,7 @@ export function VideoModal({ type, onClose }: VideoModalProps) {
             autoPlay
             className="w-full h-full"
           >
-            Your browser does not support video playback.
+            {dict.videoModal.noSupport}
           </video>
         </div>
       </div>

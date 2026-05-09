@@ -1,12 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { BOOKING_URL, PHONE, PHONE_TEL, EMAIL } from "@/data/industries";
-
-const solutionLinks = [
-  { name: "How It Works", href: "/#how-it-works" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "About", href: "/about" },
-];
+import { useDict, useLang } from "@/i18n/context";
 
 const recentWork = [
   { name: "Used Slot Shop", href: "https://usedslotshop.com" },
@@ -15,26 +12,36 @@ const recentWork = [
 ];
 
 export function Footer() {
+  const dict = useDict();
+  const lang = useLang();
+  const prefix = lang === "es" ? "/es" : "";
+
+  const solutionLinks = [
+    { name: dict.nav.howItWorks, href: `${prefix}/#how-it-works` },
+    { name: dict.nav.pricing, href: `${prefix}/pricing` },
+    { name: dict.nav.about, href: `${prefix}/about` },
+  ];
+
   return (
     <footer className="bg-[#1B2A4A] text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
+            <Link href={`${prefix}/`} className="flex items-center gap-2 mb-4">
               <Image src="/images/logo.png" alt="AI Peak Biz" width={44} height={44} />
               <span className="text-lg font-bold text-white">
                 AI Peak Biz
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Revenue recovery and customer communication for service businesses. Every call answered. Every lead captured. More appointments booked.
+              {dict.footer.tagline}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4">Navigation</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">{dict.footer.navigation}</h3>
             <ul className="space-y-2">
               {solutionLinks.map((l) => (
                 <li key={l.href}>
@@ -45,11 +52,11 @@ export function Footer() {
               ))}
               <li>
                 <a href={BOOKING_URL} className="text-sm text-slate-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  Book a Strategy Call
+                  {dict.footer.bookCall}
                 </a>
               </li>
             </ul>
-            <h3 className="text-sm font-semibold text-white mt-6 mb-4">Recent Work</h3>
+            <h3 className="text-sm font-semibold text-white mt-6 mb-4">{dict.footer.recentWork}</h3>
             <ul className="space-y-2">
               {recentWork.map((l) => (
                 <li key={l.href}>
@@ -69,7 +76,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4">Contact</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">{dict.footer.contact}</h3>
             <ul className="space-y-2">
               <li>
                 <a href={PHONE_TEL} className="text-sm text-slate-400 hover:text-white transition-colors">
@@ -87,16 +94,16 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4">Legal</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">{dict.footer.legal}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy-policy" className="text-sm text-slate-400 hover:text-white transition-colors">Privacy Policy</Link>
+                <Link href={`${prefix}/privacy-policy`} className="text-sm text-slate-400 hover:text-white transition-colors">{dict.footer.privacyPolicy}</Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-slate-400 hover:text-white transition-colors">Terms of Service</Link>
+                <Link href={`${prefix}/terms`} className="text-sm text-slate-400 hover:text-white transition-colors">{dict.footer.terms}</Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="text-sm text-slate-400 hover:text-white transition-colors">Disclaimer</Link>
+                <Link href={`${prefix}/disclaimer`} className="text-sm text-slate-400 hover:text-white transition-colors">{dict.footer.disclaimer}</Link>
               </li>
             </ul>
           </div>
@@ -104,7 +111,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-slate-700 mt-12 pt-8">
-          <p className="text-sm text-slate-500 text-center">&copy; 2026 AI Peak Biz. All rights reserved.</p>
+          <p className="text-sm text-slate-500 text-center">&copy; {dict.footer.copyright}</p>
         </div>
       </div>
     </footer>
