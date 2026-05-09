@@ -42,14 +42,14 @@ function MindMapDesktop() {
         }}
         animate={{
           boxShadow: [
-            "0 0 30px rgba(59, 130, 246, 0.3)",
-            "0 0 50px rgba(59, 130, 246, 0.5)",
-            "0 0 30px rgba(59, 130, 246, 0.3)",
+            "0 0 30px rgba(43, 91, 168, 0.2)",
+            "0 0 50px rgba(43, 91, 168, 0.35)",
+            "0 0 30px rgba(43, 91, 168, 0.2)",
           ],
         }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-full h-full rounded-full bg-[#0D3B3F] border-2 border-[#4DD9E0]/40 flex items-center justify-center shadow-lg">
+        <div className="w-full h-full rounded-full bg-white border-2 border-brand/30 flex items-center justify-center shadow-lg">
           <Image
             src="/images/logo.png"
             alt="AI Peak Biz"
@@ -77,7 +77,7 @@ function MindMapDesktop() {
               y1={centerY}
               x2={x}
               y2={y}
-              stroke={isHovered ? nodeColors[i] : "#3A3A3E"}
+              stroke={isHovered ? nodeColors[i] : "#E5E2DD"}
               strokeWidth={isHovered ? 2.5 : 1}
               className="transition-all duration-300"
             />
@@ -119,9 +119,9 @@ function MindMapDesktop() {
                     : `0 0 0px ${color}00`,
                 }}
                 transition={{ duration: 0.2 }}
-                className="mx-auto w-[68px] h-[68px] rounded-full flex items-center justify-center mb-2 border-2 shadow-md"
+                className="mx-auto w-[68px] h-[68px] rounded-full flex items-center justify-center mb-2 border-2 shadow-md bg-white"
                 style={{
-                  backgroundColor: `${color}15`,
+                  backgroundColor: `${color}10`,
                   borderColor: `${color}40`,
                 }}
               >
@@ -147,7 +147,7 @@ function MindMapDesktop() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 glassmorphism rounded-lg p-3 shadow-xl"
+                  className="absolute z-20 mt-2 left-1/2 -translate-x-1/2 w-48 bg-white rounded-lg p-3 shadow-xl border border-border"
                 >
                   <div className="flex flex-wrap gap-1">
                     {ind.subIndustries.map((sub) => (
@@ -184,11 +184,11 @@ function MindMapMobile() {
           <Link
             key={ind.slug}
             href={`/industries/${ind.slug}`}
-            className="glassmorphism rounded-xl p-4 hover:border-accent-blue/50 transition-all duration-200 group"
+            className="bg-white rounded-xl p-4 border border-border shadow-sm hover:shadow-md transition-all duration-200 group"
             aria-label={`${ind.name} - click to learn more`}
           >
             <Icon className="w-7 h-7 mb-2" style={{ color }} />
-            <h3 className="text-sm font-semibold text-text-primary mb-2 group-hover:text-accent-blue transition-colors">
+            <h3 className="text-sm font-semibold text-text-primary mb-2 group-hover:text-brand transition-colors">
               {ind.name}
             </h3>
             <div className="flex flex-wrap gap-1">
@@ -205,7 +205,7 @@ function MindMapMobile() {
                 </span>
               ))}
               {ind.subIndustries.length > 4 && (
-                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-white/10 text-text-muted">
+                <span className="inline-block px-1.5 py-0.5 text-[9px] rounded-full bg-background-alt text-text-muted">
                   +{ind.subIndustries.length - 4}
                 </span>
               )}
