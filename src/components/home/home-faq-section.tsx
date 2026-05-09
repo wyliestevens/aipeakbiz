@@ -6,7 +6,7 @@ import { useDict } from "@/i18n/context";
 
 export function HomeFAQSection() {
   const dict = useDict();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndices, setOpenIndices] = useState<Set<number>>(new Set([0, 1]));
 
   return (
     <section className="section-padding bg-background-alt">
@@ -24,20 +24,24 @@ export function HomeFAQSection() {
               className="bg-white rounded-xl border border-border overflow-hidden"
             >
               <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                onClick={() => {
+                  const next = new Set(openIndices);
+                  if (next.has(i)) next.delete(i); else next.add(i);
+                  setOpenIndices(next);
+                }}
                 className="w-full flex items-center justify-between p-5 text-left"
-                aria-expanded={openIndex === i}
+                aria-expanded={openIndices.has(i)}
               >
                 <span className="text-base font-medium text-text-primary pr-4">
                   {faq.question}
                 </span>
                 <ChevronDown
                   className={`w-5 h-5 text-text-muted shrink-0 transition-transform ${
-                    openIndex === i ? "rotate-180" : ""
+                    openIndices.has(i) ? "rotate-180" : ""
                   }`}
                 />
               </button>
-              {openIndex === i && (
+              {openIndices.has(i) && (
                 <div className="px-5 pb-5 pt-0">
                   <p className="text-sm text-text-secondary leading-relaxed">
                     {faq.answer}

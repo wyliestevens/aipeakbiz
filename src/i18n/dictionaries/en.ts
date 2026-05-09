@@ -18,29 +18,43 @@ const en = {
     eyebrow: "Revenue Recovery for Service Businesses",
     headline: "Every missed call is a job you already paid for and lost.",
     subheadline:
-      "AI Peak Biz helps service businesses respond to every lead instantly, answer every call 24/7, and book more appointments automatically. No more lost revenue from slow follow-up.",
-    chooseExperience: "Choose Your Experience",
-    watchOverview: "Watch Overview",
-    hearAICall: "Hear Real AI Call",
-    tryDemo: "Try the AI Demo",
+      "AI Peak Biz answers every call, responds to every lead in seconds, and books appointments around the clock. You run the business. We make sure no customer slips through.",
+    formBelow: "No sales pitch. No obligation. Hear the AI in action.",
+    preferToTalk: "Prefer to talk first?",
     bookCall: "Book a Strategy Call",
+  },
+
+  // Demo form (used in hero now)
+  demo: {
+    firstName: "First name",
+    phone: "(555) 123-4567",
+    consent:
+      "I agree to receive an automated demo call at the number provided from AI Peak Biz. Message and data rates apply. I understand this consent is not a condition of purchase.",
+    submit: "Hear the AI Call You in 60 Seconds",
+    submitting: "Calling you...",
+    successTitle: "Got it!",
+    successMessage:
+      "Our AI voice assistant will be calling you in about 60 seconds. Make sure your phone is nearby.",
+    errorMessage:
+      "Something went wrong. Please try again or email us at wylie@aipeakbiz.com.",
+    phoneError: "Please enter a valid 10-digit US phone number.",
   },
 
   // Missed Leads
   missedLeads: {
     heading: "The real cost of missed leads",
     subheading:
-      "You are probably losing more revenue to slow follow-up than you realize. Here is what we see with every service business we work with.",
+      "You are losing more revenue to slow follow-up than you realize. Here is what we see with every service business we work with.",
     points: [
       {
         title: "Leads cost $50 to $300 each",
         description:
-          "Between Google Ads, LSA, Angi, and referrals, every lead has a real cost. When nobody picks up, that money is gone.",
+          "Between Google Ads, LSA, Angi, and referrals, every lead has a real cost. When nobody picks up, the money is gone.",
       },
       {
         title: "The first responder wins 78% of the time",
         description:
-          "The business that calls back first almost always gets the job. Not the cheapest. Not the most experienced. The fastest.",
+          "The business that returns the call first almost always gets the job. Not the cheapest. Not the most experienced. The fastest.",
       },
       {
         title: "Your crew is working, not answering phones",
@@ -50,7 +64,7 @@ const en = {
       {
         title: "Revenue leaks quietly, every single day",
         description:
-          "Most business owners do not know how much they are losing. It does not show up on a report. It just never becomes revenue in the first place.",
+          "Most business owners do not know how much they are losing. It does not show up on a report. It never becomes revenue in the first place.",
       },
     ],
   },
@@ -78,41 +92,41 @@ const en = {
       {
         title: "You focus on the work",
         description:
-          "You show up to the job. We handle every lead, follow-up, and reminder before that.",
+          "You show up to the job. We handle every lead, follow-up, and reminder before it.",
       },
     ],
   },
 
-  // Revenue Systems
+  // Revenue Leak Framework (replaces Revenue Systems)
   revenueSystems: {
-    eyebrow: "The Revenue Recovery System",
-    heading: "Recover more revenue from every lead",
+    eyebrow: "The Revenue Leak Framework",
+    heading: "Four places revenue leaks out of your business",
     subheading:
-      "AI Peak Biz helps service businesses answer every lead, automate follow-up, reactivate old customers, improve online reputation, and turn more conversations into booked appointments automatically.",
+      "Most service businesses lose money in the same four spots. Plug all four and you stop the leak.",
     systems: [
       {
-        title: "AI Voice Assistant",
+        title: "Leak 1: The Unanswered Call",
         description:
-          "Answer every call instantly, qualify leads automatically, respond after hours, and book more appointments without missed opportunities.",
+          "Your phone rings while your crew is on a job. The lead hangs up and calls the next name on Google. Our AI Voice Assistant answers every call, day or night, qualifies the lead, and books the appointment.",
       },
       {
-        title: "Google Review Automation",
+        title: "Leak 2: The Slow Follow-Up",
         description:
-          "Automatically request more 5-star Google reviews after completed jobs. Improve trust, strengthen local rankings, and help future customers choose your business faster.",
+          "A web form gets filled out at 9pm. By the time you respond the next morning, the lead has hired someone else. Our AI Chatbot responds in seconds, holds a real conversation, captures the lead, and qualifies them while their interest is still hot.",
       },
       {
-        title: "Database Reactivation",
+        title: "Leak 3: The Forgotten Reviews",
         description:
-          "Most businesses already have untapped revenue sitting in old leads and past customers. AI Peak Biz reactivates dormant contacts with automated follow-up campaigns designed to generate new appointments.",
+          "Happy customers walk away without leaving a review. Future buyers pick the competitor with more stars. Our Google Review Automation requests reviews from every completed job and helps your business become the obvious choice on the local map.",
       },
       {
-        title: "AI Website Chatbot",
+        title: "Leak 4: The Dormant Database",
         description:
-          "Turn website visitors into real conversations instantly. Your AI chatbot answers questions, captures leads, qualifies prospects, and helps book appointments even after hours.",
+          "You already have hundreds of old leads and past customers sitting in your CRM. Most are still in the market. Our Database Reactivation runs automated campaigns that wake up dormant contacts and turn them into booked appointments.",
       },
     ],
     footer:
-      "These four systems work together to make sure no lead, no customer, and no revenue opportunity falls through the cracks.",
+      "Plug all four leaks and you stop losing money to broken communication.",
   },
 
   // Founder
@@ -123,9 +137,9 @@ const en = {
     headline:
       "I spent 20 years watching businesses lose customers to a ringing phone.",
     paragraphs: [
-      "My name is Wylie. I spent two decades in healthcare, working in clinics, at front desks, in the day-to-day operations. I watched the same thing happen over and over: the phone rings, the staff is busy, the call goes to voicemail. That patient books with someone else. That revenue disappears.",
+      "My name is Wylie. I spent two decades in healthcare, working in clinics, at front desks, in the day-to-day operations. I watched the same thing happen over and over: the phone rings, the staff is busy, the call goes to voicemail. The patient books with someone else. The revenue disappears.",
       "When I started looking beyond healthcare, I saw the same problem everywhere. Roofers on a job site. HVAC techs in an attic. Plumbers elbow-deep in a repair. The phone rings. Nobody answers. The lead calls the next name on Google.",
-      "AI Peak Biz exists because I built the system I wished every business I worked with had. It answers every call, responds to every lead, books the appointment, and follows up. You run your business. We make sure every customer who reaches out actually gets through.",
+      "AI Peak Biz exists because I built the system I wished every business I worked with had. It answers every call, responds to every lead, books the appointment, and follows up. You run your business. We make sure every customer who reaches out gets through.",
       "This is not a software company asking you to figure it out yourself. We build your system, configure it for your business, and manage it for you. If something needs adjusting, we handle it. You focus on the work you are good at.",
     ],
     readMore: "Read the full story",
@@ -139,41 +153,41 @@ const en = {
     googleReview: "Google Review",
   },
 
-  // Why Section
+  // Why Section (Trust Pillars)
   why: {
     heading: "Why businesses trust AI Peak Biz",
     subheading:
-      "We are not a tech company trying to sell you software. We are a revenue recovery partner that happens to use AI.",
+      "We are not a tech company selling software. We are a revenue recovery partner that happens to use AI.",
     reasons: [
       {
-        title: "Built with integrity",
+        title: "Built by an operator, not a coder",
         description:
-          "We do not oversell or make promises we cannot keep. If we are not a good fit for your business, we will tell you.",
+          "Twenty years inside healthcare clinics taught me how real businesses lose customers. Every part of this system exists because I watched it happen.",
       },
       {
-        title: "Ongoing support, not a handoff",
+        title: "Solo operator. Direct access.",
         description:
-          "This is a managed service. We do not build it and disappear. We monitor, optimize, and support your system every month.",
+          "When you sign on, you work directly with me. No account managers. No ticket queues. My personal phone number is on this page.",
       },
       {
         title: "Done for you, not DIY",
         description:
-          "You will never log into a complicated dashboard or configure anything yourself. We handle everything.",
+          "You will never log into a dashboard or configure a workflow. We build the system, manage the system, and adjust the system. You run your business.",
       },
       {
-        title: "Practical, not theoretical",
+        title: "Four new clients per month maximum",
         description:
-          "We built this from real experience in real businesses. Every feature exists because an actual business needed it.",
+          "Every system gets built by hand and tuned to the business. I cap onboarding at four new clients a month so each one gets real attention.",
       },
       {
-        title: "We understand service businesses",
+        title: "Real reviews from real owners",
         description:
-          "Contractors, clinics, trades. We know your day does not happen behind a desk. Your system needs to work without you babysitting it.",
+          "Every testimonial on this page is a verified Google review. Names, businesses, locations. No anonymous quotes. No fake five stars.",
       },
       {
-        title: "Continuous optimization",
+        title: "Honest fit assessment",
         description:
-          "Every deployment includes hands-on optimization and refinement to ensure your AI system is functioning correctly for your workflow.",
+          "If your business does not have enough lead flow to justify the system, I will tell you on the strategy call. I would rather lose the sale than sell something that will not pay you back.",
       },
     ],
   },
@@ -182,7 +196,7 @@ const en = {
   deployment: {
     heading: "Flexible deployment options",
     subheading:
-      "Every deployment includes full system build, AI configuration, ongoing management, and support.",
+      "Three deployment levels. All three include full system build, AI configuration, ongoing management, and direct support.",
     payInFull: "Pay in Full",
     installmentPlan: "Installment Plan",
     deploymentLabel: "deployment",
@@ -196,7 +210,7 @@ const en = {
     viewPricing: "View full pricing details",
     tiers: [
       {
-        name: "AI Front Desk Deployment",
+        name: "Essentials",
         description:
           "Core revenue recovery for businesses ready to stop missing calls.",
         highlights: [
@@ -207,11 +221,11 @@ const en = {
         ],
       },
       {
-        name: "Revenue Recovery Deployment",
+        name: "Growth",
         description:
           "The complete system for businesses serious about capturing every dollar of revenue.",
         highlights: [
-          "Everything in AI Front Desk",
+          "Everything in Essentials",
           "AI Chatbot",
           "AI Outbound Appointment Setter",
           "Reputation Management",
@@ -219,11 +233,11 @@ const en = {
         ],
       },
       {
-        name: "AI Revenue Deployment",
+        name: "Peak",
         description:
           "A strategic growth partner with full business intelligence and ongoing optimization.",
         highlights: [
-          "Everything in Revenue Recovery",
+          "Everything in Growth",
           "Dormant Customer Reactivation",
           "Monthly Performance Reports",
           "Quarterly Strategy Reviews",
@@ -237,7 +251,7 @@ const en = {
   industries: {
     heading: "Built for real service businesses",
     subheading:
-      "The missed-call and slow-follow-up problem isn't unique to one industry. AI Peak Biz works across dozens of industries to recover lost revenue and book more appointments.",
+      "The missed-call and slow-follow-up problem is not unique to one industry. AI Peak Biz works across dozens of industries to recover lost revenue and book more appointments.",
   },
 
   // FAQ
@@ -245,69 +259,51 @@ const en = {
     heading: "Common questions",
     items: [
       {
-        question: "Will my customers hate talking to an AI?",
+        question: "Will my customers know they are talking to an AI?",
         answer:
-          "Most customers do not even realize they are talking to an AI. The voice sounds natural, answers their questions, and books them quickly. What customers actually hate is getting sent to voicemail or waiting hours for a callback. Fast, helpful responses win every time.",
+          "We build the AI to sound natural and conversational. Most callers do not notice. The ones who do almost always continue the conversation because the AI answers their questions accurately, books their appointment, and respects their time. We test every system with real calls before launch and tune the voice, pacing, and responses until it feels right.",
       },
       {
-        question: "How much does this cost?",
+        question: "What happens if the AI makes a mistake on an important call?",
         answer:
-          "Deployments start at $4,997 with monthly management starting at $997/mo. We offer flexible payment options so you can pay the deployment cost in full or spread it over monthly installments. The system typically pays for itself within the first few weeks from recovered revenue alone.",
+          "Every call is recorded and transcribed. You get notifications on important calls and full call logs you review anytime. If the AI ever handles something wrong, we adjust the prompt and retrain the same day. In practice, the AI is more consistent than a tired human at 5pm on a Friday. It does not have bad days.",
+      },
+      {
+        question: "How long does setup take?",
+        answer:
+          "Most systems are live within seven to ten business days. We handle the buildout, the AI configuration, the phone number provisioning, and the integrations. You answer a short onboarding questionnaire and review the system before launch.",
+      },
+      {
+        question: "What if my business is too small or too new for this?",
+        answer:
+          "If you do not have enough lead flow to recover the cost of the system, I will tell you on the strategy call and recommend something simpler. The system pays for itself when you have leads coming in and a real cost of missing them. If you are not there yet, this is not the right tool.",
       },
       {
         question: "Does this replace my staff?",
         answer:
-          "No. This replaces the calls your staff cannot get to. It covers after-hours, weekends, hold times, and overflow. Your team stays focused on the customers in front of them. The AI handles the ones trying to reach you.",
+          "No. The AI handles the calls and leads your staff is too busy to answer. Most clients keep their existing team and use the AI to capture overflow, after-hours calls, and weekend leads. Your people focus on the work humans do best. The AI handles the rest.",
       },
       {
-        question: "How difficult is the setup?",
+        question: "What is included in the monthly management fee?",
         answer:
-          "For you, there is no setup. This is a done-for-you service. We handle everything: AI configuration, voice training, calendar integration, CRM setup, and testing. Most businesses are live within 5 to 10 business days.",
+          "System monitoring, prompt updates, integration maintenance, performance reviews, and direct support from me. If something needs adjusting, I adjust it. If a workflow needs tuning, I tune it. The monthly fee is what makes this a managed service instead of a hand-off.",
       },
       {
-        question: "What industries does this work for?",
+        question: "Are there any extra costs?",
         answer:
-          "Any service business that books appointments or takes calls from customers. We work with roofers, HVAC companies, plumbers, electricians, clinics, dental offices, law firms, salons, auto shops, and dozens of other industries.",
-      },
-      {
-        question: "What support is included?",
-        answer:
-          "Every deployment includes hands-on optimization and refinement to ensure your AI system is functioning correctly for your workflow. Monthly management covers ongoing monitoring, adjustments, and support. If something needs to change, we handle it.",
+          "AI Voice and Outbound Calls carry per-minute usage fees from the underlying voice provider. We pass those through at cost with no markup. Typical usage runs $50 to $200 a month depending on call volume. Full numbers are covered on the strategy call.",
       },
     ],
   },
 
-  // Demo Section
-  demo: {
-    heading: "Try the AI yourself",
-    subheading:
-      "Fill out the form below and our AI voice assistant will call you within 60 seconds. Experience exactly what your customers would hear.",
-    formTitle: "Live AI Demo Call",
-    formSubtitle: "No obligation. No sales pitch. Just hear the AI in action.",
-    firstName: "First name",
-    lastName: "Last name",
-    email: "Email address",
-    phone: "(555) 123-4567",
-    businessName: "Business name",
-    consent:
-      "I agree to receive an automated demo call at the number provided from AI Peak Biz. Message and data rates may apply. I understand this consent is not a condition of purchase.",
-    submit: "Get Your Live Demo Call",
-    submitting: "Calling you...",
-    successTitle: "Got it!",
-    successMessage:
-      "Our AI voice assistant will be calling you in about 60 seconds. Make sure your phone is nearby.",
-    errorMessage:
-      "Something went wrong. Please try again or email us at wylie@aipeakbiz.com.",
-    phoneError: "Please enter a valid 10-digit US phone number.",
-  },
-
   // CTA Section
   cta: {
-    heading: "Ready to stop losing revenue to missed calls?",
+    heading: "I take four new clients a month. Here is how to claim a slot.",
     subheading:
-      "Let us walk you through exactly how the system works for your business. No pressure. No obligation. Just a conversation.",
+      "I personally build and manage every system. When this month is full, the next opening is the following month. The strategy call is a real conversation about whether your business is a fit. No pressure. No pitch.",
     bookCall: "Book a Strategy Call",
-    tryDemo: "Try the AI Demo First",
+    tryDemo: "Hear the AI Call You First",
+    callDirect: "Or call me directly at 928-628-6080.",
   },
 
   // Footer
@@ -315,7 +311,8 @@ const en = {
     tagline:
       "Revenue recovery and customer communication for service businesses. Every call answered. Every lead captured. More appointments booked.",
     navigation: "Navigation",
-    recentWork: "Recent Work",
+    recentWork: "Other Projects We Have Built",
+    recentWorkSubhead: "We also build websites for non-service-business clients.",
     contact: "Contact",
     legal: "Legal",
     privacyPolicy: "Privacy Policy",

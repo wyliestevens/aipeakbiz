@@ -18,23 +18,36 @@ const es: Dictionary = {
     headline:
       "Cada llamada perdida es un trabajo por el que ya pagaste y perdiste.",
     subheadline:
-      "AI Peak Biz ayuda a negocios de servicios a responder cada cliente potencial al instante, contestar cada llamada las 24 horas, y agendar mas citas automaticamente. No mas ingresos perdidos por seguimiento lento.",
-    chooseExperience: "Elige Tu Experiencia",
-    watchOverview: "Ver Resumen",
-    hearAICall: "Escuchar Llamada de IA",
-    tryDemo: "Probar la Demo de IA",
+      "AI Peak Biz contesta cada llamada, responde a cada cliente potencial en segundos, y agenda citas las 24 horas. Tu manejas el negocio. Nosotros nos aseguramos de que ningun cliente se pierda.",
+    formBelow: "Sin discurso de ventas. Sin compromiso. Escucha la IA en accion.",
+    preferToTalk: "Prefieres hablar primero?",
     bookCall: "Agendar una Llamada",
+  },
+
+  demo: {
+    firstName: "Nombre",
+    phone: "(555) 123-4567",
+    consent:
+      "Acepto recibir una llamada demo automatizada al numero proporcionado de AI Peak Biz. Aplican tarifas de mensajes y datos. Entiendo que este consentimiento no es una condicion de compra.",
+    submit: "Escucha la IA Llamarte en 60 Segundos",
+    submitting: "Llamandote...",
+    successTitle: "Listo!",
+    successMessage:
+      "Nuestro asistente de voz con IA te llamara en aproximadamente 60 segundos. Asegurate de tener tu telefono cerca.",
+    errorMessage:
+      "Algo salio mal. Por favor intenta de nuevo o envianos un correo a wylie@aipeakbiz.com.",
+    phoneError: "Por favor ingresa un numero de telefono valido de 10 digitos.",
   },
 
   missedLeads: {
     heading: "El costo real de los clientes perdidos",
     subheading:
-      "Probablemente estas perdiendo mas ingresos por seguimiento lento de lo que crees. Esto es lo que vemos con cada negocio de servicios con el que trabajamos.",
+      "Estas perdiendo mas ingresos por seguimiento lento de lo que crees. Esto es lo que vemos con cada negocio de servicios con el que trabajamos.",
     points: [
       {
         title: "Cada cliente potencial cuesta entre $50 y $300",
         description:
-          "Entre Google Ads, LSA, Angi y referencias, cada cliente potencial tiene un costo real. Cuando nadie contesta, ese dinero se pierde.",
+          "Entre Google Ads, LSA, Angi y referencias, cada cliente potencial tiene un costo real. Cuando nadie contesta, el dinero se pierde.",
       },
       {
         title: "El primero en responder gana el 78% de las veces",
@@ -49,7 +62,7 @@ const es: Dictionary = {
       {
         title: "Los ingresos se escapan silenciosamente, todos los dias",
         description:
-          "La mayoria de los duenos de negocios no saben cuanto estan perdiendo. No aparece en un reporte. Simplemente nunca se convierte en ingresos.",
+          "La mayoria de los duenos de negocios no saben cuanto estan perdiendo. No aparece en un reporte. Nunca se convierte en ingresos.",
       },
     ],
   },
@@ -82,34 +95,34 @@ const es: Dictionary = {
   },
 
   revenueSystems: {
-    eyebrow: "El Sistema de Recuperacion de Ingresos",
-    heading: "Recupera mas ingresos de cada cliente potencial",
+    eyebrow: "El Marco de Fugas de Ingresos",
+    heading: "Cuatro lugares donde los ingresos se escapan de tu negocio",
     subheading:
-      "AI Peak Biz ayuda a negocios de servicios a responder cada cliente potencial, automatizar el seguimiento, reactivar clientes anteriores, mejorar la reputacion en linea y convertir mas conversaciones en citas agendadas automaticamente.",
+      "La mayoria de los negocios de servicios pierden dinero en los mismos cuatro puntos. Tapa los cuatro y detienes la fuga.",
     systems: [
       {
-        title: "Asistente de Voz con IA",
+        title: "Fuga 1: La Llamada Sin Contestar",
         description:
-          "Contesta cada llamada al instante, califica clientes potenciales automaticamente, responde fuera de horario y agenda mas citas sin oportunidades perdidas.",
+          "Tu telefono suena mientras tu equipo esta en un trabajo. El cliente potencial cuelga y llama al siguiente nombre en Google. Nuestro Asistente de Voz con IA contesta cada llamada, de dia o de noche, califica al cliente potencial y agenda la cita.",
       },
       {
-        title: "Automatizacion de Resenas en Google",
+        title: "Fuga 2: El Seguimiento Lento",
         description:
-          "Solicita automaticamente mas resenas de 5 estrellas en Google despues de trabajos completados. Mejora la confianza, fortalece tu posicion local y ayuda a futuros clientes a elegir tu negocio mas rapido.",
+          "Un formulario web se llena a las 9pm. Para cuando respondes a la manana siguiente, el cliente potencial ya contrato a alguien mas. Nuestro Chatbot de IA responde en segundos, mantiene una conversacion real, captura al cliente potencial y lo califica mientras su interes sigue fresco.",
       },
       {
-        title: "Reactivacion de Base de Datos",
+        title: "Fuga 3: Las Resenas Olvidadas",
         description:
-          "La mayoria de los negocios ya tienen ingresos sin explotar en clientes potenciales antiguos y clientes anteriores. AI Peak Biz reactiva contactos inactivos con campanas de seguimiento automatizadas disenadas para generar nuevas citas.",
+          "Los clientes satisfechos se van sin dejar una resena. Los futuros compradores eligen al competidor con mas estrellas. Nuestra Automatizacion de Resenas en Google solicita resenas de cada trabajo completado y ayuda a tu negocio a ser la opcion obvia en el mapa local.",
       },
       {
-        title: "Chatbot de IA para Sitio Web",
+        title: "Fuga 4: La Base de Datos Inactiva",
         description:
-          "Convierte visitantes del sitio web en conversaciones reales al instante. Tu chatbot de IA responde preguntas, captura clientes potenciales, califica prospectos y ayuda a agendar citas incluso fuera de horario.",
+          "Ya tienes cientos de clientes potenciales antiguos y clientes anteriores en tu CRM. La mayoria siguen en el mercado. Nuestra Reactivacion de Base de Datos ejecuta campanas automatizadas que despiertan contactos inactivos y los convierten en citas agendadas.",
       },
     ],
     footer:
-      "Estos cuatro sistemas trabajan juntos para asegurar que ningun cliente potencial, ningun cliente y ninguna oportunidad de ingresos se pierda.",
+      "Tapa las cuatro fugas y dejas de perder dinero por comunicacion rota.",
   },
 
   founder: {
@@ -119,9 +132,9 @@ const es: Dictionary = {
     headline:
       "Pase 20 anos viendo negocios perder clientes por un telefono que suena.",
     paragraphs: [
-      "Mi nombre es Wylie. Pase dos decadas en el sector salud, trabajando en clinicas, en recepciones, en las operaciones del dia a dia. Vi lo mismo pasar una y otra vez: el telefono suena, el personal esta ocupado, la llamada va al buzon de voz. Ese paciente agenda con alguien mas. Esos ingresos desaparecen.",
+      "Mi nombre es Wylie. Pase dos decadas en el sector salud, trabajando en clinicas, en recepciones, en las operaciones del dia a dia. Vi lo mismo pasar una y otra vez: el telefono suena, el personal esta ocupado, la llamada va al buzon de voz. El paciente agenda con alguien mas. Los ingresos desaparecen.",
       "Cuando empece a mirar mas alla del sector salud, vi el mismo problema en todas partes. Techadores en una obra. Tecnicos de aire acondicionado en un atico. Plomeros con las manos en una reparacion. El telefono suena. Nadie contesta. El cliente potencial llama al siguiente nombre en Google.",
-      "AI Peak Biz existe porque construi el sistema que deseaba que cada negocio con el que trabaje tuviera. Contesta cada llamada, responde a cada cliente potencial, agenda la cita y hace el seguimiento. Tu manejas tu negocio. Nosotros nos aseguramos de que cada cliente que te contacta realmente logre comunicarse.",
+      "AI Peak Biz existe porque construi el sistema que deseaba que cada negocio con el que trabaje tuviera. Contesta cada llamada, responde a cada cliente potencial, agenda la cita y hace el seguimiento. Tu manejas tu negocio. Nosotros nos aseguramos de que cada cliente que te contacta logre comunicarse.",
       "Esta no es una empresa de software que te pide que lo resuelvas tu mismo. Nosotros construimos tu sistema, lo configuramos para tu negocio y lo manejamos por ti. Si algo necesita ajuste, nosotros lo manejamos. Tu te enfocas en el trabajo en el que eres bueno.",
     ],
     readMore: "Lee la historia completa",
@@ -137,37 +150,37 @@ const es: Dictionary = {
   why: {
     heading: "Por que los negocios confian en AI Peak Biz",
     subheading:
-      "No somos una empresa de tecnologia tratando de venderte software. Somos un socio de recuperacion de ingresos que utiliza IA.",
+      "No somos una empresa de tecnologia vendiendo software. Somos un socio de recuperacion de ingresos que utiliza IA.",
     reasons: [
       {
-        title: "Construido con integridad",
+        title: "Construido por un operador, no un programador",
         description:
-          "No vendemos de mas ni hacemos promesas que no podemos cumplir. Si no somos una buena opcion para tu negocio, te lo diremos.",
+          "Veinte anos dentro de clinicas de salud me ensenaron como los negocios reales pierden clientes. Cada parte de este sistema existe porque lo vi suceder.",
       },
       {
-        title: "Soporte continuo, no una entrega y adios",
+        title: "Operador individual. Acceso directo.",
         description:
-          "Este es un servicio administrado. No lo construimos y desaparecemos. Monitoreamos, optimizamos y apoyamos tu sistema cada mes.",
+          "Cuando te registras, trabajas directamente conmigo. Sin gerentes de cuenta. Sin filas de tickets. Mi numero de telefono personal esta en esta pagina.",
       },
       {
         title: "Hecho para ti, no hazlo tu mismo",
         description:
-          "Nunca tendras que entrar a un panel complicado ni configurar nada tu mismo. Nosotros manejamos todo.",
+          "Nunca tendras que entrar a un panel o configurar un flujo de trabajo. Nosotros construimos el sistema, lo manejamos y lo ajustamos. Tu manejas tu negocio.",
       },
       {
-        title: "Practico, no teorico",
+        title: "Maximo cuatro clientes nuevos por mes",
         description:
-          "Construimos esto desde experiencia real en negocios reales. Cada funcion existe porque un negocio real la necesitaba.",
+          "Cada sistema se construye a mano y se ajusta al negocio. Limito la incorporacion a cuatro clientes nuevos por mes para que cada uno reciba atencion real.",
       },
       {
-        title: "Entendemos los negocios de servicios",
+        title: "Resenas reales de duenos reales",
         description:
-          "Contratistas, clinicas, oficios. Sabemos que tu dia no sucede detras de un escritorio. Tu sistema necesita funcionar sin que lo estes vigilando.",
+          "Cada testimonio en esta pagina es una resena verificada de Google. Nombres, negocios, ubicaciones. Sin citas anonimas. Sin cinco estrellas falsas.",
       },
       {
-        title: "Optimizacion continua",
+        title: "Evaluacion honesta de compatibilidad",
         description:
-          "Cada implementacion incluye optimizacion y refinamiento practico para asegurar que tu sistema de IA funcione correctamente para tu flujo de trabajo.",
+          "Si tu negocio no tiene suficiente flujo de clientes potenciales para justificar el sistema, te lo dire en la llamada estrategica. Prefiero perder la venta que vender algo que no te va a dar retorno.",
       },
     ],
   },
@@ -175,7 +188,7 @@ const es: Dictionary = {
   deployment: {
     heading: "Opciones flexibles de implementacion",
     subheading:
-      "Cada implementacion incluye la construccion completa del sistema, configuracion de IA, gestion continua y soporte.",
+      "Tres niveles de implementacion. Los tres incluyen construccion completa del sistema, configuracion de IA, gestion continua y soporte directo.",
     payInFull: "Pago Completo",
     installmentPlan: "Plan de Pagos",
     deploymentLabel: "implementacion",
@@ -189,7 +202,7 @@ const es: Dictionary = {
     viewPricing: "Ver todos los detalles de precios",
     tiers: [
       {
-        name: "Implementacion AI Front Desk",
+        name: "Esenciales",
         description:
           "Recuperacion de ingresos esencial para negocios listos para dejar de perder llamadas.",
         highlights: [
@@ -200,11 +213,11 @@ const es: Dictionary = {
         ],
       },
       {
-        name: "Implementacion de Recuperacion de Ingresos",
+        name: "Crecimiento",
         description:
           "El sistema completo para negocios serios en capturar cada dolar de ingresos.",
         highlights: [
-          "Todo en AI Front Desk",
+          "Todo en Esenciales",
           "Chatbot de IA",
           "Agendador de Citas Saliente con IA",
           "Gestion de Reputacion",
@@ -212,11 +225,11 @@ const es: Dictionary = {
         ],
       },
       {
-        name: "Implementacion de Ingresos con IA",
+        name: "Peak",
         description:
           "Un socio estrategico de crecimiento con inteligencia de negocio completa y optimizacion continua.",
         highlights: [
-          "Todo en Recuperacion de Ingresos",
+          "Todo en Crecimiento",
           "Reactivacion de Clientes Inactivos",
           "Reportes Mensuales de Rendimiento",
           "Revisiones Estrategicas Trimestrales",
@@ -236,75 +249,58 @@ const es: Dictionary = {
     heading: "Preguntas frecuentes",
     items: [
       {
-        question: "Mis clientes odiaran hablar con una IA?",
+        question: "Mis clientes sabran que estan hablando con una IA?",
         answer:
-          "La mayoria de los clientes ni siquiera se dan cuenta de que estan hablando con una IA. La voz suena natural, responde sus preguntas y los agenda rapidamente. Lo que los clientes realmente odian es ir al buzon de voz o esperar horas por una devolucion de llamada. Las respuestas rapidas y utiles ganan siempre.",
+          "Construimos la IA para sonar natural y conversacional. La mayoria de las personas que llaman no lo notan. Los que si, casi siempre continuan la conversacion porque la IA responde sus preguntas con precision, agenda su cita y respeta su tiempo. Probamos cada sistema con llamadas reales antes del lanzamiento y ajustamos la voz, el ritmo y las respuestas hasta que se sienta bien.",
       },
       {
-        question: "Cuanto cuesta esto?",
+        question: "Que pasa si la IA comete un error en una llamada importante?",
         answer:
-          "Las implementaciones comienzan en $4,997 con gestion mensual desde $997/mes. Ofrecemos opciones flexibles de pago para que puedas pagar el costo de implementacion completo o distribuirlo en pagos mensuales. El sistema tipicamente se paga solo en las primeras semanas con los ingresos recuperados.",
+          "Cada llamada se graba y se transcribe. Recibes notificaciones de llamadas importantes y registros completos de llamadas que revisas en cualquier momento. Si la IA maneja algo mal, ajustamos el prompt y reentrenamos el mismo dia. En la practica, la IA es mas consistente que un humano cansado a las 5pm un viernes. No tiene dias malos.",
+      },
+      {
+        question: "Cuanto tiempo toma la configuracion?",
+        answer:
+          "La mayoria de los sistemas estan activos en siete a diez dias habiles. Nosotros manejamos la construccion, la configuracion de IA, la asignacion del numero de telefono y las integraciones. Tu respondes un breve cuestionario de incorporacion y revisas el sistema antes del lanzamiento.",
+      },
+      {
+        question: "Que pasa si mi negocio es muy pequeno o muy nuevo para esto?",
+        answer:
+          "Si no tienes suficiente flujo de clientes potenciales para recuperar el costo del sistema, te lo dire en la llamada estrategica y recomendare algo mas simple. El sistema se paga solo cuando tienes clientes potenciales llegando y un costo real de perderlos. Si aun no estas ahi, esta no es la herramienta correcta.",
       },
       {
         question: "Esto reemplaza a mi personal?",
         answer:
-          "No. Esto reemplaza las llamadas que tu personal no puede atender. Cubre fuera de horario, fines de semana, tiempos de espera y desbordamiento. Tu equipo se enfoca en los clientes frente a ellos. La IA maneja a los que intentan comunicarse contigo.",
+          "No. La IA maneja las llamadas y clientes potenciales que tu personal esta demasiado ocupado para atender. La mayoria de los clientes mantienen su equipo existente y usan la IA para capturar el desbordamiento, llamadas fuera de horario y clientes potenciales de fin de semana. Tu gente se enfoca en el trabajo que los humanos hacen mejor. La IA maneja el resto.",
       },
       {
-        question: "Que tan dificil es la configuracion?",
+        question: "Que incluye la tarifa mensual de gestion?",
         answer:
-          "Para ti, no hay configuracion. Este es un servicio hecho para ti. Nosotros manejamos todo: configuracion de IA, entrenamiento de voz, integracion de calendario, configuracion de CRM y pruebas. La mayoria de los negocios estan activos en 5 a 10 dias habiles.",
+          "Monitoreo del sistema, actualizaciones de prompts, mantenimiento de integraciones, revisiones de rendimiento y soporte directo de mi parte. Si algo necesita ajuste, yo lo ajusto. Si un flujo de trabajo necesita afinacion, yo lo afino. La tarifa mensual es lo que hace de esto un servicio administrado en lugar de una entrega.",
       },
       {
-        question: "Para que industrias funciona esto?",
+        question: "Hay costos adicionales?",
         answer:
-          "Cualquier negocio de servicios que agende citas o reciba llamadas de clientes. Trabajamos con techadores, empresas de aire acondicionado, plomeros, electricistas, clinicas, consultorios dentales, firmas de abogados, salones, talleres mecanicos y docenas de otras industrias.",
-      },
-      {
-        question: "Que soporte esta incluido?",
-        answer:
-          "Cada implementacion incluye optimizacion y refinamiento practico para asegurar que tu sistema de IA funcione correctamente para tu flujo de trabajo. La gestion mensual cubre monitoreo continuo, ajustes y soporte. Si algo necesita cambiar, nosotros lo manejamos.",
+          "Las llamadas de voz con IA y llamadas salientes tienen tarifas por minuto del proveedor de voz subyacente. Las pasamos al costo sin margen de ganancia. El uso tipico es de $50 a $200 al mes dependiendo del volumen de llamadas. Los numeros completos se cubren en la llamada estrategica.",
       },
     ],
   },
 
-  demo: {
-    heading: "Prueba la IA tu mismo",
-    subheading:
-      "Llena el formulario a continuacion y nuestro asistente de voz con IA te llamara en 60 segundos. Experimenta exactamente lo que tus clientes escucharian.",
-    formTitle: "Llamada Demo de IA en Vivo",
-    formSubtitle:
-      "Sin compromiso. Sin discurso de ventas. Solo escucha la IA en accion.",
-    firstName: "Nombre",
-    lastName: "Apellido",
-    email: "Correo electronico",
-    phone: "(555) 123-4567",
-    businessName: "Nombre del negocio",
-    consent:
-      "Acepto recibir una llamada demo automatizada al numero proporcionado de AI Peak Biz. Pueden aplicar tarifas de mensajes y datos. Entiendo que este consentimiento no es una condicion de compra.",
-    submit: "Recibir Mi Llamada Demo en Vivo",
-    submitting: "Llamandote...",
-    successTitle: "Listo!",
-    successMessage:
-      "Nuestro asistente de voz con IA te llamara en aproximadamente 60 segundos. Asegurate de tener tu telefono cerca.",
-    errorMessage:
-      "Algo salio mal. Por favor intenta de nuevo o envianos un correo a wylie@aipeakbiz.com.",
-    phoneError: "Por favor ingresa un numero de telefono valido de 10 digitos.",
-  },
-
   cta: {
-    heading: "Listo para dejar de perder ingresos por llamadas perdidas?",
+    heading: "Acepto cuatro clientes nuevos al mes. Asi es como reclamar un lugar.",
     subheading:
-      "Permitenos mostrarte exactamente como funciona el sistema para tu negocio. Sin presion. Sin compromiso. Solo una conversacion.",
+      "Yo personalmente construyo y administro cada sistema. Eso limita cuantos negocios incorporo. Cuando el mes esta lleno, la proxima apertura es el mes siguiente. La llamada estrategica es una conversacion real sobre si tu negocio es compatible. Sin presion. Sin discurso de ventas.",
     bookCall: "Agendar una Llamada",
-    tryDemo: "Probar la Demo de IA Primero",
+    tryDemo: "Escucha la IA Llamarte Primero",
+    callDirect: "O llamame directamente al 928-628-6080.",
   },
 
   footer: {
     tagline:
       "Recuperacion de ingresos y comunicacion con clientes para negocios de servicios. Cada llamada contestada. Cada cliente potencial capturado. Mas citas agendadas.",
     navigation: "Navegacion",
-    recentWork: "Trabajos Recientes",
+    recentWork: "Otros Proyectos que Hemos Construido",
+    recentWorkSubhead: "Tambien construimos sitios web para clientes fuera de negocios de servicios.",
     contact: "Contacto",
     legal: "Legal",
     privacyPolicy: "Politica de Privacidad",
@@ -320,6 +316,6 @@ const es: Dictionary = {
     closeVideo: "Cerrar video",
     noSupport: "Tu navegador no soporta la reproduccion de video.",
   },
-} as const;
+};
 
 export default es;

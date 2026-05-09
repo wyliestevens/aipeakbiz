@@ -1,12 +1,10 @@
 "use client";
 
-import { BOOKING_URL } from "@/data/industries";
-import { useDict, useLang } from "@/i18n/context";
+import { BOOKING_URL, PHONE_TEL } from "@/data/industries";
+import { useDict } from "@/i18n/context";
 
 export function CTASection({ heading }: { heading?: string } = {}) {
   const dict = useDict();
-  const lang = useLang();
-  const prefix = lang === "es" ? "/es" : "";
 
   return (
     <section className="section-padding">
@@ -28,12 +26,15 @@ export function CTASection({ heading }: { heading?: string } = {}) {
               {dict.cta.bookCall}
             </a>
             <a
-              href={`${prefix}/#demo`}
+              href="#demo"
               className="btn-secondary text-base px-8 py-4"
             >
               {dict.cta.tryDemo}
             </a>
           </div>
+          <p className="text-sm text-text-muted mt-6">
+            {dict.cta.callDirect}
+          </p>
         </div>
       </div>
     </section>

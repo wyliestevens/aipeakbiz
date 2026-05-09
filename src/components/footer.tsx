@@ -56,7 +56,8 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <h3 className="text-sm font-semibold text-white mt-6 mb-4">{dict.footer.recentWork}</h3>
+            <h3 className="text-sm font-semibold text-white mt-6 mb-2">{dict.footer.recentWork}</h3>
+            <p className="text-xs text-slate-500 mb-3">{dict.footer.recentWorkSubhead}</p>
             <ul className="space-y-2">
               {recentWork.map((l) => (
                 <li key={l.href}>

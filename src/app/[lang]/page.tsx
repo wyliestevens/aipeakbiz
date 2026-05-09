@@ -9,7 +9,6 @@ import { RevenueSystemsSection } from "@/components/revenue-systems-section";
 import { DeploymentSection } from "@/components/home/deployment-section";
 import { IndustriesWrapper } from "@/components/home/industries-wrapper";
 import { HomeFAQSection } from "@/components/home/home-faq-section";
-import { DemoSection } from "@/components/home/demo-section";
 import { CTASection } from "@/components/cta-section";
 
 export const metadata: Metadata = {
@@ -47,7 +46,6 @@ export default function HomePage() {
       <DeploymentSection />
       <IndustriesWrapper />
       <SocialProofSection />
-      <DemoSection />
       <HomeFAQSection />
       <CTASection />
     </>
