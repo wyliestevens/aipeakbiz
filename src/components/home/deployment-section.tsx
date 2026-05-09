@@ -15,7 +15,7 @@ const deploymentPricing = [
 export function DeploymentSection() {
   const dict = useDict();
   const lang = useLang();
-  const prefix = lang === "es" ? "/es" : "";
+  const prefix = lang === "es" ? "/es" : "/en";
   const [paymentType, setPaymentType] = useState<"full" | "installment">("full");
 
   return (

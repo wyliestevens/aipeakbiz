@@ -14,7 +14,7 @@ const recentWork = [
 export function Footer() {
   const dict = useDict();
   const lang = useLang();
-  const prefix = lang === "es" ? "/es" : "";
+  const prefix = lang === "es" ? "/es" : "/en";
 
   const solutionLinks = [
     { name: dict.nav.howItWorks, href: `${prefix}/#how-it-works` },

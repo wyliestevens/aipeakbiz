@@ -7,7 +7,7 @@ import { useDict, useLang } from "@/i18n/context";
 export function FounderSection() {
   const dict = useDict();
   const lang = useLang();
-  const prefix = lang === "es" ? "/es" : "";
+  const prefix = lang === "es" ? "/es" : "/en";
 
   return (
     <section className="section-padding bg-background-alt">

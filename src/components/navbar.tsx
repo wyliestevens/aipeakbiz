@@ -9,7 +9,7 @@ import { useDict, useLang } from "@/i18n/context";
 import { usePathname } from "next/navigation";
 
 function langPrefix(lang: string) {
-  return lang === "es" ? "/es" : "";
+  return lang === "es" ? "/es" : "/en";
 }
 
 export function Navbar() {
@@ -45,7 +45,7 @@ export function Navbar() {
   const altLang = lang === "es" ? "en" : "es";
   const altPrefix = langPrefix(altLang);
   // Strip current lang prefix from pathname to get the base path
-  const basePath = lang === "es" ? pathname.replace(/^\/es/, "") || "/" : pathname;
+  const basePath = lang === "es" ? pathname.replace(/^\/es/, "") || "/" : pathname.replace(/^\/en/, "") || "/";
   const altHref = `${altPrefix}${basePath}`;
 
   return (
