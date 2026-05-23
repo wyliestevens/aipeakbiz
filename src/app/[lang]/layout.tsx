@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar";
+import { MissionStatement } from "@/components/mission-statement";
 import { Footer } from "@/components/footer";
 import { AnalyticsScripts } from "@/components/analytics";
 import { SkipToMain } from "@/components/skip-to-main";
@@ -26,6 +27,7 @@ export default async function LangLayout({
     <I18nProvider dict={dict} lang={lang}>
       <SkipToMain />
       <Navbar />
+      <MissionStatement />
       <main id="main-content">{children}</main>
       <Footer />
       <AnalyticsScripts />
