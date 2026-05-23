@@ -1,7 +1,7 @@
 export function MissionStatement() {
   return (
     <section
-      className="w-full bg-[#1B2A4A] py-10 px-6 md:px-12"
+      className="w-full bg-[#1B2A4A] mt-16 md:mt-20 py-10 px-6 md:px-12"
       aria-label="Mission Statement"
     >
       <div className="mx-auto max-w-4xl text-center">
