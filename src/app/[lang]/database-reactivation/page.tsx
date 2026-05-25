@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Database Reactivation for Service Businesses",
+  description:
+    "AI Peak Biz reactivates your dormant customer database with automated outreach. Win back past customers who already know and trust your business.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/database-reactivation",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Database Reactivation", url: "/database-reactivation" },
+]);
+
 export default function DatabaseReactivationPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="Database Reactivation"
       headline="Your past customers are your cheapest source of new revenue."
       description="Most service businesses are sitting on a goldmine of past customers who just need a nudge. We build automated reactivation campaigns that reach out to dormant contacts with the right message at the right time, bringing them back without you spending a dollar on ads."
@@ -36,5 +72,6 @@ export default function DatabaseReactivationPage() {
         { value: "$0", label: "Ad spend required" },
       ]}
     />
+    </>
   );
 }

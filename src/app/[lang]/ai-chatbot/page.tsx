@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Chatbot for Service Businesses",
+  description:
+    "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/ai-chatbot",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "AI Chatbot", url: "/ai-chatbot" },
+]);
+
 export default function AIChatbotPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="AI Chatbot"
       headline="Turn website visitors into booked appointments. Automatically."
       description="Your website gets traffic. Most visitors leave without taking action. Your AI chatbot engages every visitor instantly, answers their questions, and books appointments 24/7. No forms. No wait. No lost leads."
@@ -36,5 +72,6 @@ export default function AIChatbotPage() {
         { value: "24/7", label: "Always available" },
       ]}
     />
+    </>
   );
 }

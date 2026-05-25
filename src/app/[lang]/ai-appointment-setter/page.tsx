@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Appointment Setter for Service Businesses",
+  description:
+    "AI Peak Biz builds AI appointment setters that call new leads instantly after form submission. Zero delay. More booked appointments. No staff required.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/ai-appointment-setter",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "AI Appointment Setter", url: "/ai-appointment-setter" },
+]);
+
 export default function AIAppointmentSetterPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="AI Appointment Setter"
       headline="New lead comes in. AI calls them. Appointment booked. No delay."
       description="When a prospect fills out a form on your website, your AI appointment setter calls them within seconds. It introduces your business, answers their questions, and books them directly into your calendar. No waiting. No manual follow-up. No lost leads."
@@ -36,5 +72,6 @@ export default function AIAppointmentSetterPage() {
         { value: "5 min", label: "After 5 minutes, lead contact rates drop 10x" },
       ]}
     />
+    </>
   );
 }

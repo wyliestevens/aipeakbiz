@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Website Design for Service Businesses",
+  description:
+    "AI Peak Biz designs and builds professional websites for service businesses. Fast, mobile-optimized, and built to convert visitors into booked appointments.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/website-design",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Website Design", url: "/website-design" },
+]);
+
 export default function WebsiteDesignPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="Website Design"
       headline="A website built to book appointments, not just look pretty."
       description="Your website is the first impression most customers get. We build fast, mobile-optimized sites designed specifically for service businesses. Clear calls to action, online booking, and SEO best practices built in from day one."
@@ -36,5 +72,6 @@ export default function WebsiteDesignPage() {
         { value: "2x", label: "More bookings vs generic sites" },
       ]}
     />
+    </>
   );
 }

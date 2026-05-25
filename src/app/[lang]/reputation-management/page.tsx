@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Reputation Management for Service Businesses",
+  description:
+    "AI Peak Biz builds automated reputation management systems. Get more 5-star Google reviews. Route negative feedback privately. Build trust that drives bookings.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/reputation-management",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Reputation Management", url: "/reputation-management" },
+]);
+
 export default function ReputationManagementPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="Reputation Management"
       headline="More 5-star reviews. Every month. Without asking."
       description="Your happy customers leave without posting a review because nobody asks at the right time. Your AI reputation engine sends a review request after every visit. Happy customers are guided to Google. Concerns are routed to you privately. Your rating climbs every month."
@@ -36,5 +72,6 @@ export default function ReputationManagementPage() {
         { value: "0.5★", label: "Gap costs 15-20% of potential customers" },
       ]}
     />
+    </>
   );
 }

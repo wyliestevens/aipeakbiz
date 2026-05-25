@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Missed Call Text-Back for Service Businesses",
+  description:
+    "Never lose a lead to a missed call again. AI Peak Biz sets up automated text-back that responds within 60 seconds with a booking link.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/missed-call-text-back",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Missed Call Text-Back", url: "/missed-call-text-back" },
+]);
+
 export default function MissedCallTextBackPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="Missed Call Text-Back"
       headline="Miss a call? Your system texts them back in 60 seconds."
       description="When your team cannot answer the phone, your system sends an instant text with a booking link. The customer describes what they need and schedules an appointment before they even think about calling your competitor."
@@ -36,5 +72,6 @@ export default function MissedCallTextBackPage() {
         { value: "30%+", label: "Of missed calls converted to bookings" },
       ]}
     />
+    </>
   );
 }

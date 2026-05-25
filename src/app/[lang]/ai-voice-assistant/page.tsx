@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
-import { buildLangAlternates } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -16,9 +16,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Voice Assistant for Service Businesses",
+  description:
+    "AI Peak Biz builds and manages AI voice assistants that answer every phone call 24/7. No missed calls. More booked appointments. No new payroll.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "AI Peak Biz",
+    telephone: "+1-928-628-6080",
+    email: "wylie@aipeakbiz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kingman",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    },
+  },
+  areaServed: "US",
+  url: "https://www.aipeakbiz.com/ai-voice-assistant",
+};
+
+const breadcrumbJsonLd = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "AI Voice Assistant", url: "/ai-voice-assistant" },
+]);
+
 export default function AIVoiceAssistantPage() {
   return (
-    <ServicePageContent
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageContent
       title="AI Voice Assistant"
       headline="Every call answered. Every time. Even at 2 AM."
       description="Your AI voice assistant picks up every phone call your team cannot. It sounds natural, knows your business, and books appointments directly into your calendar. Evenings. Weekends. Holidays. No missed calls. No new payroll."
@@ -36,5 +72,6 @@ export default function AIVoiceAssistantPage() {
         { value: "$36K", label: "Average annual receptionist salary replaced" },
       ]}
     />
+    </>
   );
 }
