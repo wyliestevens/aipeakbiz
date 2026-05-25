@@ -105,7 +105,10 @@ const businessSchema = {
     opens: "00:00",
     closes: "23:59",
   },
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/aipeakbiz/",
+    "https://www.linkedin.com/in/aipeakbiz",
+  ],
 };
 
 export default function RootLayout({
