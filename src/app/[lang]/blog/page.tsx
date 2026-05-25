@@ -8,10 +8,25 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = "Blog";
+  const description = isEs
+    ? "Blog de AI Peak Biz. Ideas sobre automatizacion con IA, sistemas de recepcion y como hacer crecer tu negocio de servicios."
+    : "AI Peak Biz blog. Insights on AI automation, front desk systems, and growing your service business.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/blog"
+    : "https://www.aipeakbiz.com/blog";
+
   return {
-    title: "Blog",
-    description: "AI Peak Biz blog. Insights on AI automation, front desk systems, and growing your service business.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/blog"),
+    robots: { index: false, follow: true },
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Chatbot con IA para Negocios de Servicios"
+    : "AI Chatbot for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz construye y gestiona chatbots con IA que agendan citas desde tu sitio web las 24 horas. Respuestas instantaneas. Mas reservas. Sin tiempo de personal."
+    : "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/ai-chatbot"
+    : "https://www.aipeakbiz.com/ai-chatbot";
+
   return {
-    title: "AI Chatbot for Service Businesses",
-    description:
-      "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/ai-chatbot"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

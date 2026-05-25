@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Respuesta Automatica por Texto a Llamadas Perdidas"
+    : "Missed Call Text-Back for Service Businesses";
+  const description = isEs
+    ? "Nunca pierdas un cliente por una llamada perdida. AI Peak Biz configura respuestas automaticas por texto en 60 segundos con un enlace para agendar."
+    : "Never lose a lead to a missed call again. AI Peak Biz sets up automated text-back that responds within 60 seconds with a booking link.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/missed-call-text-back"
+    : "https://www.aipeakbiz.com/missed-call-text-back";
+
   return {
-    title: "Missed Call Text-Back for Service Businesses | AI Peak Biz",
-    description:
-      "Never lose a lead to a missed call again. AI Peak Biz sets up automated text-back that responds within 60 seconds with a booking link.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/missed-call-text-back"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

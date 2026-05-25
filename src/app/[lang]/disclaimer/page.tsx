@@ -7,10 +7,24 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs ? "Aviso Legal" : "Disclaimer";
+  const description = isEs
+    ? "Aviso legal de AI Peak Biz sobre ganancias, resultados y uso de nuestro sitio web y servicios."
+    : "AI Peak Biz disclaimer regarding earnings, results, and use of our website and services.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/disclaimer"
+    : "https://www.aipeakbiz.com/disclaimer";
+
   return {
-    title: "Disclaimer",
-    description: "AI Peak Biz disclaimer regarding earnings, results, and use of our website and services.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/disclaimer"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 
@@ -47,8 +61,8 @@ export default function DisclaimerPage() {
           <p>
             AI Peak Biz<br />
             Kingman, Arizona<br />
-            Email: <a href="mailto:wylie@aipeakbiz.com" className="text-accent-blue hover:underline">wylie@aipeakbiz.com</a><br />
-            Phone: <a href="tel:9286286080" className="text-accent-blue hover:underline">928-628-6080</a>
+            Email: <a href="mailto:wylie@aipeakbiz.com" className="text-brand hover:underline">wylie@aipeakbiz.com</a><br />
+            Phone: <a href="tel:9286286080" className="text-brand hover:underline">928-628-6080</a>
           </p>
         </div>
       </div>

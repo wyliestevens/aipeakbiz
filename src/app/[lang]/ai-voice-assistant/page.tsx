@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Asistente de Voz con IA para Negocios de Servicios"
+    : "AI Voice Assistant for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz construye y gestiona asistentes de voz con IA que contestan cada llamada las 24 horas. Sin llamadas perdidas. Mas citas agendadas. Sin nomina adicional."
+    : "AI Peak Biz builds and manages AI voice assistants that answer every phone call 24/7. No missed calls. More booked appointments. No new payroll.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/ai-voice-assistant"
+    : "https://www.aipeakbiz.com/ai-voice-assistant";
+
   return {
-    title: "AI Voice Assistant for Service Businesses",
-    description:
-      "AI Peak Biz builds and manages AI voice assistants that answer every phone call 24/7. No missed calls. More booked appointments. No new payroll.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/ai-voice-assistant"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

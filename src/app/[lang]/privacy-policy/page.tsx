@@ -7,10 +7,24 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs ? "Politica de Privacidad" : "Privacy Policy";
+  const description = isEs
+    ? "Politica de privacidad de AI Peak Biz. Como recopilamos, usamos y protegemos tu informacion."
+    : "AI Peak Biz privacy policy. How we collect, use, and protect your information.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/privacy-policy"
+    : "https://www.aipeakbiz.com/privacy-policy";
+
   return {
-    title: "Privacy Policy",
-    description: "AI Peak Biz privacy policy. How we collect, use, and protect your information.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/privacy-policy"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 
@@ -78,8 +92,8 @@ export default function PrivacyPolicyPage() {
           <p>
             AI Peak Biz<br />
             Kingman, Arizona<br />
-            Email: <a href="mailto:wylie@aipeakbiz.com" className="text-accent-blue hover:underline">wylie@aipeakbiz.com</a><br />
-            Phone: <a href="tel:9286286080" className="text-accent-blue hover:underline">928-628-6080</a>
+            Email: <a href="mailto:wylie@aipeakbiz.com" className="text-brand hover:underline">wylie@aipeakbiz.com</a><br />
+            Phone: <a href="tel:9286286080" className="text-brand hover:underline">928-628-6080</a>
           </p>
         </div>
       </div>

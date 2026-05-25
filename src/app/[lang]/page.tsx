@@ -19,11 +19,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Recuperacion de Ingresos para Negocios de Servicios"
+    : "Revenue Recovery for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz ayuda a negocios de servicios a recuperar ingresos perdidos con respuesta instantanea, atencion de llamadas 24/7 y agendamiento automatico de citas."
+    : "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/"
+    : "https://www.aipeakbiz.com/";
+
   return {
-    title: "AI Peak Biz | Revenue Recovery for Service Businesses",
-    description:
-      "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 
@@ -32,11 +47,6 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "AI Peak Biz",
   url: "https://www.aipeakbiz.com",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.aipeakbiz.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
 };
 
 const faqJsonLd = faqSchema(en.faq.items);

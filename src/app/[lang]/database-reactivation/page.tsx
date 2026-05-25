@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Reactivacion de Base de Datos para Negocios de Servicios"
+    : "Database Reactivation for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz reactiva tu base de datos de clientes inactivos con contacto automatizado. Recupera clientes que ya conocen y confian en tu negocio."
+    : "AI Peak Biz reactivates your dormant customer database with automated outreach. Win back past customers who already know and trust your business.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/database-reactivation"
+    : "https://www.aipeakbiz.com/database-reactivation";
+
   return {
-    title: "Database Reactivation for Service Businesses | AI Peak Biz",
-    description:
-      "AI Peak Biz reactivates your dormant customer database with automated outreach. Win back past customers who already know and trust your business.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/database-reactivation"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

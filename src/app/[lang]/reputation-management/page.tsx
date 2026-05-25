@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Gestion de Reputacion para Negocios de Servicios"
+    : "Reputation Management for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz construye sistemas automatizados de gestion de reputacion. Obtiene mas resenas de 5 estrellas en Google. Dirige comentarios negativos de forma privada."
+    : "AI Peak Biz builds automated reputation management systems. Get more 5-star Google reviews. Route negative feedback privately. Build trust that drives bookings.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/reputation-management"
+    : "https://www.aipeakbiz.com/reputation-management";
+
   return {
-    title: "Reputation Management for Service Businesses",
-    description:
-      "AI Peak Biz builds automated reputation management systems. Get more 5-star Google reviews. Route negative feedback privately. Build trust that drives bookings.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/reputation-management"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

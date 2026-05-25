@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Diseno Web para Negocios de Servicios"
+    : "Website Design for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz disena y construye sitios web profesionales para negocios de servicios. Rapidos, optimizados para movil y disenados para convertir visitantes en citas."
+    : "AI Peak Biz designs and builds professional websites for service businesses. Fast, mobile-optimized, and built to convert visitors into booked appointments.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/website-design"
+    : "https://www.aipeakbiz.com/website-design";
+
   return {
-    title: "Website Design for Service Businesses | AI Peak Biz",
-    description:
-      "AI Peak Biz designs and builds professional websites for service businesses. Fast, mobile-optimized, and built to convert visitors into booked appointments.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/website-design"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 

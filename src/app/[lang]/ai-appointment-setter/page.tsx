@@ -8,11 +8,26 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
+  const isEs = lang === "es";
+  const title = isEs
+    ? "Agendador de Citas con IA para Negocios de Servicios"
+    : "AI Appointment Setter for Service Businesses";
+  const description = isEs
+    ? "AI Peak Biz construye agendadores de citas con IA que llaman a nuevos clientes potenciales al instante. Sin demoras. Mas citas agendadas. Sin personal adicional."
+    : "AI Peak Biz builds AI appointment setters that call new leads instantly after form submission. Zero delay. More booked appointments. No staff required.";
+  const url = isEs
+    ? "https://www.aipeakbiz.com/es/ai-appointment-setter"
+    : "https://www.aipeakbiz.com/ai-appointment-setter";
+
   return {
-    title: "AI Appointment Setter for Service Businesses",
-    description:
-      "AI Peak Biz builds AI appointment setters that call new leads instantly after form submission. Zero delay. More booked appointments. No staff required.",
+    title,
+    description,
     alternates: buildLangAlternates(lang, "/ai-appointment-setter"),
+    openGraph: {
+      title: `${title} | AI Peak Biz`,
+      description,
+      url,
+    },
   };
 }
 
