@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ConsultingPageContent } from "@/components/consulting-page";
-import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
+import { buildLangAlternates, breadcrumbSchema, faqSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -58,6 +58,35 @@ const breadcrumbJsonLd = breadcrumbSchema([
   { name: "AI Consulting & Teaching", url: "/ai-consulting" },
 ]);
 
+const faqs = [
+  {
+    question: "Do I need to know anything about AI before we start?",
+    answer: "No. Most of our consulting clients know AI matters but have no idea where to start. That is exactly the point. We meet you where you are, explain everything in plain English, and build a plan that makes sense for your specific business. No technical background required.",
+  },
+  {
+    question: "How is this different from hiring an AI agency?",
+    answer: "An AI agency builds things for you and charges monthly to maintain them. We teach your team to understand and use AI tools themselves. You walk away with knowledge and a roadmap, not a dependency. If you want done-for-you implementation, we offer that separately through our AI deployment services.",
+  },
+  {
+    question: "What kind of AI tools do you recommend?",
+    answer: "It depends entirely on your business. We are vendor-neutral and recommend what is best for you, not what pays us a commission. Common recommendations include AI chatbots, voice assistants, workflow automation, content creation tools, and CRM AI features. Every recommendation is specific to the problems we find in your operations.",
+  },
+  {
+    question: "How long does a consulting engagement take?",
+    answer: "A typical engagement is 2 to 6 weeks depending on the complexity of your business. We start with a discovery call, deliver an AI readiness assessment, provide hands-on training, and leave you with a prioritized implementation roadmap. You can engage us for ongoing support or take the roadmap and run with it yourself.",
+  },
+  {
+    question: "Is there a long-term contract?",
+    answer: "No. There are no long-term contracts or retainers required. You engage us for as long as you need help. When you no longer need us, you simply tell us. You keep everything we built together, including all documentation, training materials, and recommendations.",
+  },
+  {
+    question: "Can you train my entire team or just the owner?",
+    answer: "We train whoever needs to learn. For some businesses that means the owner and one office manager. For others it means a team of 10. Training sessions are practical and hands-on, not lecture-style. We use real examples from your business so the lessons stick.",
+  },
+];
+
+const faqJsonLd = faqSchema(faqs);
+
 export default function AIConsultingPage() {
   return (
     <>
@@ -68,6 +97,10 @@ export default function AIConsultingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <ConsultingPageContent />
     </>
