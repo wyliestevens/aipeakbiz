@@ -95,11 +95,27 @@
 - cluster-map.html — interactive visualization (open in browser)
 - 6 detailed content briefs ready to write
 
+## Service Pages Expansion (Completed 2026-05-25)
+- All 8 service pages expanded from ~300 words to 1,500+ words
+- ServicePageContent component redesigned with new sections: Problem (2-3 paragraphs), How It Works (5 steps), Industry Examples (3 trades), FAQ (6 questions), Related Services (3 cross-links)
+- Consulting page (separate component) also expanded with Problem, Industry Examples, FAQ, and Related Services sections
+- FAQPage JSON-LD schema added to all 8 service pages via faqSchema()
+- Internal cross-linking between related services on every page
+- All content written for blue-collar service business owners (roofers, HVAC, plumbers, electricians)
+
+## Sub-Industry Page Infrastructure (Added 2026-05-25)
+- Routes: /industries/[slug]/[subSlug] (91 sub-industry pages)
+- Data layer: src/data/sub-industry-content.ts (SubIndustryContent interface, empty content record, helpers)
+- Page: src/app/[lang]/industries/[slug]/[subSlug]/page.tsx (static params, metadata, JSON-LD schemas)
+- Internal linking: CategoryPage now shows "Sub-Industries We Serve" grid on parent industry pages
+- Rewrite: next.config.mjs maps /industries/:slug/:subSlug to /en/industries/:slug/:subSlug
+- Content data is empty — pages will 404 until SubIndustryContent entries are populated
+- Helper functions: getSubIndustryContent(), getAllSubIndustrySlugs(), getSubIndustryName(), slugifySubIndustry()
+
 ## What's Next
-- Translate remaining service pages and industry pages to Spanish
-- Build 91 sub-industry pages (data exists in industries.ts, needs /industries/[category]/[sub-industry] routes)
+- Populate sub-industry content (fill subIndustryContent record in sub-industry-content.ts)
+- Translate remaining service pages and industry pages to Spanish (service pages now have much more content to translate)
 - Create competitor comparison pages (/compare/ai-peak-biz-vs-podium, vs-ruby, etc.)
-- Expand service page content from ~300 words to 1,500+
 - Write first blog posts from content briefs
 - Set up Google Business Profile (Kingman, AZ)
 - Build backlink foundation (directories, HARO, podcasts)

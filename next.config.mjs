@@ -23,6 +23,8 @@ const nextConfig = {
       { source: "/disclaimer", destination: "/en/disclaimer" },
       // Industry pages
       { source: "/industries/:slug", destination: "/en/industries/:slug" },
+      // Sub-industry pages
+      { source: "/industries/:slug/:subSlug", destination: "/en/industries/:slug/:subSlug" },
     ];
   },
   async headers() {

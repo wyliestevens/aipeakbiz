@@ -2,15 +2,26 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { IndustryContent } from "@/data/industry-content";
-import { BOOKING_URL } from "@/data/industries";
+import { BOOKING_URL, industries } from "@/data/industries";
+import { slugifySubIndustry } from "@/data/sub-industry-content";
 import { ReviewGrid } from "@/components/review-carousel";
 import { RevenueSystemsSection } from "@/components/revenue-systems-section";
 import { FAQ, FAQSchema } from "@/components/faq";
 import { CTASection } from "@/components/cta-section";
 
-export function CategoryPage({ content }: { content: IndustryContent }) {
+interface CategoryPageProps {
+  content: IndustryContent;
+  /** When set, this is a sub-industry page — skip the sub-industries section. */
+  parentSlug?: string;
+}
+
+export function CategoryPage({ content, parentSlug }: CategoryPageProps) {
+  // Find the parent industry for this page (only for parent-level pages)
+  const parentIndustry = !parentSlug
+    ? industries.find((i) => i.slug === content.slug)
+    : undefined;
   return (
     <>
       <FAQSchema items={content.faq} />
@@ -250,6 +261,48 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
           <FAQ items={content.faq} />
         </div>
       </section>
+
+      {/* Sub-Industries We Serve (only on parent industry pages) */}
+      {parentIndustry && parentIndustry.subIndustries.length > 0 && (
+        <section className="section-padding bg-surface">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
+                Specializations
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
+                {parentIndustry.name} sub-industries we serve
+              </h2>
+            </motion.div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {parentIndustry.subIndustries.map((sub, i) => (
+                <motion.div
+                  key={sub}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05 }}
+                >
+                  <Link
+                    href={`/industries/${parentIndustry.slug}/${slugifySubIndustry(sub)}`}
+                    className="flex items-center justify-between bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-5 hover:border-brand/40 hover:shadow-md transition-all group"
+                  >
+                    <span className="text-base font-medium text-text-primary group-hover:text-brand transition-colors">
+                      {sub}
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-text-muted group-hover:text-brand transition-colors flex-shrink-0 ml-3" />
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTASection />
     </>
