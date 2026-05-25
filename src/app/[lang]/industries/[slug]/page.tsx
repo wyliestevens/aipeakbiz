@@ -10,7 +10,12 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return industries.map((ind) => ({ slug: ind.slug }));
+  const slugs = industries.map((ind) => ({ slug: ind.slug }));
+  // Chiropractic has its own page but isn't in the industries array
+  if (!slugs.some((s) => s.slug === "chiropractic")) {
+    slugs.push({ slug: "chiropractic" });
+  }
+  return slugs;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -50,8 +55,7 @@ const industryBreadcrumb = (slug: string, title: string) => ({
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aipeakbiz.com" },
-    { "@type": "ListItem", position: 2, name: "Industries", item: "https://www.aipeakbiz.com" },
-    { "@type": "ListItem", position: 3, name: title, item: `https://www.aipeakbiz.com/industries/${slug}` },
+    { "@type": "ListItem", position: 2, name: title, item: `https://www.aipeakbiz.com/industries/${slug}` },
   ],
 });
 
@@ -60,7 +64,7 @@ const serviceSchema = (slug: string, title: string, description: string) => ({
   "@type": "Service",
   name: title,
   provider: {
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     name: "AI Peak Biz",
     telephone: "+1-928-628-6080",
     email: "wylie@aipeakbiz.com",
@@ -68,6 +72,7 @@ const serviceSchema = (slug: string, title: string, description: string) => ({
       "@type": "PostalAddress",
       addressLocality: "Kingman",
       addressRegion: "AZ",
+      postalCode: "86401",
       addressCountry: "US",
     },
   },

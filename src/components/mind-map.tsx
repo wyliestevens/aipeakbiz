@@ -55,6 +55,7 @@ function MindMapDesktop() {
             alt="AI Peak Biz"
             width={90}
             height={90}
+            sizes="90px"
             className="w-[90px] h-[90px] object-contain"
           />
         </div>

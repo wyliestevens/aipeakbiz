@@ -54,7 +54,7 @@ const en = {
       {
         title: "The first responder wins 78% of the time",
         description:
-          "The business that returns the call first almost always gets the job. Not the cheapest. Not the most experienced. The fastest.",
+          "According to the Lead Response Management study, the business that returns the call first almost always gets the job. Not the cheapest. Not the most experienced. The fastest.",
       },
       {
         title: "Your crew is working, not answering phones",

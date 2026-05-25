@@ -61,8 +61,53 @@
 - Homepage fully translated; service/industry pages serve but use English text (translate incrementally)
 - Industry wheel (mind map) restored on homepage (2026-05-09)
 
+## SEO (Major overhaul 2026-05-25)
+- FIXED: Root layout alternates block removed — page-level canonicals/hreflang now work
+- FIXED: next.config.mjs has explicit rewrites for all English pages (was broken on Vercel)
+- FIXED: html lang attribute now dynamic via HtmlLang client component
+- FIXED: Homepage title no longer duplicates brand name
+- FIXED: Broken SearchAction schema removed from homepage
+- Merged Organization + LocalBusiness into single ProfessionalService schema with founder, hours, priceRange
+- FAQPage JSON-LD on homepage AND pricing page
+- BreadcrumbList + Service JSON-LD on industry pages and all 8 service pages
+- Security headers added (X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options)
+- Portfolio links in footer now have rel="nofollow"
+- Founder photos resized from 10.6 MB to ~248 KB total, EXIF stripped (GPS data removed)
+- Proper 1200x630 branded og-image.png created
+- Logo resized from 109 KB to 12 KB
+- llms.txt created for AI search engines
+- robots.txt updated with explicit AI bot rules (GPTBot, ClaudeBot, PerplexityBot, etc.)
+- Sitemap priorities differentiated: homepage 1.0, services 0.9, industries 0.8, legal 0.3
+- Chiropractic added to generateStaticParams (was missing from sitemap)
+- Image sizes props added to all Next.js Image components
+- Internal cross-links added from Revenue Leak section to service pages
+- Industry breadcrumb schema fixed (removed broken "Industries" middle item)
+- 78% stat attributed to Lead Response Management study
+- Empty blog page set to noindex
+- SEO helper utility: src/lib/seo.ts (buildLangAlternates, faqSchema, breadcrumbSchema)
+- Sitemap: 60 URLs (30 EN + 30 ES), English at root, Spanish at /es/
+- Google site verification configured
+- claude-seo skill installed at ~/.claude/skills/claude-seo
+
+## SEO Content Plans (Generated 2026-05-25)
+- cluster-plan.md — 22 blog posts across 6 topic clusters
+- cluster-plan.json — machine-readable plan with link adjacency
+- cluster-map.html — interactive visualization (open in browser)
+- 6 detailed content briefs ready to write
+
 ## What's Next
 - Translate remaining service pages and industry pages to Spanish
-- Redesign the go.aipeakbiz.com landing pages (aipeakbiz-roofers repo) to match new brand
-- Service pages may need light-theme updates (still using old dark theme components)
+- Build 91 sub-industry pages (data exists in industries.ts, needs /industries/[category]/[sub-industry] routes)
+- Create competitor comparison pages (/compare/ai-peak-biz-vs-podium, vs-ruby, etc.)
+- Expand service page content from ~300 words to 1,500+
+- Write first blog posts from content briefs
+- Set up Google Business Profile (Kingman, AZ)
+- Build backlink foundation (directories, HARO, podcasts)
+- Set up www redirect in Vercel (Settings > Domains)
+- Populate sameAs array once social profiles are created
 - GHL workflow setup: webhook trigger for voice-bot-demo, AI voice agent config
+
+## Related: Landing Pages Rebuild (COMPLETED 2026-05-11)
+- aipeakbiz-roofers repo fully rebuilt: 142 landing pages (71 EN + 71 ES) + 142 thank-you pages
+- New conversion-focused architecture: dollar-quantified H1s, tel: CTA, 4-field lead form, 11-section layout
+- See /Users/wylie/aipeakbiz-roofers/CLAUDE.md for full details

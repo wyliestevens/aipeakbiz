@@ -27,18 +27,20 @@ export function AboutContent() {
               <div className="w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-lg shrink-0">
                 <Image
                   src="/images/founder/wylie-professional.jpeg"
-                  alt="Wylie Stevens"
+                  alt="Wylie Stevens, Founder of AI Peak Biz, professional headshot"
                   width={192}
                   height={192}
+                  sizes="192px"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-lg shrink-0 hidden md:block">
                 <Image
                   src="/images/founder/wylie-speaking.jpeg"
-                  alt="Wylie Stevens speaking"
+                  alt="Wylie Stevens speaking at a business event"
                   width={192}
                   height={192}
+                  sizes="192px"
                   className="w-full h-full object-cover object-top"
                 />
               </div>

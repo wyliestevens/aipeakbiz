@@ -52,39 +52,21 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   robots: { index: true, follow: true },
-  alternates: {
-    canonical: "https://www.aipeakbiz.com",
-    languages: {
-      en: "https://www.aipeakbiz.com",
-      es: "https://www.aipeakbiz.com/es",
-      "x-default": "https://www.aipeakbiz.com",
-    },
-  },
 };
 
-const organizationSchema = {
+const businessSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["ProfessionalService", "Organization"],
   name: "AI Peak Biz",
+  description:
+    "Revenue recovery and customer communication company for service businesses. AI-powered call answering, lead response, appointment booking, and database reactivation.",
   url: "https://www.aipeakbiz.com",
   logo: "https://www.aipeakbiz.com/images/logo.png",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+1-928-628-6080",
-    contactType: "sales",
-    areaServed: "US",
-    availableLanguage: "English",
-  },
-  sameAs: [],
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "AI Peak Biz",
-  url: "https://www.aipeakbiz.com",
+  image: "https://www.aipeakbiz.com/images/og-image.png",
   telephone: "+1-928-628-6080",
   email: "wylie@aipeakbiz.com",
+  priceRange: "$$$$",
+  areaServed: "US",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Kingman",
@@ -97,7 +79,33 @@ const localBusinessSchema = {
     latitude: 35.1894,
     longitude: -114.053,
   },
-  image: "https://www.aipeakbiz.com/images/logo.png",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+1-928-628-6080",
+    contactType: "sales",
+    areaServed: "US",
+    availableLanguage: ["English", "Spanish"],
+  },
+  founder: {
+    "@type": "Person",
+    name: "Wylie Stevens",
+    jobTitle: "Founder",
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "00:00",
+    closes: "23:59",
+  },
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -113,13 +121,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
+            __html: JSON.stringify(businessSchema),
           }}
         />
       </head>

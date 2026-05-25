@@ -22,6 +22,7 @@ export function FounderSection() {
                   alt="Wylie Stevens, Founder of AI Peak Biz"
                   width={256}
                   height={256}
+                  sizes="(max-width: 768px) 224px, 256px"
                   className="w-full h-full object-cover object-top"
                 />
               </div>

@@ -1,10 +1,38 @@
+const highPriorityPages = ['/', '/es', '/pricing', '/free-assessment', '/about'];
+const servicePaths = ['/ai-chatbot', '/ai-voice-assistant', '/missed-call-text-back', '/database-reactivation', '/ai-appointment-setter', '/reputation-management', '/website-design', '/ai-consulting'];
+const legalPaths = ['/terms', '/privacy-policy', '/disclaimer'];
+
+function getPriority(path) {
+  const clean = path.replace(/^\/es/, '') || '/';
+  if (clean === '/') return path.startsWith('/es') ? 0.9 : 1.0;
+  if (servicePaths.some(s => clean === s)) return 0.9;
+  if (['/pricing', '/free-assessment', '/about'].includes(clean)) return 0.8;
+  if (clean.startsWith('/industries/')) return 0.8;
+  if (legalPaths.includes(clean)) return 0.3;
+  if (clean === '/blog') return 0.3;
+  return 0.7;
+}
+
+function getChangefreq(path) {
+  const clean = path.replace(/^\/es/, '') || '/';
+  if (legalPaths.includes(clean)) return 'monthly';
+  if (clean === '/blog') return 'daily';
+  return 'weekly';
+}
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://www.aipeakbiz.com',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
-      { userAgent: '*', allow: '/' },
+      { userAgent: '*', allow: '/', disallow: '/api/' },
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Anthropic-ai', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
     ],
   },
   exclude: ['/api/*'],
@@ -18,8 +46,8 @@ module.exports = {
       return {
         loc: `https://www.aipeakbiz.com${rootPath}`,
         lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: rootPath === '/' ? 1.0 : 0.7,
+        changefreq: getChangefreq(rootPath),
+        priority: getPriority(rootPath),
       };
     }
 
@@ -27,8 +55,8 @@ module.exports = {
     return {
       loc: `https://www.aipeakbiz.com${path}`,
       lastmod: new Date().toISOString(),
-      changefreq: 'weekly',
-      priority: path === '/' ? 1.0 : 0.7,
+      changefreq: getChangefreq(path),
+      priority: getPriority(path),
     };
   },
 }

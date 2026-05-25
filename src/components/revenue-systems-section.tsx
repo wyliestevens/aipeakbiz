@@ -1,12 +1,21 @@
 "use client";
 
+import Link from "next/link";
 import { Phone, Star, RefreshCw, MessageCircle } from "lucide-react";
-import { useDict } from "@/i18n/context";
+import { useDict, useLang } from "@/i18n/context";
 
 const systemIcons = [Phone, Star, RefreshCw, MessageCircle];
+const systemLinks = [
+  "/ai-voice-assistant",
+  "/reputation-management",
+  "/database-reactivation",
+  "/ai-chatbot",
+];
 
 export function RevenueSystemsSection() {
   const dict = useDict();
+  const lang = useLang();
+  const prefix = lang === "es" ? "/es" : "";
 
   return (
     <section className="section-padding">
@@ -26,10 +35,12 @@ export function RevenueSystemsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {dict.revenueSystems.systems.map((system, i) => {
             const Icon = systemIcons[i];
+            const href = `${prefix}${systemLinks[i]}`;
             return (
-              <div
+              <Link
                 key={i}
-                className="relative bg-surface rounded-2xl border border-border p-8 md:p-10 hover:border-brand-100 hover:shadow-md transition-all duration-300 group"
+                href={href}
+                className="relative bg-surface rounded-2xl border border-border p-8 md:p-10 hover:border-brand-100 hover:shadow-md transition-all duration-300 group block"
               >
                 <div className="w-14 h-14 rounded-xl bg-brand-50 flex items-center justify-center mb-6 group-hover:bg-brand-100 transition-colors duration-300">
                   <Icon className="w-7 h-7 text-brand" strokeWidth={1.8} />
@@ -40,7 +51,7 @@ export function RevenueSystemsSection() {
                 <p className="text-base text-text-secondary leading-relaxed">
                   {system.description}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>

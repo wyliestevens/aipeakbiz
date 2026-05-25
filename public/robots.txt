@@ -1,6 +1,31 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /api/
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic-ai
+User-agent: Anthropic-ai
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
 
 # Host
 Host: https://www.aipeakbiz.com

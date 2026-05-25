@@ -1,0 +1,385 @@
+{
+  "pillar": {
+    "title": "AI Revenue Recovery for Service Businesses: The Complete Guide",
+    "keyword": "AI revenue recovery service business",
+    "secondaryKeywords": ["AI for contractors", "service business automation", "recover lost revenue AI"],
+    "volume": "high",
+    "intent": "informational",
+    "template": "ultimate-guide",
+    "wordCount": 3500,
+    "url": "/blog/ai-revenue-recovery-service-businesses-guide",
+    "status": "planned"
+  },
+  "clusters": [
+    {
+      "name": "Missed Calls & Lead Capture",
+      "color": "#2B5BA8",
+      "posts": [
+        {
+          "title": "How Much Do Missed Calls Cost Contractors? The Real Numbers",
+          "keyword": "missed calls cost contractors",
+          "secondaryKeywords": ["missed call revenue loss", "unanswered calls cost small business", "contractor missed phone calls"],
+          "volume": "high",
+          "intent": "informational",
+          "template": "explainer",
+          "wordCount": 1500,
+          "url": "/blog/missed-calls-cost-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "Missed Call Text-Back for Contractors: How It Works and Why You Need It",
+          "keyword": "missed call text back contractors",
+          "secondaryKeywords": ["missed call text back service", "auto text missed call", "missed call SMS reply"],
+          "volume": "high",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/missed-call-text-back-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "Speed to Lead: Why Responding in 5 Minutes Wins the Job",
+          "keyword": "speed to lead service business",
+          "secondaryKeywords": ["lead response time", "how fast to follow up leads", "speed to lead statistics"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "explainer",
+          "wordCount": 1400,
+          "url": "/blog/speed-to-lead-service-business",
+          "status": "planned"
+        },
+        {
+          "title": "After-Hours Lead Capture: Stop Losing Weekend and Evening Calls",
+          "keyword": "after hours lead capture contractors",
+          "secondaryKeywords": ["after hours phone answering", "weekend call answering service business", "night time lead capture"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1400,
+          "url": "/blog/after-hours-lead-capture-contractors",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "AI Voice & Front Desk",
+      "color": "#C27C3E",
+      "posts": [
+        {
+          "title": "AI Receptionist vs Human Receptionist: Which Is Better for Contractors?",
+          "keyword": "AI receptionist vs human receptionist",
+          "secondaryKeywords": ["virtual receptionist for contractors", "AI answering service comparison", "AI vs live answering service"],
+          "volume": "high",
+          "intent": "commercial",
+          "template": "comparison",
+          "wordCount": 1600,
+          "url": "/blog/ai-receptionist-vs-human-receptionist-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "AI Voice Assistant for HVAC Companies: 24/7 Call Handling That Books Jobs",
+          "keyword": "AI voice assistant HVAC",
+          "secondaryKeywords": ["HVAC answering service AI", "AI phone answering HVAC", "HVAC call handling automation"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/ai-voice-assistant-hvac-companies",
+          "status": "planned"
+        },
+        {
+          "title": "How AI Front Desk Systems Handle Emergency Calls for Plumbers and Roofers",
+          "keyword": "AI front desk emergency calls contractors",
+          "secondaryKeywords": ["emergency call routing AI", "AI triage calls plumber", "priority call handling service business"],
+          "volume": "low",
+          "intent": "informational",
+          "template": "explainer",
+          "wordCount": 1300,
+          "url": "/blog/ai-front-desk-emergency-calls-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "Best AI Answering Services for Home Service Contractors (2026 Comparison)",
+          "keyword": "best AI answering service contractors",
+          "secondaryKeywords": ["AI answering service reviews", "top AI phone answering home services", "contractor answering service comparison"],
+          "volume": "high",
+          "intent": "commercial",
+          "template": "best-of",
+          "wordCount": 1800,
+          "url": "/blog/best-ai-answering-services-contractors",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Database Reactivation & Past Customer Revenue",
+      "color": "#4A8C6F",
+      "posts": [
+        {
+          "title": "Database Reactivation for Contractors: Turn Dead Leads into Booked Jobs",
+          "keyword": "database reactivation contractors",
+          "secondaryKeywords": ["reactivate old leads contractor", "database reactivation campaign", "dead lead recovery service business"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1600,
+          "url": "/blog/database-reactivation-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "How to Run an AI-Powered Database Reactivation Campaign (Step-by-Step)",
+          "keyword": "AI database reactivation campaign",
+          "secondaryKeywords": ["AI reactivation SMS email", "automated lead reactivation", "CRM reactivation AI"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/ai-database-reactivation-campaign-guide",
+          "status": "planned"
+        },
+        {
+          "title": "Unsold Estimates: How Contractors Are Recovering $50K+ from Old Quotes",
+          "keyword": "unsold estimates recovery contractors",
+          "secondaryKeywords": ["follow up old estimates", "rehash unsold quotes", "contractor estimate follow up automation"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "explainer",
+          "wordCount": 1400,
+          "url": "/blog/unsold-estimates-recovery-contractors",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Reputation & Reviews",
+      "color": "#7B4F9D",
+      "posts": [
+        {
+          "title": "AI Reputation Management for Contractors: Get More 5-Star Reviews on Autopilot",
+          "keyword": "AI reputation management contractors",
+          "secondaryKeywords": ["automated review generation", "Google reviews contractor", "reputation management service business"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/ai-reputation-management-contractors",
+          "status": "planned"
+        },
+        {
+          "title": "How Google Reviews Impact Contractor Revenue (and How to Get More)",
+          "keyword": "Google reviews impact contractor revenue",
+          "secondaryKeywords": ["Google reviews ROI", "how reviews affect business revenue", "contractor Google rating revenue"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "explainer",
+          "wordCount": 1400,
+          "url": "/blog/google-reviews-impact-contractor-revenue",
+          "status": "planned"
+        },
+        {
+          "title": "Automated Review Request Systems: The Complete Setup Guide",
+          "keyword": "automated review request system",
+          "secondaryKeywords": ["automated review SMS", "review generation automation", "ask for reviews automatically"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "how-to",
+          "wordCount": 1400,
+          "url": "/blog/automated-review-request-system-guide",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "AI Implementation & ROI",
+      "color": "#D4574E",
+      "posts": [
+        {
+          "title": "AI for Small Business: A No-BS Guide for Contractors Who Hate Tech",
+          "keyword": "AI for small business contractors guide",
+          "secondaryKeywords": ["AI for contractors beginners", "simple AI tools service business", "AI for non-technical business owners"],
+          "volume": "high",
+          "intent": "informational",
+          "template": "ultimate-guide",
+          "wordCount": 1800,
+          "url": "/blog/ai-small-business-contractors-guide",
+          "status": "planned"
+        },
+        {
+          "title": "How to Calculate AI ROI for Your Service Business",
+          "keyword": "AI ROI service business",
+          "secondaryKeywords": ["AI return on investment", "is AI worth it contractors", "AI automation cost benefit"],
+          "volume": "medium",
+          "intent": "informational",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/calculate-ai-roi-service-business",
+          "status": "planned"
+        },
+        {
+          "title": "5 AI Tools Every HVAC and Roofing Company Needs in 2026",
+          "keyword": "AI tools HVAC roofing companies 2026",
+          "secondaryKeywords": ["best AI tools contractors", "AI technology home services", "must have AI tools service business"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "listicle",
+          "wordCount": 1500,
+          "url": "/blog/ai-tools-hvac-roofing-companies",
+          "status": "planned"
+        },
+        {
+          "title": "AI Appointment Scheduling for Contractors: Book Jobs While You Sleep",
+          "keyword": "AI appointment scheduling contractors",
+          "secondaryKeywords": ["automated booking contractor", "AI scheduling home services", "online booking automation contractor"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1400,
+          "url": "/blog/ai-appointment-scheduling-contractors",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Industry-Specific Revenue Recovery",
+      "color": "#2A7B9B",
+      "posts": [
+        {
+          "title": "AI Revenue Recovery for Roofers: Stop Losing $120K in Missed Leads",
+          "keyword": "AI revenue recovery roofers",
+          "secondaryKeywords": ["roofing company AI", "roofer lead capture AI", "roofing missed calls solution"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/ai-revenue-recovery-roofers",
+          "status": "planned"
+        },
+        {
+          "title": "AI Revenue Recovery for HVAC Companies: Capture Every Emergency Call",
+          "keyword": "AI revenue recovery HVAC",
+          "secondaryKeywords": ["HVAC AI automation", "HVAC after hours calls AI", "HVAC lead recovery"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/ai-revenue-recovery-hvac",
+          "status": "planned"
+        },
+        {
+          "title": "AI Revenue Recovery for Plumbers: Never Miss Another Emergency Call",
+          "keyword": "AI revenue recovery plumbers",
+          "secondaryKeywords": ["plumbing company AI", "plumber missed calls", "plumbing lead capture automation"],
+          "volume": "medium",
+          "intent": "commercial",
+          "template": "how-to",
+          "wordCount": 1400,
+          "url": "/blog/ai-revenue-recovery-plumbers",
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "links": [
+    { "from": "pillar", "to": "cluster-0-post-0", "type": "mandatory", "anchor": "missed calls cost contractors" },
+    { "from": "pillar", "to": "cluster-0-post-1", "type": "mandatory", "anchor": "missed call text-back" },
+    { "from": "pillar", "to": "cluster-0-post-2", "type": "mandatory", "anchor": "speed to lead" },
+    { "from": "pillar", "to": "cluster-0-post-3", "type": "mandatory", "anchor": "after-hours lead capture" },
+    { "from": "pillar", "to": "cluster-1-post-0", "type": "mandatory", "anchor": "AI receptionist vs human" },
+    { "from": "pillar", "to": "cluster-1-post-1", "type": "mandatory", "anchor": "AI voice assistant for HVAC" },
+    { "from": "pillar", "to": "cluster-1-post-2", "type": "mandatory", "anchor": "AI front desk emergency calls" },
+    { "from": "pillar", "to": "cluster-1-post-3", "type": "mandatory", "anchor": "best AI answering services" },
+    { "from": "pillar", "to": "cluster-2-post-0", "type": "mandatory", "anchor": "database reactivation" },
+    { "from": "pillar", "to": "cluster-2-post-1", "type": "mandatory", "anchor": "AI reactivation campaign" },
+    { "from": "pillar", "to": "cluster-2-post-2", "type": "mandatory", "anchor": "unsold estimate recovery" },
+    { "from": "pillar", "to": "cluster-3-post-0", "type": "mandatory", "anchor": "AI reputation management" },
+    { "from": "pillar", "to": "cluster-3-post-1", "type": "mandatory", "anchor": "Google reviews impact revenue" },
+    { "from": "pillar", "to": "cluster-3-post-2", "type": "mandatory", "anchor": "automated review requests" },
+    { "from": "pillar", "to": "cluster-4-post-0", "type": "mandatory", "anchor": "AI guide for contractors" },
+    { "from": "pillar", "to": "cluster-4-post-1", "type": "mandatory", "anchor": "calculate AI ROI" },
+    { "from": "pillar", "to": "cluster-4-post-2", "type": "mandatory", "anchor": "AI tools for HVAC and roofing" },
+    { "from": "pillar", "to": "cluster-4-post-3", "type": "mandatory", "anchor": "AI appointment scheduling" },
+    { "from": "pillar", "to": "cluster-5-post-0", "type": "mandatory", "anchor": "AI for roofers" },
+    { "from": "pillar", "to": "cluster-5-post-1", "type": "mandatory", "anchor": "AI for HVAC companies" },
+    { "from": "pillar", "to": "cluster-5-post-2", "type": "mandatory", "anchor": "AI for plumbers" },
+
+    { "from": "cluster-0-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-0-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-0-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-0-post-3", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-1-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-1-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-1-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-1-post-3", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-2-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-2-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-2-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-3-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-3-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-3-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-4-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-4-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-4-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-4-post-3", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-5-post-0", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-5-post-1", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+    { "from": "cluster-5-post-2", "to": "pillar", "type": "mandatory", "anchor": "AI revenue recovery guide" },
+
+    { "from": "cluster-0-post-0", "to": "cluster-0-post-1", "type": "within-cluster", "anchor": "missed call text-back" },
+    { "from": "cluster-0-post-0", "to": "cluster-0-post-2", "type": "within-cluster", "anchor": "speed to lead" },
+    { "from": "cluster-0-post-1", "to": "cluster-0-post-0", "type": "within-cluster", "anchor": "cost of missed calls" },
+    { "from": "cluster-0-post-1", "to": "cluster-0-post-3", "type": "within-cluster", "anchor": "after-hours lead capture" },
+    { "from": "cluster-0-post-2", "to": "cluster-0-post-0", "type": "within-cluster", "anchor": "missed call costs" },
+    { "from": "cluster-0-post-2", "to": "cluster-0-post-1", "type": "within-cluster", "anchor": "missed call text-back" },
+    { "from": "cluster-0-post-3", "to": "cluster-0-post-0", "type": "within-cluster", "anchor": "missed call revenue loss" },
+    { "from": "cluster-0-post-3", "to": "cluster-1-post-1", "type": "cross-cluster", "anchor": "AI voice assistant for HVAC" },
+
+    { "from": "cluster-1-post-0", "to": "cluster-1-post-3", "type": "within-cluster", "anchor": "best AI answering services" },
+    { "from": "cluster-1-post-0", "to": "cluster-1-post-1", "type": "within-cluster", "anchor": "AI voice for HVAC" },
+    { "from": "cluster-1-post-1", "to": "cluster-1-post-0", "type": "within-cluster", "anchor": "AI vs human receptionist" },
+    { "from": "cluster-1-post-1", "to": "cluster-1-post-2", "type": "within-cluster", "anchor": "emergency call handling" },
+    { "from": "cluster-1-post-2", "to": "cluster-1-post-1", "type": "within-cluster", "anchor": "AI voice assistant" },
+    { "from": "cluster-1-post-2", "to": "cluster-0-post-3", "type": "cross-cluster", "anchor": "after-hours lead capture" },
+    { "from": "cluster-1-post-3", "to": "cluster-1-post-0", "type": "within-cluster", "anchor": "AI vs human receptionist" },
+    { "from": "cluster-1-post-3", "to": "cluster-4-post-1", "type": "cross-cluster", "anchor": "AI ROI calculation" },
+
+    { "from": "cluster-2-post-0", "to": "cluster-2-post-1", "type": "within-cluster", "anchor": "AI reactivation campaign guide" },
+    { "from": "cluster-2-post-0", "to": "cluster-2-post-2", "type": "within-cluster", "anchor": "unsold estimate recovery" },
+    { "from": "cluster-2-post-1", "to": "cluster-2-post-0", "type": "within-cluster", "anchor": "database reactivation for contractors" },
+    { "from": "cluster-2-post-1", "to": "cluster-2-post-2", "type": "within-cluster", "anchor": "rehash old quotes" },
+    { "from": "cluster-2-post-2", "to": "cluster-2-post-0", "type": "within-cluster", "anchor": "full database reactivation" },
+    { "from": "cluster-2-post-2", "to": "cluster-4-post-1", "type": "cross-cluster", "anchor": "calculate your AI ROI" },
+
+    { "from": "cluster-3-post-0", "to": "cluster-3-post-1", "type": "within-cluster", "anchor": "how reviews impact revenue" },
+    { "from": "cluster-3-post-0", "to": "cluster-3-post-2", "type": "within-cluster", "anchor": "automated review requests" },
+    { "from": "cluster-3-post-1", "to": "cluster-3-post-0", "type": "within-cluster", "anchor": "AI reputation management" },
+    { "from": "cluster-3-post-1", "to": "cluster-3-post-2", "type": "within-cluster", "anchor": "set up automated reviews" },
+    { "from": "cluster-3-post-2", "to": "cluster-3-post-0", "type": "within-cluster", "anchor": "AI reputation management" },
+    { "from": "cluster-3-post-2", "to": "cluster-3-post-1", "type": "within-cluster", "anchor": "reviews and revenue" },
+
+    { "from": "cluster-4-post-0", "to": "cluster-4-post-1", "type": "within-cluster", "anchor": "calculate AI ROI" },
+    { "from": "cluster-4-post-0", "to": "cluster-4-post-2", "type": "within-cluster", "anchor": "top AI tools for contractors" },
+    { "from": "cluster-4-post-0", "to": "cluster-0-post-0", "type": "cross-cluster", "anchor": "cost of missed calls" },
+    { "from": "cluster-4-post-1", "to": "cluster-4-post-0", "type": "within-cluster", "anchor": "AI guide for contractors" },
+    { "from": "cluster-4-post-1", "to": "cluster-2-post-0", "type": "cross-cluster", "anchor": "database reactivation ROI" },
+    { "from": "cluster-4-post-2", "to": "cluster-4-post-0", "type": "within-cluster", "anchor": "getting started with AI" },
+    { "from": "cluster-4-post-2", "to": "cluster-1-post-3", "type": "cross-cluster", "anchor": "AI answering services compared" },
+    { "from": "cluster-4-post-3", "to": "cluster-4-post-0", "type": "within-cluster", "anchor": "AI for contractors guide" },
+    { "from": "cluster-4-post-3", "to": "cluster-1-post-0", "type": "cross-cluster", "anchor": "AI receptionist vs human" },
+
+    { "from": "cluster-5-post-0", "to": "cluster-5-post-1", "type": "within-cluster", "anchor": "AI for HVAC companies" },
+    { "from": "cluster-5-post-0", "to": "cluster-0-post-0", "type": "cross-cluster", "anchor": "missed call costs" },
+    { "from": "cluster-5-post-1", "to": "cluster-5-post-0", "type": "within-cluster", "anchor": "AI for roofers" },
+    { "from": "cluster-5-post-1", "to": "cluster-1-post-1", "type": "cross-cluster", "anchor": "HVAC AI voice assistant" },
+    { "from": "cluster-5-post-2", "to": "cluster-5-post-0", "type": "within-cluster", "anchor": "AI for roofers" },
+    { "from": "cluster-5-post-2", "to": "cluster-0-post-3", "type": "cross-cluster", "anchor": "after-hours lead capture" }
+  ],
+  "meta": {
+    "totalPosts": 22,
+    "totalClusters": 6,
+    "totalLinks": 64,
+    "estimatedWords": 33600,
+    "targetSite": "https://aipeakbiz.com",
+    "seedKeyword": "AI revenue recovery service business",
+    "createdAt": "2026-05-25"
+  }
+}

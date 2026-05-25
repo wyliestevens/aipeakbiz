@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { AnalyticsScripts } from "@/components/analytics";
 import { SkipToMain } from "@/components/skip-to-main";
 import { ChatWidget } from "@/components/chat-widget";
+import { HtmlLang } from "@/components/html-lang";
 import { I18nProvider } from "@/i18n/context";
 import { getDictionary, locales } from "@/i18n";
 import type { Lang } from "@/i18n";
@@ -25,6 +26,7 @@ export default async function LangLayout({
 
   return (
     <I18nProvider dict={dict} lang={lang}>
+      <HtmlLang lang={lang} />
       <SkipToMain />
       <Navbar />
       <MissionStatement />

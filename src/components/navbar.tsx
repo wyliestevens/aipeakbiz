@@ -66,6 +66,7 @@ export function Navbar() {
             alt="AI Peak Biz"
             width={48}
             height={48}
+            sizes="48px"
             className="w-10 h-10 md:w-12 md:h-12"
             priority
           />

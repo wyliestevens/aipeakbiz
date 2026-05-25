@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Peak Biz — Semantic Topic Cluster Map</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; overflow: hidden; }
+  #canvas { width: 100vw; height: 100vh; }
+  .tooltip {
+    position: absolute; display: none; background: #1e293b; border: 1px solid #334155;
+    border-radius: 8px; padding: 12px 16px; max-width: 320px; font-size: 13px;
+    line-height: 1.5; box-shadow: 0 4px 20px rgba(0,0,0,0.4); z-index: 100;
+    pointer-events: none;
+  }
+  .tooltip h3 { font-size: 14px; margin-bottom: 6px; color: #f8fafc; }
+  .tooltip .meta { color: #94a3b8; font-size: 12px; }
+  .tooltip .keyword { color: #60a5fa; font-size: 12px; font-style: italic; }
+  .legend {
+    position: fixed; bottom: 20px; left: 20px; background: #1e293b; border: 1px solid #334155;
+    border-radius: 8px; padding: 16px; font-size: 12px; z-index: 50;
+  }
+  .legend h4 { margin-bottom: 8px; font-size: 13px; color: #f8fafc; }
+  .legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .header {
+    position: fixed; top: 20px; left: 20px; z-index: 50;
+  }
+  .header h1 { font-size: 20px; color: #f8fafc; margin-bottom: 4px; }
+  .header p { font-size: 13px; color: #94a3b8; }
+  .stats {
+    position: fixed; top: 20px; right: 20px; background: #1e293b; border: 1px solid #334155;
+    border-radius: 8px; padding: 16px; font-size: 12px; z-index: 50;
+  }
+  .stats h4 { margin-bottom: 8px; font-size: 13px; color: #f8fafc; }
+  .stat-row { display: flex; justify-content: space-between; gap: 24px; margin-bottom: 4px; }
+  .stat-value { color: #60a5fa; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>AI Peak Biz — Topic Cluster Map</h1>
+  <p>aipeakbiz.com content architecture &bull; 22 posts &bull; 6 clusters</p>
+</div>
+
+<div class="stats">
+  <h4>Cluster Stats</h4>
+  <div class="stat-row"><span>Total posts</span><span class="stat-value">22</span></div>
+  <div class="stat-row"><span>Clusters</span><span class="stat-value">6</span></div>
+  <div class="stat-row"><span>Internal links</span><span class="stat-value">64</span></div>
+  <div class="stat-row"><span>Est. words</span><span class="stat-value">33,600</span></div>
+  <div class="stat-row"><span>Status</span><span class="stat-value">Planned</span></div>
+</div>
+
+<div class="legend">
+  <h4>Clusters</h4>
+  <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> Pillar Page</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#2B5BA8"></div> Missed Calls & Lead Capture</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#C27C3E"></div> AI Voice & Front Desk</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4A8C6F"></div> Database Reactivation</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#7B4F9D"></div> Reputation & Reviews</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#D4574E"></div> AI Implementation & ROI</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#2A7B9B"></div> Industry-Specific</div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+<canvas id="canvas"></canvas>
+
+<script>
+const CLUSTER_DATA = {
+  pillar: {
+    title: "AI Revenue Recovery for Service Businesses: The Complete Guide",
+    keyword: "AI revenue recovery service business",
+    template: "ultimate-guide",
+    wordCount: 3500,
+    url: "/blog/ai-revenue-recovery-service-businesses-guide"
+  },
+  clusters: [
+    {
+      name: "Missed Calls & Lead Capture",
+      color: "#2B5BA8",
+      posts: [
+        { title: "How Much Do Missed Calls Cost Contractors?", keyword: "missed calls cost contractors", template: "explainer", wordCount: 1500, url: "/blog/missed-calls-cost-contractors" },
+        { title: "Missed Call Text-Back for Contractors", keyword: "missed call text back contractors", template: "how-to", wordCount: 1500, url: "/blog/missed-call-text-back-contractors" },
+        { title: "Speed to Lead: Why 5 Minutes Wins the Job", keyword: "speed to lead service business", template: "explainer", wordCount: 1400, url: "/blog/speed-to-lead-service-business" },
+        { title: "After-Hours Lead Capture", keyword: "after hours lead capture contractors", template: "how-to", wordCount: 1400, url: "/blog/after-hours-lead-capture-contractors" }
+      ]
+    },
+    {
+      name: "AI Voice & Front Desk",
+      color: "#C27C3E",
+      posts: [
+        { title: "AI Receptionist vs Human Receptionist", keyword: "AI receptionist vs human receptionist", template: "comparison", wordCount: 1600, url: "/blog/ai-receptionist-vs-human-receptionist-contractors" },
+        { title: "AI Voice Assistant for HVAC Companies", keyword: "AI voice assistant HVAC", template: "how-to", wordCount: 1500, url: "/blog/ai-voice-assistant-hvac-companies" },
+        { title: "AI Front Desk: Emergency Calls for Contractors", keyword: "AI front desk emergency calls", template: "explainer", wordCount: 1300, url: "/blog/ai-front-desk-emergency-calls-contractors" },
+        { title: "Best AI Answering Services for Contractors (2026)", keyword: "best AI answering service contractors", template: "best-of", wordCount: 1800, url: "/blog/best-ai-answering-services-contractors" }
+      ]
+    },
+    {
+      name: "Database Reactivation",
+      color: "#4A8C6F",
+      posts: [
+        { title: "Database Reactivation for Contractors", keyword: "database reactivation contractors", template: "how-to", wordCount: 1600, url: "/blog/database-reactivation-contractors" },
+        { title: "AI-Powered Database Reactivation Campaign Guide", keyword: "AI database reactivation campaign", template: "how-to", wordCount: 1500, url: "/blog/ai-database-reactivation-campaign-guide" },
+        { title: "Unsold Estimates: Recovering $50K+ from Old Quotes", keyword: "unsold estimates recovery contractors", template: "explainer", wordCount: 1400, url: "/blog/unsold-estimates-recovery-contractors" }
+      ]
+    },
+    {
+      name: "Reputation & Reviews",
+      color: "#7B4F9D",
+      posts: [
+        { title: "AI Reputation Management for Contractors", keyword: "AI reputation management contractors", template: "how-to", wordCount: 1500, url: "/blog/ai-reputation-management-contractors" },
+        { title: "How Google Reviews Impact Contractor Revenue", keyword: "Google reviews contractor revenue", template: "explainer", wordCount: 1400, url: "/blog/google-reviews-impact-contractor-revenue" },
+        { title: "Automated Review Request Systems: Setup Guide", keyword: "automated review request system", template: "how-to", wordCount: 1400, url: "/blog/automated-review-request-system-guide" }
+      ]
+    },
+    {
+      name: "AI Implementation & ROI",
+      color: "#D4574E",
+      posts: [
+        { title: "AI for Small Business: No-BS Guide for Contractors", keyword: "AI small business contractors guide", template: "ultimate-guide", wordCount: 1800, url: "/blog/ai-small-business-contractors-guide" },
+        { title: "How to Calculate AI ROI for Your Service Business", keyword: "AI ROI service business", template: "how-to", wordCount: 1500, url: "/blog/calculate-ai-roi-service-business" },
+        { title: "5 AI Tools Every HVAC & Roofing Company Needs", keyword: "AI tools HVAC roofing 2026", template: "listicle", wordCount: 1500, url: "/blog/ai-tools-hvac-roofing-companies" },
+        { title: "AI Appointment Scheduling for Contractors", keyword: "AI appointment scheduling contractors", template: "how-to", wordCount: 1400, url: "/blog/ai-appointment-scheduling-contractors" }
+      ]
+    },
+    {
+      name: "Industry-Specific",
+      color: "#2A7B9B",
+      posts: [
+        { title: "AI Revenue Recovery for Roofers", keyword: "AI revenue recovery roofers", template: "how-to", wordCount: 1500, url: "/blog/ai-revenue-recovery-roofers" },
+        { title: "AI Revenue Recovery for HVAC Companies", keyword: "AI revenue recovery HVAC", template: "how-to", wordCount: 1500, url: "/blog/ai-revenue-recovery-hvac" },
+        { title: "AI Revenue Recovery for Plumbers", keyword: "AI revenue recovery plumbers", template: "how-to", wordCount: 1400, url: "/blog/ai-revenue-recovery-plumbers" }
+      ]
+    }
+  ]
+};
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const tooltip = document.getElementById('tooltip');
+
+let W, H, nodes = [], edges = [], dragging = null, offsetX = 0, offsetY = 0;
+let mouseX = 0, mouseY = 0, hoveredNode = null;
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', () => { resize(); layoutNodes(); });
+resize();
+
+function layoutNodes() {
+  nodes = [];
+  const cx = W / 2, cy = H / 2;
+
+  // Pillar at center
+  nodes.push({
+    id: 'pillar', x: cx, y: cy, r: 32,
+    color: '#f59e0b', title: CLUSTER_DATA.pillar.title,
+    keyword: CLUSTER_DATA.pillar.keyword, template: CLUSTER_DATA.pillar.template,
+    wordCount: CLUSTER_DATA.pillar.wordCount, url: CLUSTER_DATA.pillar.url,
+    isPillar: true, cluster: 'Pillar'
+  });
+
+  const numClusters = CLUSTER_DATA.clusters.length;
+  const clusterRadius = Math.min(W, H) * 0.32;
+
+  CLUSTER_DATA.clusters.forEach((cluster, ci) => {
+    const angle = (ci / numClusters) * Math.PI * 2 - Math.PI / 2;
+    const clusterCx = cx + Math.cos(angle) * clusterRadius;
+    const clusterCy = cy + Math.sin(angle) * clusterRadius;
+
+    const numPosts = cluster.posts.length;
+    const spokeRadius = Math.min(W, H) * 0.1;
+
+    cluster.posts.forEach((post, pi) => {
+      const spokeAngle = angle + ((pi - (numPosts - 1) / 2) * 0.35);
+      const dist = spokeRadius * (0.7 + pi * 0.15);
+      nodes.push({
+        id: `cluster-${ci}-post-${pi}`,
+        x: clusterCx + Math.cos(spokeAngle) * dist,
+        y: clusterCy + Math.sin(spokeAngle) * dist,
+        r: 16, color: cluster.color, title: post.title,
+        keyword: post.keyword, template: post.template,
+        wordCount: post.wordCount, url: post.url,
+        isPillar: false, cluster: cluster.name
+      });
+    });
+  });
+
+  // Build edges (pillar to/from all spokes)
+  edges = [];
+  nodes.forEach(n => {
+    if (!n.isPillar) {
+      edges.push({ from: 'pillar', to: n.id, type: 'mandatory' });
+    }
+  });
+}
+
+layoutNodes();
+
+function getNode(id) { return nodes.find(n => n.id === id); }
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  // Draw edges
+  edges.forEach(e => {
+    const a = getNode(e.from), b = getNode(e.to);
+    if (!a || !b) return;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = hoveredNode && (hoveredNode.id === a.id || hoveredNode.id === b.id)
+      ? 'rgba(250,250,250,0.3)' : 'rgba(100,116,139,0.15)';
+    ctx.lineWidth = hoveredNode && (hoveredNode.id === a.id || hoveredNode.id === b.id) ? 1.5 : 0.5;
+    ctx.stroke();
+  });
+
+  // Draw nodes
+  nodes.forEach(n => {
+    const isHovered = hoveredNode && hoveredNode.id === n.id;
+    const r = isHovered ? n.r * 1.2 : n.r;
+
+    // Glow
+    if (n.isPillar || isHovered) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r + 6, 0, Math.PI * 2);
+      ctx.fillStyle = n.color + '33';
+      ctx.fill();
+    }
+
+    // Circle
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = n.color;
+    ctx.fill();
+
+    // Border
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.strokeStyle = isHovered ? '#f8fafc' : n.color + 'aa';
+    ctx.lineWidth = isHovered ? 2 : 1;
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle = '#f8fafc';
+    ctx.font = n.isPillar ? 'bold 11px system-ui' : '10px system-ui';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    const label = n.title.length > 35 ? n.title.slice(0, 33) + '...' : n.title;
+    ctx.fillText(label, n.x, n.y + r + 6);
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+
+function hitTest(x, y) {
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    const n = nodes[i];
+    const dx = x - n.x, dy = y - n.y;
+    if (dx * dx + dy * dy <= (n.r + 4) * (n.r + 4)) return n;
+  }
+  return null;
+}
+
+canvas.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  if (dragging) {
+    dragging.x = e.clientX - offsetX;
+    dragging.y = e.clientY - offsetY;
+    return;
+  }
+  const node = hitTest(e.clientX, e.clientY);
+  hoveredNode = node;
+  canvas.style.cursor = node ? 'grab' : 'default';
+
+  if (node) {
+    tooltip.style.display = 'block';
+    tooltip.innerHTML = `
+      <h3>${node.title}</h3>
+      <div class="keyword">${node.keyword}</div>
+      <div class="meta" style="margin-top:6px">
+        <strong>Cluster:</strong> ${node.cluster}<br>
+        <strong>Template:</strong> ${node.template}<br>
+        <strong>Words:</strong> ${node.wordCount.toLocaleString()}<br>
+        <strong>URL:</strong> ${node.url}
+      </div>
+    `;
+    let tx = e.clientX + 16, ty = e.clientY + 16;
+    if (tx + 320 > W) tx = e.clientX - 336;
+    if (ty + 160 > H) ty = e.clientY - 176;
+    tooltip.style.left = tx + 'px';
+    tooltip.style.top = ty + 'px';
+  } else {
+    tooltip.style.display = 'none';
+  }
+});
+
+canvas.addEventListener('mousedown', e => {
+  const node = hitTest(e.clientX, e.clientY);
+  if (node) {
+    dragging = node;
+    offsetX = e.clientX - node.x;
+    offsetY = e.clientY - node.y;
+    canvas.style.cursor = 'grabbing';
+  }
+});
+
+canvas.addEventListener('mouseup', () => { dragging = null; canvas.style.cursor = 'default'; });
+canvas.addEventListener('mouseleave', () => { dragging = null; hoveredNode = null; tooltip.style.display = 'none'; });
+</script>
+</body>
+</html>

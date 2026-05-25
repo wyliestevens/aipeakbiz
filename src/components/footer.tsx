@@ -29,7 +29,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href={`${prefix}/`} className="flex items-center gap-2 mb-4">
-              <Image src="/images/logo.png" alt="AI Peak Biz" width={44} height={44} />
+              <Image src="/images/logo.png" alt="AI Peak Biz" width={44} height={44} sizes="44px" />
               <span className="text-lg font-bold text-white">
                 AI Peak Biz
               </span>
@@ -64,7 +64,7 @@ export function Footer() {
                   <a
                     href={l.href}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener nofollow"
                     title={`${l.name} -- built by AI Peak Biz`}
                     className="text-sm text-slate-400 hover:text-white transition-colors"
                   >
