@@ -81,8 +81,17 @@ export default async function BlogPage({ params }: Props) {
                 <Link
                   key={post.slug}
                   href={`${prefix}/blog/${post.slug}`}
-                  className="block bg-surface rounded-2xl border border-border p-8 hover:border-brand-100 hover:shadow-md transition-all duration-300 group"
+                  className="block bg-surface rounded-2xl border border-border overflow-hidden hover:border-brand-100 hover:shadow-md transition-all duration-300 group"
                 >
+                  {post.heroImage && (
+                    <img
+                      src={post.heroImage}
+                      alt={post.heroImageAlt}
+                      className="w-full h-48 md:h-56 object-cover"
+                      loading="lazy"
+                    />
+                  )}
+                  <div className="p-8">
                   <span className="inline-block text-xs font-bold tracking-widest text-brand uppercase mb-3">
                     {post.category}
                   </span>
@@ -111,6 +120,7 @@ export default async function BlogPage({ params }: Props) {
                     <span className="ml-auto text-brand font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                       Read more <ArrowRight className="w-4 h-4" />
                     </span>
+                  </div>
                   </div>
                 </Link>
               ))}

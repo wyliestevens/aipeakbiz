@@ -51,6 +51,18 @@ export function BlogPostContent({ post, lang }: Props) {
           </div>
         </header>
 
+        {/* Hero image */}
+        {post.heroImage && (
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={post.heroImage}
+              alt={post.heroImageAlt}
+              className="w-full h-auto aspect-[1200/630] object-cover"
+              loading="eager"
+            />
+          </div>
+        )}
+
         {/* Content */}
         <div
           className="prose prose-lg prose-slate max-w-none

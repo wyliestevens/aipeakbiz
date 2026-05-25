@@ -11,6 +11,8 @@ export interface BlogPost {
   readTime: string;
   category: string;
   keywords: string[];
+  heroImage: string; // URL for the hero image
+  heroImageAlt: string;
   content: string;
   contentEs?: string;
   faqs: { question: string; answer: string }[];
@@ -36,6 +38,8 @@ export const blogPosts: BlogPost[] = [
       "roofing missed calls",
       "plumbing missed calls",
     ],
+    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor on a roof with a phone ringing — representing missed calls in the trades",
     content: `<p>You just finished a roof tear-off. It&rsquo;s 2:47 PM on a Tuesday. Your phone buzzed three times while you were up on the ladder, but you couldn&rsquo;t answer. By the time you check your voicemail at 5:30, two of the three callers have already booked with someone else.</p>
 
 <p>You didn&rsquo;t lose three phone calls. You lost somewhere between $2,700 and $7,200 in revenue. Today alone.</p>
@@ -269,6 +273,8 @@ export const blogPosts: BlogPost[] = [
       "past customer reactivation",
       "win back past clients",
     ],
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    heroImageAlt: "Business dashboard showing customer data — representing database reactivation opportunity",
     content: `<p>You spent good money getting those leads. Google Ads, yard signs, referral bonuses, HomeAdvisor, Angi &mdash; whatever the channel, every name in your CRM cost you something. Time, money, or both.</p>
 
 <p>And right now, most of those names are just sitting there. Collecting dust. Not because they were bad leads. Because life happened. They got busy. The timing was off. They went with a cheaper quote and regretted it. Their roof didn&rsquo;t leak bad enough yet. Their AC limped through one more summer.</p>
@@ -521,6 +527,8 @@ export const blogPosts: BlogPost[] = [
       "AI receptionist home services",
       "best answering service contractors",
     ],
+    heroImage: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=1200&h=630&fit=crop",
+    heroImageAlt: "Person talking on the phone at a desk — comparing AI and traditional answering services",
     content: `<p>You are paying someone $1 to $2 per minute to answer your phones. They read from a script your office manager wrote six months ago. They take a name, a number, and a vague description of the problem. Then they email it to you. By the time you see it &mdash; maybe an hour later, maybe Monday morning &mdash; that homeowner has already called two other contractors.</p>
 
 <p>This is how most answering services have worked for decades. And for a long time, it was the best option available. But the landscape has changed. AI-powered voice assistants can now hold natural conversations, book appointments on your calendar, and capture lead details in real time, all without a per-minute billing clock ticking in the background.</p>
