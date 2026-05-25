@@ -16,6 +16,7 @@ const nextConfig = {
       { source: "/reputation-management", destination: "/en/reputation-management" },
       { source: "/website-design", destination: "/en/website-design" },
       { source: "/blog", destination: "/en/blog" },
+      { source: "/blog/:slug", destination: "/en/blog/:slug" },
       { source: "/free-assessment", destination: "/en/free-assessment" },
       { source: "/terms", destination: "/en/terms" },
       { source: "/privacy-policy", destination: "/en/privacy-policy" },
