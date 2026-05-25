@@ -1,5 +1,7 @@
 import { industries } from "./industries";
 import { IndustryContent } from "./industry-content";
+import { subIndustryContent2 } from "./sub-industry-content-2";
+import { subIndustryContent3 } from "./sub-industry-content-3";
 
 export interface SubIndustryContent extends IndustryContent {
   parentSlug: string;
@@ -2356,6 +2358,10 @@ export const subIndustryContent: Record<string, SubIndustryContent> = {
     ],
     reviewIndices: [],
   },
+  // Merge Professional Services, Legal, Financial, Real Estate
+  ...subIndustryContent2,
+  // Merge Automotive, Fitness, Beauty, Education, Hospitality, Trades
+  ...subIndustryContent3,
 };
 
 /** Convert a sub-industry display name to a URL slug. */
