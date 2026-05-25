@@ -108,6 +108,7 @@ const businessSchema = {
   sameAs: [
     "https://www.facebook.com/aipeakbiz/",
     "https://www.linkedin.com/in/aipeakbiz",
+    "https://share.google/XJmZhZ2xV7NYWS817",
   ],
 };
 
