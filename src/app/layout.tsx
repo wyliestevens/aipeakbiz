@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Stop losing jobs to missed calls and slow follow-up. AI Peak Biz helps service businesses respond instantly and book more appointments.",
     images: [
       {
-        url: "https://www.aipeakbiz.com/images/logo.png",
+        url: "https://www.aipeakbiz.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "AI Peak Biz — Revenue Recovery for Service Businesses",
