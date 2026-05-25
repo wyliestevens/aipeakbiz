@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reputation Management for Service Businesses",
-  description:
-    "AI Peak Biz builds automated reputation management systems. Get more 5-star Google reviews. Route negative feedback privately. Build trust that drives bookings.",
-  alternates: { canonical: "https://www.aipeakbiz.com/reputation-management" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Reputation Management for Service Businesses",
+    description:
+      "AI Peak Biz builds automated reputation management systems. Get more 5-star Google reviews. Route negative feedback privately. Build trust that drives bookings.",
+    alternates: buildLangAlternates(lang, "/reputation-management"),
+  };
+}
 
 export default function ReputationManagementPage() {
   return (

@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AI Chatbot for Service Businesses",
-  description:
-    "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.",
-  alternates: { canonical: "https://www.aipeakbiz.com/ai-chatbot" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "AI Chatbot for Service Businesses",
+    description:
+      "AI Peak Biz builds and manages AI chatbots that book appointments from your website 24/7. Instant responses. More bookings. Zero staff time.",
+    alternates: buildLangAlternates(lang, "/ai-chatbot"),
+  };
+}
 
 export default function AIChatbotPage() {
   return (

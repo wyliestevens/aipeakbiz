@@ -1,10 +1,18 @@
 import { Metadata } from "next";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "AI Peak Biz privacy policy. How we collect, use, and protect your information.",
-  alternates: { canonical: "https://www.aipeakbiz.com/privacy-policy" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Privacy Policy",
+    description: "AI Peak Biz privacy policy. How we collect, use, and protect your information.",
+    alternates: buildLangAlternates(lang, "/privacy-policy"),
+  };
+}
 
 export default function PrivacyPolicyPage() {
   return (

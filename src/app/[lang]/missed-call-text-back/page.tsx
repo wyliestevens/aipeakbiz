@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Missed Call Text-Back for Service Businesses | AI Peak Biz",
-  description:
-    "Never lose a lead to a missed call again. AI Peak Biz sets up automated text-back that responds within 60 seconds with a booking link.",
-  alternates: { canonical: "https://www.aipeakbiz.com/missed-call-text-back" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Missed Call Text-Back for Service Businesses | AI Peak Biz",
+    description:
+      "Never lose a lead to a missed call again. AI Peak Biz sets up automated text-back that responds within 60 seconds with a booking link.",
+    alternates: buildLangAlternates(lang, "/missed-call-text-back"),
+  };
+}
 
 export default function MissedCallTextBackPage() {
   return (

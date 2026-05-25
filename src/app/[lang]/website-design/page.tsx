@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Website Design for Service Businesses | AI Peak Biz",
-  description:
-    "AI Peak Biz designs and builds professional websites for service businesses. Fast, mobile-optimized, and built to convert visitors into booked appointments.",
-  alternates: { canonical: "https://www.aipeakbiz.com/website-design" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Website Design for Service Businesses | AI Peak Biz",
+    description:
+      "AI Peak Biz designs and builds professional websites for service businesses. Fast, mobile-optimized, and built to convert visitors into booked appointments.",
+    alternates: buildLangAlternates(lang, "/website-design"),
+  };
+}
 
 export default function WebsiteDesignPage() {
   return (

@@ -3,9 +3,10 @@ import { notFound } from "next/navigation";
 import { industryContent } from "@/data/industry-content";
 import { industries } from "@/data/industries";
 import { CategoryPage } from "@/components/category-page";
+import { buildLangAlternates } from "@/lib/seo";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -13,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { lang, slug } = await params;
 
   // Handle chiropractic separately
   if (slug === "chiropractic") {
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "AI Front Desk System for Chiropractors",
       description:
         "Stop losing patients to missed calls, no-shows, and weak reviews. AI Peak Biz builds and manages a complete AI front desk system for chiropractic clinics.",
-      alternates: { canonical: `https://www.aipeakbiz.com/industries/chiropractic` },
+      alternates: buildLangAlternates(lang, `/industries/chiropractic`),
       openGraph: {
         title: "AI Front Desk System for Chiropractors | AI Peak Biz",
         description:
@@ -36,13 +37,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: content.title,
     description: content.metaDescription,
-    alternates: { canonical: `https://www.aipeakbiz.com/industries/${slug}` },
+    alternates: buildLangAlternates(lang, `/industries/${slug}`),
     openGraph: {
       title: `${content.title} | AI Peak Biz`,
       description: content.metaDescription,
     },
   };
 }
+
+const industryBreadcrumb = (slug: string, title: string) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aipeakbiz.com" },
+    { "@type": "ListItem", position: 2, name: "Industries", item: "https://www.aipeakbiz.com" },
+    { "@type": "ListItem", position: 3, name: title, item: `https://www.aipeakbiz.com/industries/${slug}` },
+  ],
+});
 
 const serviceSchema = (slug: string, title: string, description: string) => ({
   "@context": "https://schema.org",
@@ -85,6 +96,12 @@ export default async function IndustryPage({ params }: Props) {
             ),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(industryBreadcrumb("chiropractic", "Chiropractors")),
+          }}
+        />
         <ChiropracticPage />
       </>
     );
@@ -101,6 +118,12 @@ export default async function IndustryPage({ params }: Props) {
           __html: JSON.stringify(
             serviceSchema(slug, content.title, content.metaDescription)
           ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(industryBreadcrumb(slug, content.title)),
         }}
       />
       <CategoryPage content={content} />

@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     title: "AI Peak Biz | Revenue Recovery for Service Businesses",
     description:
       "Stop losing jobs to missed calls and slow follow-up. AI Peak Biz helps service businesses respond instantly and book more appointments.",
+    images: [
+      {
+        url: "https://www.aipeakbiz.com/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Peak Biz — Revenue Recovery for Service Businesses",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -44,7 +52,14 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://www.aipeakbiz.com" },
+  alternates: {
+    canonical: "https://www.aipeakbiz.com",
+    languages: {
+      en: "https://www.aipeakbiz.com",
+      es: "https://www.aipeakbiz.com/es",
+      "x-default": "https://www.aipeakbiz.com",
+    },
+  },
 };
 
 const organizationSchema = {

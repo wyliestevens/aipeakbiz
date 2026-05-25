@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AI Voice Assistant for Service Businesses",
-  description:
-    "AI Peak Biz builds and manages AI voice assistants that answer every phone call 24/7. No missed calls. More booked appointments. No new payroll.",
-  alternates: { canonical: "https://www.aipeakbiz.com/ai-voice-assistant" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "AI Voice Assistant for Service Businesses",
+    description:
+      "AI Peak Biz builds and manages AI voice assistants that answer every phone call 24/7. No missed calls. More booked appointments. No new payroll.",
+    alternates: buildLangAlternates(lang, "/ai-voice-assistant"),
+  };
+}
 
 export default function AIVoiceAssistantPage() {
   return (

@@ -1,10 +1,18 @@
 import { Metadata } from "next";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Disclaimer",
-  description: "AI Peak Biz disclaimer regarding earnings, results, and use of our website and services.",
-  alternates: { canonical: "https://www.aipeakbiz.com/disclaimer" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Disclaimer",
+    description: "AI Peak Biz disclaimer regarding earnings, results, and use of our website and services.",
+    alternates: buildLangAlternates(lang, "/disclaimer"),
+  };
+}
 
 export default function DisclaimerPage() {
   return (

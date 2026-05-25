@@ -1,11 +1,19 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog",
-  description: "AI Peak Biz blog. Insights on AI automation, front desk systems, and growing your service business.",
-  alternates: { canonical: "https://www.aipeakbiz.com/blog" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Blog",
+    description: "AI Peak Biz blog. Insights on AI automation, front desk systems, and growing your service business.",
+    alternates: buildLangAlternates(lang, "/blog"),
+  };
+}
 
 // TODO: Add blog posts as content is created. For now, show a coming-soon state.
 

@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Database Reactivation for Service Businesses | AI Peak Biz",
-  description:
-    "AI Peak Biz reactivates your dormant customer database with automated outreach. Win back past customers who already know and trust your business.",
-  alternates: { canonical: "https://www.aipeakbiz.com/database-reactivation" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Database Reactivation for Service Businesses | AI Peak Biz",
+    description:
+      "AI Peak Biz reactivates your dormant customer database with automated outreach. Win back past customers who already know and trust your business.",
+    alternates: buildLangAlternates(lang, "/database-reactivation"),
+  };
+}
 
 export default function DatabaseReactivationPage() {
   return (

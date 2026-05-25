@@ -1,10 +1,18 @@
 import { Metadata } from "next";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions",
-  description: "AI Peak Biz terms and conditions governing use of our website and services.",
-  alternates: { canonical: "https://www.aipeakbiz.com/terms" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "Terms & Conditions",
+    description: "AI Peak Biz terms and conditions governing use of our website and services.",
+    alternates: buildLangAlternates(lang, "/terms"),
+  };
+}
 
 export default function TermsPage() {
   return (

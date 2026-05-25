@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import { ServicePageContent } from "@/components/service-page";
+import { buildLangAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AI Appointment Setter for Service Businesses",
-  description:
-    "AI Peak Biz builds AI appointment setters that call new leads instantly after form submission. Zero delay. More booked appointments. No staff required.",
-  alternates: { canonical: "https://www.aipeakbiz.com/ai-appointment-setter" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "AI Appointment Setter for Service Businesses",
+    description:
+      "AI Peak Biz builds AI appointment setters that call new leads instantly after form submission. Zero delay. More booked appointments. No staff required.",
+    alternates: buildLangAlternates(lang, "/ai-appointment-setter"),
+  };
+}
 
 export default function AIAppointmentSetterPage() {
   return (

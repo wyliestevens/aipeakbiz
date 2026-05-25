@@ -10,13 +10,22 @@ import { DeploymentSection } from "@/components/home/deployment-section";
 import { IndustriesWrapper } from "@/components/home/industries-wrapper";
 import { HomeFAQSection } from "@/components/home/home-faq-section";
 import { CTASection } from "@/components/cta-section";
+import { buildLangAlternates, faqSchema } from "@/lib/seo";
+import en from "@/i18n/dictionaries/en";
 
-export const metadata: Metadata = {
-  title: "AI Peak Biz | Revenue Recovery for Service Businesses",
-  description:
-    "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.",
-  alternates: { canonical: "https://www.aipeakbiz.com" },
-};
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "AI Peak Biz | Revenue Recovery for Service Businesses",
+    description:
+      "AI Peak Biz helps service businesses recover missed revenue with instant lead response, 24/7 call answering, and automated appointment booking. Built for contractors, roofers, HVAC, and local businesses.",
+    alternates: buildLangAlternates(lang, "/"),
+  };
+}
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -30,12 +39,18 @@ const websiteSchema = {
   },
 };
 
+const faqJsonLd = faqSchema(en.faq.items);
+
 export default function HomePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <HeroSection />
       <MissedLeadsSection />
