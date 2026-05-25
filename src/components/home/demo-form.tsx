@@ -74,7 +74,7 @@ export function DemoForm() {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="glassmorphism rounded-2xl p-8 flex flex-col items-center gap-4 text-center"
+        className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-2xl p-8 flex flex-col items-center gap-4 text-center"
       >
         <CheckCircle className="w-12 h-12 text-green-400" />
         <p className="text-xl font-semibold text-text-primary">Got it!</p>
@@ -87,17 +87,17 @@ export function DemoForm() {
   }
 
   const inputClasses =
-    "w-full px-4 py-3 rounded-lg bg-[#1E1E22] border border-[#3A3A3E] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-blue transition-colors text-sm";
+    "w-full px-4 py-3 rounded-lg bg-[#1E1E22] border border-[#3A3A3E] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-brand transition-colors text-sm";
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, duration: 0.6 }}
-      className="glassmorphism rounded-2xl p-6 lg:p-8"
+      className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-2xl p-6 lg:p-8"
     >
       <div className="flex items-center gap-2 mb-3">
-        <Phone className="w-5 h-5 text-accent-blue" />
+        <Phone className="w-5 h-5 text-brand" />
         <h3 className="text-lg font-bold text-text-primary">
           Get a Live Demo From Our AI Voice Assistant
         </h3>
@@ -186,7 +186,7 @@ export function DemoForm() {
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
             required
-            className="mt-1 accent-accent-blue"
+            className="mt-1 accent-brand"
           />
           <span className="text-xs text-text-muted leading-relaxed">
             I agree to receive an automated demo call at the number provided from

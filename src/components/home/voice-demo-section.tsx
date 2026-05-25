@@ -49,8 +49,8 @@ export function VoiceDemoSection() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glassmorphism text-sm mb-6">
-            <Phone className="w-4 h-4 text-accent-blue" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-sm mb-6">
+            <Phone className="w-4 h-4 text-brand" />
             <span className="text-text-primary font-medium">Live Demo</span>
           </div>
 
@@ -67,7 +67,7 @@ export function VoiceDemoSection() {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="glassmorphism rounded-2xl p-8 inline-flex flex-col items-center gap-3"
+              className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-2xl p-8 inline-flex flex-col items-center gap-3"
             >
               <CheckCircle className="w-10 h-10 text-green-400" />
               <p className="text-lg font-semibold text-text-primary">
@@ -89,7 +89,7 @@ export function VoiceDemoSection() {
                     setPhone(formatPhone(e.target.value));
                     if (status === "error") setStatus("idle");
                   }}
-                  className="w-full pl-11 pr-4 py-4 rounded-xl bg-[#1E1E22] border border-[#3A3A3E] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-blue transition-colors text-base"
+                  className="w-full pl-11 pr-4 py-4 rounded-xl bg-[#1E1E22] border border-[#3A3A3E] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-brand transition-colors text-base"
                   required
                 />
               </div>

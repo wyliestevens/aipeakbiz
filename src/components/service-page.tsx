@@ -33,7 +33,7 @@ export function ServicePageContent({
             transition={{ duration: 0.7 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-4">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-4">
               {title}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
@@ -66,7 +66,7 @@ export function ServicePageContent({
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <p className="text-3xl md:text-4xl font-bold font-mono gradient-text">
+                <p className="text-3xl md:text-4xl font-bold font-mono text-brand">
                   {stat.value}
                 </p>
                 <p className="text-sm text-text-muted mt-1">{stat.label}</p>
@@ -97,10 +97,10 @@ export function ServicePageContent({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6 text-center"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 text-center"
               >
-                <div className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-3 mx-auto">
-                  <Check className="w-4 h-4 text-accent-blue" />
+                <div className="w-8 h-8 rounded-lg bg-brand-50 flex items-center justify-center mb-3 mx-auto">
+                  <Check className="w-4 h-4 text-brand" />
                 </div>
                 <h3 className="text-sm font-semibold text-text-primary mb-2">
                   {feature.title}

@@ -14,7 +14,7 @@ export function ReviewsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+          <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
             5-Star Google Reviews
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display">

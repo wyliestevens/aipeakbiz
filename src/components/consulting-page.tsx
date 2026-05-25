@@ -51,7 +51,7 @@ export function ConsultingPageContent() {
             transition={{ duration: 0.7 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-violet uppercase mb-4">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-4">
               AI Consulting & Teaching
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
@@ -92,8 +92,8 @@ export function ConsultingPageContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glassmorphism text-sm mb-6">
-              <GraduationCap className="w-4 h-4 text-accent-violet" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-sm mb-6">
+              <GraduationCap className="w-4 h-4 text-brand" />
               <span className="text-text-primary font-medium">AI Teaching & Training</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display mb-4">
@@ -134,10 +134,10 @@ export function ConsultingPageContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6 text-center"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 text-center"
               >
-                <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4 mx-auto">
-                  <item.icon className="w-5 h-5 text-accent-violet" />
+                <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-4 mx-auto">
+                  <item.icon className="w-5 h-5 text-brand" />
                 </div>
                 <h3 className="text-lg font-semibold text-text-primary mb-2">
                   {item.title}
@@ -190,10 +190,10 @@ export function ConsultingPageContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6 text-center"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 text-center"
               >
-                <div className="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center mb-4 mx-auto">
-                  <step.icon className="w-5 h-5 text-accent-violet" />
+                <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-4 mx-auto">
+                  <step.icon className="w-5 h-5 text-brand" />
                 </div>
                 <h3 className="text-xl font-semibold text-text-primary mb-2">
                   {step.title}
@@ -222,8 +222,8 @@ export function ConsultingPageContent() {
             <ul className="space-y-4">
               {benefits.map((b) => (
                 <li key={b} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-accent-blue/10 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-accent-blue" />
+                  <div className="w-6 h-6 rounded-full bg-brand-50 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 text-brand" />
                   </div>
                   <span className="text-lg text-text-secondary">{b}</span>
                 </li>
@@ -253,7 +253,7 @@ export function ConsultingPageContent() {
               If you already know exactly what you need, check out our{" "}
               <Link
                 href="/pricing"
-                className="text-accent-blue hover:text-accent-violet transition-colors font-medium"
+                className="text-brand hover:text-brand transition-colors font-medium"
               >
                 done-for-you AI systems
               </Link>

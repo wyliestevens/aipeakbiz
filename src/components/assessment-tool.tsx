@@ -184,9 +184,9 @@ export function AssessmentTool() {
       {/* Progress bar */}
       {step > 0 && step < 8 && (
         <div className="mb-8">
-          <div className="h-1 bg-border-custom rounded-full overflow-hidden">
+          <div className="h-1 bg-border rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-accent-blue to-accent-violet"
+              className="h-full bg-gradient-to-r from-brand to-brand-dark"
               animate={{ width: `${(step / 7) * 100}%` }}
               transition={{ duration: 0.3 }}
             />
@@ -232,8 +232,8 @@ export function AssessmentTool() {
                     onClick={() => setData({ ...data, industry: name })}
                     className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                       data.industry === name
-                        ? "bg-accent-blue text-white"
-                        : "glassmorphism text-text-secondary hover:text-text-primary hover:border-accent-blue/30"
+                        ? "bg-brand text-white"
+                        : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary hover:text-text-primary hover:border-brand/30"
                     }`}
                   >
                     {name}
@@ -273,7 +273,7 @@ export function AssessmentTool() {
                     onChange={(e) =>
                       setData({ ...data, reviewCount: e.target.value === "" ? 0 : parseInt(e.target.value) || 0 })
                     }
-                    className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none"
+                    className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none"
                     placeholder="e.g. 45"
                   />
                 </div>
@@ -290,7 +290,7 @@ export function AssessmentTool() {
                     onChange={(e) =>
                       setData({ ...data, starRating: parseFloat(e.target.value) })
                     }
-                    className="w-full accent-accent-blue"
+                    className="w-full accent-brand"
                   />
                   <div className="flex justify-between text-xs text-text-muted">
                     <span>1.0</span>
@@ -329,8 +329,8 @@ export function AssessmentTool() {
                         }
                         className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
                           data.monthlyCalls === callValues[range]
-                            ? "bg-accent-blue text-white"
-                            : "glassmorphism text-text-secondary hover:text-text-primary"
+                            ? "bg-brand text-white"
+                            : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary hover:text-text-primary"
                         }`}
                       >
                         {range}
@@ -347,8 +347,8 @@ export function AssessmentTool() {
                       onClick={() => setData({ ...data, knowsMissedRate: true })}
                       className={`px-4 py-2 rounded-lg text-sm ${
                         data.knowsMissedRate
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       Yes
@@ -359,8 +359,8 @@ export function AssessmentTool() {
                       }
                       className={`px-4 py-2 rounded-lg text-sm ${
                         !data.knowsMissedRate
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       No
@@ -380,14 +380,14 @@ export function AssessmentTool() {
                             missedCallRate: parseInt(e.target.value) / 100,
                           })
                         }
-                        className="w-full accent-accent-blue"
+                        className="w-full accent-brand"
                       />
                       <p className="text-sm text-text-muted mt-1">
                         {Math.round(data.missedCallRate * 100)}% of calls missed
                       </p>
                     </div>
                   ) : (
-                    <p className="text-xs text-accent-blue">
+                    <p className="text-xs text-brand">
                       Using 30% as the industry average for missed calls.
                     </p>
                   )}
@@ -428,7 +428,7 @@ export function AssessmentTool() {
                         revenuePerCustomer: parseInt(e.target.value) || 0,
                       })
                     }
-                    className="w-full pl-8 pr-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none"
+                    className="w-full pl-8 pr-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none"
                     placeholder="200"
                   />
                 </div>
@@ -464,8 +464,8 @@ export function AssessmentTool() {
                       onClick={() => setData({ ...data, knowsVisitors: true })}
                       className={`px-4 py-2 rounded-lg text-sm ${
                         data.knowsVisitors
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       I know
@@ -480,8 +480,8 @@ export function AssessmentTool() {
                       }
                       className={`px-4 py-2 rounded-lg text-sm ${
                         !data.knowsVisitors
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       I don&apos;t track this
@@ -498,11 +498,11 @@ export function AssessmentTool() {
                           monthlyVisitors: parseInt(e.target.value) || 0,
                         })
                       }
-                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none"
+                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none"
                       placeholder="e.g. 1000"
                     />
                   ) : (
-                    <p className="text-xs text-accent-blue">
+                    <p className="text-xs text-brand">
                       Using 500 visitors/month as the estimate for a typical service business.
                     </p>
                   )}
@@ -516,8 +516,8 @@ export function AssessmentTool() {
                       onClick={() => setData({ ...data, knowsConversion: true })}
                       className={`px-4 py-2 rounded-lg text-sm ${
                         data.knowsConversion
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       I know
@@ -532,8 +532,8 @@ export function AssessmentTool() {
                       }
                       className={`px-4 py-2 rounded-lg text-sm ${
                         !data.knowsConversion
-                          ? "bg-accent-blue text-white"
-                          : "glassmorphism text-text-secondary"
+                          ? "bg-brand text-white"
+                          : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm text-text-secondary"
                       }`}
                     >
                       I don&apos;t know
@@ -553,14 +553,14 @@ export function AssessmentTool() {
                             conversionRate: parseFloat(e.target.value) / 100,
                           })
                         }
-                        className="w-full accent-accent-blue"
+                        className="w-full accent-brand"
                       />
                       <p className="text-sm text-text-muted mt-1">
                         {(data.conversionRate * 100).toFixed(1)}% conversion rate
                       </p>
                     </div>
                   ) : (
-                    <p className="text-xs text-accent-blue">
+                    <p className="text-xs text-brand">
                       Using 2% as the typical conversion rate for unoptimized service business websites.
                     </p>
                   )}
@@ -599,11 +599,11 @@ export function AssessmentTool() {
                       noShowRate: parseInt(e.target.value) / 100,
                     })
                   }
-                  className="w-full accent-accent-blue"
+                  className="w-full accent-brand"
                 />
                 <div className="flex justify-between text-xs text-text-muted mt-1">
                   <span>0%</span>
-                  <span className="text-accent-blue font-medium text-sm">
+                  <span className="text-brand font-medium text-sm">
                     {Math.round(data.noShowRate * 100)}%
                   </span>
                   <span>50%</span>
@@ -626,7 +626,7 @@ export function AssessmentTool() {
           {/* Step 7: Calculating (brief transition) */}
           {step === 7 && (
             <div className="text-center py-16">
-              <Loader2 className="w-8 h-8 text-accent-blue animate-spin mx-auto mb-4" />
+              <Loader2 className="w-8 h-8 text-brand animate-spin mx-auto mb-4" />
               <p className="text-lg text-text-secondary">
                 Calculating your revenue loss...
               </p>
@@ -637,13 +637,13 @@ export function AssessmentTool() {
           {step === 8 && results && (
             <div>
               <div className="text-center mb-12">
-                <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+                <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
                   Your Results
                 </p>
                 <h2 className="text-2xl md:text-3xl font-bold text-text-primary tracking-display mb-4">
                   Estimated monthly revenue you are leaving on the table:
                 </h2>
-                <div className="text-5xl md:text-7xl font-extrabold font-mono gradient-text py-4">
+                <div className="text-5xl md:text-7xl font-extrabold font-mono text-brand py-4">
                   <AnimatedCounter value={results.totalMonthlyLoss} />
                 </div>
                 <p className="text-text-secondary mt-2">
@@ -656,7 +656,7 @@ export function AssessmentTool() {
               </div>
 
               {/* Breakdown */}
-              <div className="glassmorphism rounded-xl p-6 mb-8">
+              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 mb-8">
                 <h3 className="text-sm font-semibold text-text-primary mb-4">
                   Breakdown by category
                 </h3>
@@ -674,9 +674,9 @@ export function AssessmentTool() {
                           {formatCurrency(item.value)}/mo
                         </span>
                       </div>
-                      <div className="h-2 bg-border-custom rounded-full overflow-hidden">
+                      <div className="h-2 bg-border rounded-full overflow-hidden">
                         <motion.div
-                          className="h-full bg-gradient-to-r from-accent-blue to-accent-violet rounded-full"
+                          className="h-full bg-gradient-to-r from-brand to-brand-dark rounded-full"
                           initial={{ width: 0 }}
                           animate={{
                             width: `${maxLoss > 0 ? (item.value / maxLoss) * 100 : 0}%`,
@@ -690,13 +690,13 @@ export function AssessmentTool() {
               </div>
 
               {/* ROI comparison */}
-              <div className="glassmorphism rounded-xl p-6 mb-8 text-center">
+              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 mb-8 text-center">
                 <p className="text-sm text-text-secondary mb-2">
                   Growth System investment: $7,997 build + $1,497/mo
                 </p>
                 <p className="text-lg font-bold text-text-primary">
                   Typical payback:{" "}
-                  <span className="gradient-text">
+                  <span className="text-brand">
                     {results.paybackWeeks > 0 ? `${results.paybackWeeks} weeks` : "immediate"}
                   </span>
                 </p>
@@ -715,7 +715,7 @@ export function AssessmentTool() {
               </div>
 
               {/* Contact capture */}
-              <div className="glassmorphism rounded-xl p-6">
+              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-text-primary mb-2">
                   Get your full report emailed to you
                 </h3>
@@ -739,14 +739,14 @@ export function AssessmentTool() {
                         value={contactInfo.firstName}
                         onChange={(e) => setContactInfo({ ...contactInfo, firstName: e.target.value })}
                         placeholder="First name *"
-                        className="px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                        className="px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none text-sm"
                       />
                       <input
                         type="text"
                         value={contactInfo.lastName}
                         onChange={(e) => setContactInfo({ ...contactInfo, lastName: e.target.value })}
                         placeholder="Last name"
-                        className="px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                        className="px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none text-sm"
                       />
                     </div>
                     <input
@@ -754,21 +754,21 @@ export function AssessmentTool() {
                       value={contactInfo.email}
                       onChange={(e) => setContactInfo({ ...contactInfo, email: e.target.value })}
                       placeholder="Email address *"
-                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none text-sm"
                     />
                     <input
                       type="tel"
                       value={contactInfo.phone}
                       onChange={(e) => setContactInfo({ ...contactInfo, phone: e.target.value })}
                       placeholder="Phone number *"
-                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border-custom text-text-primary focus:border-accent-blue focus:outline-none text-sm"
+                      className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-text-primary focus:border-brand focus:outline-none text-sm"
                     />
                     <label className="flex items-start gap-2 cursor-pointer">
                       <input
                         type="checkbox"
                         checked={contactInfo.smsConsent}
                         onChange={(e) => setContactInfo({ ...contactInfo, smsConsent: e.target.checked })}
-                        className="mt-1 accent-accent-blue"
+                        className="mt-1 accent-brand"
                       />
                       <span className="text-xs text-text-secondary leading-relaxed">
                         I agree to receive text messages from AI Peak Biz. Message frequency varies. Reply STOP to opt out. Message and data rates may apply.

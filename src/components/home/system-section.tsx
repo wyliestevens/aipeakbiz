@@ -85,12 +85,12 @@ function CapabilityCard({ cap, index }: { cap: typeof capabilities[0]; index: nu
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="relative glassmorphism rounded-xl p-5 hover:border-accent-blue/30 transition-colors cursor-pointer"
+      className="relative bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-5 hover:border-brand/30 transition-colors cursor-pointer"
       style={{ zIndex: hovered ? 100 : 1 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <cap.icon className="w-8 h-8 text-accent-blue mb-3" />
+      <cap.icon className="w-8 h-8 text-brand mb-3" />
       <h3 className="text-sm font-semibold text-text-primary mb-1">
         {cap.title}
       </h3>

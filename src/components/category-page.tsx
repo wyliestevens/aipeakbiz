@@ -17,7 +17,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 via-accent-violet/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-brand-50/50 to-transparent" />
         <div className="container-custom relative pt-28 pb-16 md:pt-36 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -57,7 +57,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               The Problem
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
@@ -72,9 +72,9 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6"
               >
-                <div className="text-xs font-mono text-accent-blue mb-2">
+                <div className="text-xs font-mono text-brand mb-2">
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <h3 className="text-lg font-semibold text-text-primary mb-3">
@@ -83,7 +83,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 <p className="text-sm text-text-secondary leading-relaxed mb-3">
                   {problem.description}
                 </p>
-                <p className="text-sm font-semibold text-accent-violet">
+                <p className="text-sm font-semibold text-brand">
                   {problem.cost}
                 </p>
               </motion.div>
@@ -104,7 +104,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               The Solution
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
@@ -119,10 +119,10 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6"
               >
-                <div className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-3">
-                  <Check className="w-4 h-4 text-accent-blue" />
+                <div className="w-8 h-8 rounded-lg bg-brand-50 flex items-center justify-center mb-3">
+                  <Check className="w-4 h-4 text-brand" />
                 </div>
                 <h3 className="text-lg font-semibold text-text-primary mb-2">
                   {solution.title}
@@ -145,7 +145,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               Real Scenarios
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
@@ -160,7 +160,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glassmorphism rounded-xl p-6 md:p-8 text-center"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 md:p-8 text-center"
               >
                 <h3 className="text-lg font-semibold text-text-primary mb-3">
                   {useCase.title}
@@ -182,7 +182,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               Pricing
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display mb-6">
@@ -194,13 +194,13 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
                 <p className="text-3xl font-bold font-mono text-text-primary">$4,997</p>
                 <p className="text-sm text-text-muted">build + $997/mo</p>
               </div>
-              <div className="hidden sm:block w-px h-16 bg-border-custom" />
+              <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <p className="text-sm text-text-muted mb-1">Most popular</p>
                 <p className="text-3xl font-bold font-mono text-text-primary">$7,997</p>
                 <p className="text-sm text-text-muted">build + $1,497/mo</p>
               </div>
-              <div className="hidden sm:block w-px h-16 bg-border-custom" />
+              <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <p className="text-sm text-text-muted mb-1">Full system</p>
                 <p className="text-3xl font-bold font-mono text-text-primary">$14,997</p>
@@ -209,7 +209,7 @@ export function CategoryPage({ content }: { content: IndustryContent }) {
             </div>
             <Link
               href="/pricing"
-              className="text-accent-blue hover:text-accent-violet transition-colors text-sm font-medium"
+              className="text-brand hover:text-brand transition-colors text-sm font-medium"
             >
               View full pricing details &rarr;
             </Link>

@@ -5,7 +5,7 @@ import { reviews, Review } from "@/data/reviews";
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <div className="flex-shrink-0 w-[340px] md:w-[400px] glassmorphism rounded-xl p-6 mx-3">
+    <div className="flex-shrink-0 w-[340px] md:w-[400px] bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 mx-3">
       <div className="flex items-center gap-1 mb-3">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="w-4 h-4 fill-warning text-warning" />
@@ -60,7 +60,7 @@ export function ReviewGrid({ subset }: { subset?: number[] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {displayReviews.map((review) => (
-        <div key={review.name} className="glassmorphism rounded-xl p-6">
+        <div key={review.name} className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6">
           <div className="flex items-center gap-1 mb-3">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-4 h-4 fill-warning text-warning" />

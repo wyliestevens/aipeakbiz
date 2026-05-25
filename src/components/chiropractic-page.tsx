@@ -146,7 +146,7 @@ export function ChiropracticPage() {
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 via-accent-violet/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-brand-50/50 to-transparent" />
         <div className="container-custom relative pt-28 pb-16 md:pt-36 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -154,7 +154,7 @@ export function ChiropracticPage() {
             transition={{ duration: 0.7 }}
             className="max-w-3xl"
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-accent-blue/10 text-accent-blue text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-brand-50 text-brand text-sm font-semibold mb-6">
               Built for Chiropractic Clinics
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-text-primary tracking-display leading-[1.1] mb-6">
@@ -201,7 +201,7 @@ export function ChiropracticPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               The Numbers Do Not Lie
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
@@ -216,9 +216,9 @@ export function ChiropracticPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`glassmorphism rounded-xl p-6 ${i === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
+                className={`bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 ${i === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
               >
-                <div className="text-xs font-mono text-accent-blue mb-2">
+                <div className="text-xs font-mono text-brand mb-2">
                   {point.number}
                 </div>
                 <h3 className="text-lg font-semibold text-text-primary mb-2">
@@ -227,7 +227,7 @@ export function ChiropracticPage() {
                 <p className="text-sm text-text-secondary leading-relaxed mb-3">
                   {point.description}
                 </p>
-                <p className="text-sm font-semibold text-accent-violet">
+                <p className="text-sm font-semibold text-brand">
                   {point.cost}
                 </p>
               </motion.div>
@@ -245,7 +245,7 @@ export function ChiropracticPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               The System
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
@@ -281,8 +281,8 @@ export function ChiropracticPage() {
                   </a>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="glassmorphism rounded-xl p-8 text-center">
-                    <p className="text-4xl md:text-5xl font-bold font-mono gradient-text mb-2">
+                  <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-8 text-center">
+                    <p className="text-4xl md:text-5xl font-bold font-mono text-brand mb-2">
                       {solution.stat}
                     </p>
                     <p className="text-sm text-text-secondary max-w-xs">
@@ -305,15 +305,15 @@ export function ChiropracticPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+            <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
               The ROI
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-display">
               The System Pays for Itself in the First Month
             </h2>
           </motion.div>
-          <div className="glassmorphism rounded-xl p-8 md:p-12 text-center max-w-2xl mx-auto mb-16">
-            <p className="text-5xl md:text-6xl font-bold font-mono gradient-text mb-4">
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-8 md:p-12 text-center max-w-2xl mx-auto mb-16">
+            <p className="text-5xl md:text-6xl font-bold font-mono text-brand mb-4">
               $2,400/month
             </p>
             <p className="text-text-secondary leading-relaxed">
@@ -339,7 +339,7 @@ export function ChiropracticPage() {
               { step: "3", title: "Live in 7 Days", desc: "You review and approve. We flip the switch. Your AI front desk starts answering calls immediately." },
             ].map((s) => (
               <div key={s.step} className="text-center">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent-blue to-accent-violet flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-lg">{s.step}</span>
                 </div>
                 <h4 className="text-lg font-bold text-text-primary mb-2">{s.title}</h4>
@@ -352,7 +352,7 @@ export function ChiropracticPage() {
 
       {/* Founding System */}
       <section className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/20 via-accent-violet/15 to-accent-pink/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand/20 via-brand-dark/15 to-brand-dark/10" />
         <div className="absolute inset-0 bg-background/40" />
         <div className="container-custom relative">
           <motion.div
@@ -380,21 +380,21 @@ export function ChiropracticPage() {
                   This is not a discount. This is a partnership.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center glassmorphism rounded-lg px-4 py-3">
+                  <div className="flex justify-between items-center bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-lg px-4 py-3">
                     <span className="text-sm text-text-secondary">System Build</span>
                     <span className="font-bold font-mono text-text-primary">$4,997 <span className="text-xs text-text-muted">one-time</span></span>
                   </div>
-                  <div className="flex justify-between items-center glassmorphism rounded-lg px-4 py-3">
+                  <div className="flex justify-between items-center bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-lg px-4 py-3">
                     <span className="text-sm text-text-secondary">Management</span>
                     <span className="font-bold font-mono text-text-primary">$997<span className="text-xs text-text-muted">/month</span></span>
                   </div>
-                  <div className="flex justify-between items-center glassmorphism rounded-lg px-4 py-3">
+                  <div className="flex justify-between items-center bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-lg px-4 py-3">
                     <span className="text-sm text-text-secondary">Commitment</span>
                     <span className="font-bold font-mono text-text-primary">12 months</span>
                   </div>
                 </div>
               </div>
-              <div className="glassmorphism rounded-xl p-6">
+              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6">
                 <h3 className="text-white font-semibold mb-4">Everything in the Growth System included:</h3>
                 <ul className="space-y-2">
                   {[
@@ -420,7 +420,7 @@ export function ChiropracticPage() {
             <div className="text-center mt-10">
               <a
                 href={BOOKING_URL}
-                className="inline-flex items-center justify-center px-10 py-4 rounded-lg font-semibold text-accent-blue bg-white hover:bg-white/90 transition-all text-lg"
+                className="inline-flex items-center justify-center px-10 py-4 rounded-lg font-semibold text-brand bg-white hover:bg-white/90 transition-all text-lg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -459,7 +459,7 @@ export function ChiropracticPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="glassmorphism rounded-xl p-6"
+                className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6"
               >
                 <h3 className="text-sm font-semibold text-text-primary mb-2">{item.title}</h3>
                 <p className="text-sm text-text-secondary leading-relaxed">{item.desc}</p>

@@ -25,7 +25,7 @@ export function AboutTeaser() {
           </p>
           <Link
             href="/about"
-            className="text-accent-blue hover:text-accent-violet transition-colors font-medium"
+            className="text-brand hover:text-brand-dark transition-colors font-medium"
           >
             Read our story &rarr;
           </Link>

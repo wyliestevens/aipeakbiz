@@ -38,7 +38,7 @@ export function PricingPreview() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-semibold tracking-widest text-accent-blue uppercase mb-3">
+          <p className="text-sm font-semibold tracking-widest text-brand uppercase mb-3">
             Pricing
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary tracking-display mb-4">
@@ -56,12 +56,12 @@ export function PricingPreview() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className={`rounded-xl p-6 ${
                 tier.popular
-                  ? "gradient-border bg-background ring-1 ring-accent-blue/30"
-                  : "glassmorphism"
+                  ? "border-brand bg-background ring-1 ring-brand/30"
+                  : "bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm"
               }`}
             >
               {tier.popular && (
-                <span className="inline-block px-3 py-1 text-xs font-semibold bg-accent-blue/10 text-accent-blue rounded-full mb-3">
+                <span className="inline-block px-3 py-1 text-xs font-semibold bg-brand-50 text-brand rounded-full mb-3">
                   Most Popular
                 </span>
               )}
@@ -99,7 +99,7 @@ export function PricingPreview() {
         <p className="text-center">
           <Link
             href="/pricing"
-            className="text-accent-blue hover:text-accent-violet transition-colors text-sm font-medium"
+            className="text-brand hover:text-brand-dark transition-colors text-sm font-medium"
           >
             Full details on Pricing page &rarr;
           </Link>

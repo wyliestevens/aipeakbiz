@@ -65,12 +65,12 @@ export function PainPointsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`glassmorphism rounded-xl p-6 lg:col-span-2 ${
+              className={`bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 lg:col-span-2 ${
                 i === 3 ? "lg:col-start-2" : ""
               }`}
             >
-              <div className="w-10 h-10 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-4">
-                <point.icon className="w-5 h-5 text-accent-blue" />
+              <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
+                <point.icon className="w-5 h-5 text-brand" />
               </div>
               <h3 className="text-lg font-semibold text-text-primary mb-2">
                 {point.title}
@@ -78,7 +78,7 @@ export function PainPointsSection() {
               <p className="text-sm text-text-secondary leading-relaxed mb-3">
                 {point.description}
               </p>
-              <p className="text-sm font-semibold text-accent-violet">
+              <p className="text-sm font-semibold text-brand">
                 {point.cost}
               </p>
             </motion.div>

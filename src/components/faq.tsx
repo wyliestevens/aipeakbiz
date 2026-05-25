@@ -15,7 +15,7 @@ export function FAQ({ items }: { items: FAQItem[] }) {
   return (
     <div className="space-y-3 max-w-3xl mx-auto">
       {items.map((item, i) => (
-        <div key={i} className="glassmorphism rounded-xl overflow-hidden">
+        <div key={i} className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl overflow-hidden">
           <button
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             className="w-full flex items-center justify-between px-6 py-4 text-left"
