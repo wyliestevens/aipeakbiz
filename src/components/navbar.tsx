@@ -39,6 +39,7 @@ export function Navbar() {
     { name: dict.nav.howItWorks, href: `${prefix}/#how-it-works` },
     { name: dict.nav.about, href: `${prefix}/about` },
     { name: dict.nav.pricing, href: `${prefix}/pricing` },
+    { name: "Blog", href: `${prefix}/blog` },
   ];
 
   // Build the alternate language URL
