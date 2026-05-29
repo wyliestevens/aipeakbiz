@@ -1065,6 +1065,269 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "missed-call-text-back-contractors",
+    title: "Missed Call Text-Back for Contractors: How It Works and Why You Need It",
+    excerpt:
+      "When a call goes unanswered, 85% of callers won’t leave a voicemail — they’ll call your competitor instead. Missed call text-back sends an automatic SMS within seconds, keeping the lead alive until you can respond.",
+    metaDescription:
+      "Missed call text-back sends an automatic text when you can’t answer. Learn how it works and why contractors use it to recover revenue from unanswered calls.",
+    date: "2026-05-29",
+    author: "Wylie Stevens",
+    readTime: "9 min read",
+    category: "Revenue Recovery",
+    keywords: [
+      "missed call text back contractors",
+      "missed call to text",
+      "automated text back service business",
+      "after hours lead capture contractors",
+      "contractor lead capture",
+    ],
+    heroImage: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor holding a phone showing a missed call notification — missed call text-back system for service businesses",
+    content: `<p>You finish nailing down the last shingle at 3:45 PM. You pull out your phone and see two missed calls &mdash; one unknown number, one local area code. You call back the first one. No answer. You try the second. Voicemail.</p>
+
+<p>By the time you hear back &mdash; if you hear back at all &mdash; it&rsquo;s been two, three, maybe four hours. By that point, those homeowners have called two other roofers. One of them answered on the first ring. That&rsquo;s who&rsquo;s getting the estimate.</p>
+
+<p>This is the scenario missed call text-back is designed to solve. Not by putting you on the phone at 3:45 PM when you&rsquo;re on a roof. But by sending an automatic, personalized text to every caller you miss &mdash; within seconds of the missed call &mdash; so the conversation stays alive while you finish the job.</p>
+
+<p>Here&rsquo;s exactly how it works, what to say, and whether it&rsquo;s the right investment for your business.</p>
+
+<h2>What Is Missed Call Text-Back?</h2>
+
+<p>Missed call text-back is an automated system that monitors your business phone line and sends a text message to any caller you don&rsquo;t answer. The text goes out within 10 to 30 seconds of the missed call &mdash; fast enough that the caller is still holding their phone, still thinking about you, when it arrives.</p>
+
+<p>The message opens a conversation. Something simple: &ldquo;Hey, sorry we missed your call &mdash; how can we help?&rdquo; The caller texts back. That reply waits in your inbox or CRM until you&rsquo;re free to respond. No voicemail. No calling back into the void. A recoverable lead sitting in a text thread.</p>
+
+<p>This is different from an answering service or a voicemail callback system. You&rsquo;re not leaving a recording and waiting for someone to maybe call you back. You&rsquo;re proactively engaging the caller with a channel they&rsquo;re far more likely to use &mdash; text.</p>
+
+<p>The numbers back this up. SMS open rates sit above 95%, typically within 3 minutes of receipt. Compare that to email at 15&ndash;20% open rates or voicemail with a 15% callback rate. When you send someone a text, they read it. When you leave them a voicemail, most of them ignore it. According to the Lead Response Management study from MIT, <strong>85% of callers who reach voicemail will not leave a message</strong> &mdash; and they won&rsquo;t call back. A text catches them before they move on.</p>
+
+<h2>How It Works, Step by Step</h2>
+
+<p>Understanding the mechanics helps you configure the system correctly and set the right expectations with your team.</p>
+
+<h3>Step 1: The Call Comes In</h3>
+
+<p>A potential customer dials your business number &mdash; the same number on your truck, your website, your Google listing. You&rsquo;re on a job, driving between sites, or otherwise unavailable. The call rings out or goes to voicemail.</p>
+
+<h3>Step 2: The System Detects the Missed Call</h3>
+
+<p>The missed call text-back system monitors your line in real time. Within seconds of the call going unanswered, it detects the miss and queues an automatic response. The trigger is configurable &mdash; you can set it to fire after a certain number of rings, when the call hits voicemail, or only during specific hours.</p>
+
+<h3>Step 3: A Text Goes Out Automatically</h3>
+
+<p>The system sends a pre-written SMS from your business phone number to the caller&rsquo;s number. They receive it within 10 to 30 seconds &mdash; while they&rsquo;re still holding their phone, still in &ldquo;find a contractor&rdquo; mode. The message is written in your voice and uses your business name, not some generic corporate template.</p>
+
+<h3>Step 4: The Lead Replies</h3>
+
+<p>A meaningful portion of callers &mdash; typically 15 to 40% depending on the message quality and urgency of their need &mdash; will text back. They describe the problem, ask about availability, or simply say &ldquo;yes, I need an estimate.&rdquo; That response sits in your inbox or CRM, visible on any device, ready for you when you&rsquo;re free.</p>
+
+<h3>Step 5: You Respond on Your Schedule</h3>
+
+<p>You finish the job, climb down, get in the truck &mdash; and then reply to your text conversations. Instead of a string of unknown missed calls with zero context, you have a list of warm leads who have identified themselves, described their problem, and shown they&rsquo;re willing to communicate via text. The selling starts with a head start.</p>
+
+<h2>What to Say: Message Templates That Actually Get Replies</h2>
+
+<p>The message you send matters as much as the timing. A corporate-sounding text gets ignored. A personal, conversational one gets replies. Here are examples that work for service businesses:</p>
+
+<h3>General Service Business</h3>
+
+<blockquote>
+<p>&ldquo;Hi, this is [Your Name] from [Business Name]. Sorry I missed your call &mdash; how can I help? I&rsquo;ll get back to you as soon as I&rsquo;m free.&rdquo;</p>
+</blockquote>
+
+<h3>Roofing-Specific</h3>
+
+<blockquote>
+<p>&ldquo;Hey, sorry I missed you &mdash; we&rsquo;re out on a job right now. What&rsquo;s going on with your roof? I can usually get back to you within the hour.&rdquo;</p>
+</blockquote>
+
+<h3>HVAC / Emergency Framing</h3>
+
+<blockquote>
+<p>&ldquo;Hi! Missed your call &mdash; is this an AC or heating issue? We have emergency availability. Reply here and I&rsquo;ll call you right back.&rdquo;</p>
+</blockquote>
+
+<h3>After-Hours Version</h3>
+
+<blockquote>
+<p>&ldquo;You reached [Business Name] after hours. We&rsquo;re closed right now but we don&rsquo;t want to miss you &mdash; what can we help with? We&rsquo;ll reply first thing in the morning.&rdquo;</p>
+</blockquote>
+
+<p>A few principles apply across all of these:</p>
+
+<ul>
+<li><strong>Keep it short.</strong> Under 160 characters if possible, definitely under 320. This is a text message, not an email.</li>
+<li><strong>Acknowledge the missed call directly.</strong> &ldquo;Sorry I missed you&rdquo; builds goodwill immediately. Don&rsquo;t pretend nothing happened.</li>
+<li><strong>Ask a specific question or give them a reason to reply.</strong> &ldquo;What&rsquo;s going on with your roof?&rdquo; gets a far higher response rate than &ldquo;We&rsquo;ll get back to you soon.&rdquo;</li>
+<li><strong>Set a timing expectation.</strong> &ldquo;I can usually get back to you within the hour&rdquo; is honest and reassuring. People will wait if they know approximately how long.</li>
+<li><strong>Write like a person, not a company.</strong> First-person singular is warmer than third-person corporate speak. &ldquo;I missed your call&rdquo; beats &ldquo;We were unable to answer your call at this time.&rdquo;</li>
+</ul>
+
+<h2>Why Missed Call Text-Back Works</h2>
+
+<p>Missed call text-back works because it meets people at the moment they&rsquo;re most receptive, with the channel they most prefer to use.</p>
+
+<p><strong>Timing is everything.</strong> When someone calls a contractor, they&rsquo;re in decision mode. They&rsquo;ve identified a problem, concluded they need help, and picked up the phone. That decision mode doesn&rsquo;t last long &mdash; life interrupts, attention shifts, and the next search result appears. A text arriving within 30 seconds catches them before the window closes. A voicemail callback discovered three hours later doesn&rsquo;t.</p>
+
+<p><strong>People prefer texting for initial contact.</strong> Research consistently shows that a majority of consumers would prefer to text a business rather than call for basic inquiries like scheduling, quotes, and service questions. Text is lower friction. When you open that channel automatically, you&rsquo;re meeting a preference that most contractors ignore.</p>
+
+<p><strong>It signals responsiveness before you even respond.</strong> A fast text-back &mdash; even automated &mdash; tells the caller that your business pays attention. That impression sticks. By the time you&rsquo;re actually talking to them, the trust baseline is already higher than if they reached your voicemail and heard nothing.</p>
+
+<p><strong>It creates a paper trail.</strong> Every response is in a text thread, timestamped and searchable. No trying to remember what the person said they needed. No phone tag. You have a full conversation record when you follow up.</p>
+
+<h2>What Missed Call Text-Back Does NOT Do</h2>
+
+<p>Overstating the capability leads to disappointment. Here&rsquo;s what this system is not.</p>
+
+<p>Missed call text-back <strong>does not answer your calls.</strong> It doesn&rsquo;t engage in real-time conversation while you&rsquo;re unavailable. If a homeowner needs to ask specific questions about your process, your availability, or your service area, they&rsquo;re waiting for your manual reply. That&rsquo;s not a dealbreaker for most leads &mdash; but it&rsquo;s worth knowing.</p>
+
+<p>It also <strong>does not book appointments automatically.</strong> It opens the conversation. The booking still requires you &mdash; or a more robust system like an <a href="/ai-voice-assistant">AI voice assistant</a> &mdash; to close the loop. Contractors who want their calendar filled while they&rsquo;re on a job need a more complete solution.</p>
+
+<p>And it <strong>does not qualify leads.</strong> Every missed call gets the same text. A solicitor and a motivated homeowner receive the same message. You still need to assess responses when you see them and decide which ones to prioritize.</p>
+
+<p>That said, for the cost and the setup time involved, missed call text-back is the highest-ROI entry point for any contractor who&rsquo;s currently missing calls and doing nothing about it. It&rsquo;s the minimum viable solution &mdash; and it genuinely saves jobs that would otherwise walk out the door and straight to a competitor.</p>
+
+<h2>How to Set It Up: Your Options</h2>
+
+<p>There are three practical paths to getting missed call text-back running on your business line.</p>
+
+<h3>Option A: Use a CRM Platform You Already Have</h3>
+
+<p>Platforms like GoHighLevel, Jobber, HouseCall Pro, and ServiceTitan have missed call text-back built in as a feature. If you&rsquo;re already paying for one of these platforms, you may have this capability sitting unused in your settings. GoHighLevel in particular is widely used by contractors for exactly this workflow &mdash; you set a missed call trigger, write your message template, and activate it in under an hour. Monthly platform costs run $97 to $297.</p>
+
+<h3>Option B: Use a Standalone Text-Back Service</h3>
+
+<p>Tools like Hatch, Kenect, and Podium offer missed call text-back as a dedicated product sitting in front of your existing phone system. These are simple to configure and don&rsquo;t require changing your phone number. Pricing typically runs $100 to $300 per month for basic plans with limited contacts.</p>
+
+<h3>Option C: Have It Managed for You</h3>
+
+<p>If you&rsquo;d rather not configure anything yourself, a managed service like <a href="/missed-call-text-back">AI Peak Biz</a> handles setup, integration with your existing phone number, message optimization, and ongoing monitoring. It connects to your CRM, tracks conversation outcomes, and can be part of a broader revenue recovery system that includes <a href="/ai-voice-assistant">AI voice answering</a>, <a href="/database-reactivation">database reactivation</a>, and <a href="/reputation-management">automated review management</a>.</p>
+
+<h2>The ROI: Running Your Numbers</h2>
+
+<p>At $100 to $300 per month, missed call text-back needs to recover roughly one to two jobs per month to break even. Here&rsquo;s the math for a typical HVAC contractor:</p>
+
+<ul>
+<li>Average job value: $900</li>
+<li>Missed calls per week: 8 (conservative for a busy shop)</li>
+<li>Percentage of missed callers who text back: 25%</li>
+<li>Text responses per week: 2</li>
+<li>Close rate on text responses: 40%</li>
+<li>Booked jobs per week from text-back: 0.8</li>
+<li>Monthly jobs recovered: ~3.5</li>
+<li><strong>Monthly revenue recovered: $3,150</strong></li>
+</ul>
+
+<p>Against a $150 monthly cost for the system, that&rsquo;s a 21x return. Even if your numbers are half of these &mdash; fewer missed calls, lower response rate, lower close rate &mdash; the ROI stays strongly positive.</p>
+
+<p>The system is not in question for most contractors. What kills the outcome is laziness after the lead texts back: not responding for four hours, sending a generic reply, or failing to convert leads who took the trouble to engage. The system opens the door. You still have to walk through it promptly.</p>
+
+<h2>Missed Call Text-Back vs. AI Voice Assistant: Which One Do You Need?</h2>
+
+<p>Once contractors understand text-back, they usually ask: &ldquo;Should I be doing the AI voice thing instead?&rdquo; Here&rsquo;s the honest comparison:</p>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Missed Call Text-Back</th>
+<th>AI Voice Assistant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Answers the call in real time</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Engages the lead instantly</td>
+<td>Yes (via SMS)</td>
+<td>Yes (live conversation)</td>
+</tr>
+<tr>
+<td>Books appointments automatically</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Qualifies the lead</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>After-hours coverage</td>
+<td>Yes (SMS fallback)</td>
+<td>Yes (live answering)</td>
+</tr>
+<tr>
+<td>Monthly cost</td>
+<td>$50&ndash;$300</td>
+<td>$300&ndash;$500</td>
+</tr>
+<tr>
+<td>Time to deploy</td>
+<td>Hours</td>
+<td>1&ndash;2 weeks</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Lower call volume, solo/small ops</td>
+<td>Medium&ndash;high call volume, crew-based</td>
+</tr>
+</tbody>
+</table>
+
+<p>The short answer: missed call text-back is the right starting point if you&rsquo;re getting under 30 calls per week or if budget is the primary constraint. It&rsquo;s fast, affordable, and immediately stops the most obvious revenue bleed.</p>
+
+<p>An <a href="/ai-voice-assistant">AI voice assistant</a> is the right move when you want every call answered live and every appointment booked without your involvement. For contractors doing $500K or more annually, the math on a voice assistant typically pays for itself within the first two weeks of recovered jobs.</p>
+
+<p>The two systems are not mutually exclusive. Many businesses run an AI voice assistant as the primary answer layer and use text-back as a fallback for any calls that still slip through due to network drops, forwarding issues, or overflow scenarios. Together, they form a near-complete lead capture system.</p>
+
+<h2>The Bottom Line</h2>
+
+<p>Every unanswered call is a decision your potential customer makes without you in the room. They hang up, open Google, and call the next contractor. Missed call text-back does one thing really well: it gives you a seat at that table before the decision is made.</p>
+
+<p>It won&rsquo;t close jobs for you. But it will keep leads engaged long enough for you to close them yourself &mdash; and that alone is worth more than most contractors spend on advertising in a month.</p>
+
+<p>If you&rsquo;re missing calls and doing nothing about it, start here. Set it up this week. Check your inbox in 30 days. Almost every contractor who runs this system is surprised by how many conversations they were missing entirely &mdash; and by how many of those conversations convert when someone actually follows up.</p>
+
+<p><strong>Want to see exactly how much your missed calls are costing you?</strong> <a href="/free-assessment">Take our free two-minute revenue assessment</a> &mdash; you&rsquo;ll get a personalized breakdown of your estimated annual revenue loss from missed calls and a recommendation on whether text-back or a full AI voice assistant is the right fit for your business.</p>`,
+    faqs: [
+      {
+        question: "How quickly does the text message go out after a missed call?",
+        answer:
+          "Most missed call text-back systems fire within 10 to 30 seconds of the call going unanswered. That's fast enough that the caller is typically still holding their phone when the text arrives. Some systems can be configured to send immediately when the call hits voicemail, or after a specific number of rings. The speed is a key part of why this works — the earlier you engage, the more likely the caller is still in decision mode rather than already dialing the next contractor.",
+      },
+      {
+        question: "Will this work with my current business phone number?",
+        answer:
+          "Yes, in virtually all cases. Missed call text-back systems work by forwarding or mirroring your existing business line — your number stays the same for callers. The text-back goes out from your existing number (or a number associated with it), so replies come back to the same place. There is no need to get a new number, change your Google listing, or update your business cards. Setup typically involves a simple forwarding rule or a software integration with your current phone provider.",
+      },
+      {
+        question: "What if a caller doesn’t have texting on their phone?",
+        answer:
+          "Landlines and some older phones can’t receive SMS messages. If someone calls from a landline, the text will fail to deliver — silently on your end. For most service businesses, this is a small percentage of callers, since the vast majority of consumer calls today come from smartphones. Some systems flag failed deliveries so you can follow up with a callback instead. If your customer base skews older or you serve commercial clients calling from office lines, you’ll want to pair text-back with a manual callback protocol for failed deliveries.",
+      },
+      {
+        question: "Should I keep my voicemail if I have missed call text-back?",
+        answer:
+          "Yes, but consider updating your voicemail greeting to mention the text. Something like: “You’ve reached [Business Name]. We just sent you a text — please reply there for the fastest response. If you prefer to leave a voicemail, we’ll call you back as soon as possible.” This channels callers toward the text conversation (which is easier for you to manage and more likely to stay active) while still giving them the voicemail option if they prefer it.",
+      },
+      {
+        question: "What is the difference between missed call text-back and an AI chatbot?",
+        answer:
+          "Missed call text-back is triggered by a phone call — it responds to someone who tried to call you and didn’t get through. An AI chatbot lives on your website and responds to visitors who are browsing. The two systems capture leads at different touchpoints. A visitor who finds you on Google and clicks your website might engage the chatbot. A person who found your number on a yard sign and called might get the text-back. The best-configured service businesses run both, ensuring leads are captured whether they come in via phone or web.",
+      },
+      {
+        question: "How many leads can I realistically expect to recover each month?",
+        answer:
+          "It depends on three variables: how many calls you currently miss, what percentage of those callers respond to the text (typically 15–40%), and what percentage of responders you close (typically 30–50% for warm inbound leads). A contractor missing 8 calls per week with a 25% text response rate and 40% close rate would recover roughly 3 to 4 booked jobs per month from a system that would otherwise have produced zero. At an average job value of $800 to $1,200, that’s $2,400 to $4,800 per month in recovered revenue — from calls that were previously disappearing silently.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
