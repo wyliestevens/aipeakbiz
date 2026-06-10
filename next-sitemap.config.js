@@ -1,5 +1,7 @@
 const highPriorityPages = ['/', '/es', '/pricing', '/free-assessment', '/about'];
 const servicePaths = ['/ai-chatbot', '/ai-voice-assistant', '/missed-call-text-back', '/database-reactivation', '/ai-appointment-setter', '/reputation-management', '/website-design', '/ai-consulting'];
+const comparePaths = ['/compare/ai-peak-biz-vs-podium', '/compare/ai-peak-biz-vs-ruby', '/compare/ai-peak-biz-vs-smith-ai'];
+const toolPaths = ['/tools/missed-call-calculator'];
 const legalPaths = ['/terms', '/privacy-policy', '/disclaimer'];
 
 function getPriority(path) {
@@ -8,6 +10,8 @@ function getPriority(path) {
   if (servicePaths.some(s => clean === s)) return 0.9;
   if (['/pricing', '/free-assessment', '/about'].includes(clean)) return 0.8;
   if (clean.startsWith('/industries/')) return 0.8;
+  if (comparePaths.includes(clean)) return 0.8;
+  if (toolPaths.includes(clean)) return 0.8;
   if (legalPaths.includes(clean)) return 0.3;
   if (clean === '/blog') return 0.3;
   return 0.7;

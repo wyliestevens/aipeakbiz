@@ -93,9 +93,24 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Resources & Legal */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4">{dict.footer.legal}</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href={`${prefix}/tools/missed-call-calculator`} className="text-sm text-slate-400 hover:text-white transition-colors">Missed Call Calculator</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/compare/ai-peak-biz-vs-podium`} className="text-sm text-slate-400 hover:text-white transition-colors">AI Peak Biz vs Podium</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/compare/ai-peak-biz-vs-ruby`} className="text-sm text-slate-400 hover:text-white transition-colors">AI Peak Biz vs Ruby</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/compare/ai-peak-biz-vs-smith-ai`} className="text-sm text-slate-400 hover:text-white transition-colors">AI Peak Biz vs Smith.ai</Link>
+              </li>
+            </ul>
+            <h3 className="text-sm font-semibold text-white mt-6 mb-4">{dict.footer.legal}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href={`${prefix}/privacy-policy`} className="text-sm text-slate-400 hover:text-white transition-colors">{dict.footer.privacyPolicy}</Link>

@@ -25,6 +25,10 @@ const nextConfig = {
       { source: "/industries/:slug", destination: "/en/industries/:slug" },
       // Sub-industry pages
       { source: "/industries/:slug/:subSlug", destination: "/en/industries/:slug/:subSlug" },
+      // Comparison pages
+      { source: "/compare/:slug", destination: "/en/compare/:slug" },
+      // Tools pages
+      { source: "/tools/:slug", destination: "/en/tools/:slug" },
     ];
   },
   async headers() {
