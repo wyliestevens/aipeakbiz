@@ -3,9 +3,22 @@ import Link from "next/link";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { buildLangAlternates, breadcrumbSchema } from "@/lib/seo";
 import { blogPosts } from "@/data/blog-posts";
+import { getBabyLoveGrowthPosts, type BlogListPost } from "@/lib/babylovegrowth-blog";
 
 interface Props {
   params: Promise<{ lang: string }>;
+}
+
+export const revalidate = 3600;
+
+async function getAllBlogPosts(): Promise<BlogListPost[]> {
+  const babyLoveGrowthPosts = await getBabyLoveGrowthPosts();
+  const localSlugs = new Set(blogPosts.map((post) => post.slug));
+  const remoteOnlyPosts = babyLoveGrowthPosts.filter((post) => !localSlugs.has(post.slug));
+
+  return [...remoteOnlyPosts, ...blogPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -18,12 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = isEs
     ? "https://www.aipeakbiz.com/es/blog"
     : "https://www.aipeakbiz.com/blog";
+  const posts = await getAllBlogPosts();
 
   return {
     title,
     description,
     alternates: buildLangAlternates(lang, "/blog"),
-    robots: blogPosts.length === 0 ? { index: false, follow: true } : undefined,
+    robots: posts.length === 0 ? { index: false, follow: true } : undefined,
     openGraph: {
       title: `${title} | AI Peak Biz`,
       description,
@@ -40,11 +54,7 @@ const blogBreadcrumb = breadcrumbSchema([
 export default async function BlogPage({ params }: Props) {
   const { lang } = await params;
   const prefix = lang === "es" ? "/es" : "";
-
-  // Sort posts by date, newest first
-  const sorted = [...blogPosts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  const sorted = await getAllBlogPosts();
 
   return (
     <>
@@ -92,35 +102,35 @@ export default async function BlogPage({ params }: Props) {
                     />
                   )}
                   <div className="p-8">
-                  <span className="inline-block text-xs font-bold tracking-widest text-brand uppercase mb-3">
-                    {post.category}
-                  </span>
-                  <h2 className="text-xl md:text-2xl font-bold text-text-primary mb-3 group-hover:text-brand transition-colors">
-                    {lang === "es" && post.titleEs ? post.titleEs : post.title}
-                  </h2>
-                  <p className="text-text-secondary leading-relaxed mb-4">
-                    {lang === "es" && post.excerptEs
-                      ? post.excerptEs
-                      : post.excerpt}
-                  </p>
-                  <div className="flex flex-wrap items-center gap-4 text-sm text-text-muted">
-                    <span>{post.author}</span>
-                    <span className="flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5" />
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
+                    <span className="inline-block text-xs font-bold tracking-widest text-brand uppercase mb-3">
+                      {post.category}
                     </span>
-                    <span className="flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5" />
-                      {post.readTime}
-                    </span>
-                    <span className="ml-auto text-brand font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      Read more <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
+                    <h2 className="text-xl md:text-2xl font-bold text-text-primary mb-3 group-hover:text-brand transition-colors">
+                      {lang === "es" && post.titleEs ? post.titleEs : post.title}
+                    </h2>
+                    <p className="text-text-secondary leading-relaxed mb-4">
+                      {lang === "es" && post.excerptEs
+                        ? post.excerptEs
+                        : post.excerpt}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-4 text-sm text-text-muted">
+                      <span>{post.author}</span>
+                      <span className="flex items-center gap-1.5">
+                        <Calendar className="w-3.5 h-3.5" />
+                        {new Date(post.date).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        })}
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="w-3.5 h-3.5" />
+                        {post.readTime}
+                      </span>
+                      <span className="ml-auto text-brand font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Read more <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
                   </div>
                 </Link>
               ))}

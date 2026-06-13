@@ -3,18 +3,41 @@ import { notFound } from "next/navigation";
 import { getBlogPost, getAllBlogSlugs } from "@/data/blog-posts";
 import { buildLangAlternates, faqSchema, breadcrumbSchema } from "@/lib/seo";
 import { BlogPostContent } from "@/components/blog-post";
+import {
+  getBabyLoveGrowthPost,
+  getBabyLoveGrowthPosts,
+  isBabyLoveGrowthPost,
+  type BlogListPost,
+} from "@/lib/babylovegrowth-blog";
 
 interface Props {
   params: Promise<{ lang: string; slug: string }>;
 }
 
+export const revalidate = 3600;
+
+async function getPost(slug: string): Promise<BlogListPost | null> {
+  const localPost = getBlogPost(slug);
+  if (localPost) return localPost;
+
+  return getBabyLoveGrowthPost(slug);
+}
+
 export async function generateStaticParams() {
-  return getAllBlogSlugs().map((slug) => ({ slug }));
+  const localParams = getAllBlogSlugs().map((slug) => ({ slug }));
+  const babyLoveGrowthParams = (await getBabyLoveGrowthPosts()).map((post) => ({ slug: post.slug }));
+  const seen = new Set<string>();
+
+  return [...localParams, ...babyLoveGrowthParams].filter(({ slug }) => {
+    if (seen.has(slug)) return false;
+    seen.add(slug);
+    return true;
+  });
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang, slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getPost(slug);
   if (!post) return {};
 
   const isEs = lang === "es";
@@ -36,23 +59,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: isBabyLoveGrowthPost(post) ? post.updatedAt : post.date,
       authors: [post.author],
+      images: post.heroImage ? [{ url: post.heroImage }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title: `${title} | AI Peak Biz`,
       description,
+      images: post.heroImage ? [post.heroImage] : undefined,
     },
   };
 }
 
-const articleSchema = (post: NonNullable<ReturnType<typeof getBlogPost>>, lang: string) => ({
+const articleSchema = (post: BlogListPost, lang: string) => ({
   "@context": "https://schema.org",
   "@type": "Article",
   headline: lang === "es" && post.titleEs ? post.titleEs : post.title,
   description: post.metaDescription,
   datePublished: post.date,
-  dateModified: post.date,
+  dateModified: isBabyLoveGrowthPost(post) ? post.updatedAt : post.date,
+  image: post.heroImage || undefined,
   author: {
     "@type": "Person",
     name: post.author,
@@ -79,7 +106,7 @@ const articleSchema = (post: NonNullable<ReturnType<typeof getBlogPost>>, lang: 
 
 export default async function BlogPostPage({ params }: Props) {
   const { lang, slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getPost(slug);
   if (!post) notFound();
 
   const breadcrumb = breadcrumbSchema([
@@ -87,21 +114,23 @@ export default async function BlogPostPage({ params }: Props) {
     { name: "Blog", url: "/blog" },
     { name: post.title, url: `/blog/${slug}` },
   ]);
+  const schema = isBabyLoveGrowthPost(post) && post.jsonLd ? post.jsonLd : articleSchema(post, lang);
+  const faqStructuredData = isBabyLoveGrowthPost(post) && post.faqJsonLd ? post.faqJsonLd : faqSchema(post.faqs);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(post, lang)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      {post.faqs.length > 0 && (
+      {(post.faqs.length > 0 || (isBabyLoveGrowthPost(post) && post.faqJsonLd)) && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(post.faqs)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
         />
       )}
       <BlogPostContent post={post} lang={lang} />

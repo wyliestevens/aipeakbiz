@@ -13,6 +13,7 @@
     "@base-ui/react": "^1.4.1",
     "@hookform/resolvers": "^5.2.2",
     "@tailwindcss/typography": "^0.5.19",
+    "babylovegrowth-next-js-blog": "^0.2.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",

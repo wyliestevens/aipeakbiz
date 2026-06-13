@@ -20,8 +20,39 @@ function getPriority(path) {
 function getChangefreq(path) {
   const clean = path.replace(/^\/es/, '') || '/';
   if (legalPaths.includes(clean)) return 'monthly';
-  if (clean === '/blog') return 'daily';
+  if (clean === '/blog' || clean.startsWith('/blog/')) return 'daily';
   return 'weekly';
+}
+
+async function getBabyLoveGrowthBlogPaths(config) {
+  if (!process.env.BABYLOVEGROWTH_BLOG_API_KEY) return [];
+
+  try {
+    const response = await fetch('https://api.babylovegrowth.ai/api/integrations/v1/articles?limit=500&offset=0', {
+      headers: {
+        'X-API-Key': process.env.BABYLOVEGROWTH_BLOG_API_KEY,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) return [];
+
+    const articles = await response.json();
+    if (!Array.isArray(articles)) return [];
+
+    return articles
+      .filter((article) => article && article.slug)
+      .flatMap((article) => {
+        const lastmod = article.updated_at || article.created_at || new Date().toISOString();
+        return [
+          { loc: `${config.siteUrl}/blog/${article.slug}`, lastmod, changefreq: 'daily', priority: 0.7 },
+          { loc: `${config.siteUrl}/es/blog/${article.slug}`, lastmod, changefreq: 'daily', priority: 0.6 },
+        ];
+      });
+  } catch (error) {
+    console.warn('BabyLoveGrowth sitemap fetch failed', error);
+    return [];
+  }
 }
 
 /** @type {import('next-sitemap').IConfig} */
@@ -40,6 +71,7 @@ module.exports = {
     ],
   },
   exclude: ['/api/*'],
+  additionalPaths: async (config) => getBabyLoveGrowthBlogPaths(config),
   transform: async (config, path) => {
     // Skip icon/asset files
     if (path.match(/\.(png|ico|jpg|jpeg|svg)$/)) return null;
