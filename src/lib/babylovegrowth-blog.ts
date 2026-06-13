@@ -76,14 +76,51 @@ export async function getBabyLoveGrowthPosts(): Promise<BabyLoveGrowthPost[]> {
   }
 }
 
+async function sleep(ms: number) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function withRetries<T>(operation: () => Promise<T>, attempts = 3): Promise<T> {
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await sleep(1500 * attempt);
+    }
+  }
+
+  throw lastError;
+}
+
 export async function getBabyLoveGrowthPost(slug: string): Promise<BabyLoveGrowthPost | null> {
   if (!process.env.BABYLOVEGROWTH_BLOG_API_KEY) return null;
 
   try {
-    const article = await babyLoveGrowthBlog.getArticleBySlug(slug);
+    const article = await withRetries(() => babyLoveGrowthBlog.getArticleBySlug(slug));
     return article ? articleToBlogPost(article) : null;
   } catch (error) {
-    console.error(`BabyLoveGrowth article fetch failed for ${slug}`, error);
+    console.error(`BabyLoveGrowth article fetch failed for ${slug}; trying list fallback`, error);
+  }
+
+  try {
+    const summary = (await getBabyLoveGrowthPosts()).find((post) => post.slug === slug);
+    if (!summary) return null;
+
+    try {
+      const article = await withRetries(() => babyLoveGrowthBlog.getArticleById(summary.remoteId));
+      return article ? articleToBlogPost(article) : summary;
+    } catch (error) {
+      console.error(`BabyLoveGrowth article ID fallback failed for ${slug}; using summary fallback`, error);
+      return {
+        ...summary,
+        content: `<p>${summary.excerpt || summary.metaDescription}</p>`,
+      };
+    }
+  } catch (error) {
+    console.error(`BabyLoveGrowth article fallback failed for ${slug}`, error);
     return null;
   }
 }
