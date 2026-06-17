@@ -2548,6 +2548,216 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "after-hours-lead-capture-contractors",
+    title: "After-Hours Lead Capture: Stop Losing Weekend and Evening Calls",
+    excerpt:
+      "Nearly 40% of contractor leads call after 5 PM or on weekends — exactly when most businesses are dark. Here’s how to capture every one of them before a competitor does.",
+    metaDescription:
+      "Contractors lose 40% of leads after hours. Learn how after-hours lead capture — text-back and AI answering — stops the revenue leak on evenings and weekends.",
+    date: "2026-06-17",
+    author: "Wylie Stevens",
+    readTime: "10 min read",
+    category: "Revenue Recovery",
+    keywords: [
+      "after hours lead capture contractors",
+      "contractor after hours calls",
+      "evening weekend lead capture",
+      "after hours answering service contractors",
+      "missed calls evenings weekends",
+      "AI after hours answering",
+    ],
+    heroImage:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop",
+    heroImageAlt:
+      "Smartphone glowing on a dark desk at night — representing after-hours calls contractors miss",
+    content: `<p>Your business hours say 8 AM to 5 PM. Your customers don&rsquo;t care.</p>
+
+<p>Homeowners don&rsquo;t notice the leak while they&rsquo;re at work. They walk into the garage Saturday morning and see water stains on the drywall. They get home Tuesday evening, look up at the ceiling, and finally decide to call somebody. They talk to their spouse after dinner, agree on a budget, and pick up the phone at 8:30 PM.</p>
+
+<p>That&rsquo;s when the call comes in. And if nobody answers, they move to the next contractor on Google within 30 seconds.</p>
+
+<p>Call data across home service businesses consistently shows that <strong>35 to 40% of inbound leads contact you outside of standard business hours</strong> &mdash; evenings, weekends, and early mornings before your office opens. For many contractors, that&rsquo;s not a fringe problem. That&rsquo;s a third of your entire lead flow disappearing into voicemail every week.</p>
+
+<p>This post breaks down why after-hours calls are actually your highest-value leads, what&rsquo;s currently happening to them, and exactly how to build a capture system that books jobs while you sleep.</p>
+
+<h2>Why After-Hours Callers Are Your Best Leads</h2>
+
+<p>There&rsquo;s a counterintuitive truth about after-hours calls: the people who call at 7 PM on a Friday are often more motivated than the people who call at 10 AM on a Monday.</p>
+
+<p>Here&rsquo;s why. A homeowner who calls during business hours is often in the early research phase &mdash; getting quotes, comparing options, not in any particular hurry. They have time to shop around. They might call five contractors this week and take two weeks to decide.</p>
+
+<p>But the person who calls at 8 PM on a Saturday? They&rsquo;ve been thinking about this problem all day. They&rsquo;ve already had the &ldquo;we need to deal with this&rdquo; conversation with their spouse. They&rsquo;re emotionally ready to commit. They want it handled. The motivation to book is high and the patience for a long shopping process is low.</p>
+
+<p>After-hours calls also skew toward emergency and urgent service &mdash; the highest-ticket, fastest-closing jobs in the trades:</p>
+
+<ul>
+<li><strong>Roofers:</strong> Storm damage discovered after work. Hail hit on a weeknight. A leak that got worse overnight.</li>
+<li><strong>HVAC:</strong> AC that died on a Friday evening. Heat that went out after business hours on a cold night. These calls come in when the failure happens, not when it&rsquo;s convenient.</li>
+<li><strong>Plumbers:</strong> Burst pipes, backed-up sewer lines, water heaters that fail at the worst times. Plumbing emergencies don&rsquo;t wait for Monday morning.</li>
+<li><strong>Electricians:</strong> Breaker failures, dead outlets before a weekend event, electrical issues discovered during home projects. Saturday and Sunday afternoon calls are common.</li>
+</ul>
+
+<p>These are not tire-kickers. These are people with a problem that needs solving. If you answer, you win the job. If you don&rsquo;t, somebody else does.</p>
+
+<h2>The Real Cost of Going Dark After 5 PM</h2>
+
+<p>Let&rsquo;s put numbers on this, because the math is what makes contractors act.</p>
+
+<p>If your phone receives 20 legitimate leads per week and 38% of them come in after hours, that&rsquo;s approximately 7.5 after-hours leads per week. If the average job in your trade is worth $1,500 and you close 25% of inbound leads, the revenue math looks like this:</p>
+
+<p><strong>7.5 leads per week &times; $1,500 &times; 25% close rate &times; 52 weeks = $146,250 per year</strong></p>
+
+<p>That&rsquo;s the pipeline. Now apply the 62% miss rate from the <a href="/blog/cost-of-missed-calls-contractors">typical contractor phone answering situation</a>, where more than half of all calls go unanswered, and the portion going completely unserved is substantial.</p>
+
+<p>Even if you capture 50% of those after-hours leads today through a combination of good luck and occasional callbacks, you&rsquo;re still leaving $73,000 in annual pipeline on the table. And the <a href="/blog/speed-to-lead-service-business">speed-to-lead research from MIT</a> is clear: responding within 5 minutes versus 30 minutes makes you 100 times more likely to connect before the lead moves on. A morning callback is almost always too late.</p>
+
+<h2>What Actually Happens to Those Calls Right Now</h2>
+
+<p>Be honest about the current state of your after-hours coverage. For most contractors, one of three things happens:</p>
+
+<p><strong>Scenario 1: Voicemail.</strong> The call rings four times and hits a generic voicemail. Research consistently shows <strong>85% of callers who reach voicemail will not leave a message.</strong> They hang up, go back to Google, and call the next contractor. Your voicemail inbox fills up with the occasional message from a very patient person &mdash; and that&rsquo;s it. The other six out of seven callers are gone permanently.</p>
+
+<p><strong>Scenario 2: It rings until they hang up.</strong> Some contractors don&rsquo;t even have voicemail set up. The phone just rings. This is actually worse than voicemail &mdash; at least voicemail signals that someone will eventually check messages. A phone that rings forever signals either that the business is closed, overwhelmed, or doesn&rsquo;t care.</p>
+
+<p><strong>Scenario 3: Forward to a personal cell.</strong> Many contractors forward the business line to their personal phone after hours. In theory, this sounds like a solution. In practice, it creates a different problem. You can&rsquo;t answer while driving. You don&rsquo;t want to answer at dinner with your family. You miss the call at 11 PM because you were asleep. And when you do answer a work call on your personal cell at 9 PM, the conversation is rushed, distracted, and you&rsquo;re doing nothing to build confidence in the caller that they&rsquo;re dealing with a professional operation. The personal cell forward is a patch, not a system.</p>
+
+<p>None of these scenarios capture the lead. None of them book the job. And while your phone sits dark, a competitor with an answering service or an AI voice assistant is booking that customer right now.</p>
+
+<h2>The Three After-Hours Capture Options (Ranked by Effectiveness)</h2>
+
+<p>There&rsquo;s a spectrum of solutions, and the right one depends on your call volume, budget, and how much of this you want automated versus handled by your team.</p>
+
+<h3>Option 1: Missed Call Text-Back (Start Here)</h3>
+
+<p>The minimum viable after-hours solution. When your business line goes unanswered, the system automatically fires a text to the caller within 10 to 30 seconds. Something like: &ldquo;Hey, sorry we missed your call &mdash; how can we help? We&rsquo;ll follow up first thing in the morning.&rdquo;</p>
+
+<p>This does two things: it signals to the caller that someone knows they called (reducing the urge to immediately dial a competitor), and it opens a text conversation you can pick up when you&rsquo;re available.</p>
+
+<p>The numbers on SMS versus voicemail are striking. Text open rates are <strong>above 95%</strong>, compared to the fraction of voicemails that ever get checked. And when the follow-up text opens a conversation, a significant portion of callers will respond and stay engaged even overnight.</p>
+
+<p><strong>Cost:</strong> $50&ndash;$150/month. <strong>Setup time:</strong> Under an hour. <strong>Limitation:</strong> It keeps the lead warm but doesn&rsquo;t close the appointment. You still need to respond and book manually.</p>
+
+<p>See the full breakdown: <a href="/missed-call-text-back">Missed Call Text-Back for Contractors</a></p>
+
+<h3>Option 2: AI Voice Assistant (Most Comprehensive)</h3>
+
+<p>This is the after-hours solution that actually books jobs &mdash; no human intervention required. An AI voice assistant answers your phone instantly, holds a natural conversation, and schedules appointments directly to your calendar while you&rsquo;re asleep.</p>
+
+<p>The caller experience is remarkably close to speaking with a real person. The AI knows your service area, your specialties, your pricing structure, and your availability. It can answer &ldquo;Do you guys work in [city]?&rdquo; and &ldquo;How long does a roof inspection usually take?&rdquo; It doesn&rsquo;t take messages. It takes action.</p>
+
+<p>A homeowner calls at 9 PM about storm damage:</p>
+
+<ol>
+<li>AI answers within one ring with your company greeting</li>
+<li>Discusses the damage, asks about roof type and age</li>
+<li>Confirms the address is in your service area</li>
+<li>Checks your calendar for available inspection slots</li>
+<li>Books Wednesday morning, sends a confirmation text</li>
+<li>Logs everything &mdash; contact info, job details, appointment &mdash; directly to your CRM</li>
+</ol>
+
+<p>You wake up Thursday morning with a full schedule and five new leads you captured while you were offline.</p>
+
+<p><strong>Cost:</strong> $300&ndash;$500/month. <strong>Setup time:</strong> 1&ndash;2 weeks. <strong>ROI:</strong> For most contractors, capturing two to three additional jobs per month pays for the system several times over.</p>
+
+<p>Learn more: <a href="/ai-voice-assistant">AI Voice Assistant for Service Businesses</a></p>
+
+<h3>Option 3: Live Answering Service (Expensive Middle Ground)</h3>
+
+<p>A traditional answering service with human operators can cover after-hours calls. The upside: a real person answers. The downside: they&rsquo;re reading from a script, they can&rsquo;t book appointments, and they cost $0.75&ndash;$2.00 per minute. For a contractor with moderate after-hours volume, this easily runs $400&ndash;$800/month for message-taking alone.</p>
+
+<p>You&rsquo;ll still need to call every lead back the next morning &mdash; and by then, many of them have already booked with whoever picked up the night before.</p>
+
+<p>The <a href="/blog/ai-answering-service-vs-traditional">full comparison of AI versus traditional answering services</a> shows that for most contractors, AI wins on cost, booking rate, and consistency.</p>
+
+<h2>Building the Right After-Hours System</h2>
+
+<p>Whether you go with text-back, AI, or a combination, the setup details matter. Here&rsquo;s what a properly configured after-hours capture system looks like:</p>
+
+<h3>Call Routing Rules</h3>
+
+<p>Define exactly when after-hours coverage kicks in. For most contractors, a smart configuration is:</p>
+
+<ul>
+<li>Business hours (e.g., 8 AM&ndash;5 PM weekdays): calls go to your regular team</li>
+<li>Evenings and weekends: calls route directly to your AI assistant or answering system</li>
+<li>Overflow: any call not answered within 3 rings during business hours routes to the same system</li>
+</ul>
+
+<p>This means you never miss a call &mdash; even during business hours when everyone is on a job site.</p>
+
+<h3>Your After-Hours Greeting</h3>
+
+<p>Your greeting sets the tone immediately. Avoid: &ldquo;You have reached [Company]. Our hours are Monday through Friday, 8 to 5. Please leave a message.&rdquo; That&rsquo;s a dead end.</p>
+
+<p>A better approach for an AI assistant: &ldquo;Hey, you&rsquo;ve reached [Company]. I&rsquo;m here to help you get squared away tonight &mdash; what can I help you with?&rdquo; The caller hears a voice, not a wall. The conversation continues.</p>
+
+<p>If you&rsquo;re using missed call text-back: the text should be sent within 10 seconds of the missed call and should sound human, not automated. &ldquo;Hi, this is [Company] &mdash; sorry we missed your call. What are you looking to get taken care of? We can usually get back to you same night or first thing tomorrow.&rdquo;</p>
+
+<h3>Calendar Integration</h3>
+
+<p>An after-hours system that can&rsquo;t book appointments is only half a solution. Make sure your calendar &mdash; whether that&rsquo;s Google Calendar, a field service management system like ServiceTitan or Jobber, or your CRM &mdash; is integrated with your answering system. The AI assistant should be able to check availability and confirm bookings in real time, not just collect contact info.</p>
+
+<h3>CRM Logging</h3>
+
+<p>Every after-hours interaction should automatically log to your CRM with the caller&rsquo;s name, number, reason for calling, and any appointment booked. If you&rsquo;re running a missed call text-back, the conversation thread should be visible to your team in the morning so whoever follows up has full context.</p>
+
+<p>The goal is zero manual data entry. If someone has to type the lead into a spreadsheet the next morning, you&rsquo;ve introduced a step where things get lost.</p>
+
+<h2>What the First Week Looks Like After Setup</h2>
+
+<p>Contractors who implement an after-hours capture system typically see an immediate change in Monday morning results. Instead of a handful of voicemails to return (most of which will not convert because the window has closed), they wake up to a list of text conversations already in progress, appointments already on the calendar, and lead details already in the CRM.</p>
+
+<p>The feedback from the lead is also different. A homeowner who got a text back at 9 PM Saturday feels taken care of. When you follow up Monday morning to confirm their Tuesday appointment, the tone of the call is completely different than reaching out cold to someone who called and heard nothing. Trust is already established. The job is usually already won.</p>
+
+<p>Pair this with your regular-hours improvements &mdash; speed to lead, consistent follow-up on unsold estimates, AI-powered <a href="/database-reactivation">database reactivation</a> &mdash; and you&rsquo;re closing the full loop on the <a href="/blog/ai-revenue-recovery-service-businesses-guide">four major revenue leaks</a> that cost most service businesses $50,000&ndash;$200,000 per year.</p>
+
+<h2>The Bottom Line</h2>
+
+<p>The jobs you lose after 5 PM are real jobs. They go to real competitors. The homeowner who called at 8 PM on a Friday and heard nothing from you booked the job with the company whose AI assistant picked up on the first ring and scheduled them for a Monday morning visit.</p>
+
+<p>You don&rsquo;t have to be available 24 hours a day. You just need a system that is. The technology exists, it&rsquo;s affordable, and the ROI on capturing after-hours leads is one of the fastest returns any service business can generate.</p>
+
+<p><strong>Not sure how much after-hours revenue you&rsquo;re currently losing?</strong> <a href="/free-assessment">Take our free revenue assessment</a> and get a personalized breakdown of your missed call revenue leak &mdash; including a specific estimate for evening and weekend calls. It takes two minutes and there&rsquo;s no obligation.</p>`,
+    faqs: [
+      {
+        question: "What percentage of contractor calls come in after hours?",
+        answer:
+          "Data from home service businesses consistently shows that 35 to 40 percent of inbound calls arrive outside of standard business hours (roughly 8 AM to 5 PM weekdays). The breakdown skews toward evenings on weekdays — the 5 PM to 9 PM window is the highest-volume period for many trades — and weekend mornings are the second most common time. Emergency trades like plumbing and HVAC see higher after-hours percentages because equipment failures don’t follow business schedules.",
+      },
+      {
+        question:
+          "Is forwarding my cell phone to my personal number a good after-hours solution?",
+        answer:
+          "It’s better than nothing, but it creates several problems. You can’t answer safely while driving. You’re unavailable when asleep or at dinner. When you do answer a work call at 9 PM on your personal cell, the conversation is rushed and unprofessional-feeling — which undermines caller confidence. And you still can’t book an appointment without checking your business calendar manually. A personal cell forward is a patch. A missed call text-back or AI voice assistant is a system.",
+      },
+      {
+        question:
+          "What should my after-hours voicemail or greeting say to keep leads engaged?",
+        answer:
+          "Avoid generic “our hours are” messages — they signal a dead end and encourage callers to hang up. If you use voicemail, keep it short and give a specific callback promise: “You’ve reached [Company]. Leave your name and number and we’ll call you back tonight or first thing in the morning.” Better yet, pair it with a missed call text-back that fires automatically after a missed call, so the caller gets an immediate response even if nobody answered. The goal is to make the caller feel heard rather than ignored.",
+      },
+      {
+        question:
+          "Can I set up an AI voice assistant for after-hours only, not all calls?",
+        answer:
+          "Yes, and this is actually a common setup. Most AI voice assistant deployments allow you to configure routing rules by time of day and day of week. During business hours, calls go to your regular receptionist or team. After 5 PM on weekdays and all weekend, calls route to the AI. Some contractors also configure overflow routing — any call not answered within three rings during business hours goes to the AI — so nothing falls through the cracks even during busy periods.",
+      },
+      {
+        question:
+          "Are after-hours callers likely to leave a voicemail if I don’t answer?",
+        answer:
+          "Very unlikely. Research consistently shows that 85 percent of callers who reach voicemail will not leave a message. Consumer behavior has shifted toward immediate responses and away from message-leaving, especially for service businesses where the caller has urgency. Most after-hours callers who reach voicemail will hang up and call the next contractor on their Google search results before you ever see a notification. The window to capture an after-hours lead closes within minutes, not hours.",
+      },
+      {
+        question:
+          "How fast do I need to respond to after-hours missed calls to have a chance of closing the job?",
+        answer:
+          "The MIT Lead Response Management study found that responding within 5 minutes makes you 100 times more likely to connect with a lead than responding within 30 minutes. After-hours, that window is even tighter — the caller is often actively comparing multiple contractors in real time. A missed call text-back fires within 10 to 30 seconds, which keeps the lead engaged and signals responsiveness before they move on. An AI voice assistant eliminates the problem entirely by answering the call in real time rather than responding after the fact.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
