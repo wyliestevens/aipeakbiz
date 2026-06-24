@@ -3099,6 +3099,293 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "calculate-ai-roi-service-business",
+    title: "How to Calculate AI ROI for Your Service Business",
+    excerpt:
+      "Before you spend a dollar on AI tools, you need to know if the math actually works for your business. Here&rsquo;s a step-by-step formula contractors use to calculate their real ROI &mdash; before they sign anything.",
+    metaDescription:
+      "Calculate AI ROI for your contracting business with real numbers. Step-by-step formula for HVAC, roofing, and plumbing companies to know if AI pays off.",
+    date: "2026-06-24",
+    author: "Wylie Stevens",
+    readTime: "11 min read",
+    category: "AI Implementation",
+    keywords: [
+      "AI ROI service business",
+      "calculate AI ROI contractors",
+      "AI return on investment contractors",
+      "AI tools ROI HVAC roofing",
+      "service business automation ROI",
+      "AI implementation payback period",
+    ],
+    heroImage:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop",
+    heroImageAlt:
+      "Contractor reviewing financial numbers on a notepad next to a laptop — calculating AI ROI for their service business",
+    content: `<p>Before any contractor writes a check for an AI tool, they ask the same question: &ldquo;Is this actually going to pay off?&rdquo;</p>
+
+<p>That&rsquo;s the right question. Not &ldquo;Is this cool?&rdquo; Not &ldquo;Is everyone else doing it?&rdquo; But: will the money I put into this come back to me, and when?</p>
+
+<p>The problem is that most AI vendors either can&rsquo;t answer that question or hand you a marketing number that doesn&rsquo;t mean anything for your specific business. In this post, I&rsquo;m going to show you exactly how to calculate the ROI of AI tools for your service business &mdash; using your own numbers, not hypotheticals.</p>
+
+<p>This is the same math I walk through with contractors before they decide whether AI Peak Biz is right for them. Some find out the numbers are overwhelming in their favor. A few find out it&rsquo;s not worth it yet. Either way, they leave with a clear picture instead of a guess.</p>
+
+<h2>The Two Numbers That Drive Every ROI Calculation</h2>
+
+<p>Every AI ROI calculation for a service business comes down to two things:</p>
+
+<ol>
+<li><strong>What you&rsquo;re currently losing</strong> (the leak)</li>
+<li><strong>What the AI tool costs to plug it</strong> (the fix)</li>
+</ol>
+
+<p>If the fix costs less than the leak, the math works. If it costs more, it doesn&rsquo;t. That&rsquo;s it.</p>
+
+<p>The complexity comes from figuring out both numbers accurately. Most contractors underestimate the leak and overestimate the cost of the fix. Let&rsquo;s work through both.</p>
+
+<h2>Step 1: Calculate Your Current Revenue Leak</h2>
+
+<p>You need to quantify what you&rsquo;re losing before you can know what AI could recover. Revenue leaks in service businesses come from a few predictable places.</p>
+
+<h3>Missed Calls and Unanswered Leads</h3>
+
+<p>Industry data consistently shows that <strong>62% of small business calls go unanswered.</strong> For contractors who are often on-site during working hours, that number can be even higher. Here&rsquo;s how to calculate yours:</p>
+
+<p>Pull your missed call log from your phone for the past 30 days. Count every call you didn&rsquo;t answer &mdash; including evenings and weekends. Divide by 4 to get a weekly average.</p>
+
+<p>Now multiply: <strong>Weekly missed calls &times; your average job value &times; your close rate &times; 52 weeks</strong></p>
+
+<p>Example: An HVAC contractor missing 8 calls per week with a $1,100 average job value and a 25% close rate:</p>
+
+<p><strong>8 &times; $1,100 &times; 0.25 &times; 52 = $114,400 per year</strong></p>
+
+<p>That&rsquo;s the size of the leak. Even if you only recover half of it with AI, you&rsquo;re looking at $57,200 in additional annual revenue. Check the full breakdown in our post on <a href="/blog/cost-of-missed-calls-contractors">what missed calls actually cost contractors by trade</a>.</p>
+
+<h3>Slow Lead Response</h3>
+
+<p>Speed to lead is one of the most underappreciated variables in contractor revenue. Research from Lead Response Management (published in the Harvard Business Review) shows that <strong>businesses responding within 5 minutes are 21 times more likely to qualify a lead</strong> than those responding after 30 minutes.</p>
+
+<p>For contractors using a manual callback process, the average response time is 4 to 6 hours. In that window, the homeowner has already gotten quotes from two or three other companies. To quantify this leak, estimate your average response time and monthly inbound lead volume, then ask: if I could cut my response time to under 5 minutes, how many more jobs would I close?</p>
+
+<p>A conservative estimate for most contractors: <strong>10&ndash;20% more closed jobs from the same lead volume.</strong></p>
+
+<h3>Unsold Estimates and Unworked Follow-Up</h3>
+
+<p>If you&rsquo;re sending quotes without systematic follow-up, you&rsquo;re leaving money on the table. Most contractors follow up once &mdash; maybe twice &mdash; then move on. Automated follow-up sequences typically improve close rates on sent quotes by 10&ndash;15 percentage points.</p>
+
+<p>Pull your last 90 days of sent estimates. How many went dark after the first quote? At your average job value, what&rsquo;s that pile of unsold estimates worth if even 15% close with better follow-up?</p>
+
+<h3>Dormant Customer Database</h3>
+
+<p>Your existing customer list is probably your most underutilized asset. A homeowner who used you for HVAC maintenance two years ago is a perfect candidate for a system checkup, an upgrade upsell, or a referral. Most contractors never contact past customers systematically because it takes time they don&rsquo;t have.</p>
+
+<p>If you have 500 past customers and a <a href="/database-reactivation">database reactivation campaign</a> reaches 30% of them with a 10% conversion at a $500 average job value, that&rsquo;s <strong>$7,500 in revenue from people who already trust you</strong> &mdash; with zero marketing spend on new leads.</p>
+
+<p>Add up all four categories. For most contractors doing $300K&ndash;$700K annually, the total annual leak lands somewhere between <strong>$80,000 and $250,000.</strong></p>
+
+<h2>Step 2: Estimate What AI Can Realistically Recover</h2>
+
+<p>Not every dollar in the leak is recoverable. AI tools aren&rsquo;t magic. Here&rsquo;s a realistic recovery rate by tool type based on what we see across client implementations:</p>
+
+<table>
+<thead>
+<tr>
+<th>AI Tool</th>
+<th>What It Recovers</th>
+<th>Conservative Recovery Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Voice Assistant (24/7 answering)</td>
+<td>Missed call revenue</td>
+<td>50&ndash;70% of missed call value</td>
+</tr>
+<tr>
+<td>Missed Call Text-Back</td>
+<td>Missed call revenue (partial)</td>
+<td>20&ndash;35% of missed call value</td>
+</tr>
+<tr>
+<td>AI Follow-Up Automation</td>
+<td>Unsold estimate revenue</td>
+<td>10&ndash;20% improvement in close rate</td>
+</tr>
+<tr>
+<td>Database Reactivation Campaign</td>
+<td>Dormant customer revenue</td>
+<td>5&ndash;15% of dormant list value</td>
+</tr>
+<tr>
+<td>AI Review Generation</td>
+<td>Indirect &mdash; better rankings, more inbound</td>
+<td>10&ndash;30% lift in organic leads over 6 months</td>
+</tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s run those numbers for the HVAC contractor from our example:</p>
+
+<ul>
+<li>Missed call leak: $114,400/year &rarr; AI voice assistant recovers 60%: <strong>$68,640</strong></li>
+<li>Unsold estimates: $40,000 in stalled quotes &rarr; 15% improvement in close rate: <strong>$6,000</strong></li>
+<li>Database reactivation: 400 past customers at $800 average &rarr; 10% conversion: <strong>$32,000 one-time</strong></li>
+</ul>
+
+<p><strong>Total first-year recovery estimate: $106,640</strong></p>
+
+<p>That&rsquo;s before factoring in the review lift, which compounds over time as better rankings bring more organic inbound calls.</p>
+
+<h2>Step 3: Calculate the Actual Cost of AI Tools</h2>
+
+<p>Now you need the cost side. Here&rsquo;s what AI tools for contractors typically run on a monthly basis:</p>
+
+<ul>
+<li><strong>Missed call text-back only:</strong> $50&ndash;$150/month</li>
+<li><strong>AI voice assistant (full 24/7 answering):</strong> $200&ndash;$500/month</li>
+<li><strong>AI review generation:</strong> $100&ndash;$300/month</li>
+<li><strong>AI appointment setter / follow-up automation:</strong> $150&ndash;$400/month</li>
+<li><strong>Full AI revenue recovery stack:</strong> $400&ndash;$900/month</li>
+</ul>
+
+<p>Some providers charge an upfront deployment fee to configure and train the AI on your specific business. At AI Peak Biz, we call this the deployment cost &mdash; it covers technical setup, AI training, and system integration. It&rsquo;s a one-time cost, not a recurring one. See our <a href="/pricing">pricing page</a> for current tiers.</p>
+
+<p>For a full revenue recovery system (voice assistant + follow-up + review generation), budget $600&ndash;$900/month in ongoing operating costs after deployment.</p>
+
+<p>Annualized: <strong>$7,200&ndash;$10,800 per year.</strong></p>
+
+<h2>Step 4: Run the ROI Calculation</h2>
+
+<p>Now you have everything. Here&rsquo;s the formula:</p>
+
+<p><strong>(Revenue recovered &minus; Total AI cost) &divide; Total AI cost &times; 100 = First-year ROI %</strong></p>
+
+<p>Using our HVAC contractor numbers:</p>
+
+<ul>
+<li>Revenue recovered: $106,640</li>
+<li>Annual AI cost: $9,600 (midpoint of the range)</li>
+</ul>
+
+<p><strong>($106,640 &minus; $9,600) &divide; $9,600 &times; 100 = 1,011% ROI</strong></p>
+
+<p>That&rsquo;s not a typo. For contractors who are meaningfully losing revenue to missed calls and unworked leads, the ROI on AI tools tends to be in the 500&ndash;1,500% range because the cost of the tools is small relative to the revenue at stake.</p>
+
+<h3>Time to Breakeven</h3>
+
+<p>If your system costs $800/month and you recover $8,000 in the first month (reasonable for a contractor with significant missed call volume), you break even in week one.</p>
+
+<p>More typically, a contractor sees the full impact build over 60&ndash;90 days as the AI voice assistant captures calls, the review system builds volume, and follow-up automation works through the pipeline. A conservative breakeven timeline for most contractors is <strong>30&ndash;90 days.</strong></p>
+
+<h2>Real Numbers by Trade</h2>
+
+<h3>Roofing Contractor (Two Crews, $800K Revenue)</h3>
+
+<p>Missing an estimated 12 calls per week at $4,500 average job value, 30% close rate.</p>
+
+<ul>
+<li>Annual missed call leak: <strong>$84,240</strong></li>
+<li>AI voice assistant + review system: $900/month ($10,800/year)</li>
+<li>Conservative 60% recovery: $50,544</li>
+<li><strong>Net first-year gain: $39,744 &mdash; ROI: 368%</strong></li>
+</ul>
+
+<p>That&rsquo;s a conservative case. Most roofers see higher recovery rates because storm-season leads are so time-sensitive &mdash; a homeowner who can&rsquo;t reach you after a hail storm calls three other roofers in the next 10 minutes. If they don&rsquo;t reach you, they don&rsquo;t call back.</p>
+
+<h3>Plumbing Company (Solo Operator, $280K Revenue)</h3>
+
+<p>Missing 6 calls per week at $650 average, 30% close rate.</p>
+
+<ul>
+<li>Annual missed call leak: <strong>$60,840</strong></li>
+<li>Missed call text-back + AI follow-up: $300/month ($3,600/year)</li>
+<li>Conservative 40% recovery: $24,336</li>
+<li><strong>Net first-year gain: $20,736 &mdash; ROI: 576%</strong></li>
+</ul>
+
+<p>For a solo plumber, the entry point doesn&rsquo;t need to be a full AI voice assistant. A <a href="/missed-call-text-back">missed call text-back system</a> alone captures many of those leads for under $150 a month. Add in automated follow-up and you&rsquo;re still under $400/month with a strong ROI.</p>
+
+<h3>HVAC Company (3 Technicians, $550K Revenue)</h3>
+
+<p>Missing 10 calls per week at $1,200 average, 25% close rate.</p>
+
+<ul>
+<li>Annual missed call leak: <strong>$156,000</strong></li>
+<li>Full AI system: $800/month ($9,600/year)</li>
+<li>Conservative 55% recovery: $85,800</li>
+<li><strong>Net first-year gain: $76,200 &mdash; ROI: 793%</strong></li>
+</ul>
+
+<h2>When AI Doesn&rsquo;t Pay Off</h2>
+
+<p>I&rsquo;m going to be straight with you about when the math doesn&rsquo;t work, because I&rsquo;d rather you make the right decision than the wrong one.</p>
+
+<p><strong>When you&rsquo;re already at capacity.</strong> If your schedule is booked three weeks out and you genuinely can&rsquo;t take on more work, capturing more leads creates problems, not revenue. Fix your capacity first. Then add AI to fill it.</p>
+
+<p><strong>When your average job value is very low.</strong> If you&rsquo;re doing $100&ndash;$150 handyman calls, the economics on AI voice assistants get tighter. Missed call text-back still makes sense at that price point, but the full AI stack takes longer to pay for itself.</p>
+
+<p><strong>When your inbound close rate is already very high.</strong> If you&rsquo;re closing 60%+ of leads on the first contact, you&rsquo;re already executing follow-up well. AI will still help you capture more calls, but the multiplier effect is smaller.</p>
+
+<p><strong>When you don&rsquo;t have a customer database.</strong> Database reactivation only works if you have contact records to work with. If you&rsquo;ve never collected customer emails or phone numbers, build that habit first. It&rsquo;s one of the most valuable assets a service business can have.</p>
+
+<h2>How to Track ROI After You Launch</h2>
+
+<p>The numbers above are projections. To measure your actual ROI, you need to track results after implementation. Here&rsquo;s what to watch:</p>
+
+<ul>
+<li><strong>Calls answered vs. missed (before and after):</strong> Your AI provider should give you call logs. Compare your answer rate from month one to month six.</li>
+<li><strong>Inbound leads booked through AI:</strong> How many appointments did the system schedule on its own, without you picking up the phone?</li>
+<li><strong>Conversion rate from AI-handled leads:</strong> When the AI books an appointment, what percentage turn into paying jobs? This tells you lead quality.</li>
+<li><strong>Google review count and ranking trend:</strong> Check your Google Business Profile monthly. Track review velocity and your position in the local map pack.</li>
+<li><strong>Revenue from reactivation campaigns:</strong> If you run a database reactivation push, track how much revenue you directly attribute to it.</li>
+</ul>
+
+<p>Within 90 days you should have enough data to know whether the system is performing. If it&rsquo;s not, that&rsquo;s a signal to adjust the setup &mdash; not to abandon the strategy.</p>
+
+<h2>Get Your Numbers Before You Decide</h2>
+
+<p>If you want to run this calculation for your specific business without doing all the math yourself, that&rsquo;s exactly what our <a href="/free-assessment">free revenue assessment</a> is for.</p>
+
+<p>Tell us your trade, your call volume, your average job value, and your close rate. We&rsquo;ll show you a personalized estimate of your current revenue leak and what AI tools would realistically recover &mdash; with a clear cost breakdown so you can make an informed decision before committing to anything.</p>
+
+<p>It takes two minutes. No sales pressure. The goal is to help you decide if AI is right for your business right now &mdash; not to push you into something before you&rsquo;re ready. If the math works in your favor, we&rsquo;ll show you exactly how to get started. If it doesn&rsquo;t, we&rsquo;ll tell you that instead.</p>`,
+    faqs: [
+      {
+        question: "How do I know how many calls I'm actually missing?",
+        answer:
+          "Check your phone's missed call log for the past 30 days and count every call you didn't answer — include evenings and weekends. Divide by 4 to get a weekly average. If you use a business phone system, most providers have call logs in the dashboard. You can also forward your business line to a tracking number for 30 days and get detailed data on answered vs. missed calls. Most contractors are surprised by the actual number — it's almost always higher than their gut estimate, especially if they're working in the field during the day.",
+      },
+      {
+        question:
+          "What close rate should I use when calculating my AI ROI?",
+        answer:
+          "Use your actual close rate on inbound leads if you track it. If you don't know, 25% is a reasonable conservative estimate for most trades — meaning roughly 1 in 4 people who call and speak to you convert into a paying customer. Roofers who answer during storm season often close at 35-45% on inbound calls. Plumbers handling emergency calls may close 40-50%. The better your close rate already, the smaller the multiplier — but even at 20%, the recovered revenue math usually works strongly in favor of AI tools for contractors missing more than 5 calls per week.",
+      },
+      {
+        question: "How long does it take to see results from AI tools?",
+        answer:
+          "Most contractors see measurable results within 30 days of going live. The missed call revenue impact is nearly immediate — calls that would have gone to voicemail are now answered. Follow-up automation and review generation compound over 60-90 days as the pipeline builds. Database reactivation campaigns typically show results within the first two weeks since you're contacting people who already know you. The review and ranking improvements take the longest — typically 3-6 months to see a meaningful lift in Google Map Pack position.",
+      },
+      {
+        question:
+          "Is the ROI different for residential vs. commercial contractors?",
+        answer:
+          "Yes, commercial contractors typically see higher per-job ROI because average job values are significantly larger. However, the missed call dynamics are different — commercial clients often go through a more deliberate bidding process, so the urgency factor is lower than in residential. For commercial contractors, AI tools tend to perform best on follow-up automation (following up on outstanding bids) and reputation management (Google reviews influence commercial clients too). Residential contractors see faster payback on AI voice assistants because residential leads call with urgent problems and pick the first contractor who answers.",
+      },
+      {
+        question:
+          "What if I can't handle more leads right now — should I still invest in AI?",
+        answer:
+          "No. If your schedule is genuinely full, adding AI tools that capture more leads creates a problem — you can't serve them, which means you'll either turn them away or overextend. Get capacity sorted first: hire a helper, subcontract overflow work, or raise prices to reduce demand. Once you have room to grow, AI tools dramatically accelerate the fill rate. The right time to install AI is just before or during a growth phase, not when you're already stretched thin.",
+      },
+      {
+        question:
+          "Can I start with just one AI tool instead of a full system?",
+        answer:
+          "Absolutely, and for most contractors starting out, that's the smarter move. The highest ROI entry point is usually a missed call text-back system — it costs under $150 per month, takes minutes to set up, and immediately engages callers you can't answer. Once you see the results and understand the technology, you can layer in a full AI voice assistant, review generation, and follow-up automation. Starting with one tool also makes it easier to measure ROI clearly before expanding. You don't need to buy everything at once to see real results.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
