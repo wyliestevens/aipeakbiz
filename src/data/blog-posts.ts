@@ -3667,6 +3667,239 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "ai-database-reactivation-campaign-guide",
+    title: "How to Run an AI-Powered Database Reactivation Campaign (Step-by-Step)",
+    excerpt:
+      "Your contact list is full of leads you already paid for &mdash; people who called, got a quote, or hired you once. Here&rsquo;s how to use AI to turn those dormant contacts into booked jobs with a structured reactivation campaign.",
+    metaDescription:
+      "Learn how to run a database reactivation campaign using AI to convert past contacts and old quotes into booked jobs. Step-by-step guide for contractors.",
+    date: "2026-06-29",
+    author: "Wylie Stevens",
+    readTime: "10 min read",
+    category: "Revenue Recovery",
+    keywords: [
+      "AI database reactivation campaign",
+      "database reactivation contractors",
+      "reactivate past customers contractors",
+      "AI SMS campaign contractors",
+      "past customer outreach service business",
+      "recover revenue past contacts",
+    ],
+    heroImage: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor reviewing contact list on phone — representing database reactivation outreach campaign",
+    content: `<p>Somewhere in your phone, your CRM, or that spreadsheet you made three years ago, there are hundreds of people who called your business, asked for a quote, or hired you once &mdash; and then went quiet.</p>
+
+<p>They didn&rsquo;t become your competition&rsquo;s loyal customers. They just got busy. The project got pushed. The budget didn&rsquo;t come through. Life happened. And now they&rsquo;re sitting in a file you never open.</p>
+
+<p>Here&rsquo;s what most contractors miss: those people already trust you. They reached out voluntarily. You&rsquo;ve already done the hardest part of the sales process &mdash; building enough credibility that they made contact. That relationship has real value, and a database reactivation campaign is how you collect it.</p>
+
+<p>This guide walks you through the exact steps to run one using AI &mdash; from pulling your contact list to booking jobs &mdash; and what to realistically expect when you do. For more on the broader revenue recovery picture, see our <a href="/blog/ai-revenue-recovery-service-businesses-guide">complete guide to AI revenue recovery for service businesses</a>.</p>
+
+<h2>What Database Reactivation Actually Is</h2>
+
+<p>Database reactivation (sometimes called &ldquo;past customer revival&rdquo; or &ldquo;dormant lead activation&rdquo;) is a targeted outreach campaign to people who have had some prior contact with your business.</p>
+
+<p>That includes:</p>
+
+<ul>
+<li>Leads who requested a quote but never booked</li>
+<li>Past customers who haven&rsquo;t called in 12 or more months</li>
+<li>People who booked an estimate but went with someone else</li>
+<li>Anyone in your CRM or contact list who&rsquo;s gone cold</li>
+</ul>
+
+<p>The goal is straightforward: re-open a conversation and convert a percentage of them into paying jobs &mdash; work you would have otherwise left on the table permanently.</p>
+
+<p>What makes AI different from a manual outreach campaign is volume, timing, and follow-up. You could personally text or call 50 past customers in a day. You cannot personally manage 500 simultaneous conversations. AI can &mdash; and it does it in real time, around the clock, without any of them waiting for a response.</p>
+
+<h2>Why Old Contacts Convert Better Than New Leads</h2>
+
+<p>This surprises a lot of contractors, but it&rsquo;s consistently true: reactivated contacts convert at two to four times the rate of cold leads.</p>
+
+<p>Think about why. A cold lead comes from an ad, a Google search, or a referral. That person has no relationship with you. They&rsquo;re evaluating you alongside three or four other contractors. You have to sell yourself from scratch.</p>
+
+<p>A past customer or old quote request already knows who you are. You&rsquo;ve either done work for them before, or they liked you enough to ask for a price. The trust barrier &mdash; the hardest part of the sales process &mdash; is at least partially cleared before you say a single word.</p>
+
+<p>On top of that, contractors typically spend $25 to $200 acquiring a new lead through advertising and marketing. Reactivating a past contact costs almost nothing. Your acquisition cost per job drops dramatically when the contacts already exist in your database.</p>
+
+<p>The numbers from real campaigns reflect this consistently. A roofing company with a list of 1,247 past contacts ran a structured reactivation campaign and booked $312,000 in new jobs within 90 days. The campaign itself cost less than $800 to run. That&rsquo;s a return you can&rsquo;t replicate with any ad platform at any budget. For more on this service, see our <a href="/database-reactivation">Database Reactivation page</a>.</p>
+
+<h2>Step 1: Build Your Contact List</h2>
+
+<p>Before you can run a campaign, you need to know who you&rsquo;re reaching out to. This step takes most contractors longer than they expect, but it&rsquo;s worth doing right.</p>
+
+<p><strong>Where to pull contacts:</strong></p>
+
+<ul>
+<li><strong>Your CRM</strong> (GoHighLevel, Jobber, ServiceTitan, HouseCall Pro) &mdash; look for leads and customers from the past one to five years</li>
+<li><strong>Email history</strong> &mdash; anyone who emailed asking for a quote or information</li>
+<li><strong>Phone records</strong> &mdash; call logs going back as far as you have them</li>
+<li><strong>Old invoices or receipts</strong> &mdash; past customers with contact info attached</li>
+<li><strong>Estimate software</strong> &mdash; anyone you ever quoted who didn&rsquo;t book</li>
+<li><strong>Paper records</strong> &mdash; if you ran the business before going digital, a basic spreadsheet of old jobs works fine</li>
+</ul>
+
+<p>Export everything to a spreadsheet: name, phone number, email if available, last contact date, and what they contacted you about. Don&rsquo;t worry about making it perfect. You just need a name and a working phone number or email for each contact.</p>
+
+<p>There&rsquo;s no minimum list size, but most meaningful campaigns start with at least 200 to 300 contacts. If you&rsquo;ve been in business more than two years, you almost certainly have more than that.</p>
+
+<h2>Step 2: Segment Your List</h2>
+
+<p>Not all old contacts are equal. Group them by type so you can send relevant messages to each group. Relevance is everything in reactivation outreach &mdash; a message that feels personal gets responses; a generic blast gets ignored.</p>
+
+<p><strong>Segment A: Past customers (did work for them, 12 or more months ago)</strong><br>
+These are your warmest leads. You have a real relationship. Your message should acknowledge that you&rsquo;ve worked together before and open the door to future work, seasonal maintenance, or upcoming projects.</p>
+
+<p><strong>Segment B: Unsold estimates (got a quote, didn&rsquo;t book)</strong><br>
+These are the &ldquo;maybe&rdquo; people. Something stopped them &mdash; timing, budget, they went with someone else. Your message should revisit the need without being pushy. Price objections can be addressed with financing options or current availability.</p>
+
+<p><strong>Segment C: Old cold leads (called or emailed, never reached a quote)</strong><br>
+These are the coldest contacts on your list. They showed interest at some point. Your message should be brief and focused on whether they still need help.</p>
+
+<p>Segmenting takes an extra hour up front but significantly improves your response rates. Sending a message that references &ldquo;the work we did together&rdquo; to someone who was never a customer creates confusion and kills trust immediately.</p>
+
+<h2>Step 3: Write Your Outreach Messages</h2>
+
+<p>The best reactivation messages share three qualities: they&rsquo;re short, they&rsquo;re specific to what the contact did before, and they make it easy to respond &ldquo;yes.&rdquo;</p>
+
+<p>Here are starting-point templates for each segment. Replace the brackets with your actual information.</p>
+
+<p><strong>For past customers:</strong></p>
+
+<blockquote>
+<p>Hey [First Name], this is [Your Name] from [Your Company]. We did [work type] for you back in [approximate year]. Just checking in &mdash; do you have any upcoming projects we can help with? We&rsquo;re scheduling for the next few weeks and wanted to give past customers first priority.</p>
+</blockquote>
+
+<p><strong>For unsold estimates:</strong></p>
+
+<blockquote>
+<p>Hey [First Name] &mdash; [Your Name] from [Your Company]. You had reached out about [work type] a while back. Not sure if that&rsquo;s still on your radar, but we&rsquo;re booking out about [X] weeks and wanted to check in. Is that something you&rsquo;re still thinking about?</p>
+</blockquote>
+
+<p><strong>For old cold leads:</strong></p>
+
+<blockquote>
+<p>Hi [First Name], this is [Your Name] with [Your Company]. You reached out about [work type] a while back. Just wanted to check if that&rsquo;s something we can still help with. Happy to take two minutes and talk through it if so.</p>
+</blockquote>
+
+<p>Keep your messages under 150 words. No sales pitch, no long backstory, no pressure. The only goal of the first message is to get a &ldquo;yes, still interested&rdquo; or &ldquo;actually yes, let&rsquo;s talk.&rdquo; Everything else comes after that.</p>
+
+<h2>Step 4: Set Up Your AI Conversation Engine</h2>
+
+<p>Here&rsquo;s where the AI component earns its value. When you send a campaign to 500 contacts manually, you can write the first message yourself. But when 80 of them respond within the first few hours, you&rsquo;re suddenly trying to manage 80 simultaneous text conversations while also running jobs, driving between sites, and everything else.</p>
+
+<p>AI handles the responses in real time. You configure it once with the following:</p>
+
+<ul>
+<li>Your business name, service area, and what you do</li>
+<li>How to respond to common replies (&ldquo;Yes, what&rsquo;s your pricing?&rdquo; / &ldquo;We already got that done&rdquo; / &ldquo;Call me instead of texting&rdquo;)</li>
+<li>Your calendar availability or booking link</li>
+<li>A hand-off rule: when a conversation reaches a certain point &mdash; for instance, when the contact wants to schedule &mdash; the system flags it for you or your office to take over</li>
+</ul>
+
+<p>The AI doesn&rsquo;t close every deal for you. It qualifies and warms the conversation so that when you do get involved, the person is already interested and has answered the basic questions. Your time gets spent only on leads that are ready to move forward &mdash; not on the back-and-forth of figuring out if they&rsquo;re even serious.</p>
+
+<p>This scalability is what separates a true AI reactivation campaign from manually texting your old contacts. Without AI, you can realistically work through 50 contacts in a day with personal calling or texting effort. With it, you can reach 500 contacts and have a sorted set of warm responses waiting when you check in.</p>
+
+<h2>Step 5: Launch, Monitor, and Follow Up</h2>
+
+<p>Once your list is built, segmented, and your AI conversation flow is configured, you&rsquo;re ready to send.</p>
+
+<p><strong>Timing matters.</strong> The best days for outreach are Tuesday through Thursday, between 9 AM and 11 AM local time. Avoid Monday (people are catching up from the weekend) and Friday (they&rsquo;re mentally checked out). For service businesses specifically, early evening follow-ups &mdash; around 6 to 7 PM &mdash; can also perform well, since homeowners are more reachable when they&rsquo;re off work and thinking about their house.</p>
+
+<p><strong>Don&rsquo;t send everything at once.</strong> For large lists, stagger your sends at 100 to 200 contacts per day over three to five days. This does two things: it prevents responses from flooding in faster than your team can handle, and it gives you a chance to monitor early results and adjust your message if response rates are lower than expected.</p>
+
+<p><strong>Plan for three touches.</strong> Most conversions in reactivation campaigns don&rsquo;t happen on the first message. Set up a follow-up sequence before you send anything:</p>
+
+<ol>
+<li><strong>Day 1:</strong> First outreach message (as above)</li>
+<li><strong>Day 3:</strong> Follow-up for non-responders (&ldquo;Just wanted to make sure my message came through&rdquo;)</li>
+<li><strong>Day 7:</strong> Final touch for non-responders (&ldquo;I&rsquo;ll close your file unless you&rsquo;re still looking for help with this&rdquo;)</li>
+</ol>
+
+<p>That third message &mdash; the &ldquo;last chance&rdquo; or &ldquo;door is closing&rdquo; message &mdash; consistently generates the highest single-day response rate of the entire sequence. There&rsquo;s something about mild, honest scarcity that prompts people who&rsquo;ve been meaning to respond but haven&rsquo;t gotten around to it. Use it every time.</p>
+
+<h2>What Results to Expect</h2>
+
+<p>Be realistic going in. Not every contact on your list is going to turn into a job. Here&rsquo;s what typical performance looks like by segment:</p>
+
+<table>
+<thead>
+<tr><th>Segment</th><th>Response Rate</th><th>Conversion to Booked Job</th></tr>
+</thead>
+<tbody>
+<tr><td>Past customers</td><td>25&ndash;40%</td><td>15&ndash;25%</td></tr>
+<tr><td>Unsold estimates</td><td>10&ndash;20%</td><td>8&ndash;15%</td></tr>
+<tr><td>Old cold leads</td><td>5&ndash;10%</td><td>3&ndash;7%</td></tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s run the math on a mixed list of 400 contacts:</p>
+
+<ul>
+<li>100 past customers &times; 20% conversion = 20 jobs</li>
+<li>200 unsold estimates &times; 10% conversion = 20 jobs</li>
+<li>100 cold leads &times; 5% conversion = 5 jobs</li>
+<li><strong>Total: 45 booked jobs</strong></li>
+</ul>
+
+<p>At an average job value of $1,200 for a plumbing or HVAC company, that&rsquo;s <strong>$54,000 in revenue from contacts you already had in your database.</strong> You spent nothing on advertising to generate these leads &mdash; they were already yours. You just hadn&rsquo;t gone back to collect.</p>
+
+<p>Your results will vary based on list quality, how long contacts have been dormant, your average job value, and how competitive your market is. But the pattern holds consistently across trades: reactivation campaigns generate real revenue from assets you&rsquo;ve already paid to build.</p>
+
+<h2>Common Mistakes That Kill Campaign Performance</h2>
+
+<p><strong>Sending generic messages.</strong> &ldquo;Hey, just checking in!&rdquo; with no context tells the reader nothing and sounds like a spam blast. Reference what they contacted you about or what work you did for them. Specificity is what makes a reactivation message feel personal.</p>
+
+<p><strong>Leading with a hard sell on the first message.</strong> Nobody wants to be sold to by someone they barely remember. The first message opens a conversation; the close comes naturally once they&rsquo;ve re-engaged.</p>
+
+<p><strong>Giving up after one touch.</strong> If you only send one message and consider the campaign done, you&rsquo;ll capture maybe 30 to 40% of your potential response rate. The follow-up sequence is where the real money lives.</p>
+
+<p><strong>Not handling responses fast enough.</strong> If a contact responds and it takes you two days to get back to them, you&rsquo;ve lost the momentum. AI handles this automatically &mdash; responses go back within seconds, keeping the conversation warm until it needs a human to take over.</p>
+
+<p><strong>Only running campaigns when you&rsquo;re slow.</strong> Reactivation works year-round, but contractors typically only think about it during the slow season. Run campaigns proactively &mdash; including during your busy season &mdash; to fill schedule gaps and stay at full capacity instead of scrambling when things quiet down.</p>
+
+<h2>Running This Without Doing It Yourself</h2>
+
+<p>If this sounds like a lot to set up &mdash; pulling contact lists, writing segmented messages, configuring an AI conversation flow, managing follow-up sequences &mdash; you&rsquo;re right. It&rsquo;s manageable once the system is built, but the initial configuration takes real time and technical knowledge most contractors don&rsquo;t have or want to spend.</p>
+
+<p>That&rsquo;s exactly what AI Peak Biz&rsquo;s <a href="/database-reactivation">Database Reactivation service</a> does for contractors. We pull your contact list, build the segments, write the messages, configure the AI conversation engine, and run the full campaign. You get a pipeline of warm leads to follow up with &mdash; without spending 20 hours in spreadsheets and SMS platforms learning how to do it yourself.</p>
+
+<p>If you want to understand what your database is worth before you do anything else, <a href="/free-assessment">take our free revenue assessment</a>. We&rsquo;ll estimate the recoverable revenue in your existing contacts based on your trade, average job value, and list size &mdash; no obligation, takes two minutes.</p>`,
+    faqs: [
+      {
+        question: "What is a database reactivation campaign?",
+        answer:
+          "A database reactivation campaign is a structured outreach effort to people who have had prior contact with your business — past customers, old quote requests, or leads who never converted — with the goal of re-opening a conversation and converting them into paying jobs. Unlike cold outreach, these contacts already know who you are, which is why they convert at significantly higher rates than new leads from advertising.",
+      },
+      {
+        question: "How big does my contact list need to be?",
+        answer:
+          "There's no firm minimum, but campaigns typically become statistically meaningful at around 200-300 contacts. If you've been in business for two or more years and have kept any records — invoices, CRM entries, email history, phone logs — you almost certainly have enough. Even a list of 150 past customers and old quotes can generate 15-20 booked jobs with a well-executed campaign.",
+      },
+      {
+        question: "What response rate should I expect?",
+        answer:
+          "Response rates vary by contact type. Past customers (people you've actually done work for) typically respond at 25-40% and convert to booked jobs at 15-25%. Unsold estimates convert at lower rates — 8-15% to a booked job — but are often your largest segment. Cold leads (people who inquired once and went quiet) convert at 3-7%. Across a mixed list, a well-run campaign typically books 8-12% of total contacts as paid jobs.",
+      },
+      {
+        question: "How is AI different from just texting or emailing old customers myself?",
+        answer:
+          "Scale and speed. You can personally reach out to 30-50 people in a day. When 80 of them respond within hours, managing those conversations while running a business is impossible. AI responds to every reply within seconds, handles common questions automatically, qualifies the lead, and flags the conversation for you only when the person is ready to schedule. You spend your time on warm, ready-to-book conversations — not on back-and-forth with people who are still deciding.",
+      },
+      {
+        question: "How do I avoid annoying or alienating past contacts?",
+        answer:
+          "Three things matter: relevance, brevity, and honesty. Reference what they contacted you about — don't send a generic blast. Keep the first message under 150 words and ask one clear question. And limit your follow-up sequence to three touches over 7-10 days — after that, move on. Most people appreciate a business that follows up. What they dislike is being bombarded with salesy messages that feel like spam. A professional, low-pressure reactivation sequence almost never generates negative reactions.",
+      },
+      {
+        question: "How often should I run a reactivation campaign?",
+        answer:
+          "Most contractors benefit from running a full campaign once or twice a year — typically in early spring before busy season and in early fall before slowdowns. Between full campaigns, you can run smaller targeted pushes: reaching out to customers from exactly 12 months ago for seasonal maintenance, or following up on estimates that are 90+ days old. AI systems can automate this ongoing outreach so it runs on a schedule without requiring you to think about it.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
