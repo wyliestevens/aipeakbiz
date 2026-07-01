@@ -3900,6 +3900,220 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "unsold-estimates-recovery-contractors",
+    title: "Unsold Estimates: How Contractors Are Recovering $50K+ from Old Quotes",
+    excerpt:
+      "Most contractors send an estimate and assume silence means no. But silence usually just means the customer got distracted — and whoever follows up first gets the job.",
+    metaDescription:
+      "Contractors are recovering $50K–$150K from unsold estimates using AI follow-up campaigns. Learn how to turn old quotes into booked jobs.",
+    date: "2026-07-01",
+    author: "Wylie Stevens",
+    readTime: "11 min read",
+    category: "Revenue Recovery",
+    keywords: [
+      "unsold estimates recovery contractors",
+      "old quotes follow up contractors",
+      "contractor estimate follow up",
+      "recover unsold jobs",
+      "estimate reactivation",
+      "contractor revenue recovery",
+    ],
+    heroImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor reviewing estimate paperwork on a clipboard — representing unsold quotes waiting to be recovered",
+    content: `<p>Last month, you sent out 12 estimates. Four turned into jobs. The other eight? You haven&rsquo;t heard back.</p>
+
+<p>Maybe you followed up once. Maybe you sent a text. But after a week or two with no response, most contractors move on. They assume the job went to someone else, or the customer decided not to do the project, or they just weren&rsquo;t a good fit.</p>
+
+<p>Here&rsquo;s what&rsquo;s actually happening: <strong>most of those customers still want the work done.</strong> They got busy. They&rsquo;re waiting on an insurance payout. They&rsquo;re comparing your bid to one other quote. They opened your email, got distracted, and forgot to reply. Life happened.</p>
+
+<p>The ones who hired your competitor? In most cases, your competitor just followed up more times than you did. That&rsquo;s it.</p>
+
+<p>If you&rsquo;ve been in business for more than a year, you have a pile of unsold estimates sitting in your CRM, your inbox, or a folder on your desktop. Those quotes represent tens of thousands of dollars &mdash; sometimes well over $100,000 &mdash; in work you quoted but never converted. This post is about going back and recovering it.</p>
+
+<h2>What&rsquo;s Actually Sitting in Your Estimate Backlog</h2>
+
+<p>Most contractors have between 30 and 150 unsold estimates at any given time, depending on their volume and how long they&rsquo;ve been tracking them. For a roofing company, that could be $50,000 to $500,000 worth of quotes that never turned into jobs.</p>
+
+<p>Let&rsquo;s run a simple number:</p>
+
+<ul>
+<li>You send 15 estimates per month.</li>
+<li>Your close rate is 30% &mdash; typical for contractors.</li>
+<li>That means 10&ndash;11 estimates per month go unanswered.</li>
+<li>Your average job is $3,500.</li>
+</ul>
+
+<p><strong>After just six months, you have 60&ndash;65 unsold estimates representing roughly $215,000 in unconverted quotes.</strong></p>
+
+<p>Now, not all of those are recoverable. Some of those customers genuinely went with a competitor. Some decided not to do the project at all. But industry data on sales follow-up consistently shows that 20&ndash;30% of &ldquo;cold&rdquo; prospects will convert if you follow up at the right time with the right message. That means even a small portion of your backlog, recovered, adds up fast.</p>
+
+<p>At 25% recovery on 60 estimates: <strong>15 additional jobs &times; $3,500 = $52,500 you&rsquo;ve already done the hard work for.</strong> You sent the estimate. You did the site visit. All that&rsquo;s left is getting them to say yes.</p>
+
+<h2>Why Estimates Go Cold (It&rsquo;s Rarely What You Think)</h2>
+
+<p>When an estimate goes cold, the instinctive explanation is &ldquo;they went with someone cheaper&rdquo; or &ldquo;they weren&rsquo;t serious.&rdquo; Sometimes that&rsquo;s true. But research into buyer behavior tells a more nuanced story.</p>
+
+<p><strong>Decision fatigue.</strong> Homeowners who need a new roof or a full HVAC replacement aren&rsquo;t excited about spending $8,000. They get three quotes, feel overwhelmed, and postpone the decision. Three months later, they still need the work done &mdash; and whoever follows up first is often who gets the job.</p>
+
+<p><strong>Waiting on money.</strong> Insurance claims, home equity loans, tax refunds, bonuses. Many customers fully intend to move forward but are waiting for a financial trigger. They didn&rsquo;t tell you that because it feels awkward to say &ldquo;I don&rsquo;t have the money yet.&rdquo; So they went quiet.</p>
+
+<p><strong>Life interrupted.</strong> Someone in the family got sick. They went on vacation. Work got crazy. The leaky roof that felt urgent in March doesn&rsquo;t feel as urgent when life is busy. The problem is still there. They still want to fix it. They just forgot to call you back.</p>
+
+<p><strong>Waiting for a second quote.</strong> They&rsquo;re still comparing. If you follow up before their other quote appointment, you can often close the job before the comparison even happens.</p>
+
+<p><strong>They&rsquo;re nervous about the price.</strong> This is a big purchase. They trust you, but they&rsquo;re not quite sure. A warm, low-pressure follow-up that answers their unasked questions &mdash; &ldquo;What&rsquo;s included?&rdquo; &ldquo;How long will it take?&rdquo; &ldquo;What if something goes wrong?&rdquo; &mdash; can be exactly what they need to pull the trigger.</p>
+
+<p>The common thread: very few people ghost you because they don&rsquo;t want the work. They ghost you because they got distracted, uncertain, or delayed &mdash; and your estimate is sitting in their inbox, silently waiting for them to act.</p>
+
+<h2>The Follow-Up Gap Most Contractors Have</h2>
+
+<p>Studies on sales follow-up consistently find that <strong>44% of salespeople give up after just one follow-up attempt.</strong> And yet, most sales &mdash; across industries &mdash; require five or more touchpoints before a customer makes a decision.</p>
+
+<p>For contractors, this gap is even wider. Most contractors don&rsquo;t follow up at all. They send the estimate and wait. If the customer doesn&rsquo;t call back within a week, the lead is mentally written off.</p>
+
+<p>Meanwhile, the customer is sitting on a decision that costs thousands of dollars. They need a little reassurance. They need someone to circle back, answer a question, or give them a gentle nudge. The contractor who does that &mdash; professionally, without being pushy &mdash; wins the job the majority of the time.</p>
+
+<p>The problem isn&rsquo;t that contractors don&rsquo;t know they should follow up. The problem is that follow-up doesn&rsquo;t scale when you&rsquo;re running a crew, managing active jobs, and handling daily operations. There are only so many hours in a day, and calling through a list of 60 old estimates feels like an overwhelming project nobody ever gets around to.</p>
+
+<p>That&rsquo;s exactly where AI-powered follow-up changes the game.</p>
+
+<h2>What an Effective Estimate Follow-Up Sequence Looks Like</h2>
+
+<p>Before talking about automation, it&rsquo;s worth understanding what actually works. A high-converting follow-up sequence has a few consistent characteristics.</p>
+
+<h3>Timing: Follow up sooner than you think</h3>
+
+<p>The optimal window for a first follow-up is <strong>48 to 72 hours after sending the estimate.</strong> At this point, the customer remembers you, remembers the estimate, and is likely still in decision mode. Waiting a week means competing with whatever else came into their life over those seven days.</p>
+
+<p>After the initial follow-up, a second touch at the 7&ndash;10 day mark and a third at 30 days captures most of the recoverable leads. Some contractors add a fourth message at 90 days for major projects where customers often delay decisions.</p>
+
+<h3>Medium: Text over email for initial outreach</h3>
+
+<p>Text messages have a 98% open rate. Emails average around 20%. When you&rsquo;re trying to re-engage a cold prospect, SMS dramatically outperforms email for the first contact. Once they respond and a conversation is open, the channel matters less.</p>
+
+<h3>Tone: Helpful, not pushy</h3>
+
+<p>The instinct is to send &ldquo;Just checking in on the estimate I sent.&rdquo; That&rsquo;s fine, but it leaves the conversation entirely in the customer&rsquo;s court. A better approach anchors the message in value: &ldquo;I noticed I haven&rsquo;t heard back on your estimate &mdash; wanted to make sure you didn&rsquo;t have any questions before moving forward.&rdquo; This gives them a reason to respond even if they&rsquo;re on the fence.</p>
+
+<h3>Specificity: Reference the actual project</h3>
+
+<p>Generic follow-ups feel like mass outreach. Specific ones feel personal. &ldquo;Following up on the roof estimate I sent you on June 3rd for the storm damage on your back slope&rdquo; gets a response. &ldquo;Just checking in&rdquo; gets ignored.</p>
+
+<h2>How to Run an Unsold Estimate Recovery Campaign</h2>
+
+<p>Here&rsquo;s how this works in practice, whether you&rsquo;re doing it manually or with an automated system.</p>
+
+<h3>Step 1: Pull your estimate backlog</h3>
+
+<p>Export all estimates from the last 6&ndash;18 months that never converted to a job. If you use estimating software (Jobber, ServiceTitan, Housecall Pro, etc.), this is usually a simple report. If you track things in a spreadsheet, sort by status and pull out everything marked &ldquo;sent&rdquo; or &ldquo;pending.&rdquo;</p>
+
+<p>You&rsquo;re looking for contacts who:</p>
+<ul>
+<li>Received a quote but never approved it</li>
+<li>Had some communication then went silent</li>
+<li>Are more than 30 days old but less than 18 months old</li>
+</ul>
+
+<h3>Step 2: Segment by age and job size</h3>
+
+<p>Group your estimates into buckets: 30&ndash;90 days old, 90&ndash;180 days old, 6&ndash;18 months old. Your messaging should differ by age. A 45-day-old estimate is probably still in consideration. An 8-month-old estimate needs a different angle &mdash; maybe a &ldquo;we have availability in your area this month&rdquo; hook, or a seasonal prompt (&ldquo;before summer&rsquo;s booked out&rdquo;).</p>
+
+<p>Also sort by job size. Your highest-value estimates get priority attention &mdash; those are the ones worth a personal phone call, not just an automated text.</p>
+
+<h3>Step 3: Write your three-touch sequence</h3>
+
+<p>For most contractors, three messages over 10&ndash;14 days is the right structure:</p>
+
+<ul>
+<li><strong>Day 1:</strong> Text message checking in on the estimate, offering to answer questions.</li>
+<li><strong>Day 5:</strong> Email with a bit more context &mdash; a link to your reviews, a note about current availability, or a seasonal offer.</li>
+<li><strong>Day 14:</strong> Final text that creates gentle urgency without pressure. Something like: &ldquo;Just wanted to reach out one more time before our schedule fills up &mdash; happy to adjust the scope or timing if that helps.&rdquo;</li>
+</ul>
+
+<h3>Step 4: Send and respond</h3>
+
+<p>Responses come in waves. Some will reply immediately. Some will respond to the third message two weeks later. Be ready to have a quick conversation when they do &mdash; this is a warm lead, not a cold one. They already know you, already have your quote, and just needed the nudge. Your follow-up speed here matters almost as much as sending the sequence in the first place.</p>
+
+<h2>The AI Advantage: Doing This at Scale Without the Manual Work</h2>
+
+<p>The sequence above sounds manageable when you&rsquo;re thinking about 10 estimates. When you have 60, 80, or 100 unsold quotes, the manual work becomes paralyzing.</p>
+
+<p>AI-powered systems like the ones we deploy at AI Peak Biz automate this entire process. You provide your estimate data (or we pull it directly from your CRM), and the system sends personalized, properly-timed messages to every contact in your backlog. When someone replies, the AI handles the initial response and flags the conversation for your attention when it&rsquo;s time for a human to close the deal.</p>
+
+<p>The math changes dramatically at scale:</p>
+
+<ul>
+<li><strong>Manual campaign for 80 contacts:</strong> 6&ndash;10 hours of work &mdash; if you ever actually do it.</li>
+<li><strong>AI campaign for 80 contacts:</strong> About 30 minutes to set up, then it runs automatically while you focus on active jobs.</li>
+</ul>
+
+<p>More importantly, the AI campaign actually gets done. The manual one sits on the to-do list for three months while you handle everything else on your plate.</p>
+
+<p>Results from typical contractor campaigns:</p>
+
+<ul>
+<li>15&ndash;30% reply rate from contacts with old estimates</li>
+<li>8&ndash;20% of contacted leads ultimately book the job</li>
+<li>Average revenue recovered per campaign: <strong>$30,000 to $150,000</strong>, depending on list size and average job value</li>
+</ul>
+
+<p>These aren&rsquo;t leads you paid for. These aren&rsquo;t cold contacts you need to convince. These are people who already invited you into their home, already looked at your quote, and already intended to move forward at some point. You&rsquo;re just picking up a conversation that got dropped.</p>
+
+<p>See how <a href="/database-reactivation">our database reactivation service</a> works for contractors who want the full system set up for them.</p>
+
+<h2>Common Objections &mdash; Addressed</h2>
+
+<p><strong>&ldquo;If they wanted to hire me, they would have called.&rdquo;</strong> That&rsquo;s not how buyer psychology works. Most people intend to call back and don&rsquo;t. Inertia is the enemy of action, not disinterest. The data is consistent: follow-up converts.</p>
+
+<p><strong>&ldquo;I don&rsquo;t want to seem desperate.&rdquo;</strong> A professional, low-pressure follow-up doesn&rsquo;t come across as desperate &mdash; it comes across as organized and attentive. Customers appreciate contractors who follow through. It signals competence, not neediness.</p>
+
+<p><strong>&ldquo;Those jobs probably went to a competitor.&rdquo;</strong> Some did. But 20&ndash;30% probably didn&rsquo;t. And even recovering one or two $5,000 jobs from your backlog is worth the 30 minutes it takes to run the campaign. The downside is essentially zero.</p>
+
+<p><strong>&ldquo;My customers aren&rsquo;t the type to respond to texts.&rdquo;</strong> Homeowners across all demographics use texting for business communication &mdash; especially for service business coordination. The data is unambiguous: text gets a response when email doesn&rsquo;t.</p>
+
+<h2>Start With the Last 90 Days</h2>
+
+<p>If this feels overwhelming, start small. Pull every estimate you sent in the last 90 days that didn&rsquo;t convert. That&rsquo;s your warm list &mdash; the people most likely to respond. Send three messages over two weeks. See what comes back.</p>
+
+<p>If you get even two additional jobs from that exercise, you&rsquo;ve proven the concept. Then you can work through the older list, set up automation for future estimates, and build a follow-up cadence that captures revenue your competitors are walking away from.</p>
+
+<p>You already did the hard part. You showed up, gave the quote, and earned their trust enough to invite you in. All that&rsquo;s left is following through.</p>
+
+<p><strong>Want to know how much revenue is sitting in your estimate backlog? <a href="/free-assessment">Take our free revenue assessment</a> &mdash; it takes two minutes and shows you what you could realistically recover.</strong> Or if you&rsquo;re ready to put an automated follow-up system in place, <a href="/pricing">see our pricing</a> to find the right fit for your business.</p>`,
+    faqs: [
+      {
+        question: "How long should I wait before following up on an unsold estimate?",
+        answer:
+          "The optimal first follow-up window is 48–72 hours after sending the estimate. At this point the customer still has your quote fresh in their mind and is likely still in decision mode. Waiting a week gives inertia time to set in and lets competitors get in front of them. After the first follow-up, touch base again at 7–10 days, then once more at 30 days. That three-touch sequence captures the large majority of leads that are still recoverable.",
+      },
+      {
+        question: "What should I say in a follow-up message to an old quote?",
+        answer:
+          "Be specific and helpful, not pushy. Reference the exact project: “Following up on the roofing estimate I sent you on June 3rd” lands better than a generic “just checking in.” Frame the message around answering questions rather than chasing a decision: “Wanted to make sure you didn’t have any questions before moving forward.” For older estimates (90+ days), a seasonal hook works well: “We have openings in your area this month” or “before the fall rush starts.”",
+      },
+      {
+        question: "Does following up on old estimates look pushy or desperate?",
+        answer:
+          "No — not when done professionally. Research consistently shows that customers appreciate contractors who follow up. It signals that you’re organized and genuinely interested in their project. What feels pushy is repeated daily contact or high-pressure language. A three-touch sequence over two weeks with helpful, low-pressure messages almost never generates a negative reaction. What it does generate, regularly, is jobs that would otherwise have gone to whoever got there first.",
+      },
+      {
+        question: "How many of my old estimates are actually still recoverable?",
+        answer:
+          "Industry data on sales follow-up suggests 20–30% of cold prospects will convert if contacted with the right message at the right time. For contractor estimates specifically, the recovery rate varies by age: estimates 30–90 days old convert at the higher end of that range, while estimates 6–18 months old tend to convert at the lower end. That said, even at 10% recovery, a list of 50 unsold estimates at a $3,000 average job value means $15,000 in recoverable revenue — from work you’ve already quoted.",
+      },
+      {
+        question: "Can I automate estimate follow-up without expensive software?",
+        answer:
+          "Basic follow-up can be done manually with your existing tools — your phone, a spreadsheet, and 30 minutes of discipline per week. The challenge is consistency and scale: most contractors say they’ll follow up and don’t, because active jobs always take priority. For contractors with larger backlogs or higher job volumes, an AI-powered follow-up system runs the sequence automatically, handles initial replies, and flags hot leads for your attention. It pays for itself many times over compared to the revenue left in the backlog.",
+      },
+      {
+        question: "What’s a realistic return from an unsold estimate recovery campaign?",
+        answer:
+          "Results vary by list size, average job value, and how old the estimates are, but typical campaigns generate $30,000 to $150,000 in recovered revenue. One common example: a roofing contractor with 80 unsold estimates from the past 12 months, averaging $4,500 per job, runs a three-touch campaign and converts 12 of those leads. That’s $54,000 in revenue from work that was already quoted and essentially forgotten. The cost of running the campaign — whether manual or automated — is a fraction of that number.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
