@@ -4305,6 +4305,192 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "automated-review-request-system-guide",
+    title: "Automated Review Request Systems: The Complete Setup Guide",
+    excerpt:
+      "Most contractors know they should ask every customer for a review. Almost none of them actually do it consistently. Here is how to build a system that asks automatically, converts at high rates, and requires almost no manual effort.",
+    metaDescription:
+      "Learn how to set up an automated review request system for your contracting business. Step-by-step guide covering tools, message sequences, and what results to expect.",
+    date: "2026-07-06",
+    author: "Wylie Stevens",
+    readTime: "11 min read",
+    category: "Reputation & Reviews",
+    keywords: [
+      "automated review request system",
+      "automate Google reviews contractors",
+      "review request software service business",
+      "get more Google reviews automatically",
+      "contractor reputation management",
+      "review request SMS contractors",
+    ],
+    heroImage:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&fit=crop",
+    heroImageAlt:
+      "Contractor checking phone with five-star review notification — automated review request system in action",
+    content: `<p>Every contractor knows they should be asking customers for reviews. Ask any owner if getting more Google reviews matters and they will tell you yes, absolutely. Ask them if they have a system that does it for every job, automatically, without relying on anyone to remember &mdash; and most will go quiet.</p>
+
+<p>The gap between knowing and doing is where most contracting businesses leave tens of thousands of dollars on the table every year. A 4.9-star competitor with 210 reviews is not working harder than you are. They probably have a system that runs in the background while you are on the job.</p>
+
+<p>This guide shows you exactly how to build that system &mdash; what it needs to do, what tools to use, what the messages should say, and what results you can realistically expect once it is running.</p>
+
+<h2>Why Manual Review Requests Do Not Scale</h2>
+
+<p>Before we get into setup, it is worth being honest about why the manual approach fails.</p>
+
+<p>The intention is always good. You finish a job, the customer is happy, you tell yourself you will follow up tomorrow and ask them to leave a review. Then tomorrow comes and you are on another roof, or your dispatch system breaks, or a supplier calls with a problem. The follow-up never happens. The window closes. The customer moves on and so do you.</p>
+
+<p>Even contractors with dedicated office staff run into the same problem. A receptionist managing calls, invoices, and scheduling is not going to reliably remember to send a review request for every completed job at the right moment. It is the kind of task that always gets bumped for something more urgent.</p>
+
+<p>And timing matters enormously. A review request sent 24 to 48 hours after job completion converts at a dramatically higher rate than one sent a week later. The customer is still in the afterglow of the finished work. They remember the crew, they can see the results, and they feel good about the decision. Wait a week and that emotional window has largely closed. Wait two weeks and the response rate drops by more than half.</p>
+
+<p>The only way to hit that timing window consistently, for every job, without relying on anyone to remember &mdash; is automation.</p>
+
+<h2>What an Automated Review Request System Actually Does</h2>
+
+<p>An automated review request system is not complicated software. At its core, it does three things:</p>
+
+<ol>
+<li><strong>It detects when a job is complete.</strong> Either through an integration with your job management software (ServiceTitan, Jobber, Housecall Pro, etc.) or via a simple manual trigger in a CRM.</li>
+<li><strong>It sends a personalized review request.</strong> Usually via SMS, since text messages are opened 95% of the time within three minutes. The message includes the customer&rsquo;s name, a reference to the work done, and a direct link to your Google review page.</li>
+<li><strong>It follows up once if there is no response.</strong> A single reminder 48 hours later captures a meaningful portion of customers who intended to respond but got distracted. After two messages, the system stops &mdash; you do not want to pester people into resentment.</li>
+</ol>
+
+<p>That is the minimum viable system. More sophisticated versions add email as a secondary channel, route responses to your team for real-time monitoring, integrate negative feedback into a private resolution pathway, and generate monthly reporting on review velocity and star rating trends. But the core &mdash; trigger, message, reminder &mdash; is where most contractors should start.</p>
+
+<h2>The Four Components of an Effective System</h2>
+
+<h3>1. A Trigger</h3>
+
+<p>The system needs to know a job is done. There are two ways to set this up depending on your current tools.</p>
+
+<p><strong>Integration trigger:</strong> If you use job management software like Jobber, ServiceTitan, Housecall Pro, or similar, most review automation platforms can connect directly via API or Zapier. When you mark a job &ldquo;complete&rdquo; in your job management software, it automatically queues the review request in your CRM or review platform. This is the cleanest approach &mdash; zero manual steps, fires every time.</p>
+
+<p><strong>Manual trigger:</strong> If you do not use job management software, a simpler option is a shared CRM where your office staff or field supervisor adds the customer to a &ldquo;job complete&rdquo; pipeline stage at the end of each day. This is slightly more dependent on human input, but takes under 30 seconds per job and can be done from a phone in the field.</p>
+
+<h3>2. A Direct Review Link</h3>
+
+<p>Your review request message needs to send customers directly to the Google review submission form &mdash; not to your website, not to your Google Business Profile homepage, not to a review aggregator page that requires extra steps. One tap, already logged in on their phone via their Google account, and they land on the form ready to write the review.</p>
+
+<p>To get your direct review link, go to your Google Business Profile, click &ldquo;Ask for reviews,&rdquo; and Google will generate a short link you can paste directly into your message templates. This link works on both mobile and desktop. Bookmark it and keep it handy &mdash; it goes into every review request you send.</p>
+
+<h3>3. Message Templates That Convert</h3>
+
+<p>The message is where most automated systems underperform. Generic templates &mdash; &ldquo;Hi there, we value your feedback, please leave us a review&rdquo; &mdash; feel like spam because they are spam. They treat every customer identically and make no reference to the actual work done.</p>
+
+<p>Templates that convert have three ingredients: the customer&rsquo;s first name, a specific reference to the work completed, and a reason why the review matters. They are brief &mdash; under 100 words for the initial SMS. And they include the direct link in the body of the message, not at the end as an afterthought.</p>
+
+<p>Here is a template that works for roofing:</p>
+
+<blockquote>
+<p>Hi [FirstName] &mdash; Wylie here from AI Peak Biz. We wrapped up the [service type] at your place [yesterday/earlier this week] and just wanted to check in. If the job met your expectations, an honest Google review makes a huge difference for our team: [direct link]. Takes about 60 seconds. Thanks &mdash; we appreciate the work.</p>
+</blockquote>
+
+<p>And the follow-up, sent 48 hours later to customers who did not respond:</p>
+
+<blockquote>
+<p>Hi [FirstName] &mdash; quick follow-up on my earlier message. If you have a minute, a review of your experience with [service type] would mean a lot: [direct link]. And if anything fell short of what you expected, just reply here &mdash; I want to make it right.</p>
+</blockquote>
+
+<p>Notice the follow-up also opens a door for dissatisfied customers to reach out privately. This is intentional. You want to know about problems before they become public reviews, and it signals to customers that you genuinely care about the outcome.</p>
+
+<h3>4. A Response Workflow</h3>
+
+<p>Reviews will come in. Some will be five stars. Some will be less. You need a process for responding to both.</p>
+
+<p>For positive reviews, respond within 48 hours, thank the customer by name, reference something specific from the job if you can, and keep it genuine rather than formulaic. A one-sentence genuine response is better than a five-sentence template that clearly was not written by a human.</p>
+
+<p>For negative reviews, the response is even more important. Acknowledge the experience without defensiveness, apologize, and invite the customer to contact you directly to resolve it. Do not argue publicly. Your response to a negative review is an audition in front of every prospective customer who reads your profile &mdash; how you handle conflict tells them more about your character than 20 five-star reviews ever will.</p>
+
+<p>At lower review volumes, a manual response workflow is manageable. As you scale past 15 to 20 incoming reviews per month, AI-assisted draft responses &mdash; which a team member reviews and personalizes before sending &mdash; can cut response time significantly without sacrificing quality.</p>
+
+<h2>Connecting the System to Your Existing Tools</h2>
+
+<p>The question most contractors ask at this point is: &ldquo;What software do I actually use?&rdquo;</p>
+
+<p>The honest answer is that it depends on what you already have. The goal is to introduce as few new tools as possible while still getting the automation in place. Here are the most common setups:</p>
+
+<h3>If You Use a CRM (GoHighLevel, Keap, HubSpot, etc.)</h3>
+
+<p>Most modern CRMs have built-in automation that can fire a review request SMS when a contact moves to a specific pipeline stage. Set up a &ldquo;Job Complete&rdquo; stage, build a two-message automation sequence triggered by that stage move, and you are done. No additional software required. The CRM handles the sending, the scheduling of the follow-up, and the tracking of who responded.</p>
+
+<h3>If You Use Job Management Software Without a CRM</h3>
+
+<p>Tools like Jobber, Housecall Pro, and ServiceTitan have native review request features. Jobber, for example, has built-in review request automation that fires when you close out a job. These native features are simpler than a full CRM setup and sufficient for most small to mid-sized contractors. Enable the feature, add your Google review link, and customize the message template to sound less like software and more like you.</p>
+
+<h3>If You Are Starting From Scratch</h3>
+
+<p>If you do not have a CRM or job management software, a simple Zapier workflow connected to a Google Sheet can serve as a starting point. Add customer names and phone numbers to the sheet when a job completes, Zapier fires a text via a tool like Twilio or your phone provider&rsquo;s API, and the message goes out automatically. It is a more manual trigger but costs almost nothing to set up and gets the automation running while you evaluate longer-term software options.</p>
+
+<h2>What Results to Expect &mdash; and When</h2>
+
+<p>Once an automated review request system is running, here is what a realistic timeline looks like for a residential contractor completing 20 to 40 jobs per month:</p>
+
+<ul>
+<li><strong>Month 1:</strong> System calibration. You are testing message timing, refining templates, and confirming the trigger fires reliably. Expect 4 to 8 new reviews &mdash; meaningfully more than the organic trickle you had before, but below steady-state volume.</li>
+<li><strong>Months 2&ndash;3:</strong> The system is running consistently. Most contractors in this volume range add 8 to 15 new reviews per month. Google starts recognizing the velocity and local search visibility improves measurably. You may start appearing in the Map Pack for keywords you were not ranking for before.</li>
+<li><strong>Month 6:</strong> If you started with 30 reviews at 4.2 stars, you likely have 80 to 100 reviews at 4.7 or higher. The competitive gap between you and market leaders in your trade area has narrowed significantly. Inbound call volume from organic search increases without any change to your ad spend.</li>
+</ul>
+
+<p>The ceiling on this is determined by your job volume and your customer satisfaction rate. A contractor completing 60 jobs per month with a 25% response rate is adding 15 new reviews per month. Do that for 12 months and you have 180 new reviews &mdash; enough to dominate local search in most mid-sized markets.</p>
+
+<h2>The One Mistake That Kills Otherwise Good Systems</h2>
+
+<p>The most common failure mode is filtering out unhappy customers before sending the review request &mdash; only asking people who, during the job close-out, indicate they are satisfied.</p>
+
+<p>This is called &ldquo;review gating&rdquo; and it violates Google&rsquo;s review policies. If Google detects it &mdash; and they do, increasingly so &mdash; they can remove your reviews, suppress your listing, or permanently suspend your Google Business Profile. The short-term gain is not worth the risk.</p>
+
+<p>More importantly, it misses the point. The goal of the follow-up message for potentially dissatisfied customers is not to get them to write a public review. It is to open a private channel for resolution before they decide to go public on their own. The message that says &ldquo;if anything fell short, just reply here&rdquo; is your early warning system. It converts negative experiences into private resolutions, which is better for your reputation than pretending dissatisfied customers do not exist.</p>
+
+<p>Send the request to everyone. Handle problems privately. Earn the five-star reviews through the work, not through filtering.</p>
+
+<h2>Scaling Without Losing the Personal Touch</h2>
+
+<p>One legitimate concern contractors raise about automation is that it feels impersonal. You built your business on relationships. Does a software-triggered SMS undermine that?</p>
+
+<p>Only if you let it. The message template is written by you, in your voice, referencing real details about the work done. The customer receives it from your business number. It reads like something a thoughtful person sent, because a thoughtful person &mdash; you &mdash; wrote the template they are receiving.</p>
+
+<p>The automation just ensures that person shows up for every customer, every time, at exactly the right moment, even when you are on a roof in August and the last thing on your mind is sending a follow-up text.</p>
+
+<p>That consistency is the point. It is not about removing the human from the interaction. It is about building a system that delivers the human touch reliably &mdash; without depending on anyone to remember to do it.</p>
+
+<p>If you want to see how an automated review request system would work for your specific business &mdash; including how it integrates with the tools you already use &mdash; <a href="/free-assessment">take our free revenue assessment</a>. Or learn more about the full <a href="/reputation-management">reputation management service</a> we run for contractors who want the system built and managed for them.</p>`,
+    faqs: [
+      {
+        question: "What is an automated review request system?",
+        answer:
+          "An automated review request system is a software workflow that sends a personalized SMS (and optionally an email) to customers shortly after a job is completed, asking them to leave a Google review via a direct link. The system fires automatically when a job is marked complete in your CRM or job management software, sends one follow-up if there is no response, and then stops. It removes the need for anyone to manually remember to ask for reviews, which is why manual requests rarely happen consistently and automated systems dramatically outperform them on review volume.",
+      },
+      {
+        question:
+          "How does an automated review request system connect to my existing software?",
+        answer:
+          "Most modern CRMs (GoHighLevel, Keap, HubSpot) have built-in automation that can trigger a review request when a contact moves to a 'Job Complete' pipeline stage. Field service software like Jobber and Housecall Pro have native review request features that connect directly to your Google Business Profile. If you do not use either, a Zapier workflow connecting a spreadsheet to a text messaging service is a low-cost starting point. The key is finding the trigger that reliably fires when a job is done — everything else in the system is standard automation that most platforms support out of the box.",
+      },
+      {
+        question: "What response rate should I expect from automated review requests?",
+        answer:
+          "Industry benchmarks for SMS review requests sent within 24–48 hours of job completion average 20–35% conversion to a posted review. Email alone typically converts at 5–12%. The wide range depends on the quality of the message template, the timing, how direct the review link is, and the baseline relationship with the customer. Contractors who personalize their messages with the customer's name and a reference to the specific work completed consistently outperform generic templates. A 25% conversion rate on 30 jobs per month produces 7 to 8 new reviews monthly — enough to meaningfully improve local search visibility within 60 to 90 days.",
+      },
+      {
+        question:
+          "Will Google penalize my business for using automated review request software?",
+        answer:
+          "No — Google explicitly allows businesses to ask customers for reviews, including via automated tools. What Google prohibits is 'review gating': filtering customers based on their expected sentiment and only sending the review request to those who seem happy. If you send the request to all customers (not just satisfied ones), use your business number rather than a third-party platform number, and do not offer incentives for reviews, you are operating within Google's policies. Any legitimate review request platform is designed to comply with these guidelines.",
+      },
+      {
+        question:
+          "Can I use free tools to automate Google review requests?",
+        answer:
+          "Yes, at small volumes. Jobber's free and starter plans include a basic review request feature. Google Business Profile itself has a 'Get more reviews' link you can share manually or paste into a message template. For more sophisticated automation — personalized messages, timed follow-ups, CRM integration — most contractors spend $50 to $150 per month on a CRM or reputation management tool. That cost is typically recovered from a single additional booked job per month, so the ROI math is straightforward. The more important investment is time: setting up the templates and testing the workflow correctly the first time.",
+      },
+      {
+        question: "How do I handle a negative review that comes in from the system?",
+        answer:
+          "Respond publicly within 24 hours: acknowledge the experience specifically, apologize without defensiveness, and invite the customer to contact you directly to resolve it. Do not argue with the reviewer publicly — your response is read by prospects, not just the reviewer. After your public response, reach out privately and make the situation right. Many customers who leave a negative review after a genuine resolution will update or remove it. Separately, your follow-up message template should include a line inviting dissatisfied customers to reply directly rather than posting publicly — this catches problems early and gives you a chance to resolve them before they become public reviews.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
