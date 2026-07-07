@@ -3,7 +3,7 @@
 **Business Info You'll Need:**
 - Business Name: AI Peak Biz
 - Website: https://www.aipeakbiz.com
-- Phone: (928) 368-4866
+- Phone: (928) 628-6080
 - Email: wylie@aipeakbiz.com
 - Address: Kingman, AZ 86401
 - Owner: Wylie Stevens

@@ -8,8 +8,8 @@ import { CTASection } from "@/components/cta-section";
 const tiers = [
   {
     name: "AI Front Desk Deployment",
-    fullPay: "$4,997",
-    installmentMonthly: "$1,829/mo x 6",
+    fullPay: "$997",
+    installmentMonthly: "$1,164/mo x 6",
     monthly: "$997",
     description: "Core revenue recovery for businesses ready to stop missing calls and losing leads.",
     features: [
@@ -29,8 +29,8 @@ const tiers = [
   },
   {
     name: "Revenue Recovery Deployment",
-    fullPay: "$7,997",
-    installmentMonthly: "$2,829/mo x 6",
+    fullPay: "$1,597",
+    installmentMonthly: "$1,764/mo x 6",
     monthly: "$1,497",
     popular: true,
     description: "The complete system for businesses serious about capturing every dollar of revenue. Our most popular deployment.",
@@ -51,8 +51,8 @@ const tiers = [
   },
   {
     name: "AI Revenue Deployment",
-    fullPay: "$14,997",
-    installmentMonthly: "$4,996/mo x 6",
+    fullPay: "$1,997",
+    installmentMonthly: "$2,830/mo x 6",
     monthly: "$2,497",
     description: "A strategic growth partner with full business intelligence, ongoing optimization, and quarterly strategy reviews.",
     features: [

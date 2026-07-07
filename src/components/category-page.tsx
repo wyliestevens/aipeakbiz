@@ -202,20 +202,20 @@ export function CategoryPage({ content, parentSlug }: CategoryPageProps) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
               <div className="text-center">
                 <p className="text-sm text-text-muted mb-1">Starting at</p>
-                <p className="text-3xl font-bold font-mono text-text-primary">$4,997</p>
-                <p className="text-sm text-text-muted">build + $997/mo</p>
+                <p className="text-3xl font-bold font-mono text-text-primary">$997</p>
+                <p className="text-sm text-text-muted">deployment + $997/mo</p>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <p className="text-sm text-text-muted mb-1">Most popular</p>
-                <p className="text-3xl font-bold font-mono text-text-primary">$7,997</p>
-                <p className="text-sm text-text-muted">build + $1,497/mo</p>
+                <p className="text-3xl font-bold font-mono text-text-primary">$1,597</p>
+                <p className="text-sm text-text-muted">deployment + $1,497/mo</p>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <p className="text-sm text-text-muted mb-1">Full system</p>
-                <p className="text-3xl font-bold font-mono text-text-primary">$14,997</p>
-                <p className="text-sm text-text-muted">build + $2,497/mo</p>
+                <p className="text-3xl font-bold font-mono text-text-primary">$1,997</p>
+                <p className="text-sm text-text-muted">deployment + $2,497/mo</p>
               </div>
             </div>
             <Link

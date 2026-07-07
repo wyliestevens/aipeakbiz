@@ -692,7 +692,7 @@ export function AssessmentTool() {
               {/* ROI comparison */}
               <div className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-xl p-6 mb-8 text-center">
                 <p className="text-sm text-text-secondary mb-2">
-                  Growth System investment: $7,997 build + $1,497/mo
+                  Growth System investment: $1,597 deployment + $1,497/mo
                 </p>
                 <p className="text-lg font-bold text-text-primary">
                   Typical payback:{" "}

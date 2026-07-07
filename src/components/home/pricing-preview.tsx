@@ -8,20 +8,20 @@ import { BOOKING_URL } from "@/data/industries";
 const tiers = [
   {
     name: "Essentials",
-    build: "$4,997",
+    build: "$997",
     monthly: "$997/mo",
     features: ["AI Voice Assistant", "Missed Call Text-Back", "Appointment Reminders", "Basic CRM"],
   },
   {
     name: "Growth",
-    build: "$7,997",
+    build: "$1,597",
     monthly: "$1,497/mo",
     popular: true,
     features: ["Everything in Essentials", "AI Chatbot", "Reputation Management", "No-Show Recovery", "Full CRM Pipeline"],
   },
   {
     name: "Peak",
-    build: "$14,997",
+    build: "$1,997",
     monthly: "$2,497/mo",
     features: ["Everything in Growth", "Predictive Revenue Forecasting", "Quarterly Strategy Reviews", "Competitor Monitoring", "Multi-Location Support"],
   },

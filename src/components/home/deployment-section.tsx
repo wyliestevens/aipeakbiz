@@ -7,9 +7,9 @@ import { BOOKING_URL } from "@/data/industries";
 import { useDict, useLang } from "@/i18n/context";
 
 const deploymentPricing = [
-  { fullPay: "$4,997", installmentMonthly: "$1,829", monthly: "$997/mo" },
-  { fullPay: "$7,997", installmentMonthly: "$2,829", monthly: "$1,497/mo", popular: true },
-  { fullPay: "$14,997", installmentMonthly: "$4,996", monthly: "$2,497/mo" },
+  { fullPay: "$997", installmentMonthly: "$1,164", monthly: "$997/mo" },
+  { fullPay: "$1,597", installmentMonthly: "$1,764", monthly: "$1,497/mo", popular: true },
+  { fullPay: "$1,997", installmentMonthly: "$2,830", monthly: "$2,497/mo" },
 ];
 
 export function DeploymentSection() {

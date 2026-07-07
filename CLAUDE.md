@@ -112,14 +112,41 @@
 - Content data is empty — pages will 404 until SubIndustryContent entries are populated
 - Helper functions: getSubIndustryContent(), getAllSubIndustrySlugs(), getSubIndustryName(), slugifySubIndustry()
 
+## Competitor Comparison Pages (Added 2026-06-10)
+- Route: /compare/[slug] with 3 pages: vs-podium, vs-ruby, vs-smith-ai
+- Data: src/data/competitors.ts (Competitor interface, feature tables, pricing, FAQs)
+- Component: src/components/comparison-content.tsx
+- Page: src/app/[lang]/compare/[slug]/page.tsx (static params, metadata, FAQ + breadcrumb schema)
+- Each page has: hero, overview, feature comparison table, pricing comparison, strengths/weaknesses, verdict CTA, FAQ accordion, cross-links to other comparisons
+- Internal links from footer Resources section
+
+## Missed Call Revenue Calculator (Added 2026-06-10)
+- Route: /tools/missed-call-calculator
+- Component: src/components/missed-call-calculator.tsx (interactive, client-side)
+- 11 industries with real avg job values and close rates
+- Sliders for calls/day, missed %, custom job value, close rate
+- Shows: lost revenue/month + year, AI recovery projection, ROI calculation
+- Stats section with sourced data (BIA/Kelsey, Lead Response Management, InsideSales)
+- Designed as a linkable asset for backlink acquisition
+
+## www Redirect (Added 2026-06-10)
+- vercel.json now redirects aipeakbiz.com → www.aipeakbiz.com (301 permanent)
+- Consolidates domain authority to single canonical domain
+
+## Directory Submission List (Added 2026-06-10)
+- File: directory-submission-list.md (in project root)
+- 5 tiers of directories prioritized by impact
+- Includes exact URLs, business info needed, and submission checklist
+- Tier 1: GBP, Bing Places, Apple Business, BBB, Yelp
+- Tier 2: Clutch, G2, Capterra, Product Hunt, AlternativeTo
+- Tier 3: Local directories (Kingman Chamber, YP, Manta)
+- Tier 5: HARO/Connectively, podcast appearances, guest posts
+
 ## What's Next
+- Submit directories from directory-submission-list.md (start with Tier 1 — GBP is critical)
 - Populate sub-industry content (fill subIndustryContent record in sub-industry-content.ts)
-- Translate remaining service pages and industry pages to Spanish (service pages now have much more content to translate)
-- Create competitor comparison pages (/compare/ai-peak-biz-vs-podium, vs-ruby, etc.)
+- Translate remaining service pages and industry pages to Spanish
 - Write first blog posts from content briefs
-- Set up Google Business Profile (Kingman, AZ)
-- Build backlink foundation (directories, HARO, podcasts)
-- Set up www redirect in Vercel (Settings > Domains)
 - Populate sameAs array once social profiles are created
 - GHL workflow setup: webhook trigger for voice-bot-demo, AI voice agent config
 

@@ -85,7 +85,7 @@ function buildEmailHtml(data: Record<string, unknown>): string {
       </div>
 
       <div style="background: #2A2A2E; border-radius: 8px; padding: 20px; margin-bottom: 24px; text-align: center;">
-        <p style="color: #A1A1AA; font-size: 14px; margin: 0 0 4px 0;">Growth System: $7,997 build + $1,497/mo</p>
+        <p style="color: #A1A1AA; font-size: 14px; margin: 0 0 4px 0;">Growth System: $1,597 deployment + $1,497/mo</p>
         <p style="font-size: 18px; font-weight: bold; margin: 0; color: #3B82F6;">Typical payback: ${paybackWeeks > 0 ? `${paybackWeeks} weeks` : "immediate"}</p>
       </div>
 

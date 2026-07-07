@@ -125,7 +125,7 @@ const faqItems = [
   {
     question: "What is the Founding System?",
     answer:
-      "Our first 5 chiropractic clients are founding partners. In exchange for being early, founding clinics get the full Growth System at a reduced management rate. $4,997 build plus $997 per month with a 12-month commitment. Once 5 spots are filled, this offer closes permanently.",
+      "Our first 5 chiropractic clients are founding partners. In exchange for being early, founding clinics get the full Growth System at a reduced management rate. $997 deployment plus $997 per month with a 12-month commitment. Once 5 spots are filled, this offer closes permanently.",
   },
   {
     question: "How does the review system work?",
@@ -382,7 +382,7 @@ export function ChiropracticPage() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-lg px-4 py-3">
                     <span className="text-sm text-text-secondary">System Build</span>
-                    <span className="font-bold font-mono text-text-primary">$4,997 <span className="text-xs text-text-muted">one-time</span></span>
+                    <span className="font-bold font-mono text-text-primary">$997 <span className="text-xs text-text-muted">one-time</span></span>
                   </div>
                   <div className="flex justify-between items-center bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm rounded-lg px-4 py-3">
                     <span className="text-sm text-text-secondary">Management</span>
