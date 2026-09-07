@@ -9286,6 +9286,177 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "contractor-estimate-follow-up-system",
+    title: "The 5-Touch Follow-Up System That Closes More Contractor Estimates",
+    excerpt:
+      "You sent the estimate. Now what? Most contractors follow up once, get no response, and write it off — but the job usually goes to whoever stayed in front of the customer longest.",
+    metaDescription:
+      "Most contractors follow up once — or not at all. This 5-touch estimate follow-up system closes more jobs without pressure tactics or awkward calls.",
+    date: "2026-09-07",
+    author: "Wylie Stevens",
+    readTime: "9 min read",
+    category: "Revenue Recovery",
+    keywords: [
+      "contractor estimate follow-up system",
+      "how to follow up on contractor estimate",
+      "roofing estimate follow-up",
+      "HVAC estimate follow-up",
+      "contractor proposal follow-up",
+      "estimate close rate contractors",
+    ],
+    heroImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor reviewing an estimate on a tablet while preparing a follow-up message for a customer",
+    content: `<p>You spent an hour doing the assessment. You measured, quoted materials, drove back to the office, and put together a professional estimate. You sent it.</p>
+
+<p>Then nothing. No reply.</p>
+
+<p>You followed up once, maybe twice. No answer. And like most contractors, you moved on &mdash; wrote it off as a tire-kicker and focused on the next job. But here&rsquo;s the thing: that estimate probably didn&rsquo;t die because the customer wasn&rsquo;t interested. It died because your competitor followed up one more time than you did.</p>
+
+<p>The contractor who closes the estimate isn&rsquo;t always the one with the best price. It&rsquo;s almost always the one who stayed in front of the customer long enough to catch them when they were ready to decide.</p>
+
+<h2>Why Most Contractor Estimates Go Cold</h2>
+
+<p>Here&rsquo;s a number that should change how you think about follow-up: <strong>80% of sales require five or more contacts, but 44% of salespeople give up after just one.</strong> That data comes from the Marketing Donut research study, and it translates directly to the contracting world.</p>
+
+<p>You sent the estimate. The homeowner received it. They haven&rsquo;t said no &mdash; they&rsquo;re just busy, distracted, or still comparing options. Their water heater started acting up the week after your visit. Their kid&rsquo;s schedule blew up. They got three competing quotes and can&rsquo;t decide. Life moved on. Your estimate slid to the bottom of the pile.</p>
+
+<p>A single follow-up call at day one doesn&rsquo;t cut through any of that. But a structured sequence of contacts over 10&ndash;14 days &mdash; each one adding value or creating a gentle reason to respond &mdash; does. It&rsquo;s not about being pushy. It&rsquo;s about being present when the customer finally has a moment to focus.</p>
+
+<p>The average contractor makes 1.3 follow-up attempts on a sent estimate. The ones who consistently close 40&ndash;50% of their estimates make four to six.</p>
+
+<h2>The Real Cost of a Cold Estimate</h2>
+
+<p>Before getting into the system, put real numbers on what a lost estimate actually costs you. Not the cost of writing the estimate &mdash; the cost of the job you didn&rsquo;t get.</p>
+
+<p>If your average roofing job is $12,000 and your close rate on sent estimates is 25%, you&rsquo;re already losing 75 of every 100 estimates. Improving your close rate from 25% to 35% on 100 estimates per month adds 10 jobs. At $12,000 average, that&rsquo;s $120,000 in additional monthly revenue &mdash; from the same leads, the same marketing spend, the same sales effort. The only thing that changed is how systematically you followed up.</p>
+
+<p>For HVAC companies averaging $3,500 per install, the same improvement adds $35,000 per month. For plumbers with $800 average repair tickets, it&rsquo;s $8,000 per month.</p>
+
+<p>The estimates are already out there. The system is what&rsquo;s missing.</p>
+
+<h2>The 5-Touch Follow-Up System</h2>
+
+<p>This isn&rsquo;t about harassing customers. It&rsquo;s a rational, non-pushy sequence that keeps you visible until the customer is ready to decide &mdash; without your team having to manually track every open estimate and remember who to call on which day.</p>
+
+<h3>Touch 1: Same-Day Confirmation (Day 0)</h3>
+
+<p>Immediately after sending the estimate, follow up with a short text or email confirming they received it and telling them the next step:</p>
+
+<blockquote>&ldquo;Hi [Name] &mdash; I just sent over the estimate for your [roof replacement / AC install / etc.]. Let me know if you have any questions or want to walk through anything. Happy to jump on a quick call. &mdash; [Your name], [Company]&rdquo;</blockquote>
+
+<p>This isn&rsquo;t a follow-up asking for a decision. It&rsquo;s a delivery confirmation that starts a conversation thread, opens the door to questions, and signals that you&rsquo;re available and responsive &mdash; without any pressure to decide.</p>
+
+<h3>Touch 2: The Value Add (Day 3)</h3>
+
+<p>Three days in, most homeowners have read the estimate but haven&rsquo;t acted. They may have questions they haven&rsquo;t asked yet. This touch adds value instead of just asking for a decision:</p>
+
+<blockquote>&ldquo;Hi [Name] &mdash; following up on the estimate I sent. A couple of things worth knowing if it helps: [brief relevant detail &mdash; material warranty, financing available, typical timeline, or what happens if they wait]. Let me know if you have questions.&rdquo;</blockquote>
+
+<p>The specific value add depends on your trade. Roofers might mention that the estimate holds through a certain date or that their crew has an opening next month. HVAC companies might note that manufacturer rebates expire at the end of the quarter. This message gives the customer a reason to respond without any pressure to close.</p>
+
+<h3>Touch 3: The Low-Pressure Check-In (Day 7)</h3>
+
+<p>Seven days after sending, a brief, easy check-in:</p>
+
+<blockquote>&ldquo;Hey [Name] &mdash; just checking in on the estimate I sent last week. Happy to answer any questions or adjust anything if your situation has changed. No rush &mdash; just want to make sure you have what you need.&rdquo;</blockquote>
+
+<p>The phrase &ldquo;no rush&rdquo; matters here. It signals respect for their timeline and reduces any pressure the customer might be feeling. Homeowners who are still deciding aren&rsquo;t annoyed by this message &mdash; they&rsquo;re often relieved that you checked in without pushing them.</p>
+
+<h3>Touch 4: The Scarcity Point (Day 10)</h3>
+
+<p>Ten days out, introduce a genuine reason to act sooner rather than later. The key word is genuine &mdash; don&rsquo;t manufacture urgency that doesn&rsquo;t exist. But most contractors have real scheduling constraints worth sharing:</p>
+
+<blockquote>&ldquo;Hi [Name] &mdash; I wanted to let you know that our schedule is filling up for [month]. We have a slot available that week that would work well for your project. Happy to hold it for you if you&rsquo;d like to move forward. Let me know either way.&rdquo;</blockquote>
+
+<p>This message works because it&rsquo;s honest, creates a specific reason to respond, and removes one of the most common reasons homeowners delay: not being sure when the work can actually happen.</p>
+
+<h3>Touch 5: The Close or Clear (Day 14)</h3>
+
+<p>Two weeks out, close the loop &mdash; one way or another:</p>
+
+<blockquote>&ldquo;Hi [Name] &mdash; I&rsquo;ve been holding this estimate open, but wanted to check in one last time before I move on. If the timing isn&rsquo;t right or you went with another contractor, completely understand &mdash; just let me know so I can update my records. If you&rsquo;re still interested, happy to talk through next steps.&rdquo;</blockquote>
+
+<p>This message does two things at once. It gives the customer who went with a competitor an easy, no-awkwardness way to tell you. And it prompts the customer who was just procrastinating to respond and re-engage. Either outcome is better than silence.</p>
+
+<p>Contractors who send this final message consistently are surprised by how often it reopens conversations they assumed were dead. &ldquo;Actually, we were waiting until after the holidays&rdquo; and &ldquo;We decided not to go with the other guy &mdash; can we still do this?&rdquo; are common replies. The day-14 touch recovers more revenue per message sent than any earlier touch in the sequence.</p>
+
+<h2>How AI Automates the Entire Sequence</h2>
+
+<p>The reason most contractors don&rsquo;t run this system isn&rsquo;t that they don&rsquo;t believe it works. It&rsquo;s that nobody has time to track 30 open estimates and remember to text each customer on day 3, day 7, day 10, and day 14. The system falls apart the moment you get busy &mdash; which is exactly when you need it most.</p>
+
+<p>AI-powered follow-up automation handles this by triggering a sequence automatically the moment an estimate is sent. Your team does nothing differently. They send the estimate the way they always have. The AI detects the send, starts the clock, and delivers each message on the right day. If a customer replies at any point, the AI flags the conversation for human follow-up or handles simple responses (scheduling questions, requests to adjust scope) automatically.</p>
+
+<p>The system pauses the sequence if a customer responds with a clear &ldquo;not interested&rdquo; or &ldquo;we went with someone else&rdquo; &mdash; so you&rsquo;re never sending a follow-up to someone who already told you no.</p>
+
+<p>Combined with <a href="/missed-call-text-back">missed call text-back</a> and an <a href="/ai-voice-assistant">AI front desk</a>, automated estimate follow-up creates a revenue capture system that runs from first contact through close without requiring manual intervention at every step.</p>
+
+<h2>What Real Contractors See</h2>
+
+<h3>Roofing Company: From 22% to 34% Close Rate</h3>
+
+<p>A residential roofing company was closing about 22% of their sent estimates. When they tracked their follow-up pattern, they found their team was making an average of 1.8 contact attempts per estimate &mdash; usually a phone call the day after sending, and sometimes a second call a week later if someone remembered.</p>
+
+<p>After implementing automated 5-touch follow-up via text (they found SMS outperformed phone calls in response rate), their close rate climbed to 34% within 90 days. On 80 estimates per month at an average job of $11,000, the additional 10 closings per month added $110,000 in monthly revenue &mdash; more than enough to justify the AI system many times over.</p>
+
+<h3>HVAC Company: Recovering &ldquo;Lost&rdquo; Estimates</h3>
+
+<p>An HVAC company found that about 60% of their sent estimates fell into a gray zone: no yes, no no, just silence. Their team had written most of those off as dead. After implementing automated follow-up through day 14, they started getting responses on estimates they&rsquo;d long forgotten. Roughly 18% of previously silent estimates converted after the day-10 or day-14 message &mdash; customers who had been meaning to call back but kept putting it off.</p>
+
+<p>At their volume, recovering 18% of written-off estimates added $22,000 per month from the same lead flow, without a dollar more in marketing spend.</p>
+
+<h3>Plumbing Company: Reducing the No-Decision Rate</h3>
+
+<p>A plumbing company that ran frequent whole-home assessments had high estimate volume but a frustratingly high no-decision rate. Many assessments produced estimates the homeowner sat on indefinitely. The 5-touch follow-up sequence, automated by AI, reduced their no-decision rate by nearly a third in the first six months &mdash; not by closing everyone, but by moving customers off the fence faster. Faster decisions meant faster job starts and faster revenue, without changing anything about their pricing or pitch.</p>
+
+<h2>Building Your System</h2>
+
+<p>Getting this running doesn&rsquo;t require a technical overhaul. The steps are straightforward:</p>
+
+<ol>
+<li><strong>Map your existing estimate process.</strong> How are estimates sent today &mdash; email, text, through your CRM? The trigger point for the AI sequence needs to be clearly defined. The simpler your estimate workflow, the easier it is to automate.</li>
+<li><strong>Write your five messages.</strong> Use the templates above as a starting point and customize them for your trade, your tone, and your typical customer. Each message should be under 100 words. Long follow-ups don&rsquo;t get read.</li>
+<li><strong>Set your timing.</strong> For most trades, day 0, 3, 7, 10, and 14 works well. High-ticket projects like full roof replacements or HVAC system installs can stretch the final touch to day 21. Low-ticket repairs may only need three touches. Match the cadence to how long the customer&rsquo;s decision cycle actually takes.</li>
+<li><strong>Connect it to your existing workflow.</strong> The best AI estimate follow-up systems integrate with what you&rsquo;re already using to send estimates &mdash; your CRM, quoting software, or email. You shouldn&rsquo;t have to change how you work to run the sequence.</li>
+<li><strong>Track your close rate before and after.</strong> Know your baseline. Check it again at 60 and 90 days. The improvement should be visible within the first two months if the sequence is running consistently.</li>
+</ol>
+
+<p>If you want help setting up an estimate follow-up sequence for your specific trade and sales process, a <a href="/free-assessment">free revenue assessment</a> will map your current numbers and show you exactly what a properly configured follow-up system could add to your monthly close rate.</p>
+
+<p>For the full picture of how AI drives revenue recovery across every part of your operation &mdash; from the first missed call to estimate follow-up to database reactivation &mdash; the <a href="/blog/ai-revenue-recovery-service-businesses-guide">complete AI revenue recovery guide</a> covers it all in one place.</p>`,
+    faqs: [
+      {
+        question: "How many times should you follow up on a contractor estimate?",
+        answer:
+          "Research shows that 80% of sales require five or more follow-ups, but most contractors make fewer than two. A structured 5-touch sequence over 14 days &mdash; same-day confirmation, day-3 value add, day-7 check-in, day-10 scarcity point, and day-14 close-or-clear &mdash; gives customers enough contact to make a decision without feeling pressured. The goal is to be present when they&rsquo;re finally ready to act, not to push them before they are.",
+      },
+      {
+        question: "What should you say when following up on a sent estimate?",
+        answer:
+          "Each follow-up message should serve a purpose beyond just &ldquo;did you see my estimate?&rdquo; Day 3 adds value: warranty details, financing options, or timeline information. Day 7 is a low-pressure check-in acknowledging there&rsquo;s no rush. Day 10 introduces a genuine scarcity point like schedule availability. Day 14 closes the loop and gives the customer an easy way to decline if they&rsquo;ve already moved on. Short messages under 100 words outperform long ones across every trade.",
+      },
+      {
+        question: "How long should you wait before giving up on a contractor estimate?",
+        answer:
+          "For most trades, a 14-day follow-up window covers the decision cycle for the majority of residential customers. High-ticket jobs like full roof replacements or HVAC system installs may warrant a final touch at day 21. Beyond three weeks, most unresponsive estimates are genuinely lost &mdash; but the day-14 close-or-clear message often surfaces procrastinators who were meaning to respond. Don&rsquo;t write off silence as a no until you&rsquo;ve given the customer a clear, easy way to say no.",
+      },
+      {
+        question: "Does following up on estimates feel pushy to customers?",
+        answer:
+          "Only if the messages are demanding or create fake urgency. A well-written follow-up sequence is genuinely useful to the customer &mdash; it answers questions they hadn&rsquo;t asked yet, provides scheduling information, and makes it easy to either proceed or decline. Most homeowners who go quiet after receiving an estimate aren&rsquo;t avoiding you; they&rsquo;re busy. A friendly, informative follow-up is welcomed, not resented. The tone matters more than the number of touches.",
+      },
+      {
+        question: "How does AI automate estimate follow-up for contractors?",
+        answer:
+          "AI follow-up automation triggers a message sequence the moment an estimate is sent. Your team sends the estimate normally &mdash; the AI detects it and starts a timed sequence of texts or emails. If the customer replies, the AI flags the conversation for human follow-up or handles simple responses automatically. The sequence pauses if the customer declines. Your team doesn&rsquo;t have to track which estimates are open, who was contacted, or what day each customer is on &mdash; the system runs in the background without manual effort.",
+      },
+      {
+        question: "What close rate improvement can I expect from better estimate follow-up?",
+        answer:
+          "Contractors who implement a structured 5-touch follow-up system typically see close rate improvements of 8&ndash;15 percentage points within 90 days. Moving from 25% to 35% on 80 monthly estimates at a $10,000 average job adds $80,000 in monthly revenue from the same lead flow. The improvement comes entirely from converting customers who were genuinely interested but slipped through because nobody followed up consistently beyond the first attempt.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
