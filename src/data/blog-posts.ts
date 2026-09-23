@@ -10505,6 +10505,225 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "google-business-profile-contractors-guide",
+    title: "Google Business Profile for Contractors: The Complete Optimization Guide (2026)",
+    excerpt:
+      "Your Google Business Profile is the single most powerful free marketing tool a contractor has &mdash; but most listings are half-finished and cost you jobs every week. Here&rsquo;s exactly how to optimize yours.",
+    metaDescription:
+      "Step-by-step Google Business Profile optimization guide for contractors. More calls, more jobs, and better local rankings — starting today.",
+    date: "2026-09-23",
+    author: "Wylie Stevens",
+    readTime: "9 min read",
+    category: "Local Marketing",
+    keywords: [
+      "Google Business Profile for contractors",
+      "Google Maps contractor ranking",
+      "local SEO for contractors",
+      "Google My Business contractor",
+      "contractor Google profile optimization",
+      "how to rank on Google Maps contractor",
+    ],
+    heroImage:
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&h=630&fit=crop",
+    heroImageAlt:
+      "Contractor on a phone looking at a map search result — representing Google Business Profile visibility for local service businesses",
+    content: `<p>Here&rsquo;s a stat that should get your attention: <strong>76% of people who search for a local service on their phone visit or contact a business within 24 hours.</strong> And the vast majority of those searches end on the Google Maps results page &mdash; the &ldquo;local pack&rdquo; with the three listings and a map.</p>
+
+<p>If your Google Business Profile isn&rsquo;t one of those three listings, you don&rsquo;t exist for those callers. Not because you do bad work. Because your profile is incomplete, under-optimized, or buried by competitors who took this seriously before you did.</p>
+
+<p>The good news: your Google Business Profile (formerly Google My Business) is completely free, and most of your competition has done a mediocre job with theirs. A well-optimized listing can move you from invisible to top-three in your market &mdash; sometimes in 30 to 90 days &mdash; without spending a dollar on ads. This guide covers exactly what to do, in the order that matters most.</p>
+
+<h2>Why Your GBP Is Your Most Important Marketing Asset</h2>
+
+<p>Think about how most homeowners find a contractor. They don&rsquo;t scroll through a website directory. They don&rsquo;t flip through the yellow pages. They open Google, type &ldquo;roofer near me&rdquo; or &ldquo;HVAC repair Kingman&rdquo; &mdash; and they call whoever appears in the first three results on the map.</p>
+
+<p>That local pack dominates the screen, especially on mobile. The organic website results appear below it, and most people never scroll that far. <strong>This means your GBP listing is more important than your website for generating local inbound calls.</strong></p>
+
+<p>A fully optimized listing does several things your website can&rsquo;t: it shows your current star rating immediately, it lets homeowners call you directly without visiting a site, it displays your photos alongside your competitors&rsquo;, and it signals to Google that you&rsquo;re a legitimate, active business in the service area.</p>
+
+<h2>Step 1: Claim and Verify Your Listing</h2>
+
+<p>Before you can optimize anything, you need to own the listing. Search your business name on Google Maps. If there&rsquo;s an existing listing that shows &ldquo;Claim this business,&rdquo; someone has already created it (often Google auto-generates listings) &mdash; claim it before a competitor or bad actor does.</p>
+
+<p>Verification is usually done by postcard (Google mails a PIN to your business address), though some accounts can verify by phone or video. Once verified, you have full control over the listing.</p>
+
+<p>If you operate as a service area business &mdash; meaning you go to customers rather than having them come to you &mdash; hide your physical address in the settings and set a service area instead. This is standard for roofers, HVAC companies, plumbers, and most contractors. Google allows this and it protects your home address from being publicly displayed.</p>
+
+<h2>Step 2: Get the Core Fields Right</h2>
+
+<p>This is where most contractors leave rankings on the table. Every field in your GBP is a signal Google uses to decide where to rank you. Fill them all out with care.</p>
+
+<h3>Business Name</h3>
+<p>Use your exact legal or trade name &mdash; nothing more. Google&rsquo;s rules prohibit keyword stuffing in business names (e.g., &ldquo;ABC Roofing &mdash; Best Roofer Kingman AZ&rdquo;). Violations can get your listing suspended. Legitimate name, consistent with what&rsquo;s on your truck, website, and invoices.</p>
+
+<h3>Primary and Secondary Categories</h3>
+<p>Your primary category is the single most important ranking signal in your profile. Choose the most specific category that describes your main service. Don&rsquo;t pick &ldquo;Contractor&rdquo; when &ldquo;Roofing Contractor&rdquo; exists. Don&rsquo;t pick &ldquo;HVAC Contractor&rdquo; when &ldquo;Air Conditioning Contractor&rdquo; or &ldquo;Heating Contractor&rdquo; might be more specific to your primary work.</p>
+
+<p>After selecting your primary category, add secondary categories for related services you offer. A plumbing company might add &ldquo;Plumber,&rdquo; &ldquo;Water Heater Installation Service,&rdquo; and &ldquo;Drainage Service.&rdquo; More relevant categories mean more searches your listing can appear for.</p>
+
+<h3>Service Area</h3>
+<p>Be specific, but realistic. Add every city, zip code, or county you actually serve. Google cross-references your service area against your review locations and your website to validate that you genuinely operate in the areas you list. Over-claiming a giant radius you don&rsquo;t actually cover will hurt your rankings in areas where you have no signals of real activity.</p>
+
+<h3>Phone Number and Website</h3>
+<p>Use your primary business phone number &mdash; the one you actually answer. Make sure this number is consistent across every online directory: your website, Yelp, BBB, Angi, and anywhere else your business is listed. Inconsistency in what Google calls NAP (Name, Address, Phone) is a known ranking negative.</p>
+
+<h3>Business Hours</h3>
+<p>Keep these accurate and up to date. If you answer calls after hours through an AI system, set your hours accordingly &mdash; you can list 24/7 if an <a href="/ai-voice-assistant">AI voice assistant</a> is always available. An outdated listing that shows &ldquo;closed&rdquo; when you&rsquo;re actually reachable is losing you after-hours calls that go to competitors who bothered to update their hours.</p>
+
+<h3>Business Description</h3>
+<p>You get 750 characters. Use them to describe what you do, who you serve, your service area, and what makes you different &mdash; in plain language, the way a homeowner would talk about it. Work in your primary service and city naturally. Avoid keyword stuffing; write for a human reader who wants to know if you&rsquo;re the right fit before they call.</p>
+
+<h2>Step 3: Add Photos That Actually Drive Calls</h2>
+
+<p>Profiles with photos receive <strong>42% more requests for directions and 35% more click-throughs to websites</strong> than profiles without, according to Google&rsquo;s own data. Photos aren&rsquo;t just decoration &mdash; they are a ranking and conversion signal.</p>
+
+<p>What to upload:</p>
+
+<ul>
+<li><strong>Before-and-after job photos:</strong> These are gold. A homeowner who can see what you did for someone else&rsquo;s roof, HVAC system, or plumbing situation is far more likely to call than one who just sees your logo.</li>
+<li><strong>Crew and vehicle photos:</strong> Homeowners want to know who&rsquo;s showing up at their house. A photo of your uniformed team in front of a branded truck builds immediate trust.</li>
+<li><strong>Work-in-progress shots:</strong> Photos taken during the job show professionalism and attention to detail.</li>
+<li><strong>Logo and cover photo:</strong> Your cover photo is what shows at the top of your listing. Make it a strong, high-quality image that represents the quality of your work.</li>
+</ul>
+
+<p>Aim for at least 20 to 30 photos to start. After that, add new photos regularly &mdash; once a week is ideal. Google rewards active listings. A profile with photos added consistently over time ranks better than one with 100 photos uploaded in a single afternoon years ago.</p>
+
+<h2>Step 4: Use Google Posts to Stay Active</h2>
+
+<p>Google Posts are short updates that appear directly on your listing &mdash; similar to a social media post, but on Google. Most contractors ignore them entirely, which is a missed opportunity.</p>
+
+<p>A Google Post can be:</p>
+<ul>
+<li>A recent completed job with a photo and brief description</li>
+<li>A seasonal offer (&ldquo;Free gutter inspection with any roof repair this October&rdquo;)</li>
+<li>A new service announcement</li>
+<li>A short tip that&rsquo;s useful to homeowners in your area</li>
+</ul>
+
+<p>Posts expire after seven days, so weekly posts signal to Google that your business is active. Even two posts per month keeps your listing fresher than 90% of your competitors. Use each post&rsquo;s call-to-action button to drive calls or website visits directly from the listing.</p>
+
+<h2>Step 5: Load Up Your Services and Products Sections</h2>
+
+<p>The &ldquo;Services&rdquo; section of your GBP lets you list every specific service you offer, with descriptions and optional prices. This is important for two reasons: it helps homeowners see the full scope of what you do, and it gives Google more keyword context to associate with your listing.</p>
+
+<p>If you&rsquo;re a roofing contractor, don&rsquo;t just list &ldquo;Roofing.&rdquo; Break it down: Asphalt Shingle Replacement, Metal Roofing Installation, Roof Leak Repair, Storm Damage Repair, Flat Roof Installation, Gutter Replacement. Each line is another signal and another way a searcher&rsquo;s query can match your listing.</p>
+
+<p>Write actual descriptions for each service. Two to three sentences that describe what the service is, who it&rsquo;s for, and what a homeowner can expect. Not keyword-stuffed filler &mdash; useful, readable descriptions.</p>
+
+<h2>Step 6: Preload Your Q&amp;A Section</h2>
+
+<p>The Q&amp;A feature on Google Business Profile lets anyone post a question and anyone answer it &mdash; including you. Most contractors either ignore it completely or let random people post unanswered questions.</p>
+
+<p>Take ownership of this section. Log into your profile and post the questions homeowners most commonly ask you, then answer them yourself. Common examples:</p>
+
+<ul>
+<li><em>&ldquo;Do you offer free estimates?&rdquo;</em> &mdash; Yes, we offer free on-site estimates for all roofing and gutter projects. Schedule yours by calling [number] or submitting a request online.</li>
+<li><em>&ldquo;How long does a typical roof replacement take?&rdquo;</em> &mdash; Most residential roof replacements are completed in one to two days, depending on roof size and complexity.</li>
+<li><em>&ldquo;Do you serve [specific city]?&rdquo;</em> &mdash; Yes, we serve [city] and the surrounding area within [X] miles.</li>
+</ul>
+
+<p>Preloaded Q&amp;As provide useful information to prospects and prevent the section from sitting empty or being filled with questions you&rsquo;d rather address yourself.</p>
+
+<h2>Step 7: Build Your Review Count Consistently</h2>
+
+<p>Reviews are the single most powerful ranking factor in the Google local pack &mdash; and the most powerful conversion signal for homeowners evaluating your listing. <strong>BrightLocal research shows that 87% of consumers read reviews before choosing a local business.</strong> In home services, where trust is everything, that number is even higher.</p>
+
+<p>Two numbers matter: your total review count and your average star rating. Google weighs both. A business with 80 reviews at 4.7 stars will outrank a business with 20 reviews at 5.0 stars in most cases, because volume signals legitimacy and market penetration.</p>
+
+<p>The most effective strategy: ask every customer within 24 to 48 hours of completing their job. Send a direct text with a link to your Google review page. Make it one tap to leave a review. Do this consistently &mdash; not just when you remember, but after every single job.</p>
+
+<p>Doing this manually is easy to let slip. An automated <a href="/reputation-management">review request system</a> sends the review ask at exactly the right moment after every completed job, without you having to think about it. Contractors who implement these systems routinely go from 15 reviews to 80-plus in their first 90 days. That jump in review count alone can move you from page two of the local pack to the top three.</p>
+
+<p>When you receive a review &mdash; positive or negative &mdash; respond to it. Responses to reviews are a ranking signal and a trust signal. For positive reviews, a brief, genuine thank-you is enough. For negative reviews, respond calmly and professionally, acknowledge the concern, and offer to make it right. Never argue in a public response. How you handle criticism tells prospects as much about your business as the criticism itself.</p>
+
+<h2>Step 8: Monitor Your GBP Insights</h2>
+
+<p>Google gives you free performance data inside your Business Profile dashboard. Check it monthly. The most useful metrics:</p>
+
+<ul>
+<li><strong>Search queries:</strong> What people searched before finding your listing. This tells you what keywords you&rsquo;re ranking for and what terms you should be incorporating into your description, posts, and services.</li>
+<li><strong>How customers found your listing:</strong> Direct searches (they searched your name) vs. discovery searches (they searched a category or keyword and found you). A high discovery percentage means your optimization is working.</li>
+<li><strong>Customer actions:</strong> Calls, website clicks, and direction requests. If calls are low relative to views, your listing may need stronger photos or a higher review count to build trust.</li>
+</ul>
+
+<p>You don&rsquo;t need to obsess over these numbers. But a monthly check tells you whether your optimization efforts are moving the needle, and it surfaces any unexpected drops that might indicate a problem with your listing.</p>
+
+<h2>Common GBP Mistakes That Cost Contractors Rankings</h2>
+
+<p>After everything above, watch out for these mistakes that undo your work:</p>
+
+<ul>
+<li><strong>NAP inconsistency:</strong> If your phone number on GBP doesn&rsquo;t match your website or Yelp listing, Google treats it as a discrepancy signal. Audit every directory and make sure your name, address, and phone are identical everywhere.</li>
+<li><strong>Using a tracking number as your primary GBP phone:</strong> Call tracking numbers are useful for ads. Don&rsquo;t use them as your primary GBP number &mdash; they create NAP inconsistency and Google sometimes flags them.</li>
+<li><strong>Ignoring the &ldquo;Suggested edits&rdquo; notifications:</strong> Anyone can suggest edits to your listing and Google may apply them automatically. Check your listing monthly for unauthorized changes.</li>
+<li><strong>Never updating photos:</strong> A listing with photos from three years ago signals stagnation. Add new photos regularly.</li>
+<li><strong>Letting reviews go unanswered:</strong> An unresponsive business owner is a yellow flag for homeowners. Respond within 24 to 48 hours of every review.</li>
+</ul>
+
+<h2>The Connection Between GBP and Your Call Handling</h2>
+
+<p>Here&rsquo;s a nuance that most guides skip: getting to the top of Google Maps is only half the equation. What happens when someone calls you from your GBP listing is the other half.</p>
+
+<p>If a homeowner finds you at the top of the local pack at 7:30 PM on a Saturday, calls your number, and gets voicemail &mdash; you just lost that lead. They&rsquo;ll scroll down and call whoever picks up. All the optimization work you did to earn that top ranking just handed a job to your competitor because nobody answered.</p>
+
+<p>This is why GBP optimization and call handling have to work together. The visibility gets the call. The system &mdash; whether that&rsquo;s a live answering service, an <a href="/ai-voice-assistant">AI voice assistant</a>, or a <a href="/missed-call-text-back">missed call text-back</a> &mdash; captures the lead before it walks away. One without the other is a revenue leak.</p>
+
+<h2>How Long Until You See Results?</h2>
+
+<p>For a completely new or freshly optimized listing in a competitive market, expect 60 to 90 days to see meaningful movement in local pack rankings. The timeline depends on your market size, your current review count, and how well your competitors have optimized their own listings.</p>
+
+<p>Some improvements show up faster. More photos, an updated description, and accurate hours can improve click-through rates within days. Review count moves over weeks as your automated request system works through your completed jobs. Category and service area changes can influence rankings within a few weeks.</p>
+
+<p>The businesses that win local pack rankings aren&rsquo;t doing anything exotic. They&rsquo;ve completed every field, maintain an active stream of photos and posts, collect reviews consistently, and respond to every review and question. That combination, maintained consistently, outranks most competitors in 6 months or less.</p>
+
+<h2>Where to Start Today</h2>
+
+<p>If you&rsquo;re starting from scratch or haven&rsquo;t looked at your GBP in a year, do these four things first:</p>
+
+<ol>
+<li>Claim and verify your listing if you haven&rsquo;t already.</li>
+<li>Fill out every field completely: categories, service area, hours, description, services.</li>
+<li>Upload at least 15 to 20 photos: before-and-afters, crew, equipment, recent jobs.</li>
+<li>Set up a system to automatically request a Google review after every completed job.</li>
+</ol>
+
+<p>Those four steps alone will put you ahead of the majority of contractors in any local market, because most of them have never done more than claim their listing and walk away.</p>
+
+<p>If you&rsquo;re not sure how your GBP stacks up against your competitors, or you want to see how your overall lead capture and follow-up holds up alongside it, a <a href="/free-assessment">free revenue assessment</a> from AI Peak Biz will show you exactly where you stand and what&rsquo;s worth fixing first.</p>`,
+    faqs: [
+      {
+        question: "How long does it take for a contractor to rank in Google Maps?",
+        answer:
+          "For a newly optimized listing in a competitive local market, expect 60 to 90 days to see meaningful improvement in local pack rankings. Factors that speed up the timeline: consistent reviews coming in, accurate and complete profile information, regular photo uploads, and an active Google Posts history. Markets with fewer competitors or a lower existing review baseline can see movement in 30 to 45 days. The contractors who move fastest are the ones who treat GBP as an ongoing activity rather than a one-time setup.",
+      },
+      {
+        question: "What Google Business Profile category should a roofing contractor use?",
+        answer:
+          "The primary category should be 'Roofing Contractor' — it's the most specific available for most roofing businesses. Add secondary categories for any related services: 'Gutter Cleaning Service,' 'Gutter Installation Service,' 'Insulation Contractor' if you offer attic insulation, or 'General Contractor' if you handle broader exterior work. Your primary category carries the most ranking weight, so always pick the most specific option that accurately describes your main service rather than a broader term like 'Contractor.'",
+      },
+      {
+        question: "How many Google reviews does a contractor need to compete in local search?",
+        answer:
+          "In most local markets, you need 40 to 60 reviews with a rating above 4.5 to compete for top-three placement in the Google local pack. Below 30 reviews, your listing is often outranked by competitors with higher volume, even if your rating is perfect. The fastest way to build review count is an automated review request system that texts every customer a direct review link within 24 to 48 hours of job completion. Contractors using these systems typically gain 30 to 100 new reviews within the first 90 days.",
+      },
+      {
+        question: "Can I use Google Business Profile if I don't have a physical storefront?",
+        answer:
+          "Yes. Google has a 'service area business' designation specifically for contractors and other businesses that go to their customers rather than having customers come to them. Set your service area to include the cities, counties, or zip codes you serve, and hide your physical address so it doesn't display publicly on the map. This is the correct setup for roofers, HVAC companies, plumbers, electricians, and most other trade contractors. Google fully supports this configuration and it has no negative ranking effect.",
+      },
+      {
+        question: "How often should contractors post on Google Business Profile?",
+        answer:
+          "Weekly is ideal; twice a month is the minimum to maintain an 'active' signal. Google Posts expire after seven days, so regular posts keep fresh content visible on your listing at all times. Good post content for contractors: a before-and-after photo from a recent job with a short description, a seasonal service offer, a new service announcement, or a useful tip relevant to homeowners in your area. Each post takes 5 to 10 minutes to create and meaningfully signals to Google that your business is active.",
+      },
+      {
+        question: "Does responding to Google reviews actually help rankings?",
+        answer:
+          "Yes, responding to reviews is a confirmed ranking signal for Google local search, and it has an even bigger impact on conversion. Google's documentation states that responding to reviews improves local search visibility. Beyond rankings, BrightLocal data shows that 89% of consumers are likely to choose a business that responds to all reviews over one that doesn't respond to any. For contractors, a thoughtful response to a negative review often converts skeptical prospects more effectively than five additional positive reviews.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
