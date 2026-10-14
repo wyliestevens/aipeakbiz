@@ -12182,6 +12182,215 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "text-message-marketing-contractors",
+    title: "Text Message Marketing for Contractors: How to Book More Jobs with SMS",
+    excerpt:
+      "SMS has a 98% open rate. Email has 21%. For contractors, that gap is the difference between a campaign customers read and one they ignore. Here&rsquo;s how to use text message marketing to book more jobs.",
+    metaDescription:
+      "Learn how contractors use SMS marketing to book more jobs. Proven text message campaigns, compliance rules, templates, and setup guide for service businesses.",
+    date: "2026-10-14",
+    author: "Wylie Stevens",
+    readTime: "11 min read",
+    category: "Lead Capture",
+    keywords: [
+      "text message marketing contractors",
+      "SMS marketing service businesses",
+      "contractor text message campaigns",
+      "SMS for HVAC plumbing roofing",
+      "contractor SMS follow-up",
+      "text marketing service business",
+    ],
+    heroImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop",
+    heroImageAlt: "Contractor checking phone messages on a job site — representing SMS marketing for service businesses",
+    content: `<p>Your customers read their text messages. They ignore your emails.</p>
+
+<p>That&rsquo;s not an opinion &mdash; it&rsquo;s data. Text messages are opened <strong>98% of the time</strong>, usually within three minutes of receipt. Email open rates hover around 21% on a good day, and most marketing emails never get opened at all. For a contractor trying to reconnect with a past customer, follow up on an estimate, or run a seasonal promotion, the difference is enormous.</p>
+
+<p>Yet most contractors either don&rsquo;t use text message marketing at all, or they only use it reactively &mdash; sending an auto-reply when someone calls and they don&rsquo;t answer. That&rsquo;s a good start, but it&rsquo;s leaving most of the opportunity on the table.</p>
+
+<p>This guide covers the full picture: the five types of SMS campaigns that actually book jobs, the compliance rules you need to follow, what to write in your messages, and how to set up a system that runs without you having to think about it.</p>
+
+<h2>Why Text Message Marketing Works Especially Well for Contractors</h2>
+
+<p>SMS marketing works across almost every industry, but it&rsquo;s particularly effective for contractors for a few specific reasons.</p>
+
+<p><strong>Your customers are homeowners who own their phones.</strong> Unlike B2B businesses targeting corporate buyers who may have shared inboxes and gatekeepers, you&rsquo;re texting the person who actually needs the work done. When you text a homeowner about their HVAC system before summer, the person reading it is the person who feels the heat and pays the bill.</p>
+
+<p><strong>Service needs are often triggered by time and season.</strong> HVAC tune-ups before summer, gutter cleaning before fall, deck sealing before winter. These seasonal windows are predictable. A well-timed text that arrives right when a homeowner is starting to think about seasonal maintenance doesn&rsquo;t feel like advertising &mdash; it feels like a useful reminder from someone who knows their situation.</p>
+
+<p><strong>Emergency jobs are won by whoever responds first.</strong> When a pipe bursts at 9 PM, the homeowner doesn&rsquo;t have time to scroll through Google. They text the last contractor who worked on their house. If that&rsquo;s you, and your number is in their phone because you&rsquo;ve been communicating by text, you get the call. If it&rsquo;s not you, you don&rsquo;t.</p>
+
+<p><strong>Text keeps you top of mind without being intrusive.</strong> A phone call requires someone to stop what they&rsquo;re doing. An email requires them to open an app they might check twice a day. A text arrives in the same place where they communicate with family and friends, and it takes three seconds to read. Done right, text marketing feels helpful rather than pushy.</p>
+
+<h2>The 5 Types of SMS Campaigns That Book Jobs</h2>
+
+<p>Not all text messages are created equal. Some of the most effective campaigns aren&rsquo;t promotional at all &mdash; they&rsquo;re practical communications that just happen to lead to more booked work.</p>
+
+<h3>1. Missed Call Follow-Up</h3>
+
+<p>This is the most basic form of contractor text marketing and the highest ROI starting point. When someone calls you and you don&rsquo;t answer, an automated text goes out within 30 seconds: &ldquo;Hey, this is [Your Company]. Sorry we missed your call &mdash; how can we help?&rdquo;</p>
+
+<p>This one message recovers an estimated 20-40% of calls that would otherwise go to voicemail and be lost forever. The caller is still in decision-making mode. They just tried to reach you. A text that arrives before they&rsquo;ve dialed the next contractor on the list keeps you in the running.</p>
+
+<p>We&rsquo;ve covered this in more detail in our guide on <a href="/blog/missed-call-text-back-contractors">missed call text-back for contractors</a>, but it&rsquo;s worth mentioning here because it&rsquo;s the foundation of any contractor SMS strategy. If you&rsquo;re doing nothing else, do this first.</p>
+
+<h3>2. Estimate Follow-Up Sequences</h3>
+
+<p>You spent an hour doing a free estimate. You sent the quote. Then silence. The homeowner isn&rsquo;t ignoring you &mdash; they&rsquo;re probably just busy, still getting other quotes, or waiting to talk to their spouse. A systematic follow-up sequence via text keeps you in the conversation without you having to remember to call.</p>
+
+<p>A simple three-message sequence works well:</p>
+
+<ul>
+<li><strong>Day 2:</strong> &ldquo;Hi [Name], just following up on the estimate we sent for your roof. Any questions I can answer?&rdquo;</li>
+<li><strong>Day 5:</strong> &ldquo;Hi [Name], we have some availability opening up next week if you want to get on the schedule. Still happy to walk through the quote with you.&rdquo;</li>
+<li><strong>Day 10:</strong> &ldquo;Hi [Name], checking in one last time on the estimate. If the timing isn&rsquo;t right, no problem &mdash; just let us know and we&rsquo;ll close this out. Happy to help when you&rsquo;re ready.&rdquo;</li>
+</ul>
+
+<p>That third message &mdash; the &ldquo;permission to walk away&rdquo; text &mdash; gets replies surprisingly often. People who were going to ghost you will often respond when you give them an easy out. Sometimes they say no, and you can stop following up. Other times they say &ldquo;actually, let&rsquo;s do it&rdquo; because they appreciate the lack of pressure.</p>
+
+<p>Our <a href="/blog/contractor-estimate-follow-up-system">contractor estimate follow-up system guide</a> goes deeper on this if you want the full playbook.</p>
+
+<h3>3. Seasonal Promotions and Maintenance Reminders</h3>
+
+<p>This is where SMS marketing starts to look like marketing rather than customer service. You have a list of past customers. You know roughly when they last had work done. You know what season is coming. A well-timed text that lands three or four weeks before seasonal demand peaks can generate immediate bookings from people who were already planning to call you, just hadn&rsquo;t gotten around to it yet.</p>
+
+<p>Examples that work:</p>
+
+<ul>
+<li><strong>HVAC (late March):</strong> &ldquo;Spring is here. We&rsquo;re booking AC tune-ups now before the summer rush. Past customers get priority scheduling. Reply YES to get on the list.&rdquo;</li>
+<li><strong>Roofing (late September):</strong> &ldquo;Fall is the best time to catch roof issues before winter sets in. We have a few inspection slots open this month. Want to get on the schedule?&rdquo;</li>
+<li><strong>Plumbing (October):</strong> &ldquo;Reminder: winterizing your outdoor plumbing before the first freeze can save you from a $2,000 burst pipe repair. We&rsquo;re booking now. Reply to schedule.&rdquo;</li>
+</ul>
+
+<p>Keep it short. Make the action obvious. Give them a reason to act now rather than later. The urgency doesn&rsquo;t need to be manufactured &mdash; seasonal windows are genuinely limited.</p>
+
+<h3>4. Review Requests</h3>
+
+<p>Your single best source of future business is your Google review count and average rating. And the single best time to ask for a review is immediately after completing a job, while the customer is still feeling good about the work.</p>
+
+<p>A text review request sent within an hour of job completion converts dramatically better than an email request sent a week later. Something like: &ldquo;Thanks for letting us take care of your [service], [Name]. If you&rsquo;re happy with how it went, we&rsquo;d really appreciate a Google review &mdash; it means a lot to our small business. Here&rsquo;s the direct link: [link]&rdquo;</p>
+
+<p>This isn&rsquo;t just good for your reputation. Every review you generate from SMS is a review that builds your local search rankings, which means more inbound calls, which means more revenue. The automation pays for itself in compounding ways. See our <a href="/blog/automated-review-request-system-guide">automated review request setup guide</a> for details on how to build this into your workflow.</p>
+
+<h3>5. Database Reactivation Campaigns</h3>
+
+<p>This is the most powerful campaign type for contractors with an existing customer list, and it&rsquo;s also the most underused.</p>
+
+<p>You have past customers who haven&rsquo;t hired you in one, two, or three years. They&rsquo;re not lost &mdash; they&rsquo;re dormant. A targeted text campaign can reactivate 5-15% of a dormant list with a single message sent at the right time. At $1,000+ average job values, even reactivating 10 customers from a list of 200 past clients generates $10,000 in work from a campaign that costs almost nothing to run.</p>
+
+<p>The key is personalization &mdash; or at least the appearance of it. &ldquo;Hi [Name], it&rsquo;s [Your Name] from [Company]. We did your [service] about [timeframe] ago. Wanted to check in &mdash; is there anything you&rsquo;ve been putting off that we can help with?&rdquo; feels like a thoughtful follow-up, not a broadcast blast.</p>
+
+<p>We cover this strategy in full in our guide on <a href="/blog/database-reactivation-contractors">database reactivation for contractors</a>.</p>
+
+<h2>SMS Compliance: What Contractors Need to Know</h2>
+
+<p>Before you start sending marketing texts, there are rules you need to follow. The Telephone Consumer Protection Act (TCPA) regulates commercial text messaging in the United States. The consequences for violating it are serious &mdash; fines start at $500 per message sent without proper consent and can reach $1,500 per message for willful violations.</p>
+
+<p>Here&rsquo;s what you need to know:</p>
+
+<p><strong>You need prior written consent to send marketing texts.</strong> This means the customer has to explicitly opt in to receiving marketing messages from you. A phone call where you fix their furnace is not consent to send them promotional texts later. You need a clear opt-in &mdash; a checkbox on a form, a text-to-join keyword, a signature on a service agreement that includes SMS consent language.</p>
+
+<p><strong>Transactional texts are different from marketing texts.</strong> Appointment reminders, job updates, invoice notices &mdash; these are transactional and have more lenient rules. You can send appointment reminders to a customer who gave you their number without them having to formally opt into &ldquo;marketing.&rdquo; The line gets crossed when you start sending promotional content (discounts, seasonal offers, upsells) to people who didn&rsquo;t consent to that.</p>
+
+<p><strong>Every marketing text needs an easy opt-out.</strong> Include &ldquo;Reply STOP to unsubscribe&rdquo; in your marketing messages. Honor opt-outs immediately. Any reputable SMS platform handles this automatically.</p>
+
+<p><strong>Keep records.</strong> Document when and how customers opted in. If you ever face a complaint, proof of consent is your defense.</p>
+
+<p>The practical takeaway: start building consent collection into your intake process now. When a new customer calls, has work done, or fills out a form, give them the option to opt in to text updates and promotions. Over time, you&rsquo;ll build a legitimate, compliant SMS list that&rsquo;s one of your most valuable marketing assets.</p>
+
+<h2>What to Write: SMS Message Templates for Contractors</h2>
+
+<p>Text messages work best when they&rsquo;re short, direct, and personal. The best contractor SMS reads like it was written by a person, not a marketing department. Here are templates you can adapt:</p>
+
+<p><strong>New lead response (within 5 minutes of form fill or inquiry):</strong><br>
+&ldquo;Hi [Name], this is [Your Name] from [Company]. Thanks for reaching out! Quick question &mdash; what&rsquo;s going on with your [service type]? Happy to give you a ballpark over the phone.&rdquo;</p>
+
+<p><strong>After an estimate (same day):</strong><br>
+&ldquo;[Name], thanks for having us out today. Your estimate is attached. Any questions at all, just reply here &mdash; fastest way to reach me.&rdquo;</p>
+
+<p><strong>Seasonal promo (4-6 weeks before season):</strong><br>
+&ldquo;Hi [Name], it&rsquo;s [Your Name] from [Company]. Getting our spring AC tune-up schedule filled &mdash; past customers get priority. Want to get on the calendar before spots fill up?&rdquo;</p>
+
+<p><strong>Post-job review request (1-2 hours after completion):</strong><br>
+&ldquo;[Name], hope the job went smoothly! If you&rsquo;re happy with the work, a quick Google review would mean a lot: [link]. Thanks for trusting us.&rdquo;</p>
+
+<p><strong>Reactivation (1-2 year dormant):</strong><br>
+&ldquo;Hi [Name], it&rsquo;s [Your Name] at [Company] &mdash; we took care of your [service] back in [year]. Checking in to see if there&rsquo;s anything you&rsquo;ve been putting off. Happy to come take a look.&rdquo;</p>
+
+<h2>Setting Up an SMS System for Your Contracting Business</h2>
+
+<p>You don&rsquo;t need to manually send every one of these messages. The whole point of a text marketing system is that most of it runs automatically in the background while you&rsquo;re on the job.</p>
+
+<p>Here&rsquo;s the basic infrastructure you need:</p>
+
+<p><strong>An SMS-capable CRM or messaging platform.</strong> Your business phone number needs to be connected to a platform that can send automated texts based on triggers (missed call, new estimate created, job completed, time since last visit). Platforms like GoHighLevel, Housecall Pro, and others built for contractors can handle this.</p>
+
+<p><strong>Consent collection built into your intake.</strong> A simple form or verbal script that gets new customers opted in to texts when they first contact you. This is a one-time setup that pays dividends for years.</p>
+
+<p><strong>Trigger-based automations.</strong> Set up the sequences once &mdash; missed call auto-reply, estimate follow-up, post-job review request &mdash; and they run without your involvement. You spend 30 minutes setting them up and they work indefinitely.</p>
+
+<p><strong>A way to handle replies.</strong> The goal is a two-way conversation. When someone replies to your auto-text, you need to see it and respond. This means having the platform connected to a shared inbox you or your team monitors, or at minimum getting notifications on your phone.</p>
+
+<p>If this sounds like a lot to set up, the honest answer is that it takes some initial configuration but very little ongoing effort. Most contractors who work with us say the setup takes a single afternoon. After that, the system runs itself.</p>
+
+<h2>What Contractors Are Seeing in Practice</h2>
+
+<p>The results from SMS marketing vary by trade, list quality, and how consistently the campaigns are run &mdash; but the pattern is consistent: contractors who implement systematic text follow-up close more estimates, book more seasonal work, and generate significantly more reviews than those relying on phone and email alone.</p>
+
+<p>Estimate follow-up sequences typically improve close rates by 15-25% without any changes to pricing or the quality of the estimate. The work was being lost not because the price was wrong, but because follow-up was inconsistent. Automated text follow-up makes follow-up consistent.</p>
+
+<p>Seasonal reactivation campaigns to a list of 100-500 past customers routinely generate $10,000-$50,000 in revenue from a single send &mdash; work from customers who were going to hire someone for that seasonal job anyway, just hadn&rsquo;t decided who yet.</p>
+
+<p>Review request texts sent immediately after job completion generate 3-5x more reviews than email requests sent days later. That review volume compounds into higher local search rankings, which drive more inbound calls, which generate more revenue &mdash; a flywheel that starts with a single automated text.</p>
+
+<h2>Where to Start</h2>
+
+<p>If you&rsquo;re starting from zero, don&rsquo;t try to implement every campaign type at once. Start with the two highest-ROI moves:</p>
+
+<ol>
+<li><strong>Set up a missed call text-back.</strong> This is reactive, requires no consent beyond the customer already calling you, and immediately captures leads you&rsquo;re currently losing. <a href="/missed-call-text-back">Learn how it works.</a></li>
+<li><strong>Add a post-job review request text.</strong> This runs automatically after every completed job, builds your Google rating, and compounds into more inbound calls over time.</li>
+</ol>
+
+<p>From there, build out the estimate follow-up sequence and, once you have a list of 100+ past customers, run a reactivation campaign.</p>
+
+<p>You don&rsquo;t need a big marketing budget for any of this. You need a system that runs in the background while you&rsquo;re doing the actual work. That&rsquo;s what separates contractors who grow consistently from those who sprint during marketing campaigns and then scramble when the campaign ends.</p>
+
+<p><strong>If you want to see exactly which of these campaigns would have the biggest impact on your specific business, <a href="/free-assessment">take our free revenue assessment</a>.</strong> We&rsquo;ll look at your current follow-up process, call volume, and customer list, and give you a personalized recommendation for where to start. No obligation, no hard sell. Just a clear picture of what&rsquo;s possible.</p>`,
+    faqs: [
+      {
+        question: "Is SMS marketing legal for contractors?",
+        answer:
+          "Yes, but only with proper consent. The Telephone Consumer Protection Act (TCPA) requires that you get prior written consent from customers before sending them marketing texts. Transactional texts — appointment reminders, job updates, invoice notices — have looser requirements, but promotional messages require explicit opt-in. Build consent collection into your intake process: a checkbox on your online form or a line in your service agreement. Every marketing text should include a way to opt out, and you must honor opt-outs immediately. Reputable SMS platforms handle the opt-out mechanics automatically.",
+      },
+      {
+        question: "What&rsquo;s the best time to send marketing texts to homeowners?",
+        answer:
+          "Tuesday through Thursday between 10 AM and 6 PM local time consistently outperforms other windows for contractor marketing texts. Avoid Mondays (people catching up from the weekend), Friday afternoons (mentally checked out), and weekends (family time, higher opt-out rates). For emergency services like plumbing and HVAC, after-hours response texts are appropriate and expected — the customer just called you, so responding at 9 PM is completely normal. For broadcast campaigns and seasonal promotions, stick to business hours mid-week.",
+      },
+      {
+        question: "How many texts can I send before it becomes spam?",
+        answer:
+          "The legal limit depends on consent and content, not a specific number. That said, frequency matters practically. For individual customers, 2-4 marketing texts per month is generally the upper limit before opt-out rates spike. For one-time reactivation campaigns, a single well-timed message to a dormant customer is usually all you need — followed by one or two follow-ups if they engage. The goal is to be useful, not persistent. A seasonal reminder is welcome. Weekly promotional blasts from a contractor feel like spam regardless of legal compliance.",
+      },
+      {
+        question: "What&rsquo;s a good open rate for contractor text campaigns?",
+        answer:
+          "Text messages typically see 95-98% open rates across all industries, with most messages read within 3 minutes. Response rates on contractor campaigns vary by message type: missed call follow-ups often see 30-50% response rates because the person just tried to contact you. Estimate follow-ups average 15-25% response rates. Reactivation campaigns to cold lists typically see 5-15% engagement. Review request texts generate conversion rates (actual reviews left) of 25-40% when sent immediately after job completion, compared to 5-10% for email requests sent days later.",
+      },
+      {
+        question: "How do I collect phone numbers legally for SMS marketing?",
+        answer:
+          "The most practical approach for contractors is to add opt-in language to the places customers already give you their number: your website contact form, your service agreement, and your estimate paperwork. A simple checkbox that says &ldquo;I agree to receive service updates and promotional texts from [Company Name]. I can unsubscribe at any time.&rdquo; is sufficient. You can also use a keyword opt-in (text JOIN to [number]) for customers who find you on social media or from a yard sign. Never add someone to a marketing SMS list just because they gave you their number for scheduling or billing purposes.",
+      },
+      {
+        question: "What&rsquo;s the difference between SMS marketing and a missed call text-back system?",
+        answer:
+          "A missed call text-back system is reactive — it only fires when someone calls you and you don’t answer. It’s a single automated message designed to recover a lead in progress. SMS marketing is proactive — you initiate contact with customers to share a seasonal promotion, follow up on an estimate, request a review, or reactivate a dormant relationship. Both use text messages, but they serve different purposes. The missed call text-back is your safety net for inbound leads. SMS marketing is an outbound revenue tool. For maximum impact, you want both: a system that catches the calls you miss and a system that proactively generates new bookings from your existing customer base.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
