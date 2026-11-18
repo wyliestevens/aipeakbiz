@@ -14903,6 +14903,224 @@ These are the coldest contacts on your list. They showed interest at some point.
       },
     ],
   },
+  {
+    slug: "90-day-revenue-recovery-roadmap-contractors",
+    title:
+      "The 90-Day Revenue Recovery Roadmap for Service Contractors",
+    excerpt:
+      "Most contractors know they&rsquo;re losing revenue &mdash; they just don&rsquo;t know where to start fixing it. This 90-day roadmap breaks down exactly what to implement, in what order, and what results to expect at each stage.",
+    metaDescription:
+      "A practical 90-day roadmap for contractors to recover lost revenue using AI — prioritized by ROI, with clear milestones at 30, 60, and 90 days.",
+    date: "2026-11-18",
+    author: "Wylie Stevens",
+    readTime: "11 min read",
+    category: "AI Implementation & ROI",
+    keywords: [
+      "revenue recovery roadmap contractors",
+      "contractor revenue recovery plan",
+      "AI implementation contractors timeline",
+      "recover lost revenue service business",
+      "contractor business growth 90 days",
+      "AI ROI service contractor",
+    ],
+    heroImage:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop",
+    heroImageAlt:
+      "Contractor reviewing a business growth plan &mdash; 90-day revenue recovery roadmap for service businesses",
+    content: `<p>Most service contractors know they&rsquo;re losing revenue. They&rsquo;ve heard the stat about missed calls costing $45,000 to $120,000 per year. They&rsquo;ve seen competitors with 200 Google reviews while they have 18. And they&rsquo;ve got a list of past clients somewhere that hasn&rsquo;t been touched in two years. The problem isn&rsquo;t awareness &mdash; it&rsquo;s where to start.</p>
+
+<p>When you try to fix everything at once, nothing gets fixed. You end up evaluating tools, running into setup friction, and going back to doing things the way you always have. The revenue keeps leaking. The gap between what you&rsquo;re bringing in and what you could be bringing in grows every month you delay.</p>
+
+<p>This roadmap solves the sequencing problem. It breaks 90 days of AI revenue recovery into three monthly phases, ordered by speed to ROI. Phase 1 stops the most expensive leaks. Phase 2 activates revenue already sitting in your business. Phase 3 compounds the gains into systems that run on their own. If you want a custom estimate of what your specific business is leaving on the table before you start, <a href="/free-assessment">take our two-minute free assessment</a>.</p>
+
+<h2>Before You Start: The 15-Minute Revenue Audit</h2>
+
+<p>Before anything else, pull three numbers. Use your records or estimate honestly. This takes 15 minutes and determines your implementation priority for the entire roadmap.</p>
+
+<p><strong>Number 1: Your missed call volume.</strong> How many calls per week go to voicemail or ring out without being answered? If you don&rsquo;t have call tracking, estimate. A 3 to 5 person operation where the team is in the field all day realistically misses 5 to 15 calls per week. Multiply that number by your average job value and your close rate. That&rsquo;s your annual missed call loss.</p>
+
+<p><strong>Number 2: Your past customer database size.</strong> How many past clients are in your CRM, billing system, or spreadsheet? Just the count. If you haven&rsquo;t sent them a specific outreach message in the last 90 days, they&rsquo;re cold. Cold past clients convert at dramatically better rates than cold leads &mdash; but only if you reach them.</p>
+
+<p><strong>Number 3: Your Google review count and rating.</strong> Look at your Google Business Profile right now. If you have fewer than 50 reviews or a rating below 4.4 stars, you&rsquo;re losing inbound leads to competitors every week in local search. You&rsquo;re paying for it whether you notice it or not.</p>
+
+<p>These three numbers tell you where your biggest leak is. For most contractors, missed calls win by a wide margin. That&rsquo;s where Phase 1 starts.</p>
+
+<h2>Phase 1 (Days 1&ndash;30): Stop the Bleeding</h2>
+
+<p>The goal of the first 30 days is straightforward: stop losing revenue you would have captured if someone had just answered the phone. This phase focuses entirely on inbound call handling &mdash; the most immediate, highest-dollar revenue leak for the majority of service contractors.</p>
+
+<h3>Week 1: Set Up Missed Call Text-Back</h3>
+
+<p>The fastest and cheapest way to stop losing inbound leads is <a href="/missed-call-text-back">missed call text-back</a>. Setup takes under an hour. When a call goes unanswered, an automatic text fires within 30 seconds: &ldquo;Hi, this is [Company Name] &mdash; sorry we missed your call. What can we help you with?&rdquo; The lead responds via text, and you&rsquo;re back in the conversation before they dial your competitor.</p>
+
+<p>At $75 to $150 per month, this is the highest ROI first step in the entire roadmap. For most contractors, the first recovered job pays for the system for three to six months. Set it up in Week 1 and start capturing leads immediately while you plan the rest of the roadmap.</p>
+
+<h3>Weeks 2&ndash;4: Evaluate and Deploy AI Voice</h3>
+
+<p>Missed call text-back captures leads after the fact. <a href="/ai-voice-assistant">AI voice assistant</a> handles calls in real time &mdash; answering live, capturing project details, booking appointments, and routing urgent calls for immediate callback. For contractors missing more than 8 calls per week, the ROI math almost always favors implementing it. At $300 to $500 per month, recovering two additional jobs per month at your average job value covers the cost by several multiples.</p>
+
+<p>Use Weeks 2 and 3 to evaluate whether AI voice makes sense for your operation. Plan configuration and testing for Week 3. By the end of Week 4, it should be live. You&rsquo;ll enter Month 2 with both systems running simultaneously.</p>
+
+<h3>End of Month 1 Checkpoint</h3>
+
+<p>By Day 30, you should have:</p>
+<ul>
+<li>Missed call text-back live and responding to every unanswered call</li>
+<li>AI voice assistant either live or in final configuration</li>
+<li>A baseline metric for inbound call volume (from your phone system or call tracking)</li>
+</ul>
+
+<p>Revenue impact in Month 1 is typically $3,000 to $12,000 in recovered jobs, depending on your call volume and average job value. That&rsquo;s not a projection &mdash; it&rsquo;s the starting line. For most contractors, the first recovered job arrives within the first two weeks.</p>
+
+<h2>Phase 2 (Days 31&ndash;60): Activate Hidden Revenue</h2>
+
+<p>Phase 2 targets two revenue sources already inside your business that are going untapped: your past customer database and your online reputation. Both generate revenue without acquiring new leads, and both compound in value over time.</p>
+
+<h3>Weeks 5&ndash;6: Run Your First Database Reactivation Campaign</h3>
+
+<p>Open your CRM, billing software, or customer list and pull every contact you haven&rsquo;t actively worked with in the past 90 days. For most contractors, that&rsquo;s 200 to 1,500 names &mdash; people who hired you, liked your work, and went quiet. They didn&rsquo;t leave you for a competitor; they just stopped hearing from you.</p>
+
+<p>An <a href="/database-reactivation">AI-powered database reactivation campaign</a> sends a personalized SMS sequence to each contact over two to three weeks: a warm, specific message referencing the work you did together, a soft offer or seasonal timing angle, and a few follow-up messages for non-responders. Past clients convert at 20 to 35% because the relationship already exists and the message arrives with context.</p>
+
+<p>For a database of 400 contacts at a 20% response rate, 20% conversion on responses, and a $3,500 average job value:</p>
+
+<p><strong>400 &times; 20% response &times; 20% book &times; $3,500 = $56,000 from one campaign.</strong></p>
+
+<p>That&rsquo;s the standard math for reactivation campaigns in the trades, not an edge case. Campaign costs run $200 to $500. Plan your first campaign for Week 5 or 6 so it runs through the end of Month 2.</p>
+
+<h3>Weeks 7&ndash;8: Launch Automated Review Requests</h3>
+
+<p>While your reactivation campaign runs, set up automated review requests on the backend of every completed job. After job close, every customer gets a personalized SMS with a one-tap link to your Google review form within 24 hours of completion &mdash; when satisfaction is highest and the experience is fresh.</p>
+
+<p>This system doesn&rsquo;t generate revenue immediately. It generates it in Month 3 and beyond. <a href="/reputation-management">Research shows</a> that increasing your Google rating from 3.5 to 4.5 stars increases revenue 5 to 9% for local service businesses. Getting from 20 reviews to 80 reviews moves you into the top search results for your area, which means more inbound leads without ad spend. Set it up in Month 2 so the reviews start building toward that threshold by Month 3.</p>
+
+<h3>End of Month 2 Checkpoint</h3>
+
+<p>By Day 60, you should have:</p>
+<ul>
+<li>AI voice and missed call text-back running from Month 1</li>
+<li>Your first reactivation campaign complete or in final messages</li>
+<li>Automated review requests live and capturing reviews after every job</li>
+<li>A Month 1 vs. Month 2 comparison of inbound conversion volume</li>
+</ul>
+
+<p>Revenue impact from Month 2 reactivation alone is typically $20,000 to $60,000 for a contractor with 300 or more past contacts. Combined with the ongoing inbound capture from Phase 1, Month 2 is usually where contractors recognize the compounding effect of running multiple systems simultaneously.</p>
+
+<h2>Phase 3 (Days 61&ndash;90): Compound and Optimize</h2>
+
+<p>Phase 3 is about refining what&rsquo;s working and building toward systems that generate revenue consistently, every month, without manual intervention. By Day 60, you have three systems running. Phase 3 optimizes each one based on real data.</p>
+
+<h3>Weeks 9&ndash;10: Tune Your AI Voice Configuration</h3>
+
+<p>By Day 60, you have 60 days of call data. Pull it and answer three questions: Which call types is the AI handling best? What percentage of callers are converting to booked appointments or callbacks? Are there call types where leads are still slipping through?</p>
+
+<p>Use this data to refine your AI&rsquo;s configuration &mdash; adjust how it handles specific inquiry types, update the information it captures, tighten the routing logic for urgent calls. This takes two to four hours and costs nothing beyond your existing subscription. Properly optimized AI voice typically improves conversion by 15 to 25% over the initial baseline as the configuration gets tuned to your actual call patterns.</p>
+
+<h3>Week 11: Plan Your Second Reactivation Campaign</h3>
+
+<p>Your first campaign ran in Month 2. Month 3 is when you plan the second round. Contacts who didn&rsquo;t respond the first time often convert on a second approach 60 days later with a fresh angle or timing anchor. Contacts who responded but didn&rsquo;t book can be followed up with a specific offer. Second campaigns typically generate 50 to 70% of first-campaign revenue because the strongest responders are already converted &mdash; but significant value remains in the remaining database.</p>
+
+<h3>Week 12: Review Reputation Progress and Set the 180-Day Target</h3>
+
+<p>By Day 90, your review system has been running for 30 days. Pull your current Google review count and rating. For most contractors, the system adds 3 to 7 new reviews per week. If you started at 15 reviews, you likely have 25 to 40 by Day 90. That&rsquo;s not yet enough to transform your local ranking &mdash; that happens at 60 to 80 reviews &mdash; but you&rsquo;re on trajectory.</p>
+
+<p>Set a 180-day target: 80 reviews at 4.5 stars or above. That&rsquo;s the threshold where local search visibility meaningfully improves for most trade categories. Keep the review system running. It compounds automatically and requires no ongoing attention.</p>
+
+<h2>What 90 Days Actually Looks Like: A Real Example</h2>
+
+<p>Here&rsquo;s what this roadmap produces for an HVAC contractor doing $600,000 per year with 500 past clients, 10 missed calls per week, and 22 Google reviews at 4.1 stars:</p>
+
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Month 1</th>
+<th>Month 2</th>
+<th>Month 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Missed call text-back / AI voice</td>
+<td>$6,000 recovered</td>
+<td>$7,500 recovered</td>
+<td>$8,500 recovered</td>
+</tr>
+<tr>
+<td>Database reactivation</td>
+<td>&mdash; (setup)</td>
+<td>$42,000 campaign</td>
+<td>$18,000 campaign 2</td>
+</tr>
+<tr>
+<td>Review system</td>
+<td>&mdash; (building)</td>
+<td>&mdash; (building)</td>
+<td>Ranking lift begins</td>
+</tr>
+<tr>
+<td><strong>Cumulative recovery</strong></td>
+<td><strong>$6,000</strong></td>
+<td><strong>$55,500</strong></td>
+<td><strong>$82,000</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>Total system cost over 90 days: $2,000 to $3,500. Total revenue recovered: $82,000. These numbers come from real industry benchmarks, not edge cases. A contractor with higher call volume, a larger database, or a higher average job value will see proportionally more. A smaller operation will see less. But at any size, the ROI structure holds: system cost is predictable, and the first recovered job typically covers months of fees.</p>
+
+<h2>The Systems That Run After Day 90</h2>
+
+<p>The 90-day roadmap is the launch window, not a sprint. At Day 91, you have three revenue systems running without additional labor:</p>
+
+<ul>
+<li><strong>AI voice / missed call text-back</strong> captures every inbound lead, every day, without someone sitting at a desk.</li>
+<li><strong>Quarterly database reactivation campaigns</strong> pull revenue from past clients every 60 to 90 days, compounding as your past client base grows.</li>
+<li><strong>Automated review requests</strong> build your Google reputation month over month, increasing organic inbound volume without ad spend.</li>
+</ul>
+
+<p>Contractors who implement all three and run them consistently for 12 months typically see total revenue increases of 15 to 35% above baseline &mdash; not from new marketing, not from more leads, but from capturing and converting revenue that was already in front of them. The 90-day roadmap works because it sequences implementation by speed to revenue. You don&rsquo;t build everything at once. You start with the fastest payback, let it fund the next layer, and compound from there.</p>
+
+<p>If you&rsquo;re not sure where your biggest leak is, <a href="/free-assessment">take the free two-minute revenue assessment</a> and we&rsquo;ll show you the numbers for your specific business. If you&rsquo;re ready to get started, <a href="/pricing">view our deployment options</a> to find the right entry point for your operation.</p>`,
+    faqs: [
+      {
+        question:
+          "What is the first thing a contractor should implement for revenue recovery?",
+        answer:
+          "For most contractors, missed call text-back is the right first step. At $75 to $150 per month, it has the fastest setup, the lowest cost, and the highest return relative to investment. Within the first week, most contractors recover at least one job that would have gone to voicemail and been lost. If your call volume is higher &mdash; 10 or more missed calls per week &mdash; an AI voice assistant that handles calls in real time is the stronger long-term play. Set up missed call text-back immediately while you evaluate AI voice, then layer in voice during Weeks 2 through 4. The two systems together typically capture 90% of the inbound revenue that was previously leaking out of your business.",
+      },
+      {
+        question:
+          "How long does it take to see ROI from AI tools for contractors?",
+        answer:
+          "Missed call text-back can show ROI within the first week &mdash; one recovered lead at a $3,000 average job value covers 20 months of a $150 per month subscription. Database reactivation campaigns show results within 2 to 3 weeks of launch, which is the typical response period for a 3-message sequence. Review automation builds slowly: meaningful ranking improvements usually appear after 60 to 90 days and 50+ new reviews. Think of it as sequenced: inbound capture pays back immediately, reactivation pays back in 2 to 3 weeks, and reputation management compounds over months into permanent organic revenue lift.",
+      },
+      {
+        question:
+          "How do I know which revenue leak is costing my business the most?",
+        answer:
+          "Run the 15-minute audit at the top of this guide: estimate your weekly missed call volume, count your past customer database size, and check your Google review count and rating. The largest product of (volume &times; average job value &times; close rate) is your biggest leak. For most service contractors, missed calls are the most expensive gap &mdash; especially trades where the team is in the field all day and can&rsquo;t answer phones. For contractors with large past customer databases and low outreach cadence, the database reactivation opportunity often exceeds the inbound leak. Take our <a href='/free-assessment'>free assessment</a> and we&rsquo;ll run the math specific to your trade, volume, and market.",
+      },
+      {
+        question:
+          "What if I&rsquo;m not tech-savvy? Can I still implement these systems?",
+        answer:
+          "Yes. None of these systems require technical expertise. Missed call text-back and AI voice are configured by your provider using the details you supply about your business &mdash; your services, your tone, your hours. You review the scripts and approve the setup. The systems run. Database reactivation campaigns are even simpler: you export your contact list as a spreadsheet, provide context about past work and timing, and the outreach runs on its own. The only ongoing task is reviewing performance data periodically, which takes about 30 minutes per month. The whole point of these systems is that they handle the communication work for you.",
+      },
+      {
+        question:
+          "What does a full revenue recovery system cost per month for a contractor?",
+        answer:
+          "Depending on what you implement: missed call text-back runs $75 to $150 per month; AI voice assistant runs $300 to $500 per month; database reactivation campaigns cost $200 to $500 per campaign, run 4 to 6 times per year; automated review requests typically run $100 to $200 per month. Running all three simultaneously puts your total monthly investment at roughly $600 to $1,200 per month, depending on tier and call volume. For a contractor recovering $5,000 to $20,000 per month in previously lost revenue, that investment typically returns 10x to 50x. The first recovered job in most months covers the system costs entirely. <a href='/pricing'>View our pricing page</a> for specific deployment tier details.",
+      },
+      {
+        question:
+          "What results can I realistically expect at 90 days?",
+        answer:
+          "At 90 days with all three systems running: your inbound conversion from missed calls should be meaningfully higher than your starting baseline &mdash; most contractors see 15 to 25% more booked jobs from inbound inquiries. Your first database reactivation campaign will have generated real booked revenue, typically $20,000 to $80,000 depending on database size and average job value. Your Google review count will have grown by 30 to 50 reviews if the system is running after every job, moving you closer to the 60 to 80 review threshold where local ranking improves. The combination of better inbound conversion and an active reactivation cycle makes the 90-day window the highest-velocity revenue improvement period most contractors experience outside of a major advertising push &mdash; but without the ad spend.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
